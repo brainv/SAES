@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.smartmatic.com/SmartmaticGUIConfiguration" xmlns:mstns="http://www.smartmatic.com/SmartmaticConfiguration/SmartmaticGUIConfiguration-schema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="SmartmaticGUIConfiguration" targetNamespace="http://www.smartmatic.com/SmartmaticGUIConfiguration">
+	<xsd:complexType name="SmartmaticGUIConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="BasicWindowConfiguration">
+		    	<xsd:complexType>
+		    		<xsd:sequence>
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="Height" type="xsd:int"/>
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="Width" type="xsd:int"/>
+		    		  <xsd:element maxOccurs="1" minOccurs="1" name="HeaderHeight" type="xsd:int"/>
+		    		  <xsd:element maxOccurs="1" minOccurs="1" name="TitleHeight" type="xsd:int"/>
+		    		  <xsd:element maxOccurs="1" minOccurs="1" name="BottomHeight" type="xsd:int"/>
+		    		  <xsd:element maxOccurs="1" minOccurs="1" name="HorizontalPadding" type="xsd:int"/>
+  		    		  <xsd:element maxOccurs="1" minOccurs="1" name="verticalPadding" type="xsd:int"/>  		    		  
+ 		    		  </xsd:sequence>
+		    	</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element maxOccurs="1" minOccurs="1" name="EventSoundsConfiguration">
+		    	<xsd:complexType>
+		    		<xsd:sequence>
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="SmartmaticButtonSound" type="xsd:string"/>	
+		    		  <xsd:element maxOccurs="1" minOccurs="1" name="AzertyKeypadSound" type="xsd:string"/>    
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="KeypadSound" type="xsd:string"/>	
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="MenuSound" type="xsd:string"/>	    
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="ConfirmationDialogSound" type="xsd:string"/>	    
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="ChooseDialogSound" type="xsd:string"/>	    
+ 		    		  </xsd:sequence>
+		    	</xsd:complexType>
+		  </xsd:element>
+  		  <xsd:element maxOccurs="1" minOccurs="1" name="ButtonLabelSizeConfiguration">
+		    	<xsd:complexType>
+		    		<xsd:sequence>
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="MenuButtons" type="xsd:nonNegativeInteger"/>	    
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="AllButtons" type="xsd:nonNegativeInteger"/>		    
+ 		    		  </xsd:sequence>
+		    	</xsd:complexType>
+		  </xsd:element>
+		   <xsd:element maxOccurs="1" minOccurs="1" name="AZERTYKeyboardWidgetConfiguration">
+		    	<xsd:complexType>
+		    		<xsd:sequence>
+		    		 <xsd:element maxOccurs="1" minOccurs="1" name="ShowChars" type="xsd:boolean"/>	
+ 		    		  </xsd:sequence>
+		    	</xsd:complexType>
+		  </xsd:element>		  
+		   <xsd:element maxOccurs="1" minOccurs="1" name="EntryPassPhraseConfiguration">
+		  		<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="CaseSensitive"/>
+						<xsd:enumeration value="UpperCase"/>
+						<xsd:enumeration value="LowerCase"/>
+					</xsd:restriction>
+				</xsd:simpleType>	
+			  </xsd:element>
+		   <xsd:element maxOccurs="1" minOccurs="1" name="ButtonsQuestionConfiguration">
+		  		<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="cancel-accept"/>
+						<xsd:enumeration value="accept-cancel"/>
+					</xsd:restriction>
+				</xsd:simpleType>	
+			  </xsd:element>
+		   <xsd:element maxOccurs="1" minOccurs="1" name="GenderConfiguration">
+		    	<xsd:complexType>
+		    		<xsd:sequence>
+		    		 <xsd:element maxOccurs="unbounded" minOccurs="1" name="Female" type="xsd:string"/>	    
+		    		 <xsd:element maxOccurs="unbounded" minOccurs="1" name="Male" type="xsd:string"/>		    
+ 		    		  </xsd:sequence>
+		    	</xsd:complexType>
+			  </xsd:element>
+		</xsd:sequence>
+  </xsd:complexType>  
+  <xsd:element name="SmartmaticGUIConfiguration" type="SmartmaticGUIConfiguration">
+  </xsd:element>				
+</xsd:schema>

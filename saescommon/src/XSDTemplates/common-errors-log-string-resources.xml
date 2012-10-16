@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Alejandra Garriga (private) -->
+<strings-resources
+	xmlns="http://www.smartmatic.com/Saes/Resources"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.smartmatic.com/Saes/Resources string-resources-schema.xsd" >
+	<string-resource key="NotPossibleToRenameTheVoteFiles">
+		<value>[VFPx006] No fue posible completar el proceso de renombrado de archivos de voto.</value>
+	</string-resource>
+	<string-resource key="CAPINotInstalledException">
+		<value>[CRPx001] El módulo necesario para realizar operaciones con los certificados no está instalado.</value>
+	</string-resource>
+	<string-resource key="CAPICertificateFormatException">
+		<value>[CRPx003] El formato del archivo del certificado no es el correcto.</value>
+	</string-resource>
+	<string-resource key="CryptographyOperationFail">
+		<value>[CGPx001] No es posible llevar a cabo la operación criptográfica.</value>
+	</string-resource>
+	<string-resource key="EncryptionErrorObtainingElectoralAuthorityCertificate">
+		<value>[ENPx001] Se produjo un error al intentar obtener el certificado del CNE.</value>
+	</string-resource>
+	<string-resource key="EncryptionElectoralAuthorityCertificateIsNull">
+		<value>[ENPx003] El certificado de CNE devuelto por el servicio es NULO. No se puede continuar la transmisión.</value>
+	</string-resource>
+	<string-resource key="EncryptionElectoralAuthorityCertificateNotInCorrectFormat">
+		<value>[ENPx005] El certificado del CNE no está en un formato válido. Se produjo un error al intentar decodificarlo de Base64.</value>
+	</string-resource>
+	<string-resource key="EncryptionCannotDecryptElectoralAuthorityCertificate">
+		<value>[ENPx007] No se pudo descifrar el certificado de la Autoridad Electoral.</value>
+	</string-resource>
+	<string-resource key="EncryptionElectoralCertificateEncryptingParametersNotAvailable">
+		<value>[ENPx011] No se pudo obtener los parámetros de encriptamiento del certificado del CNE.</value>
+	</string-resource>
+  <string-resource key="EncryptionElectoralCertificateCannotVerifyRawCertificateSignature">
+    <value>[ENPx012] No se pudo validar la firma del certificado obtenido del servidor.</value>
+  </string-resource>
+	<string-resource key="NotPossibleToWriteInDOM">
+		<value>[DMPx001] No es posible escribir en el DOM.</value>
+	</string-resource>
+	<string-resource key="NotPossibleToWriteInFlash">
+		<value>[FLPx001] No es posible escribir en la FLASH.</value>
+	</string-resource>
+	<string-resource key="CannotOpenSignatureFile">
+		<value>[SGPx001] No es posible leer el archivo de firmas.</value>
+	</string-resource>
+	<string-resource key="SignatureVerificationNotApproved">
+		<value>[SGPx003] Verificación de firmas no aprobada.</value>
+	</string-resource>
+	<string-resource key="CertificateDateNotValid">
+		<value>[CRPx005] La fecha del certificado no es válida.</value>
+	</string-resource>
+	<string-resource key="GenericSignatureVerificationFailure">
+		<value>[SGPx005] Falló la verificación de firmas.</value>
+	</string-resource>
+	<string-resource key="NotValidSignature">
+		<value>[SGPx007] Firma del archivo inválida.</value>
+	</string-resource>
+	<string-resource key="DataCertificateNotInstalled">
+		<value>[CRPx007] Certificado no instalado.</value>
+	</string-resource>
+	<string-resource key="SignaturesFileNotPresent">
+		<value>[SGPx011] El archivo de firmas no está presente.</value>
+	</string-resource>
+	<string-resource key="CertificateNotTrusted">
+		<value>[CRPx011] El certificado no es confiable.</value>
+	</string-resource>
+	<string-resource key="EncryptionInvalidSymmetricIVSize">
+		<value>[ENPx013] El vector de inicialización provisto para inicializar el objeto de cifrado simétrico no tiene una longitud válida.</value>
+	</string-resource>
+	<string-resource key="EncryptionInvalidSymmetricKeySize">
+		<value>[ENPx017] La clave simétrica provista no tiene una longitud válida.</value>
+	</string-resource>
+	<string-resource key="EncryptionNotAbleToCypherByteArray">
+		<value>[ENPx019] No se pudo cifrar el arreglo de bytes.</value>
+	</string-resource>
+	<string-resource key="EncryptionNotAbleToDecypherByteArray">
+		<value>[ENPx023] No se pudo descifrar el arreglo de bytes.</value>
+	</string-resource>
+	<string-resource key="EncryptionNotAbleToDecypherFile">
+		<value>[ENPx029] No se pudo descifrar el archivo.</value>
+	</string-resource>
+	<string-resource key="EncryptionNotAbleToCypherFile">
+		<value>[ENPx031] No se pudo cifrar el archivo.</value>
+	</string-resource>
+	<string-resource key="EncryptionNotAbleToSaveFile">
+		<value>[ENPx037] Ocurrió un error al tratar de guardar el documento.</value>
+	</string-resource>
+	<string-resource key="IncompleteEncryptedFileOrWrongLength">
+		<value>[ENPx041] La longitud del archivo encriptado no coincide con la longitud declarada en el encabezado del archivo encriptado.</value>
+	</string-resource>
+	<string-resource key="IONullPathException">
+		<value>[IOPx001] La ruta del archivo no puede ser null.</value>
+	</string-resource>
+	<string-resource key="IONegativeOffsetMessage">
+		<value>[IOPx003] Offset debe ser un número no negativo.</value>
+	</string-resource>
+	<string-resource key="IOCountMustNotBeNegativeException">
+		<value>[IOPx005] El contador debe ser un número no negativo.</value>
+	</string-resource>
+	<string-resource key="IOExceedingAmountRequiered">
+		<value>[IOPx007] Offset+contador excede el límite del arreglo.</value>
+	</string-resource>
+	<string-resource key="IONotExistingFileException">
+		<value>[IOPx011] El archivo no existe.</value>
+	</string-resource>
+	<string-resource key="IONotAbleToReadFile">
+		<value>[IOPx013] No es posible leer el archivo.  {0}</value>
+	</string-resource>
+	<string-resource key="IOFileNotFoundException">
+		<value>[IOPx017] El archivo especificado no se encuentra. {0}</value>
+	</string-resource>
+	<string-resource key="IONotAbleToCompleteTheOperation">
+		<value>[IOPx019] No es posible completar la operación de entrada/salida.</value>
+	</string-resource>
+	<string-resource key="CAPICannotReadCertFileException">
+		<value>[CRPx013] No es posible leer el archivo del certificado.</value>
+	</string-resource>
+	<string-resource key="CERTCannotGetPubKeyException">
+		<value>[CRPx017] No se pudo obtener la clave pública para el certificado.</value>
+	</string-resource>
+	<string-resource key="CERTCannotGetModulusException">
+		<value>[CRPx019] No se pudo obtener el módulo para la clave asimétrica del certificado.</value>
+	</string-resource>
+	<string-resource key="InvalidCertArray">
+		<value>[CRPx023] El arreglo del certificado es inválido.</value>
+	</string-resource>
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESInvalidFlashPresenceException.Message">
+		<value>[IOPx020] Se detecto la presencia de más de una memoria removible en el sistema.</value>
+	</string-resource>
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXNotValidFileException">
+		<value>[PFXx001] El formato del archivo de claves asimétricas no es válido.</value>
+	</string-resource>
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXNotAbleToCompleteTheOperation">
+		<value>[PFXx002] No es posible completar la carga del archivo de claves asimétricas.</value>
+	</string-resource>	
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXEmptyFileException">
+		<value>[PFXx003] El archivo de claves asimétricas está vacio.</value>
+	</string-resource>	
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXPasswordNotValidException">
+		<value>[PFXx004] La clave de protección del archivo de claves asimétricas no es válida.</value>
+	</string-resource>	
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXImportCertificateException">
+		<value>[PFXx005] No se pudo procesar el archivo de claves asimétricas.</value>
+	</string-resource>	
+	<string-resource key="ReplacementKeyFileNotFound">
+		<value>[MMKx001] El archivo con la clave de remplazo no está en la memoria.</value>
+	</string-resource>	
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESCertificateExceptionType.ManualCertificateNotTrusted">
+		<value>[MCEx001] El certificado manual no es confiable.</value>
+	</string-resource>
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESCertificateExceptionType.ManualCertificateEffectiveDate">
+		<value>[MCEx002] La fecha efectiva del certificado es mayor a la fecha de apertura de la elección.</value>
+	</string-resource>
+	<string-resource key="Smartmatic.SAES.Exceptions.SAESCertificateExceptionType.ManualCertificateExpirationDate">
+		<value>[MCEx003] La fecha de expiración del certificado es menor a la fecha de cierre de la elección.</value>
+	</string-resource>
+  <string-resource key="Smartmatic.SAES.Exceptions.SAESInvalidOperationModeStateForVolumes.Message">
+    <value>[OOEx001] El estado del ambiente del modo de operación no es válido para el estado de los volúmenes.</value>
+  </string-resource>
+  
+  <!--added by gerardo.hernandez-->
+  <string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXCommonNameInvalid">
+    <value>[PFXx010] Falló la verificación de firmas.</value>
+  </string-resource>
+  <string-resource key="Smartmatic.SAES.Exceptions.SAESPFXExceptionType.PFXExpired">
+    <value>[PFXx011] Falló la verificación de firmas.</value>
+  </string-resource>
+ 
+  <!--Add 21-08-09 armando.torres-->
+  <string-resource key="Smartmatic.SAES.Exceptions.SAESCertificateExceptionType.ErrorInstallingCertificate">
+    <value>MCEx004 Hubo errores en el proceso de instalación del certificado.</value>
+  </string-resource>
+  <string-resource key="Smartmatic.SAES.Exceptions.SAESCertificateExceptionType.ErrorUninstallingCertificate">
+    <value>MCEx005 Hubo errores en el proceso de desinstalanción del certificado.</value>
+  </string-resource>
+
+	<string-resource key="SAESNoConsolidationFolderFound">
+		<value>[ENMx005] No se ha encontrado el directorio de Consolidación.</value>
+	</string-resource>
+  
+	<!--The key MUST be: 'Fully qualified name of the type that uses this resources'.CODE
+	<string-resource key="">
+		<value></value>
+	</string-resource>
+	-->
+</strings-resources>

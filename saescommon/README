@@ -1,0 +1,28 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - xsdcxx
+  - libxerces-c-dev
+  - libsmartmatic-dev
+  - barcode
+  - libcups2-dev
+  - libgtkmm-2.4-dev
+  - libglobalplatform6-dev
+  - libpcsclite-dev
+  - libbeidlib3-dev
+
+Dependencias de ejecución:
+  - libxerces-c3.1
+  - libsmartmatic-1.0-1
+  - libcups2
+  - libgtk-2.0-0
+  - libglobalplatform6
+  - libpcsclite1
+  - libgppcscconnectionplugin1
+  - libbeidlib3
+  - beid-mozilla-plugin
+  - beid-common

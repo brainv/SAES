@@ -1,0 +1,25 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - libxml-parser-perl
+  - libgtk2.0-dev
+  - icon-naming-utils
+
+Dependencias de ejecución:
+  - gtk2-engines
+  - gtk2-engines-pixbuf
+  - librsvg2-common
+  - libgtk-2.0-0
+
+
+Switching gtk/icon themes
+------------------------
+In 2.2 and later, use gnome-theme-manager, and choose the Icon theme from the Details subdialog.
+
+ gconftool-2 --set /desktop/gnome/interface/gtk_theme "SaesDefault" --type string
+ gconftool-2 --set /desktop/gnome/interface/icon_theme "SaesDefault" --type string
+

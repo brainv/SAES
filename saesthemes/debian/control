@@ -1,0 +1,17 @@
+Source: saesthemes
+Section: gnome
+Priority: optional
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7), cdbs, libxml-parser-perl, libgtk2.0-dev (>= 2.4.0), icon-naming-utils (>= 0.8.7), pkg-config, intltool
+
+Package: saes-themes
+Architecture: all
+Depends: ${misc:Depends}, murrine-themes
+Suggests: gconf2, gtk2-engines, gtk2-engines-pixbuf, librsvg2-common
+Description: Themes for the GNOME desktop
+ This package contains the desktop themes of the GNOME desktop
+ environment.
+ .
+  * The SaesDefault theme.

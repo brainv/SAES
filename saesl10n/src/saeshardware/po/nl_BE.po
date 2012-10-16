@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/Connections/serial-port-connection.cc:91
+msgid "Smartmatic.SAES.HW.Devices.IMT5123CardReader.Connected"
+msgstr "Verbonden"
+
+#: ../src/Devices/i-m-t-5123-card-reader.cc:77
+#, c-format
+msgid "Smartmatic.SAES.HW.Devices.IMT5123CardReader.NotConnected"
+msgstr "Niet verbonden"
+
+#: ../src/Devices/i-m-t-5123-card-reader.cc:119
+#: ../src/Devices/i-m-t-5123-card-reader.cc:163
+#, c-format
+msgid "Smartmatic.SAES.HW.Devices.IMT5123CardReader.ExceptionEaten"
+msgstr "Exception Eaten"
+
+#: ../src/Devices/i-m-t-5123-card-reader.cc:245
+#, c-format
+msgid "Smartmatic.SAES.HW.Devices.IMT5123CardReader.ExtendedModeOn"
+msgstr "Extended Mode aan"
+
+#: ../src/Devices/i-m-t-5123-card-reader.cc:286
+
+################ Add 21.03.12 ################
+
+msgid "Smartmatic.SAES.HW.Devices.BarcodeDevice.BarcodeDisconnected"
+msgstr "De scanner is niet aangesloten"
+
+msgid "Smartmatic.SAES.HW.Devices.BarcodeDevice.BarcodeConnected"
+msgstr "De scanner is aangesloten"
+
+################## Add 27.03.12 ################
+
+msgid "Smartmatic.SAES.HW.Devices.BarcodeDevice.SendConfigurationCommands"
+msgstr "Bezig met versturen van configuratie instructies"
+

@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsaesfunctionality*.la
+debian/tmp/usr/lib/libsaesfunctionality*.so
+debian/tmp/usr/lib/pkgconfig/libsaesfunctionality.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsaesfunctionality/AUTHORS
+debian/tmp/usr/share/doc/libsaesfunctionality/ChangeLog
+debian/tmp/usr/share/doc/libsaesfunctionality/INSTALL
+debian/tmp/usr/share/doc/libsaesfunctionality/NEWS
+debian/tmp/usr/share/doc/libsaesfunctionality/README

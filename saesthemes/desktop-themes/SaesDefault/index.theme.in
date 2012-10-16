@@ -1,0 +1,8 @@
+[X-GNOME-Metatheme]
+_Name=Saes Default
+Type=X-GNOME-Metatheme
+_Comment=Saes Default Theme
+Encoding=UTF-8
+GtkTheme=SaesDefault
+MetacityTheme=SaesDefault
+IconTheme=SaesDefault

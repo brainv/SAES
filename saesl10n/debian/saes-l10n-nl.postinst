@@ -1,0 +1,32 @@
+#!/bin/sh -e
+
+LOCALES="nl_BE.UTF-8 nl_NL.UTF-8"
+LOCALE=`basename $0 | perl -ne 'print $2 if /-(.*)-(.*)\.+/'`
+
+if [ "$1" = "configure" ]; then
+
+	localegen="/etc/locale.gen"
+	localeubuntudir="/var/lib/locales/supported.d/"
+
+	if [ -e "${localegen}" ]	
+	then
+		for l in $(echo "${LOCALES}" | tr " " "\n")
+		do
+			sed -i "s/^\#\s*${l}/${l}/" "${localegen}"
+		done
+
+	elif [ -d "${localeubuntudir}" ] && [ ! -e "${localeubuntudir}/${LOCALE}" ]
+	then
+		touch "${localeubuntudir}/${LOCALE}"
+
+		for l in $(echo "${LOCALES}" | tr " " "\n")
+		do
+			echo "${l} UTF-8" >> "${localeubuntudir}/${LOCALE}"
+		done
+
+	fi
+fi
+
+#DEBHELPER#
+
+exit 0

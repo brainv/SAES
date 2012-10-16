@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsaes*.la
+debian/tmp/usr/lib/libsaes*.so
+debian/tmp/usr/lib/pkgconfig/libsaes.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsaes/AUTHORS
+debian/tmp/usr/share/doc/libsaes/ChangeLog
+debian/tmp/usr/share/doc/libsaes/INSTALL
+debian/tmp/usr/share/doc/libsaes/NEWS
+debian/tmp/usr/share/doc/libsaes/README

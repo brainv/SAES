@@ -1,0 +1,713 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/Operation/Authenticator/PMachineAuthenticator.cxx:85
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator."
+"ValidateElectoralProcess"
+msgstr "Valider Processus électoral"
+
+#: ../src/Operation/Authenticator/PMachineAuthenticator.cxx:90
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateMenu"
+msgstr "Valider menu"
+
+#: ../src/Operation/Authenticator/PMachineAuthenticator.cxx:93
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateNoMatch"
+msgstr "Valider Pas de correpondance trouvée"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:84
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateMenu"
+msgstr "Valider menu"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:89
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator."
+"ValidateVotingProcess"
+msgstr "Valider processus de vote"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:94
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator."
+"ValidateAudioVotingProcess"
+msgstr "Valider processus de vote audio"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:99
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateClearAlarm"
+msgstr "Valider Vider Alarmes"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:102
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateNoMatch"
+msgstr "Valider Pas de correspondance"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:42
+msgid "Smartmatic.SAES.Operation.Initiator.StartPMAchine"
+msgstr "Démarrer la machine du président"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:91
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReport"
+msgstr "Impression du rapport d'installation"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:219
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReportOk"
+msgstr "Impression du rapport réussie"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:224
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:229
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:234
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineInitiator."
+"PrintingInstallReportFail"
+msgstr "Impression du rapport échoué.\n "
+"Etteindre l'ordinateur du president, s'assurer que l'imprimante est connecté correctement\net essayer l'installation à nouveau"
+
+#: ../src/Operation/Initiator/VMachineInitiator.cxx:40
+msgid "Smartmatic.SAES.Operation.Initiator.StartVMAchine"
+msgstr "Démarrage des ordinateur de vote"
+
+#: ../src/Operation/Initiator/VMachineInitiator.cxx:65
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.CanRemoveTheFlashDriveFromTheMachine"
+msgstr "La clé usb peut maintenant être retirée pour installer une autre machine"
+
+#: ../src/Operation/Initiator/VMachineInitiator.cxx:89
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"ErrorLogicalVoterGroupAndCustomAttributeDefinition"
+msgstr "Erreur de groupe de voteur logique et définition de l'attribut personnalisé"
+
+#: ../src/Operation/Voting/FillVote.cxx:115
+msgid ""
+"Smartmatic.SAES.Operation.Voting.FillVote."
+"ErrorLogicalVoterGroupAndCustomAttributeDefinition"
+msgstr "Erreur de groupe de voteur logique et définition de l'attribut personnalisé"
+
+#: ../src/Operation/Voting/VotingExperienceController.cxx:704
+#: ../src/Operation/Voting/VotingExperienceController.cxx:709
+#: ../src/Operation/Voting/VotingExperienceController.cxx:714
+#: ../src/Operation/Voting/VotingExperienceController.cxx:748
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController.UnderConstruction"
+msgstr "En cours de construction"
+
+#: ../src/Operation/Voting/VotingExperienceController.cxx:732
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextCustomAttributeDefinitionNotFound"
+msgstr "Prochaine définition de l'attribut personnalisé non trouvé"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.IDCardDetectionException"
+msgstr "Erreur de détection de la carte ID"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager."
+"IDCardSignatureOperationException"
+msgstr "Erreur d'opération de signature de carte ID"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager."
+"IDCardSignatureCannotOpenFileException"
+msgstr "Erreur: signature de carte ID ne peut pas ouvrir le fichier" 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.GettingVoteFromSafeBuffer"
+msgstr "Récupération d'un vote depuis un buffer sécurisé" 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager."
+"ElectoralConfigurationReportPrinted"
+msgstr "Rapport des configurations électorales imprimé"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator."
+"LogPrintingInstallReportFailPrinterNotReady"
+msgstr "Echec lors de l'impression du rapport d'installation: Imprimante non prête"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator."
+"LogPrintingInstallReportFail"
+msgstr "Echec lors de l'impression du rapport d'installation"
+
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"StartingVotingExperience"
+msgstr "Démarrage du processus de vote"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"StartVotingExperienceFailture"
+msgstr "Echec du démarrage du processus de vote"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"StartedVotingExperience"
+msgstr "Processus de vote démarré"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextActionVotingExperienceClose"
+msgstr "Prochaine action - fermeture du processus de vote"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextActionVotingExperienceContest"
+msgstr "Prochaine action - processus de vote "
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnableToReadCard"
+msgstr "Impossible de lire la carte "
+
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnableToWriteCard"
+msgstr "Impossible d'écrire sur la carte"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCryptographicError"
+msgstr "Log Erreur cryptographique"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogInvalidCard"
+msgstr "Log Carte invalide"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCardUsed"
+msgstr "Log carte utilisée"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogInvalidVotingCardData"
+msgstr "Log invalidité des informations de la carte de vote"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogTimeOut"
+msgstr "Log temps dépassé"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnexpected"
+msgstr "Log inattendu" 
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogStackOfAlarmsCleared"
+msgstr "Log pile des alarmes vidées"
+
+############## new functionalities de PM
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorValidatedVote"
+msgstr "Erreur durant la validation du vote"
+
+msgid ""
+"Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorVote"
+msgstr "Vote erroné"
+
+msgid ""
+"Smartmatic.SAES.Functionality.Operation.MachineOperationManager."
+"ErrorFileNameVote"
+msgstr "Vote mauvais nom de fichier"
+
+msgid ""
+"Smartmatic.SAES.Functionality.Operation.MachineOperationManager."
+"ErrorValidateVote"
+msgstr "Erreur durant la validation du vote"
+
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController.PartyNotFound"
+msgstr "Parti non trouvé"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorFoundFolderDomVotes"
+msgstr "Une erreur s'est produite sur la clé USB Master"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorFoundFolderFlashVotes"
+msgstr "Une erreur s'est produite sur la clé USB Backup"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCardNotRemovedAfterVoting"
+msgstr "La carte n'a pas été retirée après le vote"
+
+########### Log de auditoria
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectionOpened"
+msgstr "Election ouverte"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectionClosed"
+msgstr "Election clôturée"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.VotingExperienceClosed"
+msgstr "Expérience de vote clôturée"
+
+############ claves nuevas ivette
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorValidatingVote"
+msgstr "Erreur de validation de vote" 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceOfficialVote"
+msgstr "Vote officiel sauvé avec succès" 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceDemoVote"
+msgstr "Diagnostic de vote sauvé avec succès"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceRecoveryVote"
+msgstr "Vote de récupération sauvé avec succès" 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteDecyptoException"
+msgstr "Erreur lors de l'enregistrement du vote - Decypto Exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteSignatureException"
+msgstr "Erreur lors de l'enregistrement du vote - Signature Exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorSignedData"
+msgstr "Erreur information signée"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteErrorData"
+msgstr "Erreur lors de l'enregistrement du vote - Error Data"
+
+############ Add 25-05-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTime"
+msgstr "L'application est exécutée pour la première fois"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecovery"
+msgstr "Démarrage du processus de récupération de la mémoire "
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.MemoryRecoverySuccess"
+msgstr "Le processus de récupération de la mémoire s'est terminé avec succès" 
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.MemoryRecoveryError"
+msgstr "Le processus de récupération de la mémoire s'est terminé par un échec " 
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalMode"
+msgstr "L'application s'exécute en mode normal"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.NotOperatingSystemInFlash"
+msgstr "Le système d'exploitation n'est pas détecté"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.InvalidDomAndFlashData"
+msgstr "Les informations présentes dans les deux mémoires sont invalides" 
+
+########## Add 29-05-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingOpenElection"
+msgstr "Démarrage du processus d'ouverture d'élection" 
+
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingCloseVotingExperience"
+msgstr "Démarrage du processus de fermeture d'élection" 
+
+
+####### add 01-06-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckingConfigurationSuccess"
+msgstr "La vérification de la configuration s'est terminée avec succès"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckingConfigurationError"
+msgstr "La vérification de la configuration s'est terminée par un échec"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTimeSuccess"
+msgstr "Succès de la première exécution de la machine"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTimeError"
+msgstr "Erreur au cours de la première exécution"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalModeSuccess"
+msgstr "Succès de l'exécution en mode normal" 
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalModeError"
+msgstr "Erreur de l'exécution en mode normal"
+
+############# Add 01-06-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingInstallMachine"
+msgstr "Démarrage de l'installation de la machine"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MachineInstalled"
+msgstr "Machine installée"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.PollworkerRegistered"
+msgstr "Membre dirigeant enregistré"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateWizardMenu"
+msgstr "Valider le menu wizard"
+
+############## ADD 03-06-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingPersistPVForm"
+msgstr "Démarrage de l'enregistrement du procès verbal"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.PersistPVFormSuccess"
+msgstr "Succès de l'enregistrement du procès verbal"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingCloseElection"
+msgstr "Démarrage de la fermeture de l'élection"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingDemostrationVote"
+msgstr "Démarrage du diagnostic de vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.DemostrationVote"
+msgstr "Diagnostic de vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingRegisterPollworker"
+msgstr "Démarrage de l'enregistrement des membres du bureau de vote"
+
+############## ADD 13-06-11
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.VoteRecoveryIntegrityOk"
+msgstr "Intégrité du vote de récupération correcte"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.VoteRecoveryIntegrityBad"
+msgstr "Intégrité du vote de récupération incorrecte"
+
+############## ADD 02-07-11
+
+#: ../src/Operation/Voting/VotingExperienceController.cxx:660
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextActionVotingExperienceCustomAttributeDefinition"
+msgstr "Action suivante lors de la procedure du vote 'Attribute definiton'"
+
+#: ../src/Operation/MachineOperationManager.cxx:572
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorDecryptoData"
+msgstr "Erreur durant le décryptage des données"
+
+#: ../src/Operation/MachineOperationManager.cxx:576
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteDecompressionException"
+msgstr "Erreur durant l'enregistrement du vote"
+
+#: ../src/Operation/MachineOperationManager.cxx:577
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorDecompressData"
+msgstr "Erreur durant la décompression des données"
+
+#: ../src/Operation/MachineOperationManager.cxx:587
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorData"
+msgstr "Problème de données"
+
+#: ../src/Operation/MachineOperationManager.cxx:591
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SuccessPersistenceVote"
+msgstr "Enregistrement du vote réussi"
+
+#: ../src/Operation/MachineOperationManager.cxx:660
+msgid "Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorCountVotes"
+msgstr "Erreur de comptage des votes"
+
+#: ../src/Operation/MachineOperationManager.cxx:715
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostOfficialVotes"
+msgstr "Erreur: Votes officiels perdus"
+
+# ############# new functionalities de PM
+#: ../src/Operation/MachineOperationManager.cxx:731
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostDemoVotes"
+msgstr "Erreur: Votes diagnostic perdus"
+
+#: ../src/Operation/MachineOperationManager.cxx:739
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostSecurityCopyVotes"
+msgstr "Erreur: copie des votes perdue"
+
+#: ../src/Operation/MachineOperationManager.cxx:747
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostSuperNullVotes"
+msgstr "Erreur: Votes blancs perdus"
+
+# ############# new functionalities de PM
+#: ../src/Operation/MachineOperationManager.cxx:755
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostTotalVotes"
+msgstr "Erreur: total des vote perdus"
+
+#: ../src/Operation/MachineOperationManager.cxx:765
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistenceVoteStatistics"
+msgstr "Erreur durant l'enregistrement des statistiques de votes"
+
+############## ADD 21-06-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfiguration"
+msgstr "Exécutant le contrôle de configuration"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfigurationSuccess"
+msgstr "Contrôle de configuration exécuté avec succès"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfigurationError"
+msgstr "Contrôle de configuration échoué"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineMode"
+msgstr "Exécutant mode de remplacement de machine"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineModeSuccess"
+msgstr "Changement de machine exécuté avec succès"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineModeError"
+msgstr "Remplacement de machine échoué"
+
+############# Add 30-08-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistenceVote"
+msgstr "Erreur dans la persistance du vote"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckVotes"
+msgstr "Vérifiant les votes"
+
+#############Add 31-08-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MessageErrorSIGSEGV"
+msgstr "Une erreur s'est produite dans l'application.\nVeuillez demander de l'assistance technique"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MessageErrorSIGABRT"
+msgstr "Une erreur s'est produite dans l'application.\nVeuillez demander de l'assistance technique"
+
+###############Add 14-09-11 ###############
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SaveVoteInOneMemory"
+msgstr "Démarrage du mode Sauvegarde avec une clé USB"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SaveVoteInOneMemorySuccess"
+msgstr "Le mode Sauvegarde avec une clé USB est lancé"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.RestoreVoteInAllMemory"
+msgstr "Démarrage du mode Restauration et de la \nresynchronisation des votes dans les deux clés USB"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.RestoreVoteInAllMemorySuccess"
+msgstr "Le mode Restauration et resynchronisation \ndes votes dans les deux clés USB est lancé"
+
+###############Add 26-09-11 ###############
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceSimulateVote"
+msgstr "Vote simulé persisté correctement"
+
+################ Add 20-10-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineInitiator.CheckingConfigurationSuccess"
+msgstr "La vérification de la configuration s'est terminée avec succès"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineInitiator.CheckingConfigurationError"
+msgstr "La vérification de la configuration s'est terminée par un échec "
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecoverySuccess"
+msgstr "Le mode de restauration de la mémoire a été chargé avec succès"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecoveryError"
+msgstr "Le mode de restauration de la mémoire a été chargé avec des erreurs"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.ContingencyModeSuccess"
+msgstr "Le mode de secours a  été chargé avec succès"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.ContingencyModeError"
+msgstr "Le mode de secours a été chargé avec des erreurs"
+
+################ Add 02-11-11
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.InitializingDiagnostic"
+msgstr "Initialisation du diagnostic"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnostic réussi"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.DiagnosticFailed"
+msgstr "Boîtier d'alarme inaccesible. Le diagnostic a échoué"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.InitializingDiagnostic"
+msgstr "Initialisation du diagnostic"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnostic réussi"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.DiagnosticFailed"
+msgstr "Diagnostic a échoué"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.ReconfigureDevice"
+msgstr "Reconfigurant le lecteur\nde code barres"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.CouldNotReachBarcodeReaderDiagnosticFailed"
+msgstr "Impossible de joindre le lecteur de code barres.\n"
+"Diagnostic a échoué"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.InitializingDiagnostic"
+msgstr "Début du calibrage automatique"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.DiagnosticSuccessful"
+msgstr "Autocalibrage réussi"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.DiagnosticFailed"
+msgstr "Echec de l'autocalibrage. Appuyez sur 'Calibrer' pour démarrer le processus"
+"d'étalonnage"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.InitializingDiagnostic"
+msgstr "Initialisation du diagnostic"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnostic réussi"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DiagnosticFailed"
+msgstr "Diagnostic a échoué"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.CheckingForMediaInserted"
+msgstr "Vérification de l'insertion de la clé USB"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.InitializingDiagnostic"
+msgstr "Initialisation du diagnostic"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnostic réussi"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.SendingFileToPrint"
+msgstr "Envoi du fichier à l'imprimante"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.InitializingDiagnostic"
+msgstr "Initialisation du diagnostic"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnostic réussi"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.DiagnosticFailed"
+msgstr "Diagnostic a échoué"
+
+###############Add 05-11-11 ###############
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.WriteDeviceError"
+msgstr "Erreur d'écriture du périphérique"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.ReadDeviceError"
+msgstr "Erreur de lecture du périphérique"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DataWriteDeviceError"
+msgstr "Erreur d'écriture du périphérique"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DeleteDeviceError"
+msgstr "Erreur effacant un fichier du périphérique"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DeviceNotFound"
+msgstr "Périphérique non identifié" 
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogMaximunCardExtractionCounterAlarm"
+msgstr "Alarme activée. Le nombre maximum d'extractions de cartes a été atteint"
+
+################ Add 14.02.12 ##################
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNearEndOfPaperAfterVoting"
+msgstr "Alarme: Le papier vient à manquer\n\n"
+"Si l'erreur persiste, demandez l'assistance technique"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterFailure"
+msgstr "Erreur d'imprimante durant l'impression du vote.\nVeuillez recourir à une assistance technique" 
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNotReadyForVoterActivation"
+msgstr "Erreur d'imprimante. L'expérience de vote ne peut être activé.\nVeuillez recourir à une assistance technique" 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceDuplicatedVote"
+msgstr "Vote dupliqué" 
+
+################# Add 24.02.12 #################
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.TitleErrorSIGSEGV"
+msgstr "Erreur"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.TitleErrorSIGABRT"
+msgstr "Erreur"
+
+################ Add 21.03.12 ##################
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Run"
+msgstr "Diagnostique du boitier d'alarme est en cours d'exécution"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Ok"
+msgstr "Diagnostique du boitier d'alarme a été exécuté avec succés"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Error"
+msgstr "Erreur lors du diagnostique du boitier de l'alarme"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Run"
+msgstr "Diagnostique du lecteur de code barre- Envoi des commandes"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Ok"
+msgstr "Le diagnostique du lecteur de code barre a été effectué avec succés"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Error"
+msgstr "Erreur lors du diagnostique du lecteur de code barre"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Run"
+msgstr "Le diagnosstique d'imprimante est en cours d'exécution"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Ok"
+msgstr "Le diagnostique de l'imprimante a été exécuté avec succés"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Error"
+msgstr "Erreur lors du diagnostique de l'imprimante"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Run"
+msgstr "Diagnostique du lecteur de carte en cours d'exécution"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Ok"
+msgstr "Diagnostique du lecteur de carte a été exécuté avec succés"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Error"
+msgstr "Erreur lors du diagnostique du lecteur de carte"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Run"
+msgstr "Diagnostique de la carte USB est en cours d'exécution"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Ok"
+msgstr "Diagnostique de la carte USB a été exécuté avec succés"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Error"
+msgstr "Erreur lors du diagnostique de la clé USB"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Run"
+msgstr "Le diagnostique du calibrage de l'écran tactil est en cours d'exécution"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Ok"
+msgstr "Le diagnostique du calibrage de l'écran tactil a été efféctué avec succés"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Error"
+msgstr "Erreur lors du diagnostique du calibrage d'écran tactile"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorUnpackVote"
+msgstr "Erreur lors de la lecture du vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLogicalVoterGroupInVote"
+msgstr "Erreur concernant l'information de vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVotingDeviceInVote"
+msgstr "Erreur concernant l'information de vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVoteCode"
+msgstr "Erreur lors de la validation du code du vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVoteData"
+msgstr "Erreur concernant la structure du vote"
+
+############ New Keys 15-03-2012
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistPVForm"
+msgstr "Erreur persistante du rapport du PV"
+
+######################### Add 09.05.12 ###############################
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.Info"
+msgstr "Le système vérifie si l'alarme est correctement connectée, veuillez patienter.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.Info"
+msgstr "Le système vérifie si le scanner est correctement connecté, veuillez patienter.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.Info"
+msgstr "Le système vérifie si la clef USB a été correctement insérée, veuillez patienter.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.Info"
+msgstr "Le système vérifie si le lecteur de carte est correctement connecté, veuillez patienter.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.Info"
+msgstr "Si l'image affichée sur l'écran n'est pas correctement imprimée,\nveuillez recourir à une assistance technique\n\n "
+
+####################### Add 11.05.12 #################################
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ContingencyCardCreated"
+msgstr "La carte d'urgence a été créé"
+
+###################### Add 17.05.12 #################################
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNearEndOfPaperBeforeVoting"
+msgstr "L'imprimante n'a plus de papier"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.AlarmBoxDisconnected"
+msgstr "Le boitier de l'alarme a été deconnecté"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.AlarmBoxConnected"
+msgstr "Le boitier de l'alarme est connecté"
+
+################## Add 03.08.12 ############################
+
+######## Claves para componente visual para alarma cuando SCR de VM falla ########
+
+msgid "Smartmatic.SAES.Operation.AlarmController.CardReaderUnresponsive"
+msgstr "fr Card Reader device is unresponsive. Please, restart voting machine"
+

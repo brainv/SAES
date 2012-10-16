@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.smartmatic.com/SaesConfiguration" xmlns:mstns="http://www.smartmatic.com/SaesConfiguration/SaesConfiguration-schema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="SaesConfiguration" targetNamespace="http://www.smartmatic.com/SaesConfiguration">
+
+
+<!-- Clases para la configuracion de el ticket de impresion -->
+<xsd:complexType name="TextConfiguration">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="Size" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="FontFamily" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="Bold" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="Italic" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="HPandding" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="VPandding" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="Align" type="AlignType"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LevelPaddingSpaceChar" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="Visible" type="xsd:boolean"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+  <xsd:simpleType name="AlignType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="Left"/>
+		<xsd:enumeration value="Center"/>
+		<xsd:enumeration value="Right"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="VoteChecksumType">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="CRC32"/>
+        <xsd:enumeration value="MD5"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="VoteEncodeModeType">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="BITWISE"/>
+        <xsd:enumeration value="OPTIMIZED"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="LayoutBallotOptiontType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="SeparatePrincipalAndStandIn"/>
+		<xsd:enumeration value="ConcatenatePrincipalAndStandIn"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="LayoutSuperBlankType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="AllContest"/>
+		<xsd:enumeration value="JustContestClass"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="LayoutContestType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="Simple"/>
+		<xsd:enumeration value="Truncated"/>
+		<xsd:enumeration value="Selected"/>
+		<xsd:enumeration value="Vertical"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+  
+   <xsd:simpleType name="QRcodePosition">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="TOP_ALL"/>
+		<xsd:enumeration value="BOTTOM_HEADER"/>
+		<xsd:enumeration value="BOTTOM_ALL"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="CorrectionModeQRCode">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="QR_ECLEVEL_L"/>
+		<xsd:enumeration value="QR_ECLEVEL_M"/>
+		<xsd:enumeration value="QR_ECLEVEL_Q"/>
+		<xsd:enumeration value="QR_ECLEVEL_H"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+  
+  <!-- Método de impresión del código QR -->
+    <xsd:simpleType name="QRCodePrintingModeType">
+      <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="IMAGE_BASED"/>
+          <xsd:enumeration value="COMMAND_BASED"/>
+      </xsd:restriction>
+  </xsd:simpleType>
+
+	<xsd:complexType name="LayoutContestConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="LayoutContestType" type="LayoutContestType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextBallotOption" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="CompleteWithSpaces" type="xsd:boolean"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="ConfigurationVote">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="PaddingChar" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="PrintToPdf" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="QRcodePosition" type="QRcodePosition"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="QRCodePrintingMode" type="QRCodePrintingModeType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="LevelPaddingSpaceCharSize" type="xsd:integer"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MaxBallotOptionLastNameChars" type="xsd:integer"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MaxBallotOptionNameChars" type="xsd:integer"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MaxBallotOptionCodeChars" type="xsd:integer"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="BallotOptionNameSeparator" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="DirectPrinting" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader1" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader2" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader3" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader4" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader5" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader6" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeader7" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextHeaderCustomAttributes" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextBallotName" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextRegionName" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextGeneric" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextBlankVote" type="TextConfiguration"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="CompleteVoteWithSpaces" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="UseMaxSizeBlankVote" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ShowBallotLines" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="LayoutContestConfiguration" type="LayoutContestConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContestName1" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContestName2" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContestName3" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IsTextContestName1CustomAttribute" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IsTextContestName2CustomAttribute" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IsTextContestName3CustomAttribute" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextParentOptionSelected" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextPrincipalsMessage" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextStandInMessage" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="LayoutBallotOptiontType" type="LayoutBallotOptiontType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="LayoutSuperBlankType" type="LayoutSuperBlankType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="VoteEncodeMode" type="VoteEncodeModeType"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="VoteChecksum" type="VoteChecksumType"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="QRCodeVoteList" type="QRCodeVoteList"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="VoteQRCodeMode" type="VoteQRCodeModeEnum"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="UseBackgroundImageForQR" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="PositionImageInBackgroundQR" type="PositionImage"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="VoteCodeConfig" type="VoteCodeConfig"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="AddBlankSpaceFullContest" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MultiLanguageConfiguration" type="MultiLanguageConfiguration"/>
+		</xsd:sequence>			
+  	</xsd:complexType>
+	<xsd:simpleType name="VoteQRCodeModeEnum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="XmlFull"/>
+            <xsd:enumeration value="XmlReduced"/>
+            <xsd:enumeration value="SizeOptimized"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+  <xsd:complexType name="VoteCodeConfig">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="UseShortVoteCode" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="CountGroupVoteCode" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="CharSeparatorVoteCode" type="xsd:string"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+  
+  <xsd:complexType name="MultiLanguageConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Enable" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Separator" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MaxCharsByLanguage" type="xsd:nonNegativeInteger"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  <xsd:complexType name="QRCodeVoteList">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1" name="QRCodeVoteConfig" type="QRCodeVoteConfig"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  <xsd:complexType name="QRCodeVoteConfig">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MaxSize" type="xsd:integer"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="QRCodeConfig" type="QRCodeConfig"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  <xsd:complexType name="QRCodeConfig">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="SizeQRCode" type="xsd:integer"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MarginQRCode" type="xsd:unsignedShort"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="CorrectionModeQRCode" type="CorrectionModeQRCode"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="VersionQRCode" type="xsd:unsignedShort"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  <xsd:complexType name="ConfigurationSmartcardRemoved">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextTitle" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextElectionName" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextVotingBooth" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextVoteID" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextDescription" type="TextConfiguration"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  
+  <xsd:complexType name="ConfigurationTimeout">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextTitle" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextElectionName" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextVotingBooth" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextVoteID" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextDescription" type="TextConfiguration"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+	
+  <xsd:complexType name="ConfigurationInstallation">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextInstallationTitleLevel1" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextInstallationTitleLevel2" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextInstallationTitleLevel3" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextInstallationInfo" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ShowBarCode" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="QRCodeConfig" type="QRCodeConfig"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Base64QRCode" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="QRcodePosition" type="QRcodePosition"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+  
+    <xsd:complexType name="ConfigurationContingency">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContingencyTitleLevel1" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContingencyTitleLevel2" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContingencyTitleLevel3" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TextContingencyInfo" type="TextConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IncludeHelp" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IncludeRegionSection" type="xsd:boolean"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+  
+    <xsd:simpleType name="DocumentColumnLayout">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="SingleColumn"/>
+            <xsd:enumeration value="DoubleColumn"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+  
+    <xsd:complexType name="LogPrintDocumentConfiguration">
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TextLogTitleLevel1" type="TextConfiguration"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TextLogTitleLevel2" type="TextConfiguration"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TextLogTitleLevel3" type="TextConfiguration"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TextLogTitleLevel4" type="TextConfiguration"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TextLogTitleLevel5" type="TextConfiguration"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TextLogEntry" type="TextConfiguration"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ColumnLayout" type="DocumentColumnLayout"/>
+        </xsd:sequence>         
+    </xsd:complexType>
+		
+  <xsd:complexType name="ConfigurationPrinter">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationVote" type="ConfigurationVote"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationTimeout" type="ConfigurationTimeout"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationSmartcardRemoved" type="ConfigurationSmartcardRemoved"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationInstallation" type="ConfigurationInstallation"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationContingency" type="ConfigurationContingency"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="LogPrintDocConfiguration" type="LogPrintDocumentConfiguration"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  <xsd:complexType name="ConfigurationScreenPreview">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationVote" type="ConfigurationVote"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+  
+    <xsd:complexType name="ConfigurationCard">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TimeOfValidity" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="AllowRecoveryCardGenerationOfConsolidatedVotes" type="xsd:boolean"/>
+		</xsd:sequence>			
+  </xsd:complexType>
+
+  <xsd:complexType name="ConfigurationReportFile">
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="FileName" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ReportTitle" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="FileDescription" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="NumCopies" type="xsd:integer"/>
+        </xsd:sequence>         
+  </xsd:complexType>
+  
+  <xsd:complexType name="ConfigurationReportPrinting">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="ReportFiles" type="ConfigurationReportFile"/>
+        </xsd:sequence>         
+  </xsd:complexType>
+
+
+   <xsd:complexType name="SaesConfiguration">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationCard" type="ConfigurationCard"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationPrinter" type="ConfigurationPrinter"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationScreenPreview" type="ConfigurationScreenPreview"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="VoteDummy" type="VoteDummyConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ReportPrinting" type="ConfigurationReportPrinting"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="StatisticConfiguration" type="StatisticConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="TransmissionPackageConfiguration" type="TransmissionPackageConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="CodiFileConfiguration" type="CodiFileConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeQRCodeConfig" type="QRCodeConfig"/>		
+	</xsd:sequence>
+  </xsd:complexType>
+
+<!-- incorporacion de informacion para configuracion de voto tipo dummy -->
+<xsd:complexType name="VoteDummyConfiguration">
+    <xsd:sequence/>
+    <xsd:attribute name="LogicalVoterGroupCode" type="xsd:string" use="required"/>
+    <xsd:attribute name="ContestCode" type="xsd:string" use="required"/>
+    <xsd:attribute name="BallotOptionCode" type="xsd:string" use="required"/>
+</xsd:complexType>
+
+<!-- incorporacion de configuracion para paquete de transmision -->
+<xsd:complexType name="TransmissionPackageConfiguration">
+  <xsd:sequence/>
+ 	 <xsd:attribute name="SaveDemoVotesInTransmissionPackage" type="xsd:boolean" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="CodiFileConfiguration">
+  <xsd:all>
+ 	 <xsd:element name="EnableCodi" type="xsd:boolean"/>
+ 	 <xsd:element name="PersistenceCodi" type="xsd:boolean"/>
+ 	 <xsd:element name="SeparatorVotingDevice" type="xsd:string"/>
+ 	 <xsd:element name="FirstStringFileName" type="xsd:string"/>
+ 	 <xsd:element name="RuleCodiFileName" type="RuleCodiFileNameConfiguration"/>
+ 	 <xsd:element name="RegisterS" type="RegisterCodiConfig"/>
+ 	 <xsd:element name="RegisterL" type="RegisterCodiConfig"/>
+ 	 <xsd:element name="RegisterC" type="RegisterCodiConfig"/>
+ 	 <xsd:element name="RegionName" type="RegionNameCodiConfig"/>
+ 	 <xsd:element name="PersistenceX7SCodi" type="xsd:boolean"/>
+ 	 <xsd:element name="X7SAddPVReport" type="xsd:boolean"/>
+     <xsd:element name="X7SSigned" type="X7SSigned"/>
+     <xsd:element name="X7SCrypto" type="X7SCrypto"/>
+     <xsd:element name="X7SSignedCertified" type="X7SSecurityType"/>
+     <xsd:element name="X7SCryptoCertified" type="X7SSecurityType"/>
+  </xsd:all>
+</xsd:complexType>
+
+<xsd:complexType name="RegisterCodiConfig">
+  <xsd:sequence>
+ 	 <xsd:element maxOccurs="1" minOccurs="1" name="UpdateNISCode" type="xsd:boolean"/>
+ 	 <xsd:element maxOccurs="1" minOccurs="1" name="SetVotingType" type="xsd:boolean"/>
+ 	 <xsd:element maxOccurs="1" minOccurs="1" name="SetLanguage" type="xsd:boolean"/>
+ 	 <xsd:element maxOccurs="1" minOccurs="1" name="SetNISCode" type="xsd:boolean"/>
+ 	 <xsd:element maxOccurs="1" minOccurs="0" name="FillLastFields" type="xsd:boolean"/>
+  </xsd:sequence>
+</xsd:complexType>
+
+<xsd:simpleType name="RegionNameCodiConfig">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="first-region"/>
+		<xsd:enumeration value="second-region"/>
+		<xsd:enumeration value="third-region"/>
+		<xsd:enumeration value="fourth-region"/>
+		<xsd:enumeration value="fifth-region"/>
+		<xsd:enumeration value="sixth-region"/>
+		<xsd:enumeration value="seventh-region"/>
+		<xsd:enumeration value="eighth-region"/>		
+		<xsd:enumeration value="voting-vote-custom-code"/>
+		<xsd:enumeration value="last"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="RuleCodiFileNameConfiguration">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="code-machine"/>
+		<xsd:enumeration value="totalization-type"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="X7SSecurityType">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="machine-keys-file"/>
+		<xsd:enumeration value="pem-files"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="X7SSigned">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="pkcs7-signer"/>
+		<xsd:enumeration value="cms-signer"/>
+		<xsd:enumeration value="none"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="X7SCrypto">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="pkcs7-crypto"/>
+		<xsd:enumeration value="cms-crypto"/>
+		<xsd:enumeration value="symmetric-key"/>
+		<xsd:enumeration value="none"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<!-- incorporacion de informacion para estadisticas -->
+<xsd:complexType name="StatisticConfiguration">
+    <xsd:sequence>
+		<xsd:element maxOccurs="unbounded" minOccurs="1" name="StatisticGroups" type="StatisticGroups"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="StatisticGroups">
+    <xsd:sequence>
+		<xsd:element maxOccurs="unbounded" minOccurs="0" name="StatisticItem" type="StatisticItem"/>
+	    <xsd:element maxOccurs="unbounded" minOccurs="0" name="StatisticEditType" type="StatisticEditType"/>
+    </xsd:sequence>
+    <xsd:attribute name="NameKey" type="xsd:string" use="required"/>
+    <xsd:attribute name="EditInfoKey" type="xsd:string" use="required"/>
+    <xsd:attribute name="BlockerInfoKey" type="xsd:string" use="required"/>
+    <xsd:attribute name="VerticalFilling" type="xsd:boolean" use="required"/>
+    <xsd:attribute name="Pivot" type="xsd:nonNegativeInteger" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="StatisticItem">
+    <xsd:sequence>
+		<xsd:element maxOccurs="unbounded" minOccurs="0" name="addStatisticCode" type="xsd:string"/>
+    </xsd:sequence>
+	<xsd:attribute name="Type" type="StatisticElementType" use="required"/>
+    <xsd:attribute name="Code" type="xsd:string" use="required"/>
+    <xsd:attribute name="NameKey" type="xsd:string" use="required"/>
+    <xsd:attribute name="DescriptionKey" type="xsd:string" use="required"/>
+    <xsd:attribute name="Max" type="xsd:nonNegativeInteger" use="optional"/>
+    <xsd:attribute name="Mask" type="xsd:string" use="optional"/>
+    <xsd:attribute name="Regex" type="xsd:string" use="optional"/>
+    <xsd:attribute name="Mandatory" type="xsd:boolean" use="optional"/>
+    <xsd:attribute name="Width" type="xsd:nonNegativeInteger" use="optional"/>
+    <xsd:attribute name="Height" type="xsd:nonNegativeInteger" use="optional"/>
+</xsd:complexType>
+
+
+	<xsd:simpleType name="StatisticElementType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="numeric"/>
+			<xsd:enumeration value="boolean"/>
+			<xsd:enumeration value="string"/>
+			<xsd:enumeration value="custom"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+<xsd:simpleType name="StatisticEditType">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="NotInstalled"/>
+		<xsd:enumeration value="NotPollworkerRegistered"/>
+		<xsd:enumeration value="NotDemostrationVote"/>
+		<xsd:enumeration value="NotInitiated"/>
+		<xsd:enumeration value="Initiated"/>
+		<xsd:enumeration value="Closed"/>
+		<xsd:enumeration value="ResultsTransmitted"/>
+		<xsd:enumeration value="All"/>
+		<xsd:enumeration value="None"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="PositionImage">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="TOP_LEFT"/>
+		<xsd:enumeration value="TOP_CENTER"/>
+		<xsd:enumeration value="TOP_RIGHT"/>
+		<xsd:enumeration value="MIDDLE_LEFT"/>
+		<xsd:enumeration value="MIDDLE_CENTER"/>
+		<xsd:enumeration value="MIDDLE_RIGHT"/>
+		<xsd:enumeration value="BOTTOM_LEFT"/>
+		<xsd:enumeration value="BOTTOM_CENTER"/>
+		<xsd:enumeration value="BOTTOM_RIGHT"/>
+		<xsd:enumeration value="RANDOM"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+  <xsd:element name="SaesConfiguration" type="SaesConfiguration">
+  </xsd:element>
+</xsd:schema>

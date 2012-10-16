@@ -1,0 +1,65 @@
+Source: libsaesfunctionality
+Section: devel
+Priority: extra
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Build-Depends: debhelper (>= 7),
+	autotools-dev,
+	intltool,
+	cdbs,
+	pkg-config,
+	xsdcxx (>= 3.3.0.1),
+	libxml-security-c-dev (>= 1.6.1),
+	libqrencode-dev (>= 3.1.1),
+	libglobalplatform6-dev (>= 6.0.0),
+	libxerces-c-dev,
+	libgtkmm-2.4-dev,
+	libcups2-dev,
+	libusb-1.0-0-dev,
+	liblog4cxx10-dev,
+	libpcsclite-dev,
+	libgmp3-dev,
+	doxygen,
+	graphviz,
+	libsaes-dev,
+	libsaescommon-dev,
+	libsmartmatic-dev,
+	libsmartmaticgui-dev,
+	libsaeshardware-dev,
+	libsmartmaticlog-dev
+Standards-Version: 3.9.1
+Homepage: http://www.smartmatic.com
+
+Package: libsaesfunctionality-dev
+Section: libdevel
+Architecture: any
+Depends: libsaesfunctionality1 (= ${binary:Version}), ${misc:Depends}
+Description: Library SAES Functionality Developer
+ Library SAES Functionality Developer C++.
+
+Package: libsaesfunctionality1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: saes-l10n-all
+Description: Library SAES Functionality
+ Library SAES Functionality Runtime.
+
+Package: libsaesfunctionality-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery
+Suggests: devhelp
+Description: Library SAES Functionality Doc
+ Library SAES Functionality Documentation.
+
+Package: libsaesfunctionality1-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: libsaesfunctionality1 (= ${binary:Version}), ${misc:Depends} 
+Description: Library SAES Functionality Debug
+ Library SAES Functionality Runtime Debug
+ .
+ This package contains the debugging symbols of the library.
+

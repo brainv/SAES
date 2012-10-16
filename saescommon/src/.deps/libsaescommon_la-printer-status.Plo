@@ -1,0 +1,4 @@
+libsaescommon_la-printer-status.lo: Printing/printer-status.cc \
+ Printing/printer-status.h
+
+Printing/printer-status.h:

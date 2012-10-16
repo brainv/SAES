@@ -1,0 +1,4 @@
+libsmartmaticgui_la-exit-button-listener.lo: \
+ Widgets/exit-button-listener.cc Widgets/exit-button-listener.h
+
+Widgets/exit-button-listener.h:

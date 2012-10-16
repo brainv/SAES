@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+msgid "Smartmatic.SAES.Card.ICardController.MessageReaderPowerCycle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.ICardController.TitleReaderPowerCycle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SaesSmartCard.UnableReadSmartCard"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartCardCommand.ErrorWritingFile.FailVerifyGlobalPIN"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartCardCommand.ErrorWritingFile.FailVerifyPasswordPIN"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartCardCommand.ErrorWritingFile"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartCardCommand.ErrorWritingFile.ErrorSelectAID"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartCardCommand.ErrorWritingFile.UnableWriteData"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartcardConnected.CardReaderUnresponsive"
+msgstr ""
+
+msgid "Smartmatic.SAES.Card.SmartcardConnected.UnableReadSmartCard"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckDirectoryStructure.CheckingDirStructure"
+msgstr "Checking Directory Structure"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckDirectoryStructureFailed"
+msgstr "Checking Directory Structure"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckFilesPresence.CheckingFilePresence"
+msgstr "Checking File Presence"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckingFilePresenceFailed"
+msgstr "Checking File Presence"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckFlashPresence.CheckingFlashPresence"
+msgstr "Checking Flash Backup Presence"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckFlashPresenceFailed"
+msgstr "Checking Flash Backup Presence"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckingFlashStructure.CheckingFlashStructure"
+msgstr "Checking Flash Backup Structure"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckFlashStructureFailed"
+msgstr "Checking Flash Backup Structure"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckForMemoryCompleteCondition.CheckingMemoryCompleteCondition"
+msgstr "Checking File Presence"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CheckForUsedMemoryCondition.CheckingCheckForUsedMemoryCondition"
+msgstr "Checking File Presence"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationPreparing"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationGenerating"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationSending"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationPending"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationPendingIssue"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationPrinting"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.PrintOperationCompleted"
+msgstr "------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_CANCEL"
+
+msgid "Smartmatic.SAES.Printing.BasePrintDocument.AbortedBySystem"
+msgstr "Please restart the machine with the printer connected------------------------------------------------------------------------------------------------------PRINT_OPERATION_RESULT_ERROR"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.SpoolerDeviceError"
+msgstr "Spooler Device Error"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.SpoolerServerError"
+msgstr "Spooler Server Error"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.SpoolerNoPrinterFound"
+msgstr "Spooler No Printer Found"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.NoJobsSubmitted"
+msgstr "No Jobs Submitted"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobPending"
+msgstr "Report Print Job Pending"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobHeld"
+msgstr "Report Print Job Held"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobProcesing"
+msgstr "Report Print Job Procesing"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobStopped"
+msgstr "Report Print Job Stopped"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobCanceled"
+msgstr "Report Print Job Canceled"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobAborted"
+msgstr "Report Print Job Aborted"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.ReportPrintJobCompleted"
+msgstr "Report Print Job Completed"
+
+msgid "Smartmatic.SAES.Printing.ReportPrintingController.UnmanagedReportStatus"
+msgstr "Unmanaged Report Status"
+
+#. mStatusMessage.assign((const char*) cupsLastErrorString());
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.ServiceFailureOnNotificationOp"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.UnknownState"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.PrinterReady"
+msgstr "Printer Not Found"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.OutOfPaper"
+msgstr "OUT"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.Processing"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.PaperJam"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.CoverOpen"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.Offline"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.RejectingPrintJobs"
+msgstr "Printer Not Found"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.NearEndOfPaper"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.TonnerLowWarning"
+msgstr "Error while trying to print: "
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.OutOfTonner"
+msgstr "OUT"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.Cancel"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.CartridgeNotPresent"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Printing.PrinterStatusNotifier.UnknownStateCode"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Security.Encryption.ErrorSignedValidate"
+msgstr "IN"
+
+msgid "Smartmatic.SAES.Common.Security.SecretKey.ErrorInvalidPassphraseFormat"
+msgstr ""
+
+msgid "Smartmatic.SAES.Common.Security.SecretKey.ErrorAlgorithmNotSupported"
+msgstr ""
+
+msgid "Smartmatic.SAES.Common.Security.SecretKey.ErrorDerivingDecryptionKey"
+msgstr ""
+
+msgid "Smartmatic.SAES.Common.Security.SecretKey.ErrorOpenFileSecretKey"
+msgstr ""
+
+msgid "Smartmatic.SAES.Common.Security.SecretKey.ErrorSettingChannel"
+msgstr "Error CATCH"
+
+msgid "Smartmatic.SAES.Common.Security.SecretKey.ErrorReadingSecretKey"
+msgstr ""

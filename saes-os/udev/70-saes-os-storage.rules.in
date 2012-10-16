@@ -1,0 +1,10 @@
+# usb storage action notify
+ 
+# Smartmatic - Belgic System
+
+# add event  notify
+KERNEL=="sd*1",  ACTION=="add", SUBSYSTEMS=="usb", RUN+="@SBINDIR@/smtt-event-device /dev/%k add"
+
+# remove event notify
+KERNEL=="sd*1", ACTION=="remove",SUBSYSTEMS=="usb", RUN+="@SBINDIR@/smtt-event-device /dev/%k remove"
+

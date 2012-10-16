@@ -1,0 +1,574 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnableToReadCard"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnableToWriteCard"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCryptographicError"
+msgstr "Start President Machine"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogInvalidCard"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCardUsed"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogInvalidVotingCardData"
+msgstr "Under construction"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNotReadyForVoterActivation"
+msgstr "Printer not ready for voting"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterFailure"
+msgstr "Printer failed while printing the vote receipt"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNearEndOfPaperAfterVoting"
+msgstr "Printer is low on paper"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNearEndOfPaperBeforeVoting"
+msgstr "Printer is low on paper"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogTimeOut"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnexpected"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCardNotRemovedAfterVoting"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogMaximunCardExtractionCounterAlarm"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.AlarmBoxDisconnected"
+msgstr "Alarm Box Disconnected"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.AlarmBoxConnected"
+msgstr "Alarm Box Connected"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.CardReaderUnresponsive"
+msgstr "Card Reader device is unresponsive. Please, restart voting machine."
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogStackOfAlarmsCleared"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateElectoralProcess"
+msgstr "Validate Electoral Process"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateWizardMenu"
+msgstr "Validate Menu"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateMenu"
+msgstr "Validate Menu"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateNoMatch"
+msgstr "Validate No Match"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateVotingProcess"
+msgstr "Validate Voting Process"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateMenu"
+msgstr "Validate Menu"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateAudioVotingProcess"
+msgstr "Validate Audio Voting Process"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateClearAlarm"
+msgstr "Validate Clear Alarm"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateNoMatch"
+msgstr "Validate No Match"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.Info"
+msgstr "AlarmBox Diagnosis Info"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.InitializingDiagnostic"
+msgstr "Under construction"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.DiagnosticSuccessful"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.DiagnosticFailed"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.Info"
+msgstr "BarCode Diagnosis Info"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.ReconfigureDevice"
+msgstr "Checking Configuration"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.InitializingDiagnostic"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.DiagnosticSuccessful"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.CouldNotReachBarcodeReaderDiagnosticFailed"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.DiagnosticFailed"
+msgstr "Start Voting Machine"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.InitializingDiagnostic"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.DiagnosticSuccessful"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.DiagnosticFailed"
+msgstr "Election opened"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DiagnosticFailed"
+msgstr "Diagnostic Failed"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.WriteDeviceError"
+msgstr "Write Device Error"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.ReadDeviceError"
+msgstr "Read Device Error"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DataWriteDeviceError"
+msgstr "Data Write Device Error"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DeleteDeviceError"
+msgstr "Delete Device Error"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DeviceNotFound"
+msgstr "Device Not Found"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.Info"
+msgstr "Flash Diagnosis Info"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.InitializingDiagnostic"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.CheckingForMediaInserted"
+msgstr "Checking Configuration"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DiagnosticSuccessful"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Run"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Ok"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Error"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Run"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Ok"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Error"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Run"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Ok"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Error"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Run"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Ok"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Error"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Run"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Ok"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Error"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Run"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Ok"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Error"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.Info"
+msgstr "Printer Diagnosis Info"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.InitializingDiagnostic"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.SendingFileToPrint"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.DiagnosticSuccessful"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.Info"
+msgstr "SmartCard Reader Diagnosis Info"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.InitializingDiagnostic"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.DiagnosticSuccessful"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.DiagnosticFailed"
+msgstr "Start Voting Machine"
+
+msgid "Smartmatic.SAES.Operation.Initiator.StartPMAchine"
+msgstr "Start President Machine"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTimeSuccess"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckingConfigurationSuccess"
+msgstr "Checking Configuration Success"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecoverySuccess"
+msgstr "Running Memory Recovery"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineModeSuccess"
+msgstr "Replace Machine Mode Success"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.ContingencyModeSuccess"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTimeError"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckingConfigurationError"
+msgstr "Checking Configuration Error"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecoveryError"
+msgstr "Running Memory Recovery"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineModeError"
+msgstr "Replace Machine Mode Error"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.ContingencyModeError"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.NotOperatingSystemInFlash"
+msgstr "Not Operating System In Flash"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.InvalidDomAndFlashData"
+msgstr "Invalid Dom And Flash Data"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTime"
+msgstr "Running First Time"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecovery"
+msgstr "Running Memory Recovery"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckVotes"
+msgstr "Checking Local Backup Code Fail"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.MemoryRecoverySuccess"
+msgstr "Memory Recovery Success"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.MemoryRecoveryError"
+msgstr "Memory Recovery Error"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalMode"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalModeSuccess"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalModeError"
+msgstr "Running Normal Mode"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineMode"
+msgstr "Running Replace Machine Mode"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfiguration"
+msgstr "Running Check Configuration"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfigurationSuccess"
+msgstr "Checking Configuration Success"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfigurationError"
+msgstr "Checking Configuration Error"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReport"
+msgstr "Printing Install Report"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReportFail"
+msgstr "Printing Report Fail"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.LogPrintingInstallReportFailPrinterNotReady"
+msgstr "Printing Report Fail"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReportOk"
+msgstr "Printing Report Ok"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.LogPrintingInstallReportFail"
+msgstr "Printing Report Fail"
+
+msgid "Smartmatic.SAES.Operation.Initiator.StartVMAchine"
+msgstr "Start Voting Machine"
+
+msgid "Smartmatic.SAES.Operation.Initiator.CanRemoveTheFlashDriveFromTheMachine"
+msgstr "You can remove the flash drive machine"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineInitiator.CheckingConfigurationSuccess"
+msgstr "Checking Configuration Success"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineInitiator.CheckingConfigurationError"
+msgstr "Checking Configuration Error"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MessageErrorSIGSEGV"
+msgstr "Error data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.TitleErrorSIGSEGV"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MessageErrorSIGABRT"
+msgstr "Error data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.TitleErrorSIGABRT"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistenceVote"
+msgstr "Error decrypto data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorValidatingVote"
+msgstr "Error validating vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorValidatedVote"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceOfficialVote"
+msgstr "Official Vote saved succesfully"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceDemoVote"
+msgstr "Demo Vote saved succesfully"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceRecoveryVote"
+msgstr "Recovery Vote saved succesfully"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceSimulateVote"
+msgstr "Demo Vote saved succesfully"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceDuplicatedVote"
+msgstr ""
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteDecyptoException"
+msgstr "IDCard detection exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorDecryptoData"
+msgstr "Error decrypto data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteDecompressionException"
+msgstr "Error decompress data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorDecompressData"
+msgstr "Error decompress data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteSignatureException"
+msgstr "IDCard signature operation exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorSignedData"
+msgstr "Error signed data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteErrorData"
+msgstr "Error decrypto data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorData"
+msgstr "Error data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SuccessPersistenceVote"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorFoundFolderDomVotes"
+msgstr "Error found folder dom votes"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorFoundFolderFlashVotes"
+msgstr "Error found folder flash votes"
+
+msgid "Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorCountVotes"
+msgstr "Error vote"
+
+msgid "Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorVote"
+msgstr "Error vote"
+
+msgid "Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorFileNameVote"
+msgstr "Error file name vote"
+
+msgid "Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorValidateVote"
+msgstr "Error validate vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostOfficialVotes"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostDemoVotes"
+msgstr "Error data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostSecurityCopyVotes"
+msgstr "Error decrypto data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostSuperNullVotes"
+msgstr "Error found folder flash votes"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostTotalVotes"
+msgstr "Error data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistenceVoteStatistics"
+msgstr "Error decrypto data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.RestoreVoteInAllMemory"
+msgstr "Error validating vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingInstallMachine"
+msgstr "Close election"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MachineInstalled"
+msgstr "Election opened"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingRegisterPollworker"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.PollworkerRegistered"
+msgstr "Election opened"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingDemostrationVote"
+msgstr "Close election"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.DemostrationVote"
+msgstr "Error validating vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingOpenElection"
+msgstr "Close election"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectionOpened"
+msgstr "Election opened"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingCloseElection"
+msgstr "Close election"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectionClosed"
+msgstr "Election closed"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingPersistPVForm"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistPVForm"
+msgstr "Error decrypto data"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.PersistPVFormSuccess"
+msgstr "Error validated vote"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.IDCardDetectionException"
+msgstr "IDCard detection exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.IDCardSignatureOperationException"
+msgstr "IDCard signature operation exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.IDCardSignatureCannotOpenFileException"
+msgstr "IDCard signature cannot open file exception"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingCloseVotingExperience"
+msgstr "Voting experience closed"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.VotingExperienceClosed"
+msgstr "Voting experience closed"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.GettingVoteFromSafeBuffer"
+msgstr "Getting vote from safe buffer"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLogicalVoterGroupInVote"
+msgstr "Error data vote structure"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVotingDeviceInVote"
+msgstr "Error data vote structure"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVoteCode"
+msgstr "Error data vote structure"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorUnpackVote"
+msgstr "Error data vote structure"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVoteData"
+msgstr "Error data vote structure"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectoralConfigurationReportPrinted"
+msgstr "Electoral configuration report printed"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ContingencyCardCreated"
+msgstr "Contingency Card Created"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SaveVoteInOneMemory"
+msgstr "Election opened"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SaveVoteInOneMemorySuccess"
+msgstr "Election opened"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.RestoreVoteInAllMemorySuccess"
+msgstr "Error validating vote"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.ErrorLogicalVoterGroupAndCustomAttributeDefinition"
+msgstr "Error Logical Voter Group And Custom Attribute Definition."
+
+msgid "Smartmatic.SAES.Operation.Voting.FillVote.ErrorLogicalVoterGroupAndCustomAttributeDefinition"
+msgstr "Error Logical Voter Group And Custom Attribute Definition"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.StartingVotingExperience"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.StartVotingExperienceFailture"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.VoteRecoveryIntegrityOk"
+msgstr "Vote Recovery Integrity Is Ok"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.VoteRecoveryIntegrityBad"
+msgstr "Vote Recovery Integrity Is Bad"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.StartedVotingExperience"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.NextActionVotingExperienceClose"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.NextActionVotingExperienceContest"
+msgstr "Deprecated"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.NextActionVotingExperienceCustomAttributeDefinition"
+msgstr "Next custom attribute definition not found"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.UnderConstruction"
+msgstr "Under construction"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.NextCustomAttributeDefinitionNotFound"
+msgstr "Next custom attribute definition not found"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.PartyNotFound"
+msgstr "Deprecated"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#author Pablo Trujillo
+#date 14-09-2011
+#package @PACKAGE@
+#version @VERSION@
+
+echo "<ESC>" | lp
+

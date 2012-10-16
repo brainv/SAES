@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#author Yadickson Soto
+#date 14-09-2011
+#package saes-os
+#version 1.4.6
+
+function_control()
+{
+	action="${1}"
+
+	if [ -f ${pathlevel} ] ; then
+		/bin/sh -c "echo ${action} > ${pathlevel}"
+	fi
+
+	if [ -f ${pathcontrol} ] ; then
+		/bin/sh -c "echo ${action} > ${pathcontrol}"
+	fi
+}
+
+function_parameters()
+{
+	idproduct="${1}"
+	findfile="idProduct"
+	devportid=$(LANG=C grep -ne "${idproduct}" `find /sys -iname "${findfile}"` | perl -ne "s/.*\/(.*)\/${findfile}.*/\1/i; print")
+
+	if [ -z "${devportid}" ] ; then
+		echo "Device port id ${idproduct} not found"
+		return
+	fi
+
+	devpath=$(find /sys -name "${devportid}" | perl -ne "print if /devices\/${devportid}/")
+
+	pathlevel=${devpath}/power/level
+	pathcontrol=${devpath}/power/control
+
+	function_control suspend
+	sleep $time
+	function_control on
+
+	echo "Success restart device ${idproduct}"
+	exit 0
+}
+
+time="${1}"
+
+if [ -z "${time}" ]; then
+	 time=2
+fi
+
+
+function_parameters "9520"
+function_parameters "9540"
+
+
+exit 0
+

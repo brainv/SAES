@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/VotingDevice" 
+ xmlns:mstns="http://www.smartmatic.com/Saes/Voting/VotingDevice/voting-devices-schema.xsd"  
+ xmlns:elns="http://www.smartmatic.com/Saes/Voting/Election"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+ elementFormDefault="qualified" id="voting-devices" 
+ targetNamespace="http://www.smartmatic.com/Saes/Voting/VotingDevice">
+	
+  <xs:import namespace="http://www.smartmatic.com/Saes/Voting/Election" 
+    schemaLocation="election-language-schema.xsd"/>
+	
+	<xs:element name="voting-devices">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="voting-device">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="keys">
+								<xs:complexType>
+									<xs:sequence/>
+									<xs:attribute name="transmission-key" type="xs:string" use="required"/>
+									<xs:attribute name="protection-key" type="xs:string" use="required"/>
+									<xs:attribute name="backup-zip-file-password" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="operation-modes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="operation-mode">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="roles">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" name="role">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element maxOccurs="unbounded" name="functionality" type="functionality"/>
+																		</xs:sequence>
+																		<xs:attribute name="key" type="xs:string" use="required"/>
+																		<xs:attribute name="name-key" type="xs:string" use="required"/>
+																		<xs:attribute name="description-key" type="xs:string" use="required"/>
+																		<xs:attribute name="system-role" type="xs:boolean" use="required"/>
+																		<xs:attribute default="false" name="extra-authentication-required" type="xs:boolean" use="optional"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element minOccurs="0" name="operation-mode-transitions">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" name="operation-mode-transition">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="allowed-process-status-group">
+																				<xs:annotation>
+																					<xs:documentation>
+																						The list of allowed process status.
+																						The transition will only take place if the device process status matches one of the process status in the list.
+																						Use 'Always' if no restriction is required.
+																					</xs:documentation>
+																				</xs:annotation>
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element maxOccurs="unbounded" name="allowed-process-status">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:enumeration value="Always"/>
+																									<xs:enumeration value="NotInitiated"/>
+																									<xs:enumeration value="Initiated"/>
+																									<xs:enumeration value="Closed"/>
+																									<xs:enumeration value="ResultsTransmitted"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																		<xs:attribute name="operation-mode" type="xs:string" use="required">
+																			<xs:annotation>
+																				<xs:documentation>Code of the next operation mode.</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																		<xs:attribute name="date-time" type="custom-date-time" use="required">
+																			<xs:annotation>
+																				<xs:documentation>DateTime from which the transition is enabled.</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																		<xs:attribute name="diagnostics-ok" type="xs:boolean" use="required">
+																			<xs:annotation>
+																				<xs:documentation>
+																					Indicates whether all de device have to be succesfully diagnose prior to execute the transition.
+																					The transition is disabled if the this attribute is true and at least one of the device has not been diagnosed
+																				</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																		<xs:attribute name="diagnostics-status" use="required">
+																			<xs:simpleType>
+																				<xs:restriction base="xs:string">
+																					<xs:enumeration value="NoInherit">
+																						<xs:annotation>
+																							<xs:documentation>The transition does not inherit the current diagnostic values.</xs:documentation>
+																						</xs:annotation>
+																					</xs:enumeration>
+																					<xs:enumeration value="AlwaysInherit">
+																						<xs:annotation>
+																							<xs:documentation>The transition always inherit the current diagnostic values.</xs:documentation>
+																						</xs:annotation>
+																					</xs:enumeration>
+																					<xs:enumeration value="InheritOnlyWhenNextModeIsNotInitialized"/>
+																				</xs:restriction>
+																			</xs:simpleType>
+																		</xs:attribute>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="operation-mode-behaviors">
+														<xs:annotation>
+															<xs:documentation>The these settings helps to configure Voters Training Mode and Operators training mode.</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence/>
+															<xs:attribute default="false" name="activate-voters-as-demo" type="xs:boolean" use="optional"/>
+															<xs:attribute default="false" name="reset-machine-status-at-startup" type="xs:boolean" use="optional"/>
+															<xs:attribute default="false" name="set-process-to-initiated-at-startup" type="xs:boolean" use="optional"/>
+															<xs:attribute default="false" name="pass-device-diagnostic-at-startup" type="xs:boolean" use="optional"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="code" type="xs:string" use="required"/>
+												<xs:attribute name="custom-code" type="xs:string" use="required"/>
+												<xs:attribute name="name-key" type="xs:string" use="required"/>
+												<xs:attribute name="description-key" type="xs:string" use="required"/>
+												<xs:attribute name="folder-name" type="xs:string" use="required"/>
+												<xs:attribute name="default" type="xs:boolean" use="required"/>
+												<xs:attribute name="unblocking-key" type="xs:string" use="required"/>
+												<xs:attribute name="audio-unblocking-key" type="xs:string" use="required"/>
+												<xs:attribute name="scanner-unblocking-key" type="xs:string" use="required"/>
+												<xs:attribute name="synchronization-unblocking-key" type="xs:string" use="required"/>
+												<xs:attribute name="opening-date-time" type="custom-date-time" use="required"/>
+												<xs:attribute name="closing-date-time" type="custom-date-time" use="required"/>
+											</xs:complexType>
+											<xs:key name="role-key">
+												<xs:selector xpath=".//role"/>
+												<xs:field xpath="@key"/>
+											</xs:key>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="voting-booths">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="voting-booth">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="region-hierarchies">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" name="region-hierarchy">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="category" type="region-category"/>
+																		</xs:sequence>
+																		<xs:attribute name="code" type="xs:string" use="required"/>
+																		<xs:attribute name="name" type="xs:string" use="required"/>
+																		<xs:attribute name="is-default" type="xs:boolean" use="required"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="time-zone-information">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="bias" type="xs:long">
+																	<xs:annotation>
+																		<xs:documentation>Current bias for local time translation on this computer, in minutes. The bias is the difference, in minutes, between Coordinated Universal Time (UTC) and local time. All translations between UTC and local time are based on the following formula: 	UTC = local time + bias</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+																<xs:element name="standard-date" type="time-zone-date">
+																	<xs:annotation>
+																		<xs:documentation>A time-zone-date element that contains a date and local time when the transition from daylight saving time to standard time occurs. If this date is not specified, the wMonth member in the SystemTime structure must be zero. If this date is specified, the DaylightDate value in the TimeZoneInformation structure must also be specified.</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+																<xs:element name="standard-bias" type="xs:long">
+																	<xs:annotation>
+																		<xs:documentation>Bias value to be used during local time translations that occur during standard time. This member is ignored if a value for the StandardDate member is not supplied. This value is added to the value of the Bias member to form the bias used during standard time. In most time zones, the value of this member is zero.</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+																<xs:element name="daylight-date" type="time-zone-date">
+																	<xs:annotation>
+																		<xs:documentation>A time-zone-date element that contains a date and local time when the transition from standard time to daylight saving time occurs. If this date is not specified, the wMonth member in the SystemTime structure must be zero. If this date is specified, the StandardDate value in the TimeZoneInformation structure must also be specified.</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+																<xs:element name="daylight-bias" type="xs:long">
+																	<xs:annotation>
+																		<xs:documentation>Bias value to be used during local time translations that occur during daylight saving time. This member is ignored if a value for the DaylightDate member is not supplied. This value is added to the value of the Bias member to form the bias used during daylight saving time. In most time zones, the value of this member is -60.</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="name" type="xs:string" use="required"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="custom-code" type="xs:string" use="required"/>
+												<xs:attribute name="code" type="xs:string" use="required"/>
+												<xs:attribute name="number" type="xs:string" use="required"/>
+												<xs:attribute name="registered-electors" type="xs:positiveInteger" use="required"/>
+												<xs:attribute name="polling-station-code" type="xs:string" use="required"/>
+												<xs:attribute name="polling-station-number" type="xs:positiveInteger" use="required"/>
+												<xs:attribute name="polling-station-criteria" type="xs:string" use="required"/>
+												<xs:attribute name="polling-place-code" type="xs:string" use="required"/>
+												<xs:attribute name="polling-place-registered-electors" type="xs:positiveInteger" use="required"/>
+												<xs:attribute name="polling-place-address" type="xs:string" use="required"/>
+												<xs:attribute name="polling-place-name" type="xs:string" use="required"/>
+												<xs:attribute name="default" type="xs:boolean" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="logical-voter-groups">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="logical-voter-group">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element minOccurs="0" name="custom-attributes">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" name="custom-attribute">
+																	<xs:complexType>
+																		<xs:sequence/>
+																		<xs:attribute name="code" type="xs:string" use="required"/>
+																		<xs:attribute name="value" type="xs:string" use="required"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="contest-group-code" type="xs:string" use="required"/>
+												<xs:attribute name="operation-mode-code" type="xs:string" use="required"/>
+												<xs:attribute name="voting-booth-code" type="xs:string" use="required"/>
+												<xs:attribute name="region-code" type="xs:string" use="required"/>
+												<xs:attribute name="name-key" type="xs:string" use="required"/>
+												<xs:attribute name="code" type="xs:string" use="required"/>
+												<xs:attribute name="custom-code" type="xs:string" use="required"/>
+												<xs:attribute default="false" name="hidden" type="xs:boolean" use="optional"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element minOccurs="0" name="custom-attribute-definitions">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element maxOccurs="unbounded" minOccurs="0" name="custom-attribute-definition">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="1" name="value" type="xs:string"/>
+															</xs:sequence>
+															<xs:attribute name="code" type="xs:string" use="required"/>
+															<xs:attribute name="name-key" type="xs:string" use="required"/>
+															<xs:attribute name="description-key" type="xs:string" use="required"/>
+															<xs:attribute name="machine-type" use="required">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="VM"/>
+																		<xs:enumeration value="PM"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="tally-reports">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="tally-report">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="logical-voter-group-codes">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" name="logical-voter-group-code" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="code" type="xs:string" use="required"/>
+												<xs:attribute name="description-key" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="code" type="xs:string" use="required"/>
+						<xs:attribute name="custom-code" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element minOccurs="0" ref="elns:languages"/>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+
+    
+    <xs:attributeGroup name="general-info">
+    <xs:annotation>
+      <xs:documentation>general-info is an attribute group that can be applied to every item that is shown in the voting machine graphic interface.</xs:documentation>
+    </xs:annotation>
+    <xs:attributeGroup ref="base-general-info"/>
+    <xs:attribute name="title-key" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Title.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="abstract-key" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Summarized description.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="help-key" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Help text that is shown to the voter, on demand, when he or she interacts with the voting-experience screens; specifically through the current item.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+  <xs:attributeGroup name="base-general-info">
+    <xs:annotation>
+      <xs:documentation>general-info is an attribute group that can be applied to every item that is shown in the voting machine graphic interface.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="code" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Unique code.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="custom-code" type="xs:string" use="required"/>
+  </xs:attributeGroup> 
+        
+	<xs:complexType name="region-category">
+		<xs:sequence>
+			<xs:element name="region">
+				<xs:complexType>
+					<xs:sequence/>
+					<xs:attribute name="code" type="xs:string" use="required"/>
+					<xs:attribute name="name-key" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element minOccurs="0" name="category" type="region-category"/>
+		</xs:sequence>
+		<xs:attribute name="code" type="xs:string" use="required"/>
+		<xs:attribute name="name-key" type="xs:string" use="required"/>
+		<xs:attribute name="category-level" type="CategoryLevel" use="optional"/>
+	</xs:complexType>
+	<xs:simpleType name="custom-date-time">
+		<xs:annotation>
+			<xs:documentation>Type that defines the format used for representing date-time fields.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{4})\-([0-9]{2})\-([0-9]{2})[T]([0-9]{2})[:]([0-9]{2})[:]([0-9]{2})[.]([0-9]+)(\+|\-)([0-9]{2})[:]([0-9]{2})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	<xs:simpleType name="no-empty-string">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	-->
+	<xs:complexType name="time-zone-date">
+		<xs:sequence/>
+		<xs:attribute name="month" type="xs:short" use="required"/>
+		<xs:attribute name="day" type="xs:short" use="required"/>
+		<xs:attribute name="hour" type="xs:short" use="required"/>
+		<xs:attribute name="minute" type="xs:short" use="required"/>
+		<xs:attribute name="second" type="xs:short" use="required"/>
+	</xs:complexType>
+	<xs:simpleType name="functionality">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AuditVotes"/>
+			<xs:enumeration value="ChangeOperationMode"/>
+			<xs:enumeration value="CloseAplication"/>
+			<xs:enumeration value="ClosePolls"/>
+			<xs:enumeration value="Consolidate"/>
+			<xs:enumeration value="ConsolidateMultipleMemories"/>
+			<xs:enumeration value="DiagnoseAble"/>
+			<xs:enumeration value="DiagnoseAcquisition"/>
+			<xs:enumeration value="DiagnoseAllDevices"/>
+			<xs:enumeration value="DiagnoseAudioVotingExperience"/>
+			<xs:enumeration value="DiagnoseBallot"/>
+			<xs:enumeration value="DiagnoseCardReader"/>
+			<xs:enumeration value="DiagnoseFingerprintReader"/>
+			<xs:enumeration value="DiagnoseFlash"/>
+			<xs:enumeration value="DiagnoseModem"/>
+			<xs:enumeration value="DiagnosePenAcquisition"/>
+			<xs:enumeration value="DiagnosePenRecognition"/>
+			<xs:enumeration value="DiagnosePrinter"/>
+			<xs:enumeration value="DiagnoseRecognition"/>
+			<xs:enumeration value="DiagnoseScreenContrast"/>
+			<xs:enumeration value="DiagnoseSound"/>
+			<xs:enumeration value="DiagnoseToken"/>
+			<xs:enumeration value="DiagnoseTouchScreen"/>
+			<xs:enumeration value="DiagnoseVotingExperience"/>
+			<xs:enumeration value="MakeUSBStickBackup"/>
+			<xs:enumeration value="MakeUSBWORMBackup"/>
+			<xs:enumeration value="Menu"/>
+			<xs:enumeration value="OpenPolls"/>
+			<xs:enumeration value="PenLinking"/>
+			<xs:enumeration value="PrintAuditLog"/>
+			<xs:enumeration value="PrintConsolidationResults"/>
+			<xs:enumeration value="PrintElectionResults"/>
+			<xs:enumeration value="PrintEnvironmentManagerLog"/>
+			<xs:enumeration value="PrintErrorLog"/>
+			<xs:enumeration value="PrintPreviewConsolidationResults"/>
+			<xs:enumeration value="PrintPreviewElectionResults"/>
+			<xs:enumeration value="PrintTransmissionLog"/>
+			<xs:enumeration value="PrintVotesCopy"/>
+			<xs:enumeration value="ResetMachine"/>
+			<xs:enumeration value="RestartVoteCount"/>
+			<xs:enumeration value="ScanningServicesReset"/>
+			<xs:enumeration value="SetDateTime"/>
+			<xs:enumeration value="SetPollWorkersInfo"/>
+			<xs:enumeration value="ShowAndPrintLogs"/>
+			<xs:enumeration value="ShutDown"/>
+			<xs:enumeration value="TransmitAllElectionResultsAutomatic"/>
+			<xs:enumeration value="TransmitAllElectionResultsSelective"/>
+			<xs:enumeration value="TransmitConfigurationAndStatusAutomatic"/>
+			<xs:enumeration value="TransmitConfigurationAndStatusSelective"/>
+			<xs:enumeration value="TransmitLogsAutomatic"/>
+			<xs:enumeration value="TransmitLogsSelective"/>
+			<xs:enumeration value="TransmitMachineElectionResultsAutomatic"/>
+			<xs:enumeration value="TransmitMachineElectionResultsSelective"/>
+			<xs:enumeration value="TransmitNoTransmittedElectionResultsAutomatic"/>
+			<xs:enumeration value="TransmitNoTransmittedElectionResultsSelective"/>
+			<xs:enumeration value="ViewConsolidationInformation"/>
+			<xs:enumeration value="ViewMachineInformation"/>
+			<xs:enumeration value="ViewTransmissionInformation"/>
+			<xs:enumeration value="ViewVoteResults"/>
+			<xs:enumeration value="VoteSimulation"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="CategoryLevel">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="FIRST_LEVEL"/>
+			<xs:enumeration value="SECOND_LEVEL"/>
+			<xs:enumeration value="THIRD_LEVEL"/>
+			<xs:enumeration value="FOURTH_LEVEL"/>
+			<xs:enumeration value="FIFTH_LEVEL"/>
+			<xs:enumeration value="SIXTH_LEVEL"/>
+			<xs:enumeration value="SEVENTH_LEVEL"/>
+			<xs:enumeration value="EIGHTH_LEVEL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+</xs:schema>

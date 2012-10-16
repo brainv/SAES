@@ -1,0 +1,4 @@
+libsmartmaticgui_la-StateListener.lo: ../src/Widgets/StateListener.cxx \
+ ../src/Widgets/StateListener.hxx
+
+../src/Widgets/StateListener.hxx:

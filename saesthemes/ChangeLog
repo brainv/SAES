@@ -1,0 +1,7 @@
+saesthemes (5.0.0)
+
+ * Yadickson Soto <yadickson.soto@smartmatic.com>
+  - Incorporación de herramientas de compilación automática
+  - Empaquetado de la biblioteca
+  - Primera version del paquete
+

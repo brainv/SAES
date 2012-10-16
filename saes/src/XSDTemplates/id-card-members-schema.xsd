@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="IDCardMembers"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports" 
+	xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" 
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/id-card-members-schema.xsd">
+	<xs:element name="IDCardMembers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="IDCardInfo" type="IDCardInfo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="IDCardInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="FirstName" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Surname" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Gender" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="0" name="LocationOfBirth" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Nationality" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="NationalNumber" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="SpecialOrganization" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="MemberOfFamily" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="AddressVersion" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Street" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="ZipCode" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Municipality" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Country" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="SpecialStatus" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="Type" type="IDCardInfoType" use="optional" />
+	</xs:complexType>
+
+	<xs:simpleType name="IDCardInfoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="InstallPM"/>
+			<xs:enumeration value="InstallVM"/>
+			<xs:enumeration value="OpenElection"/>
+			<xs:enumeration value="CloseVoting"/>
+			<xs:enumeration value="CloseElection"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

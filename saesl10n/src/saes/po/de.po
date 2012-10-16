@@ -1,0 +1,1345 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/Voting/ElectoralFactory.cxx:41 ../src/Voting/ElectoralFactory.cxx:80
+msgid "Smartmatic.SAES.Voting.ElectoralFactory.ErrorXMLSchema"
+msgstr "Fehler XML-Schema-Datei"
+
+#: ../src/Voting/ElectoralFactory.cxx:50 ../src/Voting/ElectoralFactory.cxx:59
+#: ../src/Voting/ElectoralFactory.cxx:89 ../src/Voting/ElectoralFactory.cxx:98
+msgid "Smartmatic.SAES.Voting.ElectoralFactory.ErrorParseXml"
+msgstr "Fehler Parse-Datei"
+
+#: ../src/Voting/ElectoralConfiguration.cxx:128
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ObjectElectionNull"
+msgstr "Objekt Wahl Null"
+
+#: ../src/Voting/ElectoralConfiguration.cxx:139
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ObjectVotingDeviceNull"
+msgstr "Objekt Wahlgerät Null"
+
+#: ../src/Voting/ElectoralConfiguration.cxx:251
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.EligibleOptionNotFound"
+msgstr "Wählbare Funktion nicht gefunden"
+
+#: ../src/Voting/VotingDevice/VotingDeviceWrapper.cxx:49
+#: ../src/Voting/VotingDevice/VotingDeviceWrapper.cxx:50
+msgid ""
+"Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper."
+"FirstVotingDeviceNotFound"
+msgstr "Erstes Wahlgerät nicht gefunden"
+
+#: ../src/Voting/VotingDevice/VotingDeviceWrapper.cxx:68
+#, c-format
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.DemoTitle"
+msgstr "TESTSTIMME"
+
+#: ../src/Printing/VotePrintDocument.cc:178
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.RecoveryTitle"
+msgstr "REINITIALISIEREN"
+
+#: ../src/Printing/VotePrintDocument.cc:210
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header1"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:211
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header2"
+msgstr "  "
+
+#: ../src/Printing/VotePrintDocument.cc:212
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header3"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:213
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header4"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:214
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header5"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:215
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header6"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:216
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header7"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:226
+msgid ""
+"Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineBallotNameBegin"
+msgstr "----------------------------------------"
+
+#: ../src/Printing/VotePrintDocument.cc:253
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineBallotNameEnd"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:490
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1NullVote"
+msgstr "%1"
+
+#: ../src/Printing/VotePrintDocument.cc:491
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1NormalVote"
+msgstr "%1"
+
+#: ../src/Printing/VotePrintDocument.cc:494
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1SuperBlankVote"
+msgstr "%1"
+
+#: ../src/Printing/VotePrintDocument.cc:517
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2NullVote"
+msgstr "%6"
+
+#: ../src/Printing/VotePrintDocument.cc:518
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2NormalVote"
+msgstr "%6"
+
+#: ../src/Printing/VotePrintDocument.cc:521
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2SuperBlankVote"
+msgstr "%6"
+
+#: ../src/Printing/VotePrintDocument.cc:546
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3NullVote"
+msgstr " "
+
+#: ../src/Printing/VotePrintDocument.cc:547
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3NormalVote"
+msgstr "%8"
+
+#: ../src/Printing/VotePrintDocument.cc:550
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3SuperBlankVote"
+msgstr "%8"
+
+#: ../src/Printing/VotePrintDocument.cc:573
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ParentOptionWasSelected"
+msgstr " %7"
+
+#: ../src/Printing/VotePrintDocument.cc:601
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.NullVote"
+msgstr "Blankostimme"
+
+#: ../src/Printing/VotePrintDocument.cc:617
+msgid ""
+"Smartmatic.SAES.Printing.VotePrintDocument.PrincipalNoSelectectedMessage"
+msgstr " "
+
+#: ../src/Printing/VotePrintDocument.cc:619
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalMessage"
+msgstr "Kandidaten"
+
+#: ../src/Printing/VotePrintDocument.cc:675
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInNoSelectedMessage"
+msgstr " "
+
+#: ../src/Printing/VotePrintDocument.cc:677
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInMessage"
+msgstr "Nachfolger"
+
+#: ../src/Printing/VotePrintDocument.cc:877
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.DemoEnd"
+msgstr "TESTSTIMME"
+
+#: ../src/Printing/VotePrintDocument.cc:883
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.RecoveryEnd"
+msgstr "REINITIALISIEREN"
+
+#: ../src/Printing/VotePrintDocument.cc:921
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalFormat"
+msgstr "%1 %2 %4"
+
+#: ../src/Printing/VotePrintDocument.cc:922
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInFormat"
+msgstr "%1 %2 %4"
+
+#: ../src/Printing/VotePrintDocument.cc:1178
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.CustomAttributeHeader"
+msgstr ""
+
+#: ../src/Printing/TimeoutPrintDocument.cc:52
+msgid "Smartmatic.SAES.Printing.TimeoutPrintDocument.PrintDoc_Title"
+msgstr "ABSTIMMUNG ABGELAUFEN"
+
+#: ../src/Printing/TimeoutPrintDocument.cc:65
+#: ../src/Printing/TimeoutPrintDocument.cc:87
+#: ../src/Printing/SmartcardRemovedPrintDocument.cc:72
+#: ../src/Printing/SmartcardRemovedPrintDocument.cc:94
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineSeparator"
+msgstr "----------------------------------------"
+
+#: ../src/Printing/TimeoutPrintDocument.cc:95
+msgid "Smartmatic.SAES.Printing.TimeoutPrintDocument.PrintDoc_Description"
+msgstr "Ihre Zeit zum Abstimmen ist abgelaufen"
+
+#: ../src/Printing/InstallationPrintDocument.cc:161
+msgid ""
+"Smartmatic.SAES.Printing.InstallationPrintDocument.InstallationReportTitle"
+msgstr "INSTALLATIONSBERICHT"
+
+#: ../src/Printing/InstallationPrintDocument.cc:163
+msgid ""
+"Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticReportTitle"
+msgstr "Diagnosebericht"
+
+#: ../src/Printing/InstallationPrintDocument.cc:180
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.VotingBoothTitle"
+msgstr " "
+
+#: ../src/Printing/InstallationPrintDocument.cc:188 /update 17/06
+#: msgstr "Adres: %1"
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.VotingCenter"
+msgstr "Identifizierung des Wahllokals: %1"
+
+#: ../src/Printing/InstallationPrintDocument.cc:196 /update 17/06
+#: msgstr "Adres: %1"
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.VotingCenterAddress"
+msgstr " "
+
+#: ../src/Printing/InstallationPrintDocument.cc:260
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.RegionTitle"
+msgstr "GEBIET"
+
+#: ../src/Printing/InstallationPrintDocument.cc:273
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region1"
+msgstr "%1"
+
+#: ../src/Printing/InstallationPrintDocument.cc:280
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region2"
+msgstr "%2"
+
+#: ../src/Printing/InstallationPrintDocument.cc:287
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region3"
+msgstr "%3"
+
+#: ../src/Printing/InstallationPrintDocument.cc:294
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region4"
+msgstr "%4"
+
+#: ../src/Printing/InstallationPrintDocument.cc:301
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region5"
+msgstr "%5"
+
+#: ../src/Printing/InstallationPrintDocument.cc:308
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region6"
+msgstr "%6"
+
+#: ../src/Printing/InstallationPrintDocument.cc:315
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region7"
+msgstr "%7"
+
+#: ../src/Printing/InstallationPrintDocument.cc:322
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region8"
+msgstr "%8"
+
+#: ../src/Printing/InstallationPrintDocument.cc:354
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DevicesStatus"
+msgstr "STATUS DER UNTERTEILUNGEN "
+
+#: ../src/Printing/InstallationPrintDocument.cc:406
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.ActivationKeys"
+msgstr "AKTIVIERUNGSPASSWÖRTER"
+
+#: ../src/Printing/InstallationPrintDocument.cc:267
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Ballot"
+msgstr "Stimme"
+
+#: ../src/Printing/InstallationPrintDocument.cc:548
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.AlarmBox"
+msgstr "Alarmmelder"
+
+#: ../src/Printing/InstallationPrintDocument.cc:552
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Barcode"
+msgstr "Scanner"
+
+#: ../src/Printing/InstallationPrintDocument.cc:556
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Printer"
+msgstr "Drucker"
+
+#: ../src/Printing/InstallationPrintDocument.cc:560
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Smartcard"
+msgstr "Kartenleser"
+
+#: ../src/Printing/InstallationPrintDocument.cc:564
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Flash"
+msgstr "Datenträger"
+
+#: ../src/Printing/InstallationPrintDocument.cc:568
+msgid ""
+"Smartmatic.SAES.Printing.InstallationPrintDocument.TouchScreenCalibration"
+msgstr "Kalibrierung des Berührungsschirms"
+
+#: ../src/Printing/InstallationPrintDocument.cc:572
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.ScreenContrast"
+msgstr "Kontrast des Bildschirms"
+
+#: ../src/Printing/InstallationPrintDocument.cc:576
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.NotDiagnosed"
+msgstr "Nicht nachgewiesen"
+
+#: ../src/Printing/InstallationPrintDocument.cc:580
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Error"
+msgstr "Fehler"
+
+#: ../src/Printing/InstallationPrintDocument.cc:584
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Ok"
+msgstr "O.K."
+
+#: ../src/Printing/SmartcardRemovedPrintDocument.cc:54
+msgid "Smartmatic.SAES.Printing.SmartcardRemovedPrintDocument.PrintDoc_Title"
+msgstr "Die Karte wurde %1-mal abgewiesen"
+
+#: ../src/Printing/SmartcardRemovedPrintDocument.cc:102
+msgid ""
+"Smartmatic.SAES.Printing.SmartcardRemovedPrintDocument.PrintDoc_Description"
+msgstr "Die Karte wurde %1-mal abgewiesen und deshalb deaktiviert"
+
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.Name"
+msgstr "     1     "
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:39
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.ActivationCardsReceived.ItemDescription"
+msgstr "Vor der Eröffnung der Wahl"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:40
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.ActivationCardsReceived.ItemName"
+msgstr "Anzahl der erhaltenen Karten"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:41
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.Name"
+msgstr "     2     "
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:44
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.DamagedCardsOnPorpuse.ItemDescription"
+msgstr "Bewusst beschädigte Karten"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:45
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.DamagedCardsOnPorpuse.ItemName"
+msgstr "Bewusst beschädigte Karten"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:46
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.ActivatedCardsWithProblems.ItemDescription"
+msgstr "Aktivierte Karten mit Problemen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:47
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.ActivatedCardsWithProblems.ItemName"
+msgstr "Aktivierte Karten mit Problemen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:48
+msgid ""
+"Smartmatic.SAES.StatisticGroup.VotingProcess.TotalCardsWithProblems.ItemDescription"
+msgstr "Anzahl Karten mit Problemen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:49
+msgid ""
+"Smartmatic.SAES.StatisticGroup.VotingProcess.TotalCardsWithProblems.ItemName"
+msgstr "Anzahl Karten mit Problemen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:50
+msgid ""
+"Smartmatic.SAES.StatisticGroup.VotingProcess.VisualizationProblems.ItemDescription"
+msgstr "Visualisierungsprobleme"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:51
+msgid ""
+"Smartmatic.SAES.StatisticGroup.VotingProcess.VisualizationProblems.ItemName"
+msgstr "Visualisierungsprobleme"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:52
+msgid ""
+"Smartmatic.SAES.StatisticGroup.VotingProcess.RevealedVotes.ItemDescription"
+msgstr "Öffentlich angegebene Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:53
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.RevealedVotes.ItemName"
+msgstr "Öffentlich angegebene Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:54
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.AnnuledVotes.ItemDescription"
+msgstr "Annullierte Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:55
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.AnnuledVotes.ItemName"
+msgstr "Annullierte Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:56
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.Name"
+msgstr "     3     "
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:59
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.UnusedActivationCards.ItemDescription"
+msgstr "Aktivierungen ohne registrierte Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:60
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.UnusedActivationCards.ItemName"
+msgstr "Aktivierungen ohne registrierte Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:61
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.RegisteredActivationCardsWithVotes.ItemDescription"
+msgstr "Aktivierungen mit registrierten Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:62
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.RegisteredActivationCardsWithVotes.ItemName"
+msgstr "Aktivierungen mit registrierten Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:63
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.ValidatedActivationCardsByUrn.ItemDescription"
+msgstr "Validierte Aktivierungen mit registrierten Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:64
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.ValidatedActivationCardsByUrn.ItemName"
+msgstr "Validierte Aktivierungen mit registrierten Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:65
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToProblems.ItemDescription"
+msgstr "Karten annulliert wegen Problemen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:66
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToProblems.ItemName"
+msgstr "Karten annulliert wegen Problemen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:67
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToInvalidaVote.ItemDescription"
+msgstr "Karten annulliert wegen ungültigen Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:68
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToInvalidaVote.ItemName"
+msgstr "Karten annulliert wegen ungültigen Stimmen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:69
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsUnderReview.ItemDescription"
+msgstr "Karten annulliert (zur Überprüfung)"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:70
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsUnderReview.ItemName"
+msgstr "Karten annulliert (zur Überprüfung)"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:37
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.EditableStateInstruction"
+msgstr "Bitte vervollständigen Sie folgende Statistiken:"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:43
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.NonEditableNotification"
+msgstr "Den Abstimmungsprozess betreffende Statistiken"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:42
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.EditableStateInstruction"
+msgstr "Den Abstimmungsprozess betreffende Statistiken"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:58
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.NonEditableNotification"
+msgstr "Den Abschluss der Abstimmung betreffende Statistiken"
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:484
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.AssistedActivation"
+msgstr "Stellvertreterkarten"
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:485
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.EditInfoAssistedActivation"
+msgstr "Stellvertreterkarten"
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:486
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.BlockerInfoAssistedActivation"
+msgstr "Stellvertreterkarten betreffende Statistiken"
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:492
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.TotalAssistedActivation"
+msgstr "Aktivierungen der Abstimmungen mit Unterstützung"
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:498
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.TotalImpugnedActivation"
+msgstr "Ablehnungen der Abstimmungen mit Unterstützung"
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:504
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.TotalProxyActivation"
+msgstr "Ablehnungen der Abstimmungen mit Unterstützung"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:57
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.EditableStateInstruction"
+msgstr "Statistiken bezüglich des Abschlusses der Wahlen"
+
+#: ../src/Voting/PBReports/statistic-resources-keys.h:38
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.NonEditableNotification"
+msgstr "Bitte vervollständigen Sie folgende Statistiken"
+
+########### security
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ErrorLoadingPollWorkers"
+msgstr "Beim Herunterladen der Mitglieder des Wahlbüros ist ein Fehler unterlaufen"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:122
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ErrorParseFile"
+msgstr "Fehler beim Parsen des Datenbestands"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:233
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedPresident"
+msgstr "Vorsitzender hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:238
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedSecretary"
+msgstr "Sekretär hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:243
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputySecretary"
+msgstr "Stellvertretenden Sekretär hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:248
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedAssistent"
+msgstr "Beisitzer hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:253
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedWitness"
+msgstr "Zeugen hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:258
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedSubstitutePresident"
+msgstr "Stellvertretenden Vorsitzenden hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:277
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedPresident"
+msgstr "Vorsitzenden entfernt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:291
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedSecretary"
+msgstr "Sekretär geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:305
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputySecretary"
+msgstr "Stellvertretenden Sekretär geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:319
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedAssistent"
+msgstr "Beisitzer geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:333
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedWitness"
+msgstr "Zeuge geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:347
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedPresidentSubstitute"
+msgstr "Stellvertretender Vorsitzender geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:394
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedPresident"
+msgstr "Vorsitzenden geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:414
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedSecretary"
+msgstr "Sekretär geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:434
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputySecretary"
+msgstr "Stellvertretenden Sekretär geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:454
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedAssistent"
+msgstr "Beisitzer geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:474
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedWitness"
+msgstr "Zeuge geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:494
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedSubstitutePresident"
+msgstr "Stellvertretender Vorsitzender geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:516
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.NoteAdded"
+msgstr "Anmerkung hinzugefügt"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:530
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.NoteDeleted"
+msgstr "Anmerkung geändert"
+
+#: ../src/Voting/PBReports/pollworkers-wrapper.cc:548
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.NoteModified"
+msgstr "Anmerkung geändert"
+
+#: ../src/Voting/PBReports/closing-notes-wrapper.cc:101
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.ClosingNotesLoadedSuccessfully"
+msgstr "Anmerkungen bezüglich des Abschlusses mit Erfolg heruntergeladen"
+
+#: ../src/Voting/PBReports/closing-notes-wrapper.cc:107
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.ErrorLoadingCloseNotes"
+msgstr "Beim Herunterladen der Anmerkungen bezüglich des Abschlusses ist ein Fehler unterlaufen"
+
+#: ../src/Voting/PBReports/closing-notes-wrapper.cc:108
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.ErrorParseFile"
+msgstr "Fehler beim Parsen des Bestands"
+
+#: ../src/Voting/PBReports/closing-notes-wrapper.cc:129
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.NoteAdded"
+msgstr "Anmerkung hinzugefügt"
+
+#: ../src/Voting/PBReports/closing-notes-wrapper.cc:144
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.NoteRemoved"
+msgstr "Anmerkung entfernt"
+
+#: ../src/Voting/PBReports/closing-notes-wrapper.cc:162
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.NoteModified"
+msgstr "Anmerkung geändert"
+
+################### Impresion del Log
+
+#: ../src/Printing/AuditLogPrintDocument.cpp:34
+msgid "Smartmatic.SAES.Printing.AuditLogPrintDocument"
+msgstr "Log der Aktivitäten"
+
+############ voto Demo
+#: ../src/Printing/VotePrintDocument.cc:200
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo1"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:201
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo2"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:202
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo3"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:203
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo4"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:204
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo5"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:205
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo6"
+msgstr ""
+
+#: ../src/Printing/VotePrintDocument.cc:206
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo7"
+msgstr ""
+
+############# 1.0.83
+
+#: ../src/Printing/InstallationPrintDocument.cc:207
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine1"
+msgstr " "
+
+#: ../src/Printing/InstallationPrintDocument.cc:215
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine2"
+msgstr " "
+
+#: ../src/Printing/InstallationPrintDocument.cc:221
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine3"
+msgstr " "
+
+#: ../src/Printing/InstallationPrintDocument.cc:226
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine4"
+msgstr " "
+
+############# Add 3-6-11
+#: ../src/Printing/ErrorLogPrintDocument.cpp:36
+msgid "Smartmatic.SAES.Printing.ErrorLogPrintDocument"
+msgstr "de Error Report"
+
+################## Add 04-06-11
+#: ../src/Printing/InstallationPrintDocument.cc:418
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine1"
+msgstr "%1 ✓ "
+
+#: ../src/Printing/InstallationPrintDocument.cc:427
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine1Title"
+msgstr "Passwort zum Abstimmen im Abstimmungscomputer:  "
+
+#: ../src/Printing/InstallationPrintDocument.cc:420
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine2"
+msgstr "%2 ✓ "
+
+#: ../src/Printing/InstallationPrintDocument.cc:428
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine2Title"
+msgstr "Passwort für den Zugang zum Wartungsmenü im Abstimmungscomputer:"
+
+#: ../src/Printing/InstallationPrintDocument.cc:422
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine3"
+msgstr "%1 ✓ "
+
+#: ../src/Printing/InstallationPrintDocument.cc:429
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine3Title"
+msgstr "Passwort für den Zugang zum Abstimmungsprozess im Gerät des Vorsitzenden:"
+
+#: ../src/Printing/InstallationPrintDocument.cc:424
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine4"
+msgstr "%2 ✓ "
+
+#: ../src/Printing/InstallationPrintDocument.cc:430
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine4Title"
+msgstr "Passwort für den Zugang zum Wartungsmenü im Gerät des Vorsitzenden:"
+
+# ############ Add 5-6-11
+#: ../src/Printing/LogPrintDocument.cpp:119
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.ElectionName"
+msgstr "%5"
+
+#: ../src/Printing/LogPrintDocument.cpp:122
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.ElectoralOrganization"
+msgstr " "
+
+#: ../src/Printing/LogPrintDocument.cpp:125
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.DeviceCode"
+msgstr " "
+
+#: ../src/Printing/LogPrintDocument.cpp:128
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.PollingPlace"
+msgstr " "
+
+#: ../src/Printing/LogPrintDocument.cpp:131
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.PollingPlaceAddresss"
+msgstr " "
+
+############# Add 11-06-11
+#: ../src/Voting/Vote/VoteWrapper.cxx:104
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.LogicalVoterGroup"
+msgstr "%1 %2 %3"
+
+#[code] [custom code] [name key]
+#: ../src/Voting/Vote/VoteWrapper.cxx:233
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.Contest"
+msgstr "%1 %2 %3"
+
+#[contest title] [contest abstract] [contest help]
+#: ../src/Voting/Vote/VoteWrapper.cxx:239
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.Party"
+msgstr "%1 %2 %3"
+
+#[party name] [party abreviation] [party order]
+#: ../src/Voting/Vote/VoteWrapper.cxx:289
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.Candidate"
+msgstr "%1 %2"
+
+#[nombre y apellido] [tally position]
+#: ../src/Voting/Vote/VoteWrapper.cxx:160
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.VoteNULL"
+msgstr " "
+
+#: ../src/Voting/Vote/VoteWrapper.cxx:161
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.VoteNotNULL"
+msgstr " "
+
+############## Add 12-06-11
+
+msgid "Smartmatic.SAES.Printing.ClosedPrintDocument.PVTitle"
+msgstr "Protokoll"
+
+msgid "Smartmatic.SAES.Printing.ClosedPrintDocument.PVDescription"
+msgstr "Protokoll"
+
+############## Add 02-07-11
+
+#: ../src/Voting/PBReports/StatisticManager.cxx:106
+#: ../src/Voting/PBReports/StatisticManager.cxx:107
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.ErrorParseFile"
+msgstr "Fehler beim Analysieren des Datenbestands"
+
+#: ../src/Voting/PBReports/PVFormWrapper.cxx:320
+#: ../src/Voting/PBReports/PVFormWrapper.cxx:321
+#: ../src/Voting/PBReports/PVFormWrapper.cxx:329
+#: ../src/Voting/PBReports/PVFormWrapper.cxx:330
+msgid "Smartmatic.SAES.Voting.PBReports.PVFormWrapper.ErrorSerializaData"
+msgstr "Fehler beim Ordnen der Daten"
+
+# [party name] [party abreviation] [party order]
+#: ../src/Voting/Vote/VoteWrapper.cxx:67 ../src/Voting/Vote/VoteWrapper.cxx:74
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.ErrorSerializaData"
+msgstr "Fehler beim Ordnen der Daten"
+
+#: ../src/Voting/ElectoralConfiguration.cxx:53
+#: ../src/Voting/ElectoralConfiguration.cxx:54
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ErrorSignedElectoralResources"
+msgstr "Fehler bei der Unterschrift zu den Wahlergebnissen"
+
+#: ../src/Voting/ElectoralConfiguration.cxx:150
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ObjectVoteRecoveryNull"
+msgstr "Leere Reinitialisierungskarte"
+
+#: ../src/Voting/operation-status.cc:97 ../src/Voting/operation-status.cc:128
+#: ../src/Voting/operation-status.cc:167 ../src/Voting/operation-status.cc:222
+#: ../src/Voting/operation-status.cc:228 ../src/Voting/operation-status.cc:618
+#: ../src/Voting/operation-status.cc:623 ../src/Voting/operation-status.cc:659
+#: ../src/Voting/operation-status.cc:664 ../src/Voting/operation-status.cc:697
+#: ../src/Voting/operation-status.cc:702
+msgid "Smartmatic.SAES.Voting.OperationStatus.ErrorSerializaData"
+msgstr "Fehler beim Ordnen der Daten"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:66
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.BallotWithCodeNotFound"
+msgstr "Stimme mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:98
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.BallotCardWithCodeNotFound"
+msgstr "Stimmkarte mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:125
+#: ../src/Voting/Election/ElectionWrapper.cxx:339
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestWithCodeNotFound"
+msgstr "Abstimmung mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:152
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.EligibleOptionWithCodeNotFound"
+msgstr "Option mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:179
+#: ../src/Voting/Election/ElectionWrapper.cxx:198
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.BallotOptionWithCodeNotFound"
+msgstr "Abstimmungsoption mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:235
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestClassWithCodeNotFound"
+msgstr "Abstimmungsart mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:258
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestCustomCodeWithCodeNotFound"
+msgstr "Abstimmungscode mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:284
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestGroupWithCodeNotFound"
+msgstr "Abstimmungsgruppe mit Code nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:541
+#, c-format
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.PartyWithAbbNotFound"
+msgstr "Partei mit Abkürzung nicht gefunden"
+
+#: ../src/Voting/Election/ElectionWrapper.cxx:579
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.PartyWithCodeNotFound"
+msgstr "Partei mit Code nicht gefunden"
+
+#: ../src/Voting/VotingDevice/VotingDeviceWrapper.cxx:70
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.VotingDeviceCodeNotFound"
+msgstr "Code de Maschine nicht gefunden"
+
+#: ../src/Voting/VotingDevice/VotingDeviceWrapper.cxx:107
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.LogicalVotingGroupCodeNotFound"
+msgstr "Code der logischen Abstimmungsgruppe nicht gefunden"
+
+#: ../src/Printing/VotePrintDocument.cc:183
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineBeginHeader"
+msgstr ""
+
+###################### ADD 19.08.11
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.NullReferendum"
+msgstr "Es wurde keine Option ausgewählt"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.TitleReferendum"
+msgstr "Es wurde die folgende Option gewählt"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1Referendum"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2Referendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3Referendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalTitleReferendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInTitleReferendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.FormatReferendum"
+msgstr "%2"
+
+###################### Add 26-09-11
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.SimulatedTitle"
+msgstr "SIMULIERTE STIMME"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.SimulatedEnd"
+msgstr "SIMULIERTE STIMME"
+
+###################### Add 31-10-11
+
+msgid "Smartmatic.SAES.Printing.TestPrinting.Title"
+msgstr "Diagnose Drucker"
+
+msgid "Smartmatic.SAES.Printing.BarcodeTitle"
+msgstr "Anweisungen für den Scanner"
+
+msgid "Smartmatic.SAES.Printing.BarcodeInstructionLine1"
+msgstr "Wenn Sie diesen Scanner verwenden wollen"
+
+msgid "Smartmatic.SAES.Printing.BarcodeInstructionLine2"
+msgstr "Für die Diagnose"
+
+msgid "Smartmatic.SAES.Printing.BarcodeInstructionLine3"
+msgstr "Diesen bitte jetzt einscannen"
+
+###################### Add 02-11-11
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyCardInfoTitle"
+msgstr "NOTKARTE"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyCardPinTitle"
+msgstr "PIN-Karte"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.InstallationReportTitle"
+msgstr "NOTKARTENBERICHT"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.VotingBoothTitle"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.VotingCenter"
+msgstr "Identifizierung des Wahllokals: %1"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.VotingCenterAddress"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.RegionTitle"
+msgstr "GEBIET"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region1"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region2"
+msgstr "%2"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region3"
+msgstr "%3"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region4"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region5"
+msgstr "%5"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region6"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region7"
+msgstr "%7"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region8"
+msgstr "%8"
+
+###################### Add 14-02-12
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.UnexpectedSignatureError"
+msgstr "Unerwarteter Unterzeichnungsfehler"
+
+###################### Add 01-03-12 ####################################
+
+msgid "Smartmatic.SAES.Voting.Codi.CodiFileWrapper.ErrorInputCodiFiles"
+msgstr "Fehler beim Einlesen der CODI-Bestände"
+
+msgid "Smartmatic.SAES.Voting.Codi.CodiFileWrapper.ErrorTallyRegisterL"
+msgstr "Fehler im Feld L, dieses stimmt nicht mit dem verarbeiteten Feld überein"
+
+msgid "Smartmatic.SAES.Voting.Codi.CodiFileWrapper.ErrorTallyRegisterC"
+msgstr "Fehler im Feld C, dieses stimmt nicht mit dem verarbeiteten Feld überein"
+
+###################### Add 05.03.12 ####################################
+
+msgid "Smartmatic.SAES.Voting.Codi.X7SCodiFileWrapper.ErrorSerializaData"
+msgstr "Fehler beim Verarbeiten der Daten"
+
+msgid "Smartmatic.SAES.Voting.Codi.X7SCodiFileWrapper.ErrorLoadPVReport"
+msgstr "Fehler beim Verarbeiten des Protokolls"
+
+msgid "Smartmatic.SAES.Voting.Codi.X7SCodiFileWrapper.ErrorLoadCodiFile"
+msgstr "Fehler beim Lesen der CODI-Bestände"
+
+#################### Add 21.03.12 #####################################
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyHelpTitle"
+msgstr "Information"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyHelpText"
+msgstr "Die Anmeldekarte in den Abstimmungscomputer stecken"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.PrintContingencyReport"
+msgstr "Der Notbericht wird ausgedruckt"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PrintInstallReport"
+msgstr "Der Installationsbericht wird ausgedruckt"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddPMInstallMemberInfo"
+msgstr "de Adding information of the poll worker in charge of the PM installation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddVMInstallMemberInfo"
+msgstr "de Adding information of the poll worker in charge of the VMs installation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddOpenElectionMemberInfo"
+msgstr "de Adding information of the poll worker in charge of openning the election"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddCloseVotingMemberInfo"
+msgstr "de Adding information of the poll worker in charge of closing the voting"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddCloseElectionMemberInfo"
+msgstr "de Adding information of the poll worker in charge of closing the election"
+
+msgid "Smartmatic.SAES.Voting.PBReports.AssistedActivationWrapper.AddAssistedActivation"
+msgstr "Es werden Informationen für das Abstimmen mit Unterstützung hinzugefügt"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.PersistenceStatistic"
+msgstr "Die Informationen werden extern gespeichert"
+
+############ New Keys 15-03-2012
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionInstalationLanguages.ErrorSerializaData"
+msgstr "Fehler beim Verarbeiten"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ActivatedCardStatisticsWrapper.ErrorParseFile"
+msgstr "Fehler beim Verarbeiten der Stimmkarten-Statistiken"
+
+msgid "Smartmatic.SAES.Voting.PBReports.AssistedActivationWrapper.ErrorParseFile"
+msgstr "Fehler beim Verarbeiten"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.ErrorLoadFile"
+msgstr "Fehler beim Aufnehmen der Informationen der Mitglieder des Wahllokals"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IncidentReportWrapper.ErrorParseFile"
+msgstr "Fehler beim Verarbeiten des Zwischenfall-Berichts"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VoteStatisticsWrapper.ErrorSerializaData"
+msgstr "Fehler beim Verarbeiten der Daten"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VoteStatisticsWrapper.ErrorParseFile"
+msgstr "Fehler beim Verarbeiten der Daten"
+
+msgid "Smartmatic.SAES.Voting.Vote.TransmissionPackageWrapper.ErrorSerializaData"
+msgstr "Fehler beim Verarbeiten des gesicherten Bestands"
+
+msgid "Smartmatic.SAES.Voting.Vote.TransmissionPackageWrapper.ErrorCertNotFound"
+msgstr "Fehler beim Hochladen des Zertifikats für die Verschlüsselung des gesicherten Bestands"
+
+msgid "Smartmatic.SAES.Voting.Vote.TransmissionPackageWrapper.ErrorCert"
+msgstr "Fehler bei der Verschlüsselung des gesicherten Bestands"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.InvalidXmlDataFormat"
+msgstr "Fehler beim Verarbeiten der Stimme"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.InvalidSignature"
+msgstr "Fehler beim Verarbeiten der unterzeichneten Stimme"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.InvalidDataFormat"
+msgstr "Fehler beim Verarbeiten der Stimme"
+
+msgid "Smartmatic.SAES.Voting.VotingCenters.VotingCentersWrapper.ErrorSerializaData"
+msgstr "Fehler beim Verarbeiten von Wahllokalen"
+
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.LogicalVotingGroupByContestGroupCodeNotFound"
+msgstr "Es besteht keine Verbindung zwischen der Art der Wahl und der logischen Wahlgruppe"
+
+###################### Add 25.4.12 ###############################
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ParentOptionMessage"
+msgstr "Listenstimme für "
+
+###################### Add 02.05.12 ##############################
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedPolice"
+msgstr "de Police added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedPolice"
+msgstr "de Police deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.RemarkAdded"
+msgstr "de Observation added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.RemarkDeleted"
+msgstr "de Observation deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.RemarkModified"
+msgstr "de Observation modified"
+
+####################### Add 07.05.12 ############################
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedPolice"
+msgstr "de Police Modified"
+
+###################### Add 17.05.12 ##############################
+
+################## Claves de Estadisticas en el CM ###############
+
+msgid "Smartmatic.SAES.StatisticGroup.AllPollworkers.Oath"
+msgstr "de Did all members of the polling station and all the witnesses do the oath?\n "
+
+msgid "Smartmatic.SAES.StatisticGroup.AllPollworkers.Note"
+msgstr "de Write down comments about the composition of the agency\n "
+
+msgid "Smartmatic.SAES.StatisticGroup.FurnitureandSuppliesForVoting.Question"
+msgstr "de Do you have all furniture and supplies required for the election process?\n "
+
+msgid "Smartmatic.SAES.StatisticGroup.FurnitureandSuppliesForVoting.Note"
+msgstr "Wenn Ihre Antwort «nein» lautet, geben Sie bitte eine Begründung an.\n "
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.ProxyActivations"
+msgstr "de How many proxy activations were made?\n "
+
+###################### Add 22.05.12 ##############################
+
+################## Nuevas Claves para Auditoria ###############
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.ErrorParseFile"
+msgstr "de Error parse Disabled Voting file"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.AddVotingDisabled"
+msgstr "de Disabled Voting added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.RemoveVotingDisabled"
+msgstr "de Disabled Voting deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.ModifyVotingDisabled"
+msgstr "de Disabled Voting modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.PersistenceVotingDisabled"
+msgstr "de Persistence Disabled Voting"
+
+
+###################### Add 23.05.12 ##############################
+
+################## Mas Claves para Auditoria ###############
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedAssistantSecretary"
+msgstr "de Assistant Secretary Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyPresident"
+msgstr "de Deputy President Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyAssistent"
+msgstr "de Deputy Assistent Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyWitness"
+msgstr "de Deputy Witness Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyAssistantSecretary"
+msgstr "de Deputy Assistant Secretary Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedAssistantSecretary"
+msgstr "de Assistant Secretary Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyPresident"
+msgstr "de Deputy President Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyAssistent"
+msgstr "de Deputy Assistent Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyWitness"
+msgstr "de Deputy Witness Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyAssistantSecretary"
+msgstr "de Deputy Assistant Secretary Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedAssistantSecretary"
+msgstr "de Assistant Secretary Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyPresident"
+msgstr "de Deputy President Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyAssistent"
+msgstr "de Deputy Assistent Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyWitness"
+msgstr "de Deputy Witness Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyAssistantSecretary"
+msgstr "de Deputy Assistant Secretary Modified"
+
+###################### Add 24.05.12 ##############################
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.PollingStationTime"
+msgstr "de Vul hieronder het tijdstip in waarop het stembureau bijeen gekomen is"
+
+###################### Add 25.05.12 ##############################
+################## Otras Claves para Auditoria ###############
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.PersistencePoliceNote"
+msgstr "de Persisting Police Note"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.ErrorParseFile"
+msgstr "de Error parse file"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.AddPoliceNote"
+msgstr "de Police Note Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.RemovePoliceNote"
+msgstr "de Police Note Removed"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.ModifyPoliceNote"
+msgstr "de Police Note Modified"
+
+###################### Add 28.05.12 ##############################
+################## Otras Claves para Auditoria ###############
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputy"
+msgstr "de Deputy Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputy"
+msgstr "de Deputy Removed"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputy"
+msgstr "de Deputy Modified"
+
+################## Add 29.05.12 ############################
+################ Claves para estadisticas de Bruselas
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.1"
+msgstr "de Constat de légalité du bureau et du matériel"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.2"
+msgstr "de Démarrage du bureau"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.3"
+msgstr "de Votes de référence"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.4"
+msgstr "de Les opérations électorales"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.5"
+msgstr "de Le déroulement du vote"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.6"
+msgstr "de Exercice du pouvoir de police"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.7"
+msgstr "de Difficultés ou incidents survenus au cours des opérations de vote"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.remark.8"
+msgstr "de Bulletins de vote annulés et déclarés nuls"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.1"
+msgstr "de Des électeurs ont intentionnellement détérioré\nou détruit leur bulletin de vote. Ces bulletins de vote ont été\naussitôt annulés. Ces personnes n’ont pas reçu une nouvelle carte à puce."
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.2"
+msgstr "de Des électeurs ont endommagé par inadvertance\nleur bulletin de vote et demandé au président une autre\ncarte à puce. Leur bulletin de vote a été repris et aussitôt annulé."
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.3"
+msgstr "de Des électeurs ont montré leur bulletin de vote dans\nl’intention de faire connaître le vote qu’ils ont émis.\nCes bulletins de vote ont été repris et aussitôt annulés.\nLe président a donné à ces personnes une nouvelle carte à puce."
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.4"
+msgstr "de Des électeurs ont prétendu que lors de la visualisation\ndu code à barre, celui-ci était illisible. Le président\na immédiatement annulé ces bulletins de vote.\nLe président a donné une nouvelle carte à puce à ces personnes."
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.5"
+msgstr "de Des électeurs ont demandé eux-même l’annulation\nde leur bulletin de vote. Ils ont reçu une nouvelle carte à puce."
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.retry.1"
+msgstr "de Les électeurs se trouvant dans les cas décrits\nau points 2, 3, 4 et 5 ci-dessus ont reçu une deuxième\ncarte à puce afin de recommencer leur vote.\nParmi ceux-ci ont demandé une deuxième\nfois l’annulation de leur bulletin de vote"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.retry.2"
+msgstr "de Dans ce cas, leur vote est déclaré nul.\nLe nombre de bulletins déclarés nuls s’élève à"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.retry.3"
+msgstr "de Des électeurs n’ont pu enregistrer leur vote en raison\nd’une défectuosité technique de l’urne électronique.\nCes électeurs ont rendu leur bulletin de vote au président\nafin qu’il soit annulé et ont reçu une nouvelle carte à puce."
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.retry.4"
+msgstr "de Des électeurs ont fait annuler leur bulletin\nde vote pour la raison mentionnée ci-après.\nIl s’agit d’une raison différente de celles\nmentionnées ci-dessus. ( voir annexe du président)"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistics.canceled.retry.5"
+msgstr "de Parmi ces électeurs  a reçu une nouvelle carte"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistic.11"
+msgstr "de Le nombre d’électeurs dont le vote a été déclaré a été déclaré nul"
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab4"
+msgstr "     4     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab5"
+msgstr "     5     "
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistic.10"
+msgstr "de volmachtformulieren en de erbij horende attesten"
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab6"
+msgstr "     6     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab7"
+msgstr "     7     "
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistic.4"
+msgstr "de Amount of demo votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.started.hour"
+msgstr "de Poll workers meeting time (hh:mm)"
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab8"
+msgstr "     8     "
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.statistic.9"
+msgstr "de Vul het aantal teststemmen in"
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab9"
+msgstr "     9     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab10"
+msgstr "     10     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab11"
+msgstr "     11     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab12"
+msgstr "     12     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab13"
+msgstr "     13     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab14"
+msgstr "     14     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab0"
+msgstr "     0     "
+
+msgid "Smartmatic.SAES.StatisticGroup.Instructions"
+msgstr "de \n\n\nThis functionality allows to insert all the information, regarding\nthe generation of the PV report. Please make sure to navigate through\nall tabs and complete the information requested"
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab15"
+msgstr "    15    "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab16"
+msgstr "    16    "
+
+msgid "Smartmatic.SAES.StatisticGroup.Tab17"
+msgstr "    17    "
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.start.election"
+msgstr "de Time when the election starts (hh:mm)"
+
+msgid "Smartmatic.SAES.StatisticGroup.pv.close.election"
+msgstr "de Time when the election is closed (hh:mm)"
+
+################## Add 20.07.12 ############################
+
+### Claves para aplicacion de Validacion de Data <XMLMDataUtilsValidatorFunctionality> ##########
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.VotingBoothNotFound"
+msgstr "Wahlkabine nicht gefunden"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.RegionHierarchiesNotFound"
+msgstr "Hierarchien der Regionen nicht gefunden"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.OperationModeNotFound"
+msgstr "Betriebsmodus nicht gefunden"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.RoleNotFound"
+msgstr "Wahlliste nicht gefunden"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.CodiFileNotFound"
+msgstr "Codi-Datei nicht gefunden"
+
+################## Add 31.07.12 ############################
+
+### Clave del CM, adicionada a estadisticas ##########
+
+msgid "Smartmatic.SAES.StatisticGroup.TechnicalIncidents.Note"
+msgstr "Noteer de technische opmerkingen"
+

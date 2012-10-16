@@ -1,0 +1,4 @@
+libsmartmaticgui_la-RefreshListener.lo: \
+ ../src/Widgets/RefreshListener.cxx ../src/Widgets/RefreshListener.hxx
+
+../src/Widgets/RefreshListener.hxx:

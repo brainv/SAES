@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.smartmatic.com/SaesHardwareConfiguration" xmlns:mstns="http://www.smartmatic.com/SaesHardwareConfiguration/SaesHardwareConfiguration-schema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="SaesHardwareConfiguration" targetNamespace="http://www.smartmatic.com/SaesHardwareConfiguration">
+	<xsd:complexType name="SaesHardwareConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="SmartcardConfiguration">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="SmartCardReaderType" type="CardReaderType"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="Extended" type="xsd:boolean"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="BarcodeDeviceConfiguration">
+				<xsd:complexType>
+					<xsd:sequence>	
+						<xsd:element maxOccurs="unbounded" minOccurs="1" name="PortToLook" type="xsd:string"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="1" name="ConfigurationCommands" type="BarcodeCommands"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="SerialPollingTime" type="xsd:integer"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="SaesHardwareConfiguration" type="SaesHardwareConfiguration">
+	</xsd:element>
+	
+	<xsd:simpleType name="CardReaderType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="AU9520"/>
+			<xsd:enumeration value="Athena"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="BarcodeCommands">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Command" type="BarcodeCommand"/>
+		</xsd:sequence>
+		<xsd:attribute name="CommandBlockName" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="BarcodeCommand">
+    	<xsd:attribute name="Command" type="xsd:string" use="required"/>
+    	<xsd:attribute name="DelayResponse" type="xsd:nonNegativeInteger" use="required"/>
+    	<xsd:attribute name="Retries" type="xsd:nonNegativeInteger" use="required"/>
+    	<xsd:attribute name="MandatorySent" type="xsd:boolean" use="required"/>
+	</xsd:complexType>	
+</xsd:schema>

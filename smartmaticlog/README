@@ -1,0 +1,12 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - liblog4cxx10-dev
+
+Dependencias de ejecución:
+  - liblog4cxx10
+

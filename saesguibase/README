@@ -1,0 +1,37 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - xsdcxx
+  - libxerces-c-dev
+  - libsmartmaticgui-5.0-dev
+  - libsmartmatic-5.0-dev
+  - libsaesfunctionality-5.0-dev
+  - libsaescommon-5.0-dev
+  - libsaes-5.0-dev
+  - libsaeshardware-5.0-dev
+  - libpcsclite-dev
+  - libgtkmm-2.4-dev
+  - libx11-dev
+  - libxtst-dev
+  - libqrencode-dev
+  - libusb-1.0-0-dev
+
+Dependencias de ejecución:
+  - libxerces-c3.1
+  - libsmartmaticgui-5.0-5
+  - libsmartmatic-5.0-5
+  - libsaesfunctionality-5.0-5
+  - libsaescommon-5.0-5
+  - libsaes-5.0-5
+  - libsaeshardware-5.0-5
+  - libpcsclite1
+  - libgtk-2.0-0
+  - libx11-6
+  - libxtst6
+  - libqrencode3
+  - libusb-1.0-0
+

@@ -1,0 +1,4 @@
+libsmartmaticgui_la-key-pad-widget-interface.lo: \
+ Widgets/key-pad-widget-interface.cc Widgets/key-pad-widget-interface.h
+
+Widgets/key-pad-widget-interface.h:

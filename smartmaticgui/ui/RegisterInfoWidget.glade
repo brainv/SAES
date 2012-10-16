@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkFrame" id="main-frame">
+    <property name="visible">True</property>
+    <property name="label_xalign">0</property>
+    <property name="shadow_type">in</property>
+    <child>
+      <object class="GtkEventBox" id="main-eventbox">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkVBox" id="main-vbox">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkFrame" id="header-frame">
+                <property name="visible">True</property>
+                <property name="label_xalign">0</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <object class="GtkEventBox" id="header-eventbox">
+                    <property name="visible">True</property>
+                    <child>
+                      <object class="GtkLabel" id="header-label">
+                        <property name="height_request">35</property>
+                        <property name="visible">True</property>
+                        <property name="xalign">0</property>
+                        <property name="xpad">10</property>
+                        <property name="use_markup">True</property>
+                        <property name="single_line_mode">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label_item">
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFrame" id="center-frame">
+                <property name="visible">True</property>
+                <property name="label_xalign">0</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <object class="GtkEventBox" id="center-eventbox">
+                    <property name="visible">True</property>
+                    <property name="border_width">10</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </child>
+                <child type="label_item">
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFrame" id="bottom-frame">
+                <property name="visible">True</property>
+                <property name="label_xalign">0</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <object class="GtkEventBox" id="bottom-eventbox">
+                    <property name="visible">True</property>
+                    <child>
+                      <object class="GtkLabel" id="bottom-label">
+                        <property name="height_request">35</property>
+                        <property name="visible">True</property>
+                        <property name="xalign">1</property>
+                        <property name="xpad">10</property>
+                        <property name="use_markup">True</property>
+                        <property name="justify">right</property>
+                        <property name="single_line_mode">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label_item">
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child type="label_item">
+      <placeholder/>
+    </child>
+  </object>
+</interface>

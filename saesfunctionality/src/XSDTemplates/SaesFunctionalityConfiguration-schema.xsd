@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.smartmatic.com/SaesFunctionalityConfiguration" xmlns:mstns="http://www.smartmatic.com/SaesFunctionalityConfiguration-schema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="SaesFunctionalityConfiguration" targetNamespace="http://www.smartmatic.com/SaesFunctionalityConfiguration">
+   <xsd:complexType name="SaesFunctionalityConfiguration">
+	<xsd:sequence>
+		<!-- incorporacion del modo de operacion para la experiencia de votacion -->
+		<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceController" type="VotingExperienceControllerConfiguration"/>
+        <!-- incorporacion votacion para super blanco -->
+        <xsd:element maxOccurs="1" minOccurs="1" name="Vote" type="VoteConfiguration"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="BlankVote" type="BlankVoteConfiguration"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="VMachineInitiator" type="VMachineInitiatorConfiguration"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="PMachineInitiator" type="PMachineInitiatorConfiguration"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="CardTypeController" type="CardTypeController"/>	
+        <xsd:element maxOccurs="1" minOccurs="1" name="PVFormTransformation" type="PVFormTransformationConfig"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="StructureInstallation" type="StructureInstallationType"/>	
+        <xsd:element maxOccurs="1" minOccurs="1" name="EnqueueVoteConfiguration" type="EnqueueVoteConfiguration"/>	
+        <!-- incorporacion roles de sistema para maquina electoral -->
+        <xsd:element maxOccurs="1" minOccurs="1" name="SystemRole" type="SystemRoleConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LaunchConfiguration">
+				<xsd:complexType>
+					<xsd:sequence>
+	    			 <xsd:element maxOccurs="1" minOccurs="1" name="ExecuteInitialCalibrationInAppTypeVotingOnly" type="xsd:boolean"/>
+	    			 <xsd:element maxOccurs="1" minOccurs="1" name="ExecutePMSetupInAppTypeDiagnostics" type="xsd:boolean"/>
+	    			 <xsd:element maxOccurs="1" minOccurs="1" name="PMSetupCommand" type="xsd:string"/>
+					</xsd:sequence>
+					<xsd:attribute name="AppType" use="required">
+                      <xsd:simpleType>
+                      <xsd:restriction base="xsd:string">
+                      <xsd:enumeration value="VotingOnly"/>
+                      <xsd:enumeration value="PollbookOnly"/>
+                      <xsd:enumeration value="VotingMachine"/>                      
+                      <xsd:enumeration value="DiagnosticsOnly"/>   
+                      <xsd:enumeration value="RunFunctionality"/> 
+                      </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:attribute>
+                    <xsd:attribute name="SkipAutoDiagnostic" type="xsd:boolean" use="required"/>
+                    <xsd:attribute name="PrintInstallationReportPM" type="xsd:boolean" use="required"/>
+				</xsd:complexType>
+		</xsd:element>
+								
+		  <xsd:element name="AlarmsConfiguration">
+    				<xsd:complexType>
+	   					<xsd:sequence>	
+							<xsd:element maxOccurs="unbounded" minOccurs="1" name="Alarm">								
+								<xsd:complexType>																	
+									<xsd:sequence>	
+										<xsd:element maxOccurs="unbounded" minOccurs="1" name="AlarmCommands" type="AlarmCommand"/>
+										<xsd:element maxOccurs="1" minOccurs="1" name="AlarmCategory" type="AlarmCategoryEnum"/>
+										<xsd:element maxOccurs="1" minOccurs="1" name="AlarmBehavior" type="AlarmBehaviorEnum"/>
+									</xsd:sequence>
+								  <xsd:attribute name="TypeOfAlarm" type="AlarmEnum" use="required"/>	
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+  					</xsd:complexType>
+ 		 </xsd:element>	  
+		<xsd:element maxOccurs="1" minOccurs="1" name="OperationConfiguration" type="OperationConfiguration"/>
+	</xsd:sequence>
+</xsd:complexType>
+	
+	<xsd:simpleType name="AlarmCategoryEnum">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="CriticalAlarm"/>
+			<xsd:enumeration value="RegularAlarm"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="AlarmBehaviorEnum">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="GoAuthentication"/>
+			<xsd:enumeration value="Wait"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+		
+  	<xsd:simpleType name="AlarmEnum">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="UnableToRead"/>
+			<xsd:enumeration value="UnableToWrite"/>
+			<xsd:enumeration value="CryptoError"/>
+			<xsd:enumeration value="InvalidContent"/>
+			<xsd:enumeration value="CardUsed"/>
+			<xsd:enumeration value="CardValidityPeriodExpired"/>
+			<xsd:enumeration value="InvalidVotingData"/>
+			<xsd:enumeration value="PrinterNeopAfterVote"/>
+			<xsd:enumeration value="VotePrintingFailure"/>
+			<xsd:enumeration value="PrinterNotReadyForVote"/>
+			<xsd:enumeration value="Timeout"/>
+			<xsd:enumeration value="CardNotRemovedAfterVoting"/>	
+			<xsd:enumeration value="CardExtractionCounter"/>
+			<xsd:enumeration value="PrinterNeopBeforeVote"/>
+			<xsd:enumeration value="AlarmBoxDisconnected"/>
+			<xsd:enumeration value="AlarmBoxConnected"/>
+      <xsd:enumeration value="CardReaderUnresponsive"/>
+			<xsd:enumeration value="Unexpected"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+  	<xsd:simpleType name="AlarmCommandEnum">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="RedLed"/>
+			<xsd:enumeration value="GreenLed"/>
+			<xsd:enumeration value="Buzzer"/>			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="AlarmCommand">
+			<xsd:attribute name="TypeOfCommand" type="AlarmCommandEnum" use="required"/>
+			<xsd:attribute name="Period" type="xsd:nonNegativeInteger" use="required"/>
+			<xsd:attribute name="IsOff" type="xsd:boolean" use="required"/>
+	</xsd:complexType>
+	
+<!-- incorporacion del modo de operacion para la experiencia de votacion -->
+<xsd:complexType name="VotingExperienceControllerConfiguration">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="OperationType" type="VotingExperienceControllerOperationType"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ValidateCardDataType" type="VotingExperienceControllerValidateCardDataType"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SkipCustomAttributeAutomatic" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="NavigateBetweenContest" type="xsd:boolean"/>
+        </xsd:sequence>
+</xsd:complexType> 
+
+<!-- incorporacion del modo de operacion para la experiencia de votacion -->
+ <xsd:simpleType name="VotingExperienceControllerOperationType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="ALTERNATE_FIRST_QUESTIONS"/>
+		<xsd:enumeration value="ALTERNATE_FIRST_CONTESTS_FIXED"/>
+		<xsd:enumeration value="ALL_QUESTIONS_FIRST_QUESTIONS"/>
+		<xsd:enumeration value="ALL_QUESTIONS_FIRST_CONTESTS_FIXED"/>
+		<xsd:enumeration value="PRIORITY_BY_CONTEST_CLASS"/>
+	</xsd:restriction>
+  </xsd:simpleType> 
+
+<!-- incorporacion de validacion de card data -->
+ <xsd:simpleType name="VotingExperienceControllerValidateCardDataType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="ALL"/>
+		<xsd:enumeration value="LOGICAL_VOTER_GROUP_ONLY"/>
+  		<xsd:enumeration value="NONE"/>
+	</xsd:restriction>
+  </xsd:simpleType> 
+
+<!-- incorporacion votacion para super blanco -->
+<xsd:complexType name="VoteConfiguration">
+        <xsd:sequence/>
+    <xsd:attribute name="FillVote" type="xsd:boolean" use="required"/>
+</xsd:complexType>
+
+<!-- incorporacion votacion para super blanco -->
+<xsd:complexType name="BlankVoteConfiguration">
+	<xsd:sequence/>
+    <xsd:attribute name="BlankVote" type="BlankVoteType" use="required"/>
+    <xsd:attribute name="BlankVoteListContestCode" type="BlankVoteListContestCodeType" use="required"/>
+</xsd:complexType>
+
+<!-- incorporacion votacion para super blanco -->
+<xsd:simpleType name="BlankVoteType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="BLANK_VOTE_ENABLED"/>
+		<xsd:enumeration value="BLANK_VOTE_DISABLED"/>
+	</xsd:restriction>
+</xsd:simpleType> 
+
+<!-- listar contest para votacion super blanco -->
+<xsd:simpleType name="BlankVoteListContestCodeType">
+        <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="BLANK_VOTE_ALL_CONTEST"/>
+                <xsd:enumeration value="BLANK_VOTE_CONTEST_GROUP_ONLY"/>
+        </xsd:restriction>
+</xsd:simpleType>
+
+<!-- incorporacion roles de sistema para maquina electoral -->
+<xsd:complexType name="SystemRoleConfiguration">
+     <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" name="role">
+            <xsd:complexType>
+			    <xsd:sequence/>
+				<xsd:attribute name="key" type="xsd:string" use="required"/>
+				<xsd:attribute name="nameKey" type="xsd:string" use="required"/>
+				<xsd:attribute name="descriptionKey" type="xsd:string" use="required"/>
+				<xsd:attribute name="type" type="SystemRoleType" use="required"/>
+            </xsd:complexType>
+       </xsd:element>
+     </xsd:sequence>
+</xsd:complexType>
+
+	<xsd:complexType name="VMachineInitiatorConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MessageRemoveFlashTime" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="SuccessMessageTime" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="StepTime" type="xsd:nonNegativeInteger"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="PMachineInitiatorConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="SuccessMessageTime" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="StepTime" type="xsd:nonNegativeInteger"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+<!-- incorporacion tipo de role -->
+<xsd:simpleType name="SystemRoleType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="MENU"/>
+		<xsd:enumeration value="VOTING"/>
+		<xsd:enumeration value="ELECTORAL"/>
+		<xsd:enumeration value="VOTING_AUDIO"/>
+		<xsd:enumeration value="CLEAR_ALARM"/>
+	</xsd:restriction>
+</xsd:simpleType> 
+	
+<!-- incorporacion del modo de operacion para la experiencia de votacion -->
+<xsd:complexType name="OperationConfiguration">
+		<xsd:attribute name="ConfigurationReset" type="xsd:boolean" use="required"/>
+		<xsd:attribute name="StartOpenElection" type="xsd:boolean" use="required"/>
+		<xsd:attribute name="DiagnosesConsideredApproved" type="xsd:boolean" use="required"/>
+		<xsd:attribute name="SimulateVotes" type="xsd:boolean" use="required"/>
+</xsd:complexType> 
+    	
+<!-- incorporacion del modo de operacion para la cola de votos -->
+<xsd:complexType name="EnqueueVoteConfiguration">
+		<xsd:attribute name="CleanVoteRepeated" type="xsd:boolean" use="required"/>
+</xsd:complexType> 
+
+<xsd:simpleType name="CardTypeController">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="memory-card"/>
+		<xsd:enumeration value="smart-card"/>
+	</xsd:restriction>
+</xsd:simpleType> 
+
+<xsd:complexType name="PVFormTransformationConfig">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="type" type="PVFormTransformationType"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="FopConfigFile" type="xsd:string"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:simpleType name="PVFormTransformationType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="FOP"/>
+		<xsd:enumeration value="XMLROFF"/>
+	</xsd:restriction>
+</xsd:simpleType> 
+
+<xsd:simpleType name="StructureInstallationType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="SEPARATE"/>
+		<xsd:enumeration value="GROUPED"/>
+	</xsd:restriction>
+</xsd:simpleType> 
+
+<xsd:simpleType name="RuleTransformation">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="COPY"/>
+	</xsd:restriction>
+</xsd:simpleType> 
+
+  <xsd:element name="SaesFunctionalityConfiguration" type="SaesFunctionalityConfiguration">
+
+  </xsd:element>
+</xsd:schema>

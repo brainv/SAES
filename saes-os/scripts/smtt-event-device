@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#author Pablo Trujillo
+#date 14-09-2011
+#package saes-os
+#version 1.4.6
+
+DEVICE="${1}"
+ACTION="${2}"
+
+/usr/sbin/smtt-event-script "${DEVICE}" "${ACTION}" &
+

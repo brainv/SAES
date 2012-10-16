@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="voting-machine-status"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/Status" 
+	xmlns="http://www.smartmatic.com/Saes/Voting/Status" 
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Status/voting-machine-status.xsd">
+	<xs:element name="VotingMachineStatus">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DevicesStatus" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DeviceStatus" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence/>
+									<xs:attribute name="VMType" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Ballot"/>
+												<xs:enumeration value="Barcode"/>
+												<xs:enumeration value="Printer"/>
+												<xs:enumeration value="AlarmBox"/>
+												<xs:enumeration value="SmartCard"/>												
+												<xs:enumeration value="TouchScreenCalibration"/>
+												<xs:enumeration value="ScreenContrast"/>
+												<xs:enumeration value="Flash"/>
+												<xs:enumeration value="Able"/>
+												<xs:enumeration value="DateTime"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="VMDateTime" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:pattern value="([0-9]{4})\-([0-9]{2})\-([0-9]{2})[T]([0-9]{2})[:]([0-9]{2})[:]([0-9]{2})[.]([0-9]+)(\+|\-)([0-9]{2})[:]([0-9]{2})"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="VMStatus" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="NotDiagnosed"/>
+												<xs:enumeration value="Ok"/>
+												<xs:enumeration value="Error"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="DiagnoseDescription" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="VMFlags" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="MachineSubst"/>
+						<xs:enumeration value="FlashSubst"/>
+						<xs:enumeration value="TTS"/>
+						<xs:enumeration value="None"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="FactoryDiagnoseCompleted" type="xs:boolean" use="required"/>
+			<xs:attribute name="TransmissionAttempts" type="xs:nonNegativeInteger" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

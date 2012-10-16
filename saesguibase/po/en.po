@@ -1,0 +1,4262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.MenuToolbar"
+msgstr "Maintenance"
+
+#. option openElection
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.OpenElection"
+msgstr "Open Election"
+
+#. option closeElection
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.CloseElection"
+msgstr "Close Election"
+
+#. option voting machine installation
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VotingMachineInstallation"
+msgstr "Voting Machine Installation"
+
+#. card Generator
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.CardActivatorFuncionality"
+msgstr "Card Activator Funcionality"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.AssistedCardActivatorFuncionality"
+msgstr "Assisted Card Activator Funcionality"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VotingForDisabledFunctionality"
+msgstr "Voting for Disabled Functionality"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.PoliceNotesFunctionality"
+msgstr "Police Notes Functionality"
+
+#. option voting process demo
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VoteProcessDemo"
+msgstr "VoteProcessDemo"
+
+#. Vote Print Preview
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VotePrintPreview"
+msgstr "Vote Print Preview"
+
+#. Incident Report
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.IncidentReport"
+msgstr "Incident Report Functionality"
+
+#. Statistics Report
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.StatisticsReport"
+msgstr "Statistics Report Functionality"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.LogReport"
+msgstr "Log Report"
+
+#. Poll Worker Register
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.PollWorkerRegister"
+msgstr "Poll Worker Register"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.CloseVotation"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VoteConsolidation"
+msgstr "Consolidation Vote Functionality"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.RegisterPresidentNotes"
+msgstr "Register President Notes"
+
+#. recovery card Generator
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.RecoveryCardActivatorFuncionality"
+msgstr "Recovery Card Activator Funcionality"
+
+#. option report printing
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.ReportPrinting"
+msgstr "Report Printing"
+
+#. ********* Configure Not installed*******
+#. Set help for no installed
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NotInstalledStateTitleKey"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NotInstalledStateContentKey"
+msgstr "Voting Machine Installation"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NotInstalledStateNameKey"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NotInstalledStateDescKey"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.helpNoInstalled"
+msgstr "Help page for: Voting Machine instalation."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NotInstalledStateNameKey"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NotInstalledStateDeskKey"
+msgstr "Set Date/Time"
+
+#. ********* Configure Not Pollworker*******
+#. Set help for not pollworker
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NotPollworkerRegisteredStateTitleKey"
+msgstr "Poll Worker Register"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NotPollworkerRegisteredStateContentKey"
+msgstr "Poll Worker Register"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NotPollworkerRegisteredStateNameKey"
+msgstr "Poll Worker Register"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NotPollworkerRegisteredStateDescKey"
+msgstr "Poll Worker Register"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.NoPollworkerRegistered"
+msgstr "Help page: for Pollworker registering."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NoPollworkerRegisteredStateNameKey"
+msgstr "Poll Worker Register"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NoPollworkerRegisteredDeskKey"
+msgstr "Poll Worker Register"
+
+#. ********* Configure No demo vote*******
+#. Set help for no demo
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NoDemoVoteStateTitleKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NoDemoVoteStateContentKey"
+msgstr "Close Votation"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NoDemoVoteStateNameKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NoDemoVoteStateDescKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.NoDemoVote"
+msgstr "Help page for: Voting demostration."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NoDemoVoteStateNameKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NoDemoVoteDeskKey"
+msgstr "VoteProcessDemo"
+
+#. ********* Configure No initiated*******
+#. Set help for no demo
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NoInitiatedStateTitleKey"
+msgstr "Statistics Report Functionality"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.NoInitiatedStateContentKey"
+msgstr "Incident Report Functionality"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NoInitiatedStateNameKey"
+msgstr "Incident Report Functionality"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.NoInitiatedStateDescKey"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.NoInitiated"
+msgstr "Help page for: Ready to open."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NoInitiatedStateNameKey"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.NoInitiatedDeskKey"
+msgstr "Incident Report Functionality"
+
+#. ********* Configure initiated*******
+#. Set help for no demo
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.InitiatedStateTitleKey"
+msgstr "Statistics Report Functionality"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.InitiatedStateContentKey"
+msgstr "Incident Report Functionality"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.InitiatedStateNameKey"
+msgstr "Incident Report Functionality"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.InitiatedStateDescKey"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.Initiated"
+msgstr "Help page for: Voting enabled."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.InitiatedStateNameKey"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.InitiatedDeskKey"
+msgstr "Incident Report Functionality"
+
+#. ********* Configure VotingClosed*******
+#. Set help for no demo
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.VotingClosedStateTitleKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.VotingClosedStateContentKey"
+msgstr "Close Votation"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.VotingClosedStateNameKey"
+msgstr "Voting Process"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.VotingClosedStateDescKey"
+msgstr "Voting Process"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.VotingClosed"
+msgstr "Help page for: Vote consolidation."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.VotingClosedStateNameKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.VotingClosedDeskKey"
+msgstr "Voting Process"
+
+#. ********* Configure Election Closed*******
+#. Set help for no demo
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.ElectionClosedStateTitleKey"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Help.ElectionClosedStateContentKey"
+msgstr "Close Votation"
+
+#. set time line config
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.ElectionClosedStateNameKey"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.Timeline.ElectionClosedStateDescKey"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.FunctionalityWizard.HelpConfiguration.ElectionClosed"
+msgstr "Help page for: Election completed."
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.ElectionClosedStateNameKey"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.Configuration.FunctionalityWizardStateConfiguration.ElectionClosedDeskKey"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.Generic"
+msgstr "Back"
+
+#. voting Machine Menu
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VotingProcess"
+msgstr "Voting Process"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.Maintenance"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.validationMenu"
+msgstr "Maintenance"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.ReportingProcess"
+msgstr "Reporting"
+
+#. option card activator
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.ActivationAndDemoProcess"
+msgstr "Activation And Demo Process"
+
+#. option diagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.Diagnosis"
+msgstr "Diagnosis"
+
+#. diagnosis->setMenuOptions (* new MenuOptions ());
+#. option alarmBoxDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.AlarmBoxDiagnosis"
+msgstr "Alarm Box Diagnosis"
+
+#. option smartcardReaderDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.SmartcardReaderDiagnosis"
+msgstr "Smartcard Reader Diagnosis"
+
+#. option printerDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.PrinterDiagnosis"
+msgstr "Printer Diagnosis"
+
+#. option calibrationDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.CalibrationDiagnosis"
+msgstr "Calibration Diagnosis"
+
+#. option brightnessDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.BrightnessDiagnosis"
+msgstr "Brightness Diagnosis"
+
+#. option barcodeDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.BarcodeDiagnosis"
+msgstr "Barcode Diagnosis"
+
+#. option allDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.AllDiagnosis"
+msgstr "All Diagnosis"
+
+#. option flashDiagnosis
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.FlashDiagnosis"
+msgstr "Flash Diagnosis"
+
+#. option shutdown menu
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.Shutdowm"
+msgstr "Set Date/Time"
+
+#. option changeHour
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.SetDateHour"
+msgstr "Set Date/Time"
+
+#. Fill Assisted Activation Info
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.FillAssistedActivationInfo"
+msgstr "Fill Assisted Activation Info Funcionality"
+
+#. Activation Consolidation Functionality
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.ActivationConsolidationFunctionality"
+msgstr "Card Activator Funcionality"
+
+#. Change language
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.ChangeLanguageFuncionality"
+msgstr "Change Language Funcionality"
+
+msgid "Smartmatic.SAES.GUI.Configuration.SAESGUIConfigurationManager.VotingExperienceValidationFunctionality"
+msgstr "Voting Experience Validation"
+
+#. rootPollBookMachine
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.RootPresidentMachineOption"
+msgstr ""
+
+#. rootVotingMachine
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.RootVotingMachineOption"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.OpenElection"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.CloseElection"
+msgstr "Close Election"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.Diagnosis"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.ReaderDiagnosis"
+msgstr "Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.PrinterDiagnosis"
+msgstr "Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.AlarmBoxDiagnosis"
+msgstr "Alarm Box Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.CalibrationDiagnosis"
+msgstr "Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.BirghtnessDiagnosis"
+msgstr "Brightness Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.BarcodeDiagnosis"
+msgstr "Barcode Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.AllDiagnosis"
+msgstr "All Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.FlashDiagnosis"
+msgstr "Flash Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.ChangeHour"
+msgstr "Change Date/Time"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.CardGenerator"
+msgstr "Help page for: Elector activation."
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.AssistedCardGenerator"
+msgstr "Help page for: Assisted elector activation."
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.RecoveryCardGenerator"
+msgstr "Help page for: Vote recovery."
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.VotingMachineInstallation"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.ChangeLanguage"
+msgstr "Single language: "
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.VoteProcessDemo"
+msgstr "VoteProcessDemo"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.PrintPreview"
+msgstr "Vote Print Preview"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.IncidentReport"
+msgstr "Incident Report Functionality"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.StatisticsReport"
+msgstr "Statistics Report Functionality"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.PollworkerRegister"
+msgstr "Poll Worker Register"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.VotingExperienceValidation"
+msgstr "Voting Experience Validation"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.CloseVotation"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.VoteConsolidation"
+msgstr "Help page for: Vote consolidation."
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.FillAssistedInfo"
+msgstr "Help page for: Assisted elector activation."
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.VotingForDisabledInfo"
+msgstr "Help page for: Voting for Disabled"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.PoliceFunctionalityInfo"
+msgstr "Police Functionality Info"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.RegisterPresidentNotes"
+msgstr "Register President Notes"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.ActivationConsolidation"
+msgstr "Help page for: Vote consolidation."
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.ReportPrinting"
+msgstr "Report Printing"
+
+msgid "Smartmatic.SAES.GUI.HelpConfiguration.LogReport"
+msgstr "Log Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationConsolidationFunctionality.FinalMessage"
+msgstr "Consolidate Vote Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationConsolidationFunctionality.ActivationConsolidation"
+msgstr "Consolidate Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationConsolidationFunctionality.LogStartFunctionality"
+msgstr "Consolidate Vote Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationConsolidationFunctionality.LogCloseFunctionality"
+msgstr "consolidate vote out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AlarmBoxDiagnosisFunctionality.AlarmBoxDiagnosis"
+msgstr "Alarm Box Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AlarmBoxDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Alarm Box Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AlarmBoxDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Alarm Box Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.AlarmBoxDevice"
+msgstr "Alarm Box Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.BarcodeReader"
+msgstr "Barcode Reader Diagnosis:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.TouchScreenCalibration"
+msgstr "Touch Screen Calibration Diagnosis:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.ScreenContrastCalibration"
+msgstr "Screen Contrast Calibration Diagnosis:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.PrinterDevice"
+msgstr "Printer Diagnosis:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.SmartcardReader"
+msgstr "Smartcard Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.FlashDevice"
+msgstr "Flash Diagnosis:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.AllDiagnosticFinished"
+msgstr "All Diagnostic Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.ErrorPrintingReport"
+msgstr "Error Printing Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.DiagnosticReportPrintedLogKey"
+msgstr "Diagnostic Report Printed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.DiagnosticReportPrintFailedLogKey"
+msgstr "Diagnostic Report Printed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.BarCodeDiagnosisFinished"
+msgstr "BarCode Diagnosis Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.SmartcardReaderDiagnosisFinished"
+msgstr "Smartcard Reader Diagnosis Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.PrinterFinished"
+msgstr "Printer Diagnosis Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.PrinterFinishedOk"
+msgstr "Printer Diagnosis Ok"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.PrinterFinishedError"
+msgstr "Printer Diagnosis Error"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.CalibrationDiagnosisFinished"
+msgstr "Calibration Diagnosis Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.FlashDiagnosisFinished"
+msgstr "Flash Diagnosis Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.BrightnessDiagnosisFinished"
+msgstr "Brightness Diagnosis Finished"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.AllDiagnosis"
+msgstr "All Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Smartcard Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AllDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Smartcard Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.FillData"
+msgstr "Fill Assisted Info"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.CustomAttributeSelection"
+msgstr "Custom Attribute Selection"
+
+#. Voting_device vd = Smartmatic::SAES::Operation::MachineOperationManager::getInstance()->getElectoralConfiguration()->getVotingDevice()->getVotingDevice("342");
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.CardInsertedPressTheButtonToActivateTheCard"
+msgstr ""
+"Card inserted. Please press the button \n"
+"to activate the card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.InsertCardToActivate"
+msgstr "Please insert card to activate"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.AreYouCompletelySureYouWantToActivate"
+msgstr ""
+"Are you completely sure you want to activate \n"
+" the card with the information provided?"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.ErrorValidatingData"
+msgstr "Error validating data. Check position of card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.ErrorActivationCard"
+msgstr "Error Activating Assisted Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.CardWasActivated"
+msgstr "Card was activated. You can remove the card."
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.CardWasActivatedSuccessfully"
+msgstr "Assisted Card was activated successfully"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.IsAudio"
+msgstr "Is Audio"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.ActivateCard"
+msgstr "Activate Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.FillInfo"
+msgstr "Fill Assisted Info"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.GoBackToTheSelections"
+msgstr ""
+"Press this button if you want to\n"
+"go back to the selection screen"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.BackToSelections"
+msgstr "Back To Selection"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.UnableKeyMessageDemostrationVoteNotPrinted"
+msgstr "Demonstration Vote Not Printed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.CardActivatorFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.LogStartFunctionality"
+msgstr "Assisted Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.AssistedCardGeneratorFunctionality.LogCloseFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BarcodeDiagnosisFunctionality.BarcodeDiagnosisExecuted"
+msgstr "Barcode Reader Diagnosis Executed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BarcodeDiagnosisFunctionality.WindowTitle"
+msgstr "Barcode Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BarcodeDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BarcodeDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BrightnessDiagnosisFunctionality.WindowTitle"
+msgstr "Brightness Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BrightnessDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Printer Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.BrightnessDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Printer Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CalibrationDiagnosisFunctionality.CalibrationDiagnosis"
+msgstr "Calibration Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CalibrationDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Calibration Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CalibrationDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Calibration Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.InsertCardToActivate"
+msgstr "Please insert card to activate"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.CustomAttributeSelection"
+msgstr "Custom Attribute Selection"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.CardInsertedPressTheButtonToActivateTheCard"
+msgstr ""
+"Card inserted. Please press the button \n"
+"to activate the card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.AreYouCompletelySureYouWantToActivate"
+msgstr ""
+"Are you completely sure you want to activate \n"
+" the card with the information provided?"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.StatingActivateCard"
+msgstr "Activate Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.ErrorValidatingData"
+msgstr "Error validating data. Check position of card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.ErrorActivationCard"
+msgstr "Error Activating Official Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.CardWasActivated"
+msgstr "Card was activated."
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.CardWasActivatedSuccessfully"
+msgstr "Official Card was activated sucessfully"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.IsAudio"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.ActivateCard"
+msgstr "Activate Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.GoBackToTheSelections"
+msgstr ""
+"Press this button if you want to\n"
+"go back to the selection screen"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.BackToSelections"
+msgstr "Back To Selection"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.GeneratedCards"
+msgstr "Generated Cards"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.UnableKeyMessageDemostrationVoteNotPrinted"
+msgstr "Demonstration Vote Not Printed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.CardActivatorFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.LogStartFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CardGeneratorFunctionality.LogCloseFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeHourFunctionality.HourNotChanged"
+msgstr "Hour Changed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeHourFunctionality.CurrentDate"
+msgstr "Current Date:"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.HourChanged"
+msgstr "Hour Changed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeHourFunctionality.HourChanged"
+msgstr "Hour Changed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeHourFunctionality.ChangeHourFunctionality"
+msgstr "Change Hour Functionality"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.ChangeDateHour"
+msgstr "Change Date/Time"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.Hour"
+msgstr "Hour: "
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.Minute"
+msgstr "Minute: "
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.Seconds"
+msgstr "Seconds: "
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.Day"
+msgstr "Day:"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.Month"
+msgstr "Month:"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.Year"
+msgstr "Year:"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.HourChange"
+msgstr "Time Change:"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.DateChange"
+msgstr "Date Change:"
+
+msgid "Smartmatic.SAES.Glade.ChangeHour.CurrentDate"
+msgstr "Current Date:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeHourFunctionality.LogStartFunctionality"
+msgstr "Change Hour Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeHourFunctionality.LogCloseFunctionality"
+msgstr "Change Hour Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeLanguageFunctionality.LanguageNotChanged"
+msgstr "Change Language Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeLanguageFunctionality.Title"
+msgstr "Change Language Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeLanguageFunctionality.LanguageChanged"
+msgstr "Change Language Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeLanguageFunctionality.LogStartFunctionality"
+msgstr "Change Language Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ChangeLanguageFunctionality.LogCloseFunctionality"
+msgstr "Change Language Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.VotationWasNotClose"
+msgstr "Close Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.ErrorClosingElection"
+msgstr "Error Closing Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.ElectionWasClosed"
+msgstr "Close Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.RegisterPollWorker"
+msgstr "Register PollWorker"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.UnableKeyMessageIsNotCloseDateYet"
+msgstr "Is Not Close Date Yet"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.CanCloseBecauseDateCheckPassed"
+msgstr "Can Close Because Date Check Passed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.CloseElection"
+msgstr "Close Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.LogStartFunctionality"
+msgstr "Close Election start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.LogCloseFunctionality"
+msgstr "Close Election out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.VotationWasNotClose"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.CloseVotationButton"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.CloseConfirmation"
+msgstr "Do You Want To Close Votation Without Any Official Card Activated?"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.CloseConfirmationMessage"
+msgstr "Do You Want To Close Votation?"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.ConfirmButton"
+msgstr "Confirm"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.CancelButton"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.VotationWasClose"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.ErrorClosingVotation"
+msgstr "Closing Votation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.CloseVotation"
+msgstr "Close Votation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.LogStartFunctionality"
+msgstr "Close Votation Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.LogCloseFunctionality"
+msgstr "Close Votation out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.WindowTitle"
+msgstr "Data Utils Validator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.LogStartFunctionality"
+msgstr "Data Utils Validator Functionality Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.LogCloseFunctionality"
+msgstr "Data Utils Validator Functionality Stop"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.ErrorLoadVotingCenterFile"
+msgstr "Error Load Voting Center File"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.InitializesTheCenterValidation"
+msgstr "Initializes The Center Validation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.LoadLanguages"
+msgstr "Load Languages"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.LanguageNotFound"
+msgstr "Language Not Found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.CreateCards"
+msgstr "Create Cards"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.CreateCard"
+msgstr "Create Card : "
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.InitVotingExperienceFail"
+msgstr "Init Voting Experience Fail"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.LoadConfigurationFail"
+msgstr "Load Configuration Fail"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.CenterFolderNotFound"
+msgstr "Center Folder Not Found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.StartLoadConfiguration"
+msgstr "Data Utils Validator Functionality Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.Authentication"
+msgstr "Authentication"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.InitElectoralConfiguration"
+msgstr "Init Electoral Configuration"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.LoadElectoralConfiguration"
+msgstr "Load Electoral Configuration"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.AuthenticationFail"
+msgstr "Authentication Fail"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.PasswordNotFound"
+msgstr "Password Not Found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DataUtilsValidatorFunctionality.ErrorLoadElectoralConfiguration"
+msgstr "Error Load Electoral Configuration"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DiagnosisFunctionality.Diagnosis"
+msgstr "Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DiagnosisFunctionality.LogStartFunctionality"
+msgstr "Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.DiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FillAssistedActivationInfoFunctionality.AddInfoButton"
+msgstr "Add New Assisted Info"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FillAssistedActivationInfoFunctionality.FillAssistedActivationInfo"
+msgstr "Fill Assisted Activation Info"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FillAssistedActivationInfoFunctionality.FillAssistedActivationStartFunctionality"
+msgstr "FillAssistedActivationStartFunctionality Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FillAssistedActivationInfoFunctionality.FillAssistedActivationCloseFunctionality"
+msgstr "FillAssistedActivationStartFunctionality Close"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FlashDiagnosisFunctionality.FlashDiagnosisExecuted"
+msgstr "Flash Diagnosis Executed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FlashDiagnosisFunctionality.FlashDiagnosis"
+msgstr "Flash Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FlashDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Flash Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.FlashDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Flash Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.DefaultExitMessage"
+msgstr "President ID"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ErrorMemoryPath"
+msgstr "Error memory path"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusNotInitiated"
+msgstr "Election Is Not Initiated"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusInitiated"
+msgstr "Election Is Initiated"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusClosed"
+msgstr "Election Is Closed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusResultsTransmitted"
+msgstr "Results Were Transmitted"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusNotInstalled"
+msgstr "Election Is Not Installed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusNotPollworkerRegistered"
+msgstr "Election Is Not Pollworker Registered"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ElectionStatusNotDemostrationVote"
+msgstr "Election Is Not Demostration Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.BarcodeNotFound"
+msgstr "Barcode not found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.LoggerAuditBarcodeNotFound"
+msgstr "Barcode not found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.SmartCardNotFound"
+msgstr "SmartCard not found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.LoggerAuditSmartCardNotFound"
+msgstr "SmartCard not found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.PrinterError"
+msgstr "Printer error"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.LoggerAuditPrinterError"
+msgstr "Printer error"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ChallengeTitleMessage"
+msgstr "President ID"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.IvalidChallengeMessage"
+msgstr "President ID"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.ValidChallengeMessage"
+msgstr "President ID"
+
+msgid "Smartmatic.SAES.GUI.Functionality.GraphicDisplayFunctionality.DescriptionMessage"
+msgstr "President ID"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.SavingIncidentReports"
+msgstr "Incident Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.IncidentReport"
+msgstr "Incident Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.LogStartFunctionality"
+msgstr "Incident Report Functionality start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.LogCloseFunctionality"
+msgstr "Incident Report Functionality out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ReportLogFunctionality.ReportLogTitle"
+msgstr "Log Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.LogReportFunctionality.LogStartFunctionality"
+msgstr "Log Report Functionality start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.LogReportFunctionality.LogCloseFunctionality"
+msgstr "Log Report Functionality out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.ElectionWasNotOpen"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.ElectionWasOpen"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.ErrorOpenElection"
+msgstr "Error Opening Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.CannotOpenBecauseDateCheckFailed"
+msgstr "Can not Open Because Date Check Failed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.UnableKeyMessageIsNotOpenDateYet"
+msgstr "The Election Is Not Open Date Yet"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.OpenElection"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.LogStartFunctionality"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.LogCloseFunctionality"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PoliceNotesFunctionality.VotingForDisabledFunctionalityTitle"
+msgstr "Police Notes Functionality Title"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PoliceNotesFunctionality.LogStartFunctionality"
+msgstr "Log Report Functionality start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PoliceNotesFunctionality.LogCloseFunctionality"
+msgstr "Log Report Functionality out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PoliceNotesFunctionality.FinalMessage"
+msgstr "Exit Police Note Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PollWorkerRegisterFunctionality.SavingPollWorkers"
+msgstr "Poll Worker Register Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PollWorkerRegisterFunctionality.PollWorkerFunctionality"
+msgstr "Poll Worker Register Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PollWorkerRegisterFunctionality.ElectionStatusChanged"
+msgstr "Poll Worker Register Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PollWorkerRegisterFunctionality.LogStartFunctionality"
+msgstr "Poll Worker Register Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PollWorkerRegisterFunctionality.LogCloseFunctionality"
+msgstr "Poll Worker Register Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrinterDiagnosisFunctionality.PrinterDiagnosisExecuted"
+msgstr "Printer Diagnosis Executed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrinterDiagnosisFunctionality.PrinterDiagnosis"
+msgstr "Printer Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrinterDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Printer Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrinterDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Printer Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.WaitingForBarcode"
+msgstr "Waiting for Barcode of Vote to be scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.BarcodeErrorTryAgain"
+msgstr "The decoding of this Barcode failed. Please try again"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.BarcodeError"
+msgstr "Barcode Error"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.VoteMarkedAsDemo"
+msgstr "This Vote is marked as a demo vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.VoteMarkedAsOfficial"
+msgstr "This Vote is marked as a official vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.VoteMarkedAsRecovery"
+msgstr "This Vote is marked as a recovery vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.VoteMarkedAsSimulated"
+msgstr "This Vote is marked as a simulated vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.WindowTitle"
+msgstr "Vote Preview Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.LogStartFunctionality"
+msgstr "Vote Preview Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PrintPreviewFunctionality.LogCloseFunctionality"
+msgstr "Vote Preview Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.InsertCardToActivate"
+msgstr "Please insert card to activate"
+
+#. Voting_device vd = Smartmatic::SAES::Operation::MachineOperationManager::getInstance()->getElectoralConfiguration()->getVotingDevice()->getVotingDevice("342");
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.CardInsertedPressTheButtonToActivateTheCard"
+msgstr ""
+"Card inserted. Please press the button \n"
+"to activate the card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.AreYouCompletelySureYouWantToActivate"
+msgstr ""
+"Are you completely sure you want to activate \n"
+" the card with the information provided?"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.CheckTheRedError"
+msgstr "Check The Red Error Circle"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.ErrorRecoveryData"
+msgstr "Error recovering data"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.ErrorValidatingData"
+msgstr "Error validating data. Check position of card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.ErrorActivationCard"
+msgstr "Error Activating Recovery Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.CardWasActivated"
+msgstr "Card was activated. You can remove the card."
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.CardWasActivatedSuccessfully"
+msgstr "Recovery Card was activated successfully"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.IsAudio"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.ActivateCard"
+msgstr "Activate Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.GeneratedCards"
+msgstr "Generated Cards"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.UnableKeyMessageDemostrationVoteNotPrinted"
+msgstr "Demostration Vote Not Printed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.CardActivatorFunctionality"
+msgstr "Recovery Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.LogStartFunctionality"
+msgstr "Recovery Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RecoveryCardGeneratorFunctionality.LogCloseFunctionality"
+msgstr "Recovery Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RegisterPresidentNotesFunctionality.SavingNotes"
+msgstr "Complete Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RegisterPresidentNotesFunctionality.RegisterPresidentNotes"
+msgstr "Complete Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RegisterPresidentNotesFunctionality.LogStartFunctionality"
+msgstr "Register President Notes Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.RegisterPresidentNotesFunctionality.LogCloseFunctionality"
+msgstr "Register President Notes Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ReportPrintingFunctionality.ReportPrintingFunctionality"
+msgstr "Report Printing Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ReportPrintingFunctionality.LogStartFunctionality"
+msgstr "Report Printing Functionality start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ReportPrintingFunctionality.LogCloseFunctionality"
+msgstr "Report Printing Functionality Close"
+
+msgid "Smartmatic.SAES.GUI.Functionality.SCReaderDiagnosisFunctionality.SmartcardReaderDiagnosisExecuted"
+msgstr "Smartcard Reader Diagnosis Executed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.SCReaderDiagnosisFunctionality.SmartcardReaderDiagnosis"
+msgstr "Smartcard Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.SCReaderDiagnosisFunctionality.LogStartFunctionality"
+msgstr "Smartcard Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.SCReaderDiagnosisFunctionality.LogCloseFunctionality"
+msgstr "Smartcard Reader Diagnosis"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ShutdownMachineFunctionality.ShutdownMachineMessage"
+msgstr "Voting Machine Installation Successfull"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ShutdownMachineFunctionality.ShutdownMachine"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ShutdownMachineFunctionality.ShutdownStartFunctionality"
+msgstr "Change Hour Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ShutdownMachineFunctionality.ShutdownCloseFunctionality"
+msgstr "Change Hour Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.StatisticsReportFunctionality.SavingStatistics"
+msgstr "Save Stats"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.StatisticsReport"
+msgstr "Statistics Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.StatisticsReportFunctionality.LogStartFunctionality"
+msgstr "Card Activator Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.StatisticsReportFunctionality.LogCloseFunctionality"
+msgstr "Reset Stats"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.BadProcessedVote.Audit"
+msgstr "Bad Processed Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.WaitingVote.Audit"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.BadProcessedVote"
+msgstr "Bad Processed Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.WaitingVote"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ErrorSaveVote.Audit"
+msgstr "Vote Saved"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ErrorSaveVote"
+msgstr "Vote Saved"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.FinalMessage"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ActivatePreviewOFFMessage.Audit"
+msgstr "Processing Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ActivatePreviewOFFMessage"
+msgstr "Processing Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ActivatePreviewOFF.Audit"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ActivatePreviewOFF"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.VotePreviewShowed"
+msgstr "Vote Preview Showed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ActivatePreviewON.Audit"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ActivatePreviewON"
+msgstr "Waiting For Vote To Be Scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.StartingProcessVote"
+msgstr "Bad Processed Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ProcessingVote.Audit"
+msgstr "Processing Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ProcessingVote"
+msgstr "Processing Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.VoteSaved"
+msgstr "Vote Saved"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.VoteAlreadyProcessed.Audit"
+msgstr "Vote Already Processed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.VotePreviewShowed.Audit"
+msgstr "Vote Preview Showed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.VoteAlreadyProcessed"
+msgstr "Vote Already Processed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ConsolidateVotes.Audit"
+msgstr "Consolidate Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.ConsolidateVotes"
+msgstr "Consolidate Vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.LogStartFunctionality"
+msgstr "Consolidate Vote Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteConsolidationFunctionality.LogCloseFunctionality"
+msgstr "consolidate vote out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ErrorSaveVote"
+msgstr "Vote scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.SuccessfullProcessVote"
+msgstr "Vote processed successfully"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.VoteAlreadyProcessed"
+msgstr "Vote already processed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteProcessDemoFunctionality.VoteAlreadyProcessed"
+msgstr "Vote Already Processed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.PleaseInsertCardToActivate"
+msgstr "Please insert card to activate"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.WaitingForCard"
+msgstr "Waiting for Card to be activated"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ScannedVote"
+msgstr "Vote scanned"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.BarcodeErrorTryAgain"
+msgstr ""
+"The decoding of this Barcode failed.\n"
+" Please try again"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ScannedVoteWithErrors"
+msgstr "Error scanning vote"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.VoteMarkedAsDemoGenerateCardWhenReady"
+msgstr ""
+"This Vote is marked as a demo vote.\n"
+" Please Generate a new card when ready"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.VoteNotMarkedAsDemoTryAgain"
+msgstr ""
+"This Vote is not marked as a demo vote.\n"
+" Please try again"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.StartingToActivateVoteDemoCard"
+msgstr "Card was activated. You can remove the card."
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ErrorValidatingDataCheckPositionOfCard"
+msgstr "Error validating data. Check position of card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ErrorActivationCard"
+msgstr "Error Activating Vote Demo Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.CardActivatedRemoveCard"
+msgstr "You can remove the card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.CardDemoWasActivatedSuccessfully"
+msgstr "Vote Demo Card was activated successfully"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.NowScanPrintedVoteToView"
+msgstr "Now scan the Printed Vote to View"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.IsAudio"
+msgstr "Is Audio"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.Magnify"
+msgstr "Magnify"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.BackMagnify"
+msgstr "Back to Main Window"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.WindowTitle"
+msgstr "Vote Process Demo Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ExitFunctionality"
+msgstr "Exit Vote Demo Functionality"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ElectionStatusNotChanged"
+msgstr "Activate Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.ElectionStatusChanged"
+msgstr "Activate Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.UnexpectedErrorChangingElectionStatus"
+msgstr "An unexpected error has occur. The Election Status could not be updated."
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteProcessDemoFunctionality.LogStartFunctionality"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VoteProcessDemoFunctionality.LogCloseFunctionality"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingExperienceValidationFunctionality.Title"
+msgstr "Add Open Election Note"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingExperienceValidationFunctionality.LogStartFunctionality"
+msgstr "Consolidate Vote Start"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingExperienceValidationFunctionality.LogCloseFunctionality"
+msgstr "consolidate vote out"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingForDisabledFunctionality.VotingForDisabledFunctionalityTitle"
+msgstr "Voting for Disabled Functionality Title"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingForDisabledFunctionality.LogStartFunctionality"
+msgstr "Start Voting for Disabled Functioanlity"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingForDisabledFunctionality.LogCloseFunctionality"
+msgstr "Stop Voting for Disabled Functioanlity"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingForDisabledFunctionality.FinalMessage"
+msgstr "Exit Voting for Disabled Functioanlity"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallationFunctionality.VotingMachineInstalled"
+msgstr "Voting Machine Installation Successfull"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallationFunctionality.VotingMachineInstallationSuccessfull"
+msgstr "Voting Machine Installation Successfull"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallationFunctionality.NoVotingMachineInstalled"
+msgstr "Voting Machine Installation Successfull"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallationFunctionality.StartingVotingMachineInstallation"
+msgstr "Voting Machine Installation Successfull"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallation"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallationFunctionality.LogStartFunctionality"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingMachineInstallationFunctionality.LogCloseFunctionality"
+msgstr "Voting Machine Installation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalActivated"
+msgstr "Total:"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationStatsWidget.ActivatingCardPleaseWait"
+msgstr "Activating Card Please Wait"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationStatsWidget.ErrorActivationCard"
+msgstr "Error Activating Vote Demo Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationStatsWidget.CardWasActivatedSuccessfully"
+msgstr "Vote Demo Card was activated successfully"
+
+msgid "Smartmatic.SAES.GUI.Functionality.ActivationStatsWidget.ErrorActivatingCard"
+msgstr "Error Activating Vote Demo Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ActivationStatsWidget.ActivationNotAllowed"
+msgstr "Please Connect Barcode To Activate Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ActivationStatsWidget.MessageSleepWriteCard"
+msgstr "Please extract card the card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AlarmBoxDiagnosisWidget.InitializingDiagnostic"
+msgstr "Initializing Diagnostic"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AlarmBoxDiagnosisWidget.DiagnosticFailed"
+msgstr "Diagnostic failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AlarmBoxDiagnosisWidget.DiagnosticSuccessful"
+msgstr "Diagnostic successful"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AlarmBoxDiagnosisWidget.PressButtonMessage"
+msgstr "Now press the button if you see the green and red lights and hear the alarm sound"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AlarmBoxDiagnosisWidget.AlarmBoxNotReach"
+msgstr "Could not reach AlarmBox. Diagnostic Failed."
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.Title"
+msgstr "Assisted Activation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.MessageInitial"
+msgstr "Press Ok when ready to generate the card, or Cancel to go back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.LabelWitness"
+msgstr "Witness:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.LabelPresident"
+msgstr "President:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.LabelVoter"
+msgstr "Voter:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.ButtonOk"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.ButtonCancel"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.MessagePresidentEmpty"
+msgstr "The President field is empty, please fill it before pressing Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.MessageWitnessEmpty"
+msgstr "The Witness field is empty, please fill it before pressing Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.MessageVoterEmpty"
+msgstr "The Voter field is empty, please fill it before pressing Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.AssistedActRegistered"
+msgstr "The Assisted Activation was registered"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationAddWidget.GeneratingCard"
+msgstr "The Assisted Activation will be registered if the card is Generated"
+
+#. outsideBox->pack_start(*alignLoad);
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.FirstName"
+msgstr "First Name"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.SurName"
+msgstr "SurName"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.ProxyActivation"
+msgstr "Proxy Activation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.PresentialActivation"
+msgstr "Presential Activation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.Pollworker"
+msgstr "Pollworker"
+
+#. ,pollworker.getGender().get(),
+#. pollworker.getNationality().get(), pollworker.getNationalNumber().get()
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.Voter"
+msgstr "Voter"
+
+#. ,voter.getGender().get(),
+#. voter.getNationality().get(), voter.getNationalNumber().get()
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.PropossedPerson"
+msgstr "Propossed Assistant"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.ActivationImpugnated"
+msgstr "Activation Impugnated"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.Impugnator"
+msgstr "Impugnator"
+
+#. ,impugnator.getGender().get(),
+#. impugnator.getNationality().get(), impugnator.getNationalNumber().get()
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.DesignatedPerson"
+msgstr "Designated Assistant"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.ReasonTitle"
+msgstr "Reason"
+
+#. int width = 130;
+#. int height = 50;
+#.
+#. nextButton = manage(new SmartmaticButton("& next"));
+#. nextButton->signal_clicked().connect(sigc::mem_fun(this, &AssistedActivationManagerWidget::on_nextButton_clicked));
+#. nextButton->set_size_request(width, height);
+#.
+#.
+#. backButton = manage(new SmartmaticButton("& back"));
+#. backButton->signal_clicked().connect(sigc::mem_fun(this, &AssistedActivationManagerWidget::on_backButton_clicked));
+#. backButton->set_size_request(width, height);
+#.
+#. HButtonBox* btnBox = manage(new HButtonBox());
+#. btnBox->set_layout(BUTTONBOX_SPREAD);
+#. btnBox->pack_start(*nextButton, false, false);
+#. btnBox->pack_start(*backButton, false, false);
+#. btnBox->set_size_request(-1, 100);
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.VoterInfo"
+msgstr "Please Insert Voter ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.VoterInfoInstruction"
+msgstr "Voter Instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.PropossedInfo"
+msgstr "Please Insert Proposer Helper ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.PropossedInfoInstruction"
+msgstr "Propossed Instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.PollworkerInfo"
+msgstr "Please Insert President ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.PollworkerInfoInstruction"
+msgstr "Poll worker instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ImpugnatorInfo"
+msgstr "Please Insert Impugnator ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ImpugnatorInfoInstruction"
+msgstr "Impugnator instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.DesignatedPersonInfo"
+msgstr "Please Insert Designated Helper ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.DesignatedInfoInstruction"
+msgstr "Designated instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ProxyQuestion"
+msgstr "Please Select Activation Type"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ProxyButton"
+msgstr "Proxy"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.PresentialButton"
+msgstr "Presential"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ProxyQuestionInstruction"
+msgstr "Proxy question istruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ChallengeQuestion"
+msgstr "Does Anybody Impugn The Assisted Activation?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.YesButton"
+msgstr "Yes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.NoButton"
+msgstr "No"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ChallengeQuestionInstruction"
+msgstr "Challenge question instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ChallengeTitle"
+msgstr "Please Fill Reason To Impugn Activation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.AcceptButton"
+msgstr "Accept"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationManagerWidget.ChallengeInstruction"
+msgstr "Challenge instruction"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationTreeView.PresidentColumn"
+msgstr "President:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationTreeView.WitnessColumn"
+msgstr "Witness:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationTreeView.VoterColumn"
+msgstr "Voter:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.AssistedActivationIDCardWidgetViewer.ActivationNotImpugnated"
+msgstr "Activation Not Impugnated"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.AlarmPending"
+msgstr "Alarm Pending"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.WrongPassword"
+msgstr "WRONG PASSWORD"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.Title"
+msgstr "Automatic Diagnostic"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BallotOptionSelectionWidget.ClearSelection"
+msgstr "Clear Selection"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BallotOptionSelectionWidget.AcceptSelection"
+msgstr "Accept Selection"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BallotOptionSelectionWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotHeaderFormat"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotHeaderFormatNoQuestion"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotHeaderFormat.Demo"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotHeaderFormatNoQuestion.Demo"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotHeaderFormat.Recovery"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotHeaderFormatNoQuestion.Recovery"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotFooterFormat"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotFooterFormat.Demo"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BallotFooterFormat.Recovery"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarcodeDetectionWidget.BarcodeNoConnected"
+msgstr "Barcode Is Not Connected, Please Connect Barcode"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarcodeDetectionWidget.ReconfigureBarcode"
+msgstr "Please Reconnect Barcode"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarcodeDetectionWidget.BarcodeConnected"
+msgstr "Barcode Connected Succesfully"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarcodeDetectionWidget.BarcodeConfigurationFail"
+msgstr "Barcode Configuration Failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarcodeDetectionWidget.ReconnectedBarcode"
+msgstr "Please Reconnect Barcode"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.Empty"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.InitializingDiagnostic"
+msgstr "Initializing Diagnostic"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.CheckConfigurationPrinterPleaseScanThePrintedBarcode"
+msgstr "Verify the functionality of the printer"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.PleaseScanThePrintedBarcodeOrTheScreenBarcode"
+msgstr "Please scan the barcode printed or showed on screen"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.CouldNotReachBarcodeReaderDiagnosticFailed"
+msgstr "Could not reach Barcode Reader. Diagnostic Failed."
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.PleaseScanTheBarcodeShowedOnScreen"
+msgstr "Please scan the barcode showed on screen"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.DiagnosticSuccessful"
+msgstr "Diagnostic Successful"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.DiagnosticFailed"
+msgstr "Diagnostic Failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.ReconfigureDevice"
+msgstr "Reconfigure the Barcode Reader"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.TestAgainBarcodeReader"
+msgstr "Test Again the Barcode Reader"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.TestAgainBarcodeReaderButton"
+msgstr "Test Again the Barcode Reader"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.ReconfigureBarcode"
+msgstr "Reconfigure the Barcode Reader"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BarCodeDiagnosisWidget.WaitForBarcodeToBePrinted"
+msgstr "Wait For Barcode To Be Printed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BasicDiagnosticWidget.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BasicDiagnosticWidget.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidErrorWidget.BeidErrorWidgetTitle"
+msgstr "Error read BEID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidErrorWidget.ExtractCardInfo"
+msgstr "Remove card and try again"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.BELGIQUE"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.BELGIE"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.BELGIEN"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.BELGIUM"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.CarteE"
+msgstr "Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.EKaart"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.EKarte"
+msgstr "Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.ECard"
+msgstr "Password:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.Name"
+msgstr "SurName"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.GivenNames"
+msgstr "Gender"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.TypeOfCard"
+msgstr "You can remove the e-id card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.RegistrationCertificate"
+msgstr "Nationality"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.Sex"
+msgstr "Sex -"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.CardNo"
+msgstr "Password:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.ShowIdWidget"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.ValidFromUntil"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.TitularSignature"
+msgstr "Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BeidWidget.HolderSignature"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.ReadHere"
+msgstr "Read here"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.Calibrate"
+msgstr "Calibrate"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.AskForStatusLabelsShown"
+msgstr ""
+"Press the button Ok if you can easily see the 4 labels shown or,\n"
+" Press Calibrate if you have any difficulties reading the text"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.LessBright"
+msgstr "- Bright"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.MoreBright"
+msgstr "+ Bright"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.More"
+msgstr "+"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.Less"
+msgstr "-"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BrightnessDiagnosisWidget.Close"
+msgstr "Close"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.PressButtonToTestCalibration"
+msgstr "Press the buttons to test machine calibration"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.AutoCalibrationSucceded"
+msgstr "Calibration succeded"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.AutoCalibrationFailed"
+msgstr "AutoCalibration failed. Press Calibrate to start the calibration process"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.CalibrationFailed"
+msgstr "Calibration failed. Press Calibrate to start the calibration process"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.Calibrate"
+msgstr "Calibrate"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.CalibrationSucceded"
+msgstr ""
+"Calibration succeded. Press the button OK to continue, \n"
+" or Calibrate to start the calibration process again."
+
+msgid "Smartmatic.SAES.GUI.Widgets.CalibrationDiagnosisWidget.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CardActivactorEventBox.TitleCustomAttribute"
+msgstr "Select type of elector: %1"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ChangeLanguageWidget.MessageKey"
+msgstr "Select the Language"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ChangeLanguageWidget.LanguageChanged"
+msgstr "Language changed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ChangeLanguageWidget.ConfigurationNotFound"
+msgstr "Configuration not found"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.ConfirmButton"
+msgstr "Confirm"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.CancelButton"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.CloseConfirmation"
+msgstr "Do You Want To Close Election Without Any Official Vote Scanned?"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.CloseConfirmationMessage"
+msgstr "Do You Want To Close Election?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CloseElectionStatusWidget.ClosingElection"
+msgstr "Closing Election"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CloseElectionStatusWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widget.ConfirmationDeleteWidget.DeleteQuestion"
+msgstr "Are You Sure You Want To Delete This Item?"
+
+msgid "Smartmatic.SAES.GUI.Widget.ConfirmationDeleteWidget.Delete"
+msgstr "Delete"
+
+msgid "Smartmatic.SAES.GUI.Widget.ConfirmationDeleteWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.VoteStatisticsWidget.TotalVotes"
+msgstr "Total Votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.VoteStatisticsWidget.TotalOfficialVotes"
+msgstr "Total official Votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.VoteStatisticsWidget.TotalDuplicateVotes"
+msgstr "Total Duplicate Votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.StatisticTitle"
+msgstr "Vote Consolidation Statistics"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.BothMemoryConnected"
+msgstr "Normal Operation Mode"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionBarcodeBothMemory"
+msgstr "Instruction Barcode Both Memory"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.WaitScanVoteBarcodeBothMemory"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionBarcodeOneMemory"
+msgstr "Instruction Barcode One Memory"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.WaitScanVoteBarcodeOneMemory"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionNoBarcodeOneMemory"
+msgstr "Instruction No Barcode One Memory"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.WaitScanVoteNoBarcodeOneMemory"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionNoBarcodeBothMemory"
+msgstr "Instruction No Barcode Both Memory"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.WaitScanVoteNoBarcodeBothMemory"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionBadProccesedVote"
+msgstr "Bad Vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.StartingProcessVote"
+msgstr "Processing Vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionGoodProccesedVote"
+msgstr "Vote Saved"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionDuplicatedProccesedVote"
+msgstr "Vote Already Processed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.VoteSaved"
+msgstr "Vote Saved"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.InstructionErrorProccesedVote"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.ConnectMemoryToConsolidate"
+msgstr "Please reinsert memory to consolidate votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.OneMemoryConnected"
+msgstr "Operating With One Memory"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.BarcodeConnected"
+msgstr "Barcode Is Connected"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ConsolidationStatsWidget.BarcodeNotConnected"
+msgstr "Barcode Is Not Connected, Please Connect Barcode"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.RetryButtonLabel"
+msgstr "Contingency card successfully created"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.QuitButtonLabel"
+msgstr "Contingency card successfully created"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.ResultSuccess"
+msgstr "Contingency card successfully created"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.ErrorReader"
+msgstr "The card reader is not working properly"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.ErrorWritingCardData"
+msgstr "Error writing the data in the card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.ErrorPrinting"
+msgstr "Error printing contingency card creation report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.WaitForCardInsertion"
+msgstr "Please insert a card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.TextWaitForCardInsertion"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.WritingCardData"
+msgstr "Writing contingency data in the card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.TextWritingCardData"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.PrintingContingencyReport"
+msgstr "Printing the contingency card creation report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.TextPrintingContingencyReport"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.WaitingForCardRemoval"
+msgstr "Please remove the card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyCardGenWidget.TextWaitingForCardRemoval"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Windows.InitializationWindow.Title"
+msgstr "Initialization Window"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyWidget.Title"
+msgstr "Duration Of Election"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ContingencyWidget.Pin"
+msgstr "Print"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalNonAudioActivated"
+msgstr "Total Non Audio:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalAudioActivated"
+msgstr "Total Audio"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalOfficialActivated"
+msgstr "Total Official:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalDemoActivated"
+msgstr "Total Demo:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalRecoveryActivated"
+msgstr "Total Recovery:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalAudioOfficialActivated"
+msgstr "Total Audio Official:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalAudioDemoActivated"
+msgstr "Total Audio Demo:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalAudioRecoveryActivated"
+msgstr "Total Audio Recovery:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalNonAudioOfficialActivated"
+msgstr "Total Non Audio Official:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalNonAudioDemoActivated"
+msgstr "Total Non Audio Demo:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.TotalNonAudioRecoveryActivated"
+msgstr "Total Non Audio Recovery:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.OfficialNonAudioTitle"
+msgstr "Non Audio Official By CA:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.CustomAttributeLabelText"
+msgstr "%2"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.DemoNonAudioTitle"
+msgstr "Non Audio Demo By CA:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.OfficialAudioTitle"
+msgstr "Audio Official By CA:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.CustomAttributesCounterWidget.DemoAudioTitle"
+msgstr "Audio Demo By CA:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DataUtilsResultWidget.Success"
+msgstr "Centers success : "
+
+msgid "Smartmatic.SAES.GUI.Widgets.DataUtilsResultWidget.Fail"
+msgstr "Centers fail : "
+
+msgid "Smartmatic.SAES.GUI.Widgets.DataUtilsValidatorWidget.Statistics"
+msgstr "Statistics"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DataUtilsValidatorWidget.Success"
+msgstr "Success"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DataUtilsValidatorWidget.Fail"
+msgstr "Fail"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.AlarmBoxDevice"
+msgstr "AlarmBox Device:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.BarcodeReader"
+msgstr "Barcode Reader:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.PrinterDevice"
+msgstr "Printer Device:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.SmartcardReader"
+msgstr "Smartcard Reader:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.FlashDevice"
+msgstr "Flash Device:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.TouchScreenCalibration"
+msgstr "Touch Screen Calibration:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.ScreenContrastCalibration"
+msgstr "Touch Screen Calibration:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DiagnosisBlockedWidget.TitleMessage"
+msgstr "Title Message"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DiagnosisBlockedWidget.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.DiagnosticWithErrorFailedButtonText"
+msgstr "Continue With Errors"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.ButtonShutDown"
+msgstr "Shutdown"
+
+msgid "Smartmatic.SAES.GUI.Windows.AutomaticDiagnosticWindow.HardwareDiagnosticFailedText"
+msgstr "Continue With Errors"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.Title"
+msgstr "Duration Of Election"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.LabelOpenElectionDuration"
+msgstr ""
+"The Opening Election Date was %1.\n"
+"The Close Votation Date was %2.\n"
+"So the duration was %3:%4:%5. "
+
+#. labelOpenElection.set_padding(10, 15);
+#.
+#. labelCloseElection.set_label(_("Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.LabelCloseElection"));
+#. labelCloseElection.set_alignment(0.0, 0.5);
+#. labelCloseElection.set_padding(10, 0);
+#. labelCloseElection.set_size_request(200, -1);
+#. labelCloseElection.set_line_wrap(true);
+#. labelCloseElection.modify_font(fontLabels);
+#.
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.LabelDuration"
+msgstr "Duration of Election:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.LabelHour"
+msgstr "Hour:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.LabelMin"
+msgstr "Mins:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.LabelSec"
+msgstr "Secs:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.DurationVerificationWidget.ButtonOk"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.BallotOptionSelectionWidget.Substitute"
+msgstr "Substitute"
+
+msgid "Smartmatic.SAES.GUI.Widgets.GeneratePVReportWidget.GeneratingPVReportFile"
+msgstr "Generating PV Report File"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.PersistPVFormSuccessfully"
+msgstr "Delete Note"
+
+msgid "Smartmatic.SAES.GUI.Functionality.CloseElectionFunctionality.ErrorPersistPVForm"
+msgstr "Error Closing Election"
+
+msgid "Smartmatic.SAES.GUI.Widgets.GeneratePVReportWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Windows.HelpWindow.PrintButton"
+msgstr "Print Help"
+
+msgid "Smartmatic.SAES.GUI.Windows.HelpWindow.NoFileToPrintFound"
+msgstr "No File To Print Found"
+
+msgid "Smartmatic.SAES.GUI.Windows.HelpWindow.NoImageHelpFound"
+msgstr "No Help Found"
+
+msgid "Smartmatic.SAES.GUI.Windows.HelpWindow.PrinterErrorState"
+msgstr "There's An Error With The Printer"
+
+msgid "Smartmatic.SAES.GUI.Windows.HelpWindow.PrintComplete"
+msgstr "Finish Print Help"
+
+msgid "Smartmatic.SAES.GUI.Windows.HelpWindow.ErrorPrinting"
+msgstr "Error Printing"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.Gender"
+msgstr "Gender"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.Nationality"
+msgstr "Nationality"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.NationalityNumber"
+msgstr "National Number"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.RemoveCard"
+msgstr "You can remove the e-id card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.Message.PleaseInsertCard"
+msgstr "Please Insert Card Or Write The Information"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.Message.AcceptCurrentBeid"
+msgstr "Accept Current Beid"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.IncompleteData"
+msgstr "Incomplete Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.LoadingData"
+msgstr "Loading Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.AcceptButtonMessage"
+msgstr "Accept"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.CancelButtonMessage"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidget.natNumberEntryMask"
+msgstr "National Number"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetCloseElection.IdCardMessage"
+msgstr "Register President ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetCloseElection.IdCardMessageConfirm"
+msgstr "Confirm This ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetCloseElection.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetCloseVotation.IdCardMessage"
+msgstr "Register President ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetCloseVotation.IdCardMessageConfirm"
+msgstr "Confirm This ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetOpenElection.IdCardMessage"
+msgstr "Register President ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetOpenElection.IdCardMessageConfirm"
+msgstr "Confirm This ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetOpenElection.Fail"
+msgstr "Error persistence id card open election"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetPMInstall.IdCardMessage"
+msgstr "Register President ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetPMInstall.IdCardMessageConfirm"
+msgstr "Confirm This ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetVMInstall.IdCardMessage"
+msgstr "Register President ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.IDCardWidgetVMInstall.IdCardMessageConfirm"
+msgstr "Confirm This ID"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.RetryPassword"
+msgstr "Retry Password"
+
+msgid "Smartmatic.SAES.GUI.Windows.InitializationWindow.Initializing"
+msgstr "Initializing"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.InsertYourLoginAndPassword"
+msgstr "Insert your login and password"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.Login"
+msgstr "Login:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.Password"
+msgstr "Password:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PagingTreeViewWidget.Print"
+msgstr "Print"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PagingTreeViewWidget.IsPrinting"
+msgstr "Report Printing"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PagingTreeViewWidget.InitialMessage"
+msgstr "Report Printing"
+
+msgid "Smartmatic.SAES.GUI.Widgets.LogTreeViewWidget.Date"
+msgstr "Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.LogTreeViewWidget.Library"
+msgstr "Library"
+
+msgid "Smartmatic.SAES.GUI.Widgets.LogTreeViewWidget.Message"
+msgstr "Message"
+
+msgid "Smartmatic.SAES.GUI.Widgets.LogTreeViewWidget.Level"
+msgstr "Level"
+
+msgid "Smartmatic.SAES.GUI.Widgets.LogTreeViewWidget.SinceStart"
+msgstr "Since Start"
+
+msgid "Smartmatic.SAES.GUI.Widget.MachineVotingWidget.Title"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.WizardWindow.Title"
+msgstr "Menu"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.AllowWindowTitle"
+msgstr "Pendrive Extracted"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.AllowWindowInstruction"
+msgstr "Press Button To Continue Or Insert Pendrive"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.SuspendWindowTitle"
+msgstr "Pendrive Extracted"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.SuspendWindowInstruction"
+msgstr "A Pendrive Was Extracted, Please Insert It To Continue"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.ErrorCheckData"
+msgstr "Error check data in media"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.VerifyDataWindowTitle"
+msgstr "Pendrive Extracted"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.VerifyDataWindowInstruction"
+msgstr "A Pendrive Was Extracted, Please Insert It To Continue"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.PendriveExtracted"
+msgstr "Pendrive Extracted"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.ButtonShutDown"
+msgstr "Shut Down"
+
+msgid "Smartmatic.SAES.GUI.Windows.ErrorWindow.AllowWindowButton"
+msgstr "Continue With One Pendrive"
+
+msgid "Smartmatic.SAES.GUI.Windows.MenuWindow.Title"
+msgstr "Menu"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.ErrorOpeningElection"
+msgstr "Error Opening Election"
+
+msgid "Smartmatic.SAES.GUI.Widgets.OpenElectionStatusWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.OpenElectionButton"
+msgstr "Open Election"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.AddNote"
+msgstr "Add Note"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.SaveNote"
+msgstr "Save Note"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.BackButton"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.Title"
+msgstr "Add Open Election Note"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.NoteRegister"
+msgstr "Note Title"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.SuccessfullyNoteAdded"
+msgstr "Note added succesfully"
+
+msgid "Smartmatic.SAES.GUI.Widgets.OpenElectionFunctionality.Fail"
+msgstr "Error Add Open Election Note"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.TitleEmpty"
+msgstr "Title Can't Be Empty"
+
+msgid "Smartmatic.SAES.GUI.Functionality.OpenElectionFunctionality.ContentEmpty"
+msgstr "Content Can't Be Empty"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartySelectionWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartySelectionWidget.NullSelection"
+msgstr "Null Selection"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestViewerWidget.PartiesContest"
+msgstr "Parties \\ Contest"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestViewerWidget.ContestParties"
+msgstr "Contest \\ Parties"
+
+msgid "Smartmatic.SAES.GUI.Functionality.PartyContestViewerWidget.VoteIsSuperNull"
+msgstr "This Vote is a Super Blank Vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PartyContestViewerWidget.VoteMarkedAsDemo"
+msgstr "This Vote is marked as a demo vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PartyContestViewerWidget.VoteMarkedAsOfficial"
+msgstr "This Vote is marked as an official vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PartyContestViewerWidget.VoteMarkedAsRecovery"
+msgstr "This Vote is marked as a recovery vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.PartyContestViewerWidget.VoteMarkedAsSimulated"
+msgstr "This Vote is marked as a simulated vote."
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestViewerWidget.Selected"
+msgstr "Selected"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestViewerWidget.NotSelected"
+msgstr "Not Selected"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestViewerWidget.N/A"
+msgstr "N/A"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestZoomWidget.TextPrincipal"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestZoomWidget.TextStandIN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestZoomWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartyContestZoomWidget.FullPartySelected"
+msgstr "NULL"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PartySelectionWidget.NullParty"
+msgstr "NULL"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyHeaderFormat"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyHeaderFormatNoQuestion"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyHeaderFormat.Demo"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyHeaderFormatNoQuestion.Demo"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyHeaderFormat.Recovery"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyHeaderFormatNoQuestion.Recovery"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyFooterFormat"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyFooterFormat.Demo"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PartyFooterFormat.Recovery"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PersistAllResultWidget.PersistAllResult"
+msgstr "Persist All Result Files"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PersistAllResultWidget.ErrorMessage"
+msgstr "Persist All Result Files Failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PersistCodiFilesWidget.PersistCodiFiles"
+msgstr "Persist Codi Files"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PersistCodiFilesWidget.ErrorMessage"
+msgstr "Persist Codi Files Failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PersistTransmissionPackageWidget.PersistTransmissionPackage"
+msgstr "Persisting Transmission Package"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PersistTransmissionPackageWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.Version"
+msgstr "Version : "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.PollingPlace"
+msgstr "Polling Place:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.PollingPlaceAddress"
+msgstr "Polling Place Address:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.ElectionNameKey"
+msgstr "Election Name:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.RegisteredElectorsKey"
+msgstr "Registered Electors:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.PollingStationCodeKey"
+msgstr "Polling Station Code:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.PollingStationNumberKey"
+msgstr "Polling Station Number:"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoKey1"
+msgstr "Version : "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoValue1"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoKey2"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoValue2"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoKey3"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoValue3"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoKey4"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoValue4"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoKey5"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoValue5"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoKey6"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.InfoValue6"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.AuthenticationWindow.Title"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.RemoveContingencyCardTitle"
+msgstr "Remove Contingency Card Title"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.RemoveContingencyCardText"
+msgstr "Remove Contingency Card Text"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.LoginAndPasswordIncorrect"
+msgstr "Login and Password incorrect. Please go back and try again!"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.LoadCenterSuccess"
+msgstr "Load Center Success"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWindow.Title"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.ErrorConfiguration"
+msgstr "Configuration Error"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.Version"
+msgstr "Version:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.PollingPlace"
+msgstr "Polling Place:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.PollingPlaceAddress"
+msgstr "Polling Place Address:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.ElectionNameKey"
+msgstr "Election:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.RegisteredElectorsKey"
+msgstr "Registered Electors:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.PollingStationCodeKey"
+msgstr "Polling Station Code:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.PollingStationNumberKey"
+msgstr "Polling Station Number:"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoKey1"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoValue1"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoKey2"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoValue2"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoKey3"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoValue3"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoKey4"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoValue4"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoKey5"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoValue5"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoKey6"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Windows.PMInstallationWidget.InfoValue6"
+msgstr " "
+
+msgid "Smartmatic.SAES.GUI.Widgets.PrinterDiagnosisWidget.Error"
+msgstr "Error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PrinterDiagnosisWidget.DiagnosticFailed"
+msgstr "Diagnostic Failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PrinterDiagnosisWidget.DiagnosticSuccessful"
+msgstr "Diagnostic Successful"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PrinterDiagnosisWidget.PressButtonAccordingResult"
+msgstr ""
+"Press Ok button if the symbol printed is equal \n"
+" to the one showed in the screen, Error button if not"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PrintPVReportWidget.PrintingPVReportFile"
+msgstr "Printing PV Report File"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PrintPVReportWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.Title"
+msgstr "Recovery Activation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.MessageInitial"
+msgstr "Press Ok when ready to generate the card, or Cancel to go back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.LabelVoteCode"
+msgstr "Vote Code:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.LabelLVGCode"
+msgstr "LVG Code:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.ButtonOk"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.ButtonCancel"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.FormatRecoveryLabel"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.MessageLVGEmpty"
+msgstr ""
+"The LVG Code field is empty,\n"
+" please fill it before pressing Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.MessageVoteEmpty"
+msgstr ""
+"The Vote Code field is empty, \n"
+" please fill it before pressing Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.MessageLVGInvalid"
+msgstr "The LVG Code is not registered in the configuration"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.MessageVoteCodeInvalid"
+msgstr "The Vote Code is invalid"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.MessageVoteWasConsolidated"
+msgstr "This vote code is invalid because it was consolidated"
+
+msgid "Smartmatic.SAES.GUI.Widgets.RecoveryCardGeneratorWidget.GeneratingCard"
+msgstr "Wait while Recovery Card is Generated"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReferendumSelectionWidget.QuestionPlaceHolder"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReferendumSelectionWidget.NullSelection"
+msgstr "Null Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumHeaderFormat"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumHeaderFormatNoQuestion"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumHeaderFormat.Demo"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumHeaderFormatNoQuestion.Demo"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumHeaderFormat.Recovery"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumHeaderFormatNoQuestion.Recovery"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumFooterFormat"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumFooterFormat.Demo"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReferendumFooterFormat.Recovery"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.PrintingReport"
+msgstr "Printing Report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.PMInstallationWidget.SuccessfulPosters"
+msgstr "Successful Posters"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportLogWidget.PrintingAuditLog"
+msgstr "Printing Audit Log"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportLogWidget.PrintingErrorLog"
+msgstr "Printing Error Log"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportLogWidget.LogPrinted"
+msgstr "Log Printed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportLogWidget.PrintError"
+msgstr "Printing Error Log"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportLogWidget.PrintOk"
+msgstr "Log Printed"
+
+msgid "Smartmatic.SAES.Glade.ReportLogWidget.TagAudit"
+msgstr "Audit"
+
+msgid "Smartmatic.SAES.Glade.ReportLogWidget.TagError"
+msgstr "Error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingCloseWidget.PrintReport"
+msgstr "Print pv report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingCloseWidget.FinishPrintReport"
+msgstr "Finish print pv report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.ReportListTitleLabelInitialMsg"
+msgstr "Reports to Print"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.PrintButtonMsg"
+msgstr "Print"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.CompositeLabelInitialMsg"
+msgstr "Press Print button to start the report printing operation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.ProgressLabelInitialMsg"
+msgstr "No report is currently being printed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.ReportPrintingFinishedMessage"
+msgstr "All reports has been successfully printed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.ComposeLabelMsgFormat"
+msgstr ""
+"%1\n"
+"%2\n"
+"%3"
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.PrintingNewReportMesg"
+msgstr "Printing report: "
+
+msgid "Smartmatic.SAES.GUI.Widgets.ReportPrintingWidget.ReportCountMessage"
+msgstr "Printing report copy"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.BackButtonPressed"
+msgstr "Back Button Pressed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.SignElectionResource"
+msgstr "Signing Election Resources"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.IDMessage"
+msgstr "Please Insert Card Of The Person That Will Sign The Election Files"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.Confirm"
+msgstr "Confirm"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.ConfirmQuestion"
+msgstr "Do You Want To Sign Files With This Id?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.SignButton"
+msgstr "Sign"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.NoSignButton"
+msgstr "No Sign"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.SignPackageQuestion"
+msgstr "Do You Want To Sign The Files?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignElectionResourceWidget.NoSignElectionResource"
+msgstr "Generating Election Resources"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignTransmissionPackageWidget.SignTransmissionPackage"
+msgstr "Signing Transmission Package"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SignTransmissionPackageWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SmartSmartCardReaderDiagnosisWidget.InitializingDiagnostic"
+msgstr "Initializing Diagnostic"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SmartCardReaderDiagnosisWidget.PleaseInsertCard"
+msgstr "Please Insert Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SmartCardReaderDiagnosisWidget.NotReachReaderDiagnosticFailed"
+msgstr "Could not reach reader. Diagnostic Failed."
+
+msgid "Smartmatic.SAES.GUI.Widgets.SmartCardReaderDiagnosisWidget.CardInserted"
+msgstr "Card Inserted"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SmartCardReaderDiagnosisWidget.DiagnosticFailed"
+msgstr "Diagnostic failed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.SmartCardReaderDiagnosisWidget.DiagnosticSuccessFul"
+msgstr "Diagnostic successful!"
+
+msgid "Smartmatic.SAES.GUI.Windows.VMInstallationWindow.ButtonBack"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Windows.VMInstallationWindow.ButtonOk"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Windows.VMInstallationWindow.ProgressMessage"
+msgstr "Polling Place:"
+
+msgid "Smartmatic.SAES.GUI.Windows.VMInstallationWindow.AuthenticationFailed"
+msgstr "Authentication Failed"
+
+msgid "Smartmatic.SAES.GUI.Windows.VMInstallationWindow.Title"
+msgstr "VM Installation Window"
+
+msgid "Smartmatic.SAES.GUI.Windows.VMInstallationWindow.SuccessfulAuthentication"
+msgstr "Authentication Successful"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CardExtractedTooManyTimes"
+msgstr "Retry Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteQuestion"
+msgstr "Do you want to vote null this contest?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteHeader"
+msgstr "NULL party vote header"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteFooter"
+msgstr "NULL party vote footer"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteNullButton"
+msgstr "NULL"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteNormalButton"
+msgstr "Null Party Vote Normal Button"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteQuestion.Demo"
+msgstr "Do you want to vote null this contest?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteHeader.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteFooter.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteNullButton.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteNormalButton.Demo"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteQuestion.Recovery"
+msgstr "Do you want to vote null this contest?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteHeader.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteFooter.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteNullButton.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullReferendumVoteNormalButton.Recovery"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteQuestion"
+msgstr "Do you want to vote null this contest?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteHeader"
+msgstr "NULL party vote header"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteFooter"
+msgstr "NULL party vote footer"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteNullButton"
+msgstr "NULL"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteNormalButton"
+msgstr "Null Party Vote Normal Button"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteQuestion.Demo"
+msgstr "Do you want to vote null this contest?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteHeader.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteFooter.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteNullButton.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteNormalButton.Demo"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteQuestion.Recovery"
+msgstr "Do you want to vote null this contest?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteHeader.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteFooter.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteNullButton.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NullPartyVoteNormalButton.Recovery"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.HeaderQuestion"
+msgstr "Question (Header)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterQuestion"
+msgstr "Question (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.HeaderQuestionConfirm"
+msgstr "Question Confirm (Header)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterQuestionConfirm"
+msgstr "Question Confirm (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CustomAttributeConfirmationFormat"
+msgstr "Please confirm the selection of %1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.HeaderQuestion.Demo"
+msgstr "Question (Header)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterQuestion.Demo"
+msgstr "Question (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.HeaderQuestionConfirm.Demo"
+msgstr "Question Confirm (Header)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterQuestionConfirm.Demo"
+msgstr "Question Confirm (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CustomAttributeConfirmationFormat.Demo"
+msgstr "Please confirm the selection of %1"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.HeaderQuestion.Recovery"
+msgstr "Question (Header)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterQuestion.Recovery"
+msgstr "Question (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.HeaderQuestionConfirm.Recovery"
+msgstr "Question Confirm (Header)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterQuestionConfirm.Recovery"
+msgstr "Question Confirm (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CustomAttributeConfirmationFormat.Recovery"
+msgstr "Please confirm the selection of %1"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.EndPrintVoteWidget.BendPrintedTicket"
+msgstr "Please fold your printed ticket"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BendPrintedTicket"
+msgstr "Please fold your printed ticket"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.EndVotingWidget.ForceEndVoting"
+msgstr "End voting experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience.CancelVoteStr"
+msgstr "Cancel vote experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience.ExtractionStr"
+msgstr "Extraction actions made: "
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience.WrongCardStr"
+msgstr "Wrong Card Inserted"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience.CancelVoteKeyPadStr"
+msgstr "Insert the vote activation code to cancel the process"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionTitle"
+msgstr "Language Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionFooter"
+msgstr "Please Select a Language (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationTitle"
+msgstr "Language Selection Confirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationFooter"
+msgstr "Confirm Language (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationFormat"
+msgstr "Please confirm %1 as the language of your choice."
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationButton"
+msgstr "Confirm Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionCancelButton"
+msgstr "Cancel Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionTitle.Demo"
+msgstr "Language Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionFooter.Demo"
+msgstr "Please Select a Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationTitle.Demo"
+msgstr "Language Selection Confirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationFooter.Demo"
+msgstr "Confirm Language (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationFormat.Demo"
+msgstr "Please confirm %1 as the language of your choice."
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationButton.Demo"
+msgstr "Confirm Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionCancelButton.Demo"
+msgstr "Cancel Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionTitle.Recovery"
+msgstr "Language Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionFooter.Recovery"
+msgstr "Please Select a Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationTitle.Recovery"
+msgstr "Language Selection Confirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationFooter.Recovery"
+msgstr "Confirm Language (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationFormat.Recovery"
+msgstr "Please confirm %1 as the language of your choice."
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionConfirmationButton.Recovery"
+msgstr "Confirm Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LanguageSelectionCancelButton.Recovery"
+msgstr "Cancel Language"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.AcceptInstallation"
+msgstr "Accept Installation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.LabelMessageInitial"
+msgstr "Press the button to start the process"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.NextButton"
+msgstr "Next"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.RequestIDCard"
+msgstr "Insert ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.RequestLoginCard"
+msgstr "Please insert login card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.WaitForLoginCard"
+msgstr "Waiting for the login card to be inserted"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.WriteActionLoginCard"
+msgstr "Saving login information to card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.WritingLoginCard"
+msgstr "Identification information is being written"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.ExtractLoginCard"
+msgstr "Please remove login card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.ExtractTokenMessage"
+msgstr "Take the login card from the machine."
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.PleaseExtractDevice"
+msgstr "Extract Media Step"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.LabelMessageExtractMedia"
+msgstr "Now you can safely extract media"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.InstallDevice"
+msgstr "Press Finish to complete the installation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.InstallAndReturn"
+msgstr "Now Install the media in all the VM's,reinsert the media when done"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.VerifyDataDevice"
+msgstr "Verify data device"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.VerifyDataAndFinalize"
+msgstr "Verify data device for finalize"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.FinishButton"
+msgstr "Finish"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.FinalizeStep"
+msgstr "Complete Installation Step"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.Finalize"
+msgstr "Press Finish to complete the installation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.VerifyDataOk"
+msgstr "Verify data device Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.VerifyDataError"
+msgstr "Verify data device Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.VotingMachineInstallationWizardWidget.ErrorWritingToken"
+msgstr "Error Writing Card, Please Reinsert The Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.WriterInfo"
+msgstr "Fill Wirter's Info"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.AddNote"
+msgstr "Add Note"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.PresidentNote"
+msgstr "President Note: "
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.WriteNote"
+msgstr "Write Note"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteWidget.Name"
+msgstr "Name: "
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteWidget.PresidentNote"
+msgstr "President Note"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteWidget.NormalNote"
+msgstr "Expert Note"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.CreateNote"
+msgstr "Create New Note"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.ConfirmNotes"
+msgstr "Confirm Notes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.CloseNoteRegisterWidget.RegisterMinimunNotes"
+msgstr "You Need To Register Minimun %1 Notes."
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.Description"
+msgstr "Report Description"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.IncidentDate"
+msgstr "Incident Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.Technicians"
+msgstr "Technician's Name"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.TechniciansLast"
+msgstr "Technicians Last Name"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.Activity"
+msgstr "Activity"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.AdditionalInfo"
+msgstr "Additional Info"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.PersonalArrival"
+msgstr "Personal Arrival Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportDialogWidget.IncidentSolution"
+msgstr "Incident Solution Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.Description"
+msgstr "Description"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.IncidentDate"
+msgstr "Incident Date"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.Technicians"
+msgstr "Technicians"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.IncidentSolved"
+msgstr "Incident Solved"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.Activity"
+msgstr "Activity"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.AdditionalInfo"
+msgstr "Additional Info"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.PersonalArrival"
+msgstr "Technical Arrival"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportTreeView.IncidentSolution"
+msgstr "Solution Date"
+
+#. the resources has "Functionality.IncidentReportFunctionality" to avoid conflicts in po
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.AddNewReport"
+msgstr "Add New Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.SaveReport"
+msgstr "Save Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.ModifyReport"
+msgstr "Modify Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.CompleteReport"
+msgstr "Complete Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.DeleteReport"
+msgstr "Delete Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.VisualizeReport"
+msgstr "Visualize Report"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportWidget.ModifiedReport"
+msgstr "Report modified"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportWidget.AddedReport"
+msgstr "Report added"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.WrongHours"
+msgstr "Wrong Hours Format"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.IncompleteData"
+msgstr "Incomplete Data To Create A Report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportWidget.DeletedReport"
+msgstr "Report deleted"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.IncidentReportWidget.CompletedReport"
+msgstr "Report completed"
+
+msgid "Smartmatic.SAES.GUI.Functionality.IncidentReportFunctionality.IncompleteDataSaved"
+msgstr "Incomplete Date To Save A Report"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.Title"
+msgstr "Insert ID of Person"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.Back"
+msgstr "Back"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.Accept"
+msgstr "Accept"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.ActionOne"
+msgstr "ActionOne"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.ActionTwo"
+msgstr "ActionTwo"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.ActionThree"
+msgstr "ActionThree"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.Comment"
+msgstr "Comment"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.Title"
+msgstr "Info Title"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.FirstName"
+msgstr "FirstName"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.LastName"
+msgstr "LastName"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.ActionOne"
+msgstr "ActionOne"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.ActionTwo"
+msgstr "ActionTwo"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.ActionThree"
+msgstr "ActionThree"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.Yes"
+msgstr "Yes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterInfoWidget.No"
+msgstr "No"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PoliceNoteRegisterWidget.CreateNote"
+msgstr "Create New Note"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.Phone"
+msgstr "Phone Number"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.AllJournal"
+msgstr "All Journal"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.InitJournal"
+msgstr "Init (hh:mm)"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.EndJournal"
+msgstr "End (hh:mm)"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.BureauAssignedLabel"
+msgstr "Bureau Assigned?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.AcceptDesignationLabel"
+msgstr "Accept?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.ImpugnationReason"
+msgstr "Reason"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerMemberRegisterWidget.CleanButton"
+msgstr "Clean Button"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerDialogWidget.Account"
+msgstr "Account"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerDialogWidget.Party"
+msgstr "Party"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.PresidentId"
+msgstr "Insert President ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.SecretaryId"
+msgstr "Insert Secretary ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.AssistentId"
+msgstr "Insert Assistent ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.WitnessId"
+msgstr "Insert Witness ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.PoliceId"
+msgstr "Insert Police ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.AssistantSecretaryId"
+msgstr "Insert Assistant Secretary ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.DeputyPresidentId"
+msgstr "Insert Deputy President ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.DeputySecretaryId"
+msgstr "Insert Deputy Secretary ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.DeputyAssistentId"
+msgstr "Insert Deputy Assistent ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.DeputyWitnessId"
+msgstr "Insert Deputy Witness ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.DeputyAssistantSecretaryId"
+msgstr "Insert Deputy Assistant Secretary ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerIDCardWidget.Deputy"
+msgstr "Insert Deputy ID Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerMemberRegisterWidget.CleanedSelections"
+msgstr "Cleaned Selections"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerDialogWidget.Member"
+msgstr "Member"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerMemberWidget.ClickToAdd"
+msgstr "Click Here To Add PollWorker"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.President"
+msgstr "President"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.Secretary"
+msgstr "Secretary"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.Assistent"
+msgstr "Assistent"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.Witness"
+msgstr "Witness"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.Police"
+msgstr "Police"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.AssistantSecretary"
+msgstr "Assistant Secretary"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.DeputyPresident"
+msgstr "Deputy President"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.DeputySecretary"
+msgstr "Deputy Secretary"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.DeputyAssistent"
+msgstr "Deputy Assistent"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.DeputyWitness"
+msgstr "Deputy Witness"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.DeputyAssistantSecretary"
+msgstr "Deputy Assistant Secretary"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerRegisterWidget.Deputy"
+msgstr "Deputy"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerDialogWidget.FirstName"
+msgstr "First Name"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerDialogWidget.LastName"
+msgstr "Last Name"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.PollWorkerDialogWidget.PhoneNumber"
+msgstr "Phone:"
+
+msgid "Smartmatic.SAES.GUI.Widgets.StatisticCounterRegisterWidget.ConfirmStatistics"
+msgstr "Confirm Statistics"
+
+msgid "Smartmatic.SAES.GUI.Widgets.StatisticCounterRegisterWidget.ViewAllTabs"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.StatisticCounterRegisterWidget.NextToAdvance"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.StatisticCounterRegisterWidget.FieldError"
+msgstr "Statistic file error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.StatisticCounterRegisterWidget.ErrorMessage"
+msgstr "An Error Occurred Please Contact Technical Personnel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.InstallationPackageNumberOfCards"
+msgstr "Installation Package Number Of Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.InstallationPackageSparePrintingRolls"
+msgstr "Installation Package Spare Printing Rolls"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.VoteMachines"
+msgstr "Vote Machines"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalActivatedCards"
+msgstr "Total Activated Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalActivatedOfficialCards"
+msgstr "Total Activated Official Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalActivatedDemoCards"
+msgstr "Total Activated Demo Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalSecurityCopyCards"
+msgstr "Total Security Copy Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalBelgianActivatedCards"
+msgstr "Total Belgian Activated Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalEuropeanActivatedCards"
+msgstr "Total European Activated Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalBelgianActivatedOfficialCards"
+msgstr "Total Belgian Activated Official Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalEuropeanActivatedOfficialCards"
+msgstr "Total European Activated Official Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalBelgianActivatedDemoCards"
+msgstr "Total Belgian Activated Demo Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalEuropeanActivateDemoCards"
+msgstr "Total European Activate Demo Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalIssueCards"
+msgstr "Total Issue Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalOfficialVotesReceived"
+msgstr "Total Official Votes Received"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalDemoVotesReceived"
+msgstr "Total Demo Votes Received"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalReadingIssuesVotesReceived"
+msgstr "Total Reading Issues Votes Received"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalAnnulledVotesByRevelation"
+msgstr "Total Annulled Votes By Revelation"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalProxyVotes"
+msgstr "Total Proxy Votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.TotalAnnulledVotes"
+msgstr "Total Annulled Votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.AdditionalHoursToVote"
+msgstr "Additional Hours To Vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.VotersWhichDamagedCards"
+msgstr "Voters Which Damaged Cards"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.StatisticCounterWidget.VotersWhichCouldNotSeeVotes"
+msgstr "Voters Which Could Not See Votes"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.InfoDisability"
+msgstr "Do you doubt dissability?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.InfoApproved"
+msgstr "Do you approve voting?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.Accept"
+msgstr "Accept"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.Comments"
+msgstr "Comments"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.IncompleteData"
+msgstr "Incomplete Data"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.InfoOfVoter"
+msgstr "Info of Voter"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.InfoOfAssistant"
+msgstr "Info of Assistant"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.InfoOfAccompanist"
+msgstr "Info of Accompanist"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledQuestionWidget.Question"
+msgstr "Would you like to register an assisted voting or an accompanied voting?"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledQuestionWidget.Assisted"
+msgstr "Assisted"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledQuestionWidget.Accompanied"
+msgstr "Accompanied"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.Assisted"
+msgstr "Assisted"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledRegisterInfoWidget.Assistant"
+msgstr "Assistent"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledInfoWidget.Accompanied"
+msgstr "Accompanied"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledRegisterInfoWidget.Accompanist"
+msgstr "Accompanist"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledRegisterInfoWidget.Voter"
+msgstr "Voter"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledRegisterInfoWidget.Disabled"
+msgstr "Disabled"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledRegisterInfoWidget.Approved"
+msgstr "Approved"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.DisabledYes"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.DisabledNo"
+msgstr "No Ok"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.DisabledNone"
+msgstr "None"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.ApprovedYes"
+msgstr "Approved"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.ApprovedNo"
+msgstr "Rejected"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PBReports.VotingForDisabledIDInfoWidget.ApprovedNone"
+msgstr "None"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.WaitPrintingTicket"
+msgstr "Wait until the vote has been printed"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ErrorPrinting"
+msgstr "Error Printing"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.PrintVoteWidget.WaitPrintingTicket"
+msgstr "Wait until the vote has been printed"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.RemoveCardWidget.PleaseRemoveTheCard"
+msgstr "Please, Remove the Card"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PleaseRemoveTheCard"
+msgstr "Please, Remove the Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CustomAttributeSelection"
+msgstr "Custom Attribute Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteQuestion"
+msgstr "Do you want to vote NULL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteHeader"
+msgstr "Blank vote header"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteFooter"
+msgstr "Blank vote footer"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteHeaderConfirmation"
+msgstr "Blank Vote Header Reconfirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteFooterConfirmation"
+msgstr "Blank Vote Footer Reconfirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteNullButton"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteNormalButton"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteConfirmation"
+msgstr "Do you REALLY want to vote NULL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NormalVoteConfirmation"
+msgstr "Do you want to vote NORMAL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReconfirmButtonText"
+msgstr "Confirm"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.RetryButtonText"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteQuestion.Demo"
+msgstr "Do you want to vote NULL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteHeader.Demo"
+msgstr "Blank vote header"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteFooter.Demo"
+msgstr "Blank vote footer"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteHeaderConfirmation.Demo"
+msgstr "Blank Vote Header Reconfirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteFooterConfirmation.Demo"
+msgstr "Blank Vote Footer Reconfirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteNullButton.Demo"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteNormalButton.Demo"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteConfirmation.Demo"
+msgstr "Do you REALLY want to vote NULL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NormalVoteConfirmation.Demo"
+msgstr "Do you want to vote NORMAL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReconfirmButtonText.Demo"
+msgstr "Confirm"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.RetryButtonText.Demo"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteQuestion.Recovery"
+msgstr "Do you want to vote NULL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteHeader.Recovery"
+msgstr "Blank vote header"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteFooter.Recovery"
+msgstr "Blank vote footer"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteHeaderConfirmation.Recovery"
+msgstr "Blank Vote Header Reconfirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteFooterConfirmation.Recovery"
+msgstr "Blank Vote Footer Reconfirmation"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteNullButton.Recovery"
+msgstr "Null Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteNormalButton.Recovery"
+msgstr "Normal Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BlankVoteConfirmation.Recovery"
+msgstr "Do you REALLY want to vote NULL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.NormalVoteConfirmation.Recovery"
+msgstr "Do you want to vote NORMAL?"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ReconfirmButtonText.Recovery"
+msgstr "Confirm"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.RetryButtonText.Recovery"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.LabelPreviewCloseQuestion"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ButtonBackPreview"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsDemo"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsOfficial"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsRecovery"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsSimulated"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.BarcodeErrorTryAgain"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.VoteStatisticsWidget.VotesStatisticsTitle"
+msgstr "Statistics"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.VoteStatisticsWidget.CustomAttributeLabelText"
+msgstr "%2"
+
+msgid "Smartmatic.SAES.GUI.Widgets.Voting.VotingExperienceValidationWidget.GeneratePartyAndBallot"
+msgstr "Generate Party And Ballot"
+
+msgid "Smartmatic.SAES.GUI.Functionality.VotingExperienceValidationFunctionality.GenerateAll"
+msgstr "Generate All"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ChecksumErrorLabel"
+msgstr "Error On Recovery Vote"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterErrorOnVote"
+msgstr "Error on printing"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterNearEndOfPaper"
+msgstr "Error on printing"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CustomAttributeQuestionFormat"
+msgstr ""
+"%1 \n"
+" %2"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterPartySelection"
+msgstr "Confirm Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ContestWelcomeFormat"
+msgstr ""
+"%1 \n"
+" %2"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterBallotSelection"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessage"
+msgstr "Please confirm your selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageHeader"
+msgstr "Please confirm your selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageFooter"
+msgstr "Please Select a Language (Footer)"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageBackButton"
+msgstr "Cancel Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageAcceptButton"
+msgstr "Cancel Language"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience"
+msgstr "TimeOut Voting Experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutEndVotingExperience"
+msgstr "TimeOut Voting Experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BottomMessage"
+msgstr "BOTTOM MESSAGE"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterErrorOnSmartcardRemoved"
+msgstr "Printer Error Smartcard Removed Report"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LoadingBallotOption"
+msgstr "Loading Ballots"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CustomAttributeQuestionFormat.Demo"
+msgstr ""
+"%1 \n"
+" %2"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterPartySelection.Demo"
+msgstr "Confirm Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ContestWelcomeFormat.Demo"
+msgstr ""
+"%1 \n"
+" %2"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterBallotSelection.Demo"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessage.Demo"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageHeader.Demo"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageFooter.Demo"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageBackButton.Demo"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageAcceptButton.Demo"
+msgstr "Accept"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience.Demo"
+msgstr "TimeOut Voting Experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterErrorOnVote.Demo"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutEndVotingExperience.Demo"
+msgstr "TimeOut Voting Experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BottomMessage.Demo"
+msgstr "BOTTOM MESSAGE"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.WaitPrintingTicket.Demo"
+msgstr "Wait until the vote has been printed"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BendPrintedTicket.Demo"
+msgstr "Please fold your printed ticket"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterErrorOnSmartcardRemoved.Demo"
+msgstr "Printer Error Smartcard Removed Report DEMO"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LoadingBallotOption.Demo"
+msgstr "Loading Ballots"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CustomAttributeQuestionFormat.Recovery"
+msgstr ""
+"%1 \n"
+" %2"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterPartySelection.Recovery"
+msgstr "Confirm Selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ContestWelcomeFormat.Recovery"
+msgstr ""
+"%1 \n"
+" %2"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.FooterBallotSelection.Recovery"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessage.Recovery"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageHeader.Recovery"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageFooter.Recovery"
+msgstr "Confirm the selection"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageBackButton.Recovery"
+msgstr "Cancel"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ConfirmSelectionMessageAcceptButton.Recovery"
+msgstr "Accept"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutVotingExperience.Recovery"
+msgstr "TimeOut Voting Experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterErrorOnVote.Recovery"
+msgstr "%1 - %5"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.TimeOutEndVotingExperience.Recovery"
+msgstr "TimeOut Voting Experience"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BottomMessage.Recovery"
+msgstr "BOTTOM MESSAGE"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.WaitPrintingTicket.Recovery"
+msgstr "Wait until the vote has been printed"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.BendPrintedTicket.Recovery"
+msgstr "Please fold your printed ticket"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterErrorOnSmartcardRemoved.Recovery"
+msgstr "Printer Error Smartcard Removed Report RECOVERY"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.LoadingBallotOption.Recovery"
+msgstr "Loading Ballots"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.ErrorWritingCard"
+msgstr "Error Writing Card"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.SmartCardExtracted"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CardNotExtracted"
+msgstr "Card Not Extracted"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.SimulateCard"
+msgstr "Simulate Card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCard"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardOrScanVote"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardAndBarcodeNotFound"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ReconfigureBarcode"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ValidatingCardInserted"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardCorrectInsertionIndication"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardNotProperlyInserted"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Windows.ChooseOptionWindow.Title"
+msgstr "Choose Option Window"
+
+msgid "Smartmatic.SAES.GUI.Windows.InitialCalibWindow.Title"
+msgstr "Initialization Window"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingMachineInstallationWizardWindow.Title"
+msgstr "VM Installation Window"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PrinterError"
+msgstr "Printer Error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorInfoVotingCardData"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.AlarmActivated"
+msgstr "Alarm Activated"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterNearEndOfPaperAfterVote"
+msgstr "Error on printing"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.AlarmCardUsed"
+msgstr "Alarm Card Used"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardValidityPeriodExpired"
+msgstr "Card validity period Has been expired"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorWriteCard"
+msgstr "Error writing card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CryptoError"
+msgstr "Crypto Error"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.UnexpectedAlarm"
+msgstr "Unexpected Alarm"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.PrinterNearEndOfPaperBeforeVote"
+msgstr "Error on printing"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.AlarmBoxDisconnected"
+msgstr "AlarmBox Disconnected"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.AlarmBoxConnected"
+msgstr "AlarmBox Connected"
+
+msgid "Smartmatic.SAES.GUI.Windows.VotingWindow.CardReaderUnresponsive"
+msgstr "Card Reader Unresponsive"
+
+#. french resource
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardUsedFR"
+msgstr "Alarm Card Used"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PrinterErrorFR"
+msgstr "Printer Error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorWriteCardFR"
+msgstr "Error writing card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorReadingCardFR"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardFR"
+msgstr "Please Insert Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsDemoFR"
+msgstr "This Vote is marked as a demo vote."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ValidatingCardInsertedFR"
+msgstr "Validating the inserted card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorInfoVotingCardDataFR"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardValidityPeriodExpiredFR"
+msgstr "Card validity period Has been expired"
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsOfficialFR"
+msgstr "This Vote is marked as an official vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsSimulatedFR"
+msgstr "This Vote is marked as a simulated vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsRecoveryFR"
+msgstr "This Vote is marked as a recovery vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.BarcodeErrorTryAgainFR"
+msgstr ""
+"The decoding of this Barcode failed.\n"
+" Please try again"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CriticalAlarmCardNotRemoveFR"
+msgstr "Critical alarm card not remove"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardOrScanVoteFR"
+msgstr "Please Insert Card or Scan a vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardAndBarcodeNotFoundFR"
+msgstr "Please Insert Card. No reader detected to scan vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ReconfigureBarcodeFR"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardCorrectInsertionIndicationFR"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardNotProperlyInsertedFR"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.LabelPreviewCloseQuestionFR"
+msgstr "Do You Want To Close The Vote Preview? FR"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ButtonBackPreviewFR"
+msgstr ""
+
+#. netherland resource
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardUsedNL"
+msgstr "Alarm Card Used"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PrinterErrorNL"
+msgstr "Printer Error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorWriteCardNL"
+msgstr "Error writing card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorReadingCardNL"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardNL"
+msgstr "Please Insert Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsDemoNL"
+msgstr "This Vote is marked as a demo vote."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ValidatingCardInsertedNL"
+msgstr "Validating the inserted card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorInfoVotingCardDataNL"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardValidityPeriodExpiredNL"
+msgstr "Card validity period Has been expired"
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsOfficialNL"
+msgstr "This Vote is marked as an official vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsSimulatedNL"
+msgstr "This Vote is marked as a simulated vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsRecoveryNL"
+msgstr "This Vote is marked as a recovery vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.BarcodeErrorTryAgainNL"
+msgstr ""
+"The decoding of this Barcode failed.\n"
+" Please try again"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CriticalAlarmCardNotRemoveNL"
+msgstr "Critical alarm card not remove"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardOrScanVoteNL"
+msgstr "Please Insert Card or Scan a vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardAndBarcodeNotFoundNL"
+msgstr "Please Insert Card. No reader detected to scan vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ReconfigureBarcodeNL"
+msgstr "Alarm Card Used"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardCorrectInsertionIndicationNL"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardNotProperlyInsertedNL"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.LabelPreviewCloseQuestionNL"
+msgstr "Do You Want To Close The Vote Preview? NL"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ButtonBackPreviewNL"
+msgstr "Back NL"
+
+#. deutsch resource
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardUsedDE"
+msgstr "Alarm Card Used"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PrinterErrorDE"
+msgstr "Printer Error"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorWriteCardDE"
+msgstr "Error writing card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorReadingCardDE"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardDE"
+msgstr "Please Insert Card"
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsDemoDE"
+msgstr "This Vote is marked as a demo vote."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ValidatingCardInsertedDE"
+msgstr "Validating the inserted card"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorInfoVotingCardDataDE"
+msgstr "Error reading card, please check the validity of the data."
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardValidityPeriodExpiredDE"
+msgstr "Card validity period Has been expired"
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsOfficialDE"
+msgstr "This Vote is marked as an official vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsSimulatedDE"
+msgstr "This Vote is marked as a simulated vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsRecoveryDE"
+msgstr "This Vote is marked as a recovery vote."
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.BarcodeErrorTryAgainDE"
+msgstr ""
+"The decoding of this Barcode failed.\n"
+" Please try again"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CriticalAlarmCardNotRemoveDE"
+msgstr "Critical alarm card not remove"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardOrScanVoteDE"
+msgstr "Please Insert Card or Scan a vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardAndBarcodeNotFoundDE"
+msgstr "Please Insert Card. No reader detected to scan vote"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ReconfigureBarcodeDE"
+msgstr "Alarm Card Used"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardCorrectInsertionIndicationDE"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardNotProperlyInsertedDE"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.LabelPreviewCloseQuestionDE"
+msgstr "Do You Want To Close The Vote Preview? DE"
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ButtonBackPreviewDE"
+msgstr "Back DE"
+
+#. spanish resource
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardUsedES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PrinterErrorES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorWriteCardES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorReadingCardES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsDemoES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ValidatingCardInsertedES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorInfoVotingCardDataES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardValidityPeriodExpiredES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsOfficialES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsSimulatedES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsRecoveryES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.BarcodeErrorTryAgainES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CriticalAlarmCardNotRemoveES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardOrScanVoteES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardAndBarcodeNotFoundES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ReconfigureBarcodeES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardCorrectInsertionIndicationES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardNotProperlyInsertedES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.LabelPreviewCloseQuestionES"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ButtonBackPreviewES"
+msgstr ""
+
+#. english resource
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardUsedEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PrinterErrorEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorWriteCardEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorReadingCardEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsDemoEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ValidatingCardInsertedEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ErrorInfoVotingCardDataEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardValidityPeriodExpiredEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsOfficialEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsSimulatedEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.VoteMarkedAsRecoveryEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Functionality.WaitingCardWidget.BarcodeErrorTryAgainEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CriticalAlarmCardNotRemoveEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardOrScanVoteEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.PleaseInsertCardAndBarcodeNotFoundEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ReconfigureBarcodeEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardCorrectInsertionIndicationEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.CardNotProperlyInsertedEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.LabelPreviewCloseQuestionEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Widgets.WaitingCardWidget.ButtonBackPreviewEN"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Operation.GenerateXMLImage.MessageErrorCustomAttributeDefinitionFromContestClass"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Operation.GenerateXMLImage.TitleErrorCustomAttributeDefinitionFromContestClass"
+msgstr ""
+
+msgid "Smartmatic.SAES.GUI.Operation.VotingWidgetManager.CreatingVotingMaps"
+msgstr "Creating Voting Maps"
+
+#~ msgid "Smartmatic.SAES.GUI.Functionality.CloseVotationFunctionality.ClosingVotation"
+#~ msgstr "Closing Votation"
+
+#~ msgid "Smartmatic.SAES.GUI.Functionality.VoteDemoFunctionality.CustomAttributeSelection"
+#~ msgstr "Custom Attribute Selection"

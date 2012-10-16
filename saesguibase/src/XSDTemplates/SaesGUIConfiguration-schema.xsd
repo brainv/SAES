@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.smartmatic.com/SaesGUIConfiguration" xmlns:mstns="http://www.smartmatic.com/SaesGUIConfiguration/SaesGUIConfiguration-schema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="SaesGUIConfiguration" targetNamespace="http://www.smartmatic.com/SaesGUIConfiguration">
+   <xsd:complexType name="SaesGUIConfiguration">
+	   <xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="StartConfiguration" type="StartConfiguration"/>							
+	   	<xsd:element maxOccurs="1" minOccurs="1" name="BeidCardUseThread" type="xsd:boolean"/>	
+	   	<xsd:element maxOccurs="1" minOccurs="1" name="BeidCardShowRemoveMessage" type="xsd:boolean"/>	
+	    <xsd:element maxOccurs="1" minOccurs="1" name="BeidShowIdCard" type="xsd:boolean"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="PMInstallationWidgetShowPrintPasswordButton" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ShowBeidEntry" type="ShowBeidEntryTypeConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="VotingMachine" type="MenuWidgetConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperience" type="VotingExperienceConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="FormsCommonControls" type="FormsCommonControlsConfigurations"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ReportPrintingWidget" type="ReportPrintingWidgetConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ForceToLoadFrame" type="xsd:boolean"/>		
+		<xsd:element maxOccurs="1" minOccurs="1" name="VMInstallationConfiguration" type="VMInstallationWidgetConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ExitMessageLabelConfiguration" type="XMLLabelConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="BlockMemoryBehaviorMenu" type="MemoryBlock"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SendBarcodeConfigurationOnReconnectWidget" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="PollingCardConfiguration" type="PollingCardConfiguration"/>						
+		<xsd:element maxOccurs="1" minOccurs="1" name="AlarmBoxMonitorConfiguration" type="AlarmBoxMonitorConfiguration"/>						
+  
+		<xsd:element name="SmartCardReaderDiagnosisConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeoutToFail" type="xsd:nonNegativeInteger"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="ChangeHourFunctionalityConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TitlesLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrincipalTitleLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonArrowWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonArrowHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonValidateWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonValidateHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="EntryWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="EntryHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="FontEntrySize" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TableVerticalSpacing" type="xsd:nonNegativeInteger"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="FunctionalitiesConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="FunctionalityConfiguration">
+						<xsd:complexType>
+							<xsd:sequence>	
+								<xsd:element maxOccurs="1" minOccurs="1" name="FunctionalityDescriptor" type="MenuOptionType"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="FunctionalityExitToAuthentication" type="xsd:boolean"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="ChallengeIsEnable" type="xsd:boolean"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="ChallengePasswordSource" type="ChallengePasswordSourceEnum"/>
+								<xsd:element maxOccurs="1" minOccurs="0" name="ElectionBlockStatus" type="ElectionBlockStatusList"/>
+								<xsd:element maxOccurs="1" minOccurs="0" name="Help" type="HelpConfiguration"/>
+								<xsd:element maxOccurs="1" minOccurs="0" name="NecessaryDevicesConfiguration" type="NecessaryDevicesConfiguration"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="ShowExitMessage" type="xsd:boolean"/>
+								<xsd:element maxOccurs="1" minOccurs="0" name="BlockMemoryBehavior" type="MemoryBlock"/>
+							</xsd:sequence>				
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>				
+			</xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="RunFunctionalityConfiguration">
+			 <xsd:complexType>
+	   					<xsd:sequence>	
+							<xsd:element maxOccurs="1" minOccurs="1" name="FunctionalityDescriptor" type="MenuOptionType"/>
+						</xsd:sequence>								
+			</xsd:complexType>
+		</xsd:element>	
+		<xsd:element name="InstallationWizardConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="AskForId" type="xsd:boolean"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="IncomePassphrase" type="IncomePassphraseEnum"/>	
+				</xsd:sequence>				
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="PMWidgetConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowImages" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LoginCaseSensitiveConfiguration" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PasswordWidgetConfiguration" type="EntryDividedWidgetConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ContingencyWidgetConfiguration" type="EntryDividedWidgetConfiguration"/>
+				</xsd:sequence>				
+			</xsd:complexType>
+		</xsd:element>			
+		<xsd:element name="CardActivatorFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="CustomAttributesPresentation" type="CustomAttributesPresentationType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SelectedColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UnSelectedColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="MinimumDemoCounterToAllowActivation" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="AssistedActivationBySelection" type="xsd:boolean"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowConfirmationButtons" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CardStatisticsConfiguration" type="ActivatedCardStatisticsConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsTitleLabelConfiguration" type="XMLLabelConfiguration"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsTitleColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ActivatedAfterInsertingCard" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowAudioCheck" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CardActivationTotalCountConfiguration" type="CountConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="CardRecoveryFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="MinimumDemoCounterToAllowActivation" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowConfirmationButtons" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CleanOnCorrectActivation" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CleanOnIncorrectActivation" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CardStatisticsConfiguration" type="ActivatedCardStatisticsConfiguration"/>					
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsTitleLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsTitleColor" type="ColorConfiguration"/>	
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="VoteDemoFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="PersistVote" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowBarcodeInPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeInParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeOutParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LabelSelectedConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LabelUnselectedConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TitleFontConfiguration" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="CardAssistedActivationFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="MinimumDemoCounterToAllowActivation" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PreviewTitlesColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PreviewContentsColor" type="ColorConfiguration"/>		
+					<xsd:element maxOccurs="1" minOccurs="1" name="InstrunctionLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="NameLabelConfiguration" type="XMLLabelConfiguration"/>										
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="PrinterDiagnosisConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrintGraphicalForPresident" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DoNotCheckBeforePrintDiagnostic" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonsWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonsHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonsFontSize" type="xsd:nonNegativeInteger"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+ 		<xsd:element name="GeneralDiagnosisConfiguration">
+    			<xsd:complexType>
+	   			<xsd:sequence>	
+						<xsd:element maxOccurs="1" minOccurs="1" name="DiagnosisLabelConfiguration" type="XMLLabelConfiguration"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="DiagnosisFooterLabelConfiguration" type="XMLLabelConfiguration"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="ResultErrorLabelConfiguration" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+  		</xsd:complexType>
+ 		 </xsd:element>
+ 		 <xsd:element name="TouchScreenCalibrationConfiguration">
+    			<xsd:complexType>
+	   			<xsd:sequence>	
+						<xsd:element maxOccurs="1" minOccurs="1" name="NumberOfCalibrationPoints" type="xsd:integer"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="HeightOfButtons" type="xsd:integer"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="WidthOfButtons" type="xsd:integer"/>
+				</xsd:sequence>
+  				</xsd:complexType>
+ 		 </xsd:element>
+ 		 
+ 		 	<xsd:element maxOccurs="1" minOccurs="1" name="EventSoundsConfiguration">
+		    	<xsd:complexType>
+		    		<xsd:sequence>
+						 <xsd:element maxOccurs="1" minOccurs="1" name="PMInstalationSound" type="xsd:string"/>	    
+						 <xsd:element maxOccurs="1" minOccurs="1" name="VMInstalationSound" type="xsd:string"/>	    
+						 <xsd:element maxOccurs="1" minOccurs="1" name="AuthenticationValidPasswordSound" type="xsd:string"/>	    
+						 <xsd:element maxOccurs="1" minOccurs="1" name="AuthenticationInvalidPasswordSound" type="xsd:string"/>
+						 <xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceSound" type="xsd:string"/>	
+						 <xsd:element maxOccurs="1" minOccurs="1" name="BallotOptionSelectSound" type="xsd:string"/>	    	
+						 <xsd:element maxOccurs="1" minOccurs="1" name="PartySelectSound" type="xsd:string"/>
+						 <xsd:element maxOccurs="1" minOccurs="1" name="DiagnosisSound" type="xsd:string"/>	    			 			 				     
+ 		    		 </xsd:sequence>
+		    	</xsd:complexType>
+		  </xsd:element>
+		  
+		<xsd:element name="BarcodeDiagnosisConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeOut" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StringToEncode" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrintAutomaticBarcode" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeCommandsName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SkipPrinterError" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeInParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeOutParams" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+
+		 <xsd:element name="BrightnessDiagnosisConfiguration">
+    			<xsd:complexType>
+	   			<xsd:sequence>	
+	   					<xsd:element maxOccurs="1" minOccurs="1" name="TimeDelayButtons" type="xsd:integer"/>
+				</xsd:sequence>
+  				</xsd:complexType>
+ 		 </xsd:element> 
+
+		 <xsd:element name="AllDiagnosisConfiguration">
+    				<xsd:complexType>
+	   					<xsd:sequence>		   						
+							<xsd:element maxOccurs="unbounded" minOccurs="1" name="DiagnosticToApply" type="DiagnosticType"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="AlarmDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="ContrastDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="CalibrationDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="FlashDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="PrinterDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="SmartcardDiagnosisWaitTime" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="PrinterDiagnosisWaitTimeOnOk" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="PrinterDiagnosisWaitTimeOnCancel" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="CalibrationDiagnosisWaitTimeOnOk" type="xsd:integer"/>
+							<xsd:element maxOccurs="1" minOccurs="1" name="ContrastDiagnosisWaitTimeOnOk" type="xsd:integer"/>
+						</xsd:sequence>
+  					</xsd:complexType>
+ 		 </xsd:element>
+ 		 <xsd:element name="AutomaticWindowConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="DiagnosticToApply" type="DiagnosticType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BlockDiagnostic" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BlockDiagnosticTitle" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BlockDiagnosticButton" type="ButtonConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UseOkButtonOnSomeNonMandatoryDiagnosticFailed" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UseShutDownButtonOnSomeMandatoryDiagnosticFailed" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="AlarmDiagnosisWaitTime" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeDiagnosisWaitTime" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="FlashDiagnosisWaitTime" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrinterDiagnosisWaitTime" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SmartcardDiagnosisWaitTime" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DiagnosticReviewWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DiagnosticReviewHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DiagnosticReviewLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowFooterInAutoDiagnosis" type="xsd:boolean"/>
+				</xsd:sequence>
+			</xsd:complexType>
+ 		 </xsd:element>
+		<xsd:element name="ContingencyCardWidgetConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="RetryButtonConf" type="ButtonConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShutdownButtonConf" type="ButtonConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TitleFontConf" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TextFontConf" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element maxOccurs="1" minOccurs="1" name="IDCardProcessConfiguration" type="IDCardProcessConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="BEIDCardWidgetConfiguration" type="BEIDCardWidgetConfiguration"/>
+		<xsd:element name="MemoryStateWidgetConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonDelay" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonConf" type="ButtonConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TextFontConf" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="HelpWidgetConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrintButtonConf" type="ButtonConfiguration"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="WaitingForCardWindowConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowSimulateButton" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowBackButton" type="xsd:boolean"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ViewPrevious" type="xsd:boolean"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="AllowVotePreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UsePrintPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UseVerticalTableInPreview" type="xsd:boolean"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="PreviewVoteLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PreviewVoteButtonConfiguration" type="ButtonConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeoutPreviewVote" type="xsd:integer"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeoutPreviewVoteClose" type="xsd:integer"/>		
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowBarcodeInPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeCommandsName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PreviewLanguageConfig" type="PreviewLanguageConfig"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BlockOnCardInsertionError" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="IsNeopBlockingCondition" type="xsd:boolean"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+ 		 <xsd:element name="LanguageSelectionWindowConfiguration">
+    				<xsd:complexType>
+	   					<xsd:sequence>	
+							<xsd:element maxOccurs="unbounded" minOccurs="1" name="LanguageButton">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element maxOccurs="1" minOccurs="1" name="LanguageCode" type="xsd:string"/>
+										<xsd:element maxOccurs="1" minOccurs="1" name="LanguageImageFile" type="xsd:string"/>										
+									</xsd:sequence>
+  								</xsd:complexType>
+ 						 	</xsd:element>								
+							</xsd:sequence>
+  					</xsd:complexType>
+ 		 </xsd:element>
+ 		 <xsd:element name="StatisticFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="RowsSpacing" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ColumnsSpacing" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonConfiguration" type="ButtonBoxConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TitleLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsLabelConfiguration" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="OpenElectionFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>
+		   			<xsd:element maxOccurs="1" minOccurs="1" name="ShowTitle" type="xsd:boolean"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonConfiguration" type="ButtonBoxConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DialogLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="OpenElectionSteps" type="OpenElectionSteps"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="AuthenticationWindowConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="PasswordLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="AlarmLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="InfoLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="VotingInfoLabelConfiguration" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="DurationWidgetConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="LeaveFieldsBlank" type="xsd:boolean"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="CloseElectionFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonConfiguration" type="ButtonBoxConfiguration"/>
+					<xsd:element maxOccurs="7" minOccurs="1" name="ClosingElectionSteps" type="CloseElectionSteps"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowSignQuestion" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowSignConfirmation" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ContinueCloseOnSignFail" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowConfirmation" type="xsd:boolean"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="ActivationConsolidationFunctionalityConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowTotalVotes" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowOfficialVotes" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowDuplicatesVotes" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowScanMessage" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowBarcodeMessage" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowActivateCards" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SelectedBoxColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UnselectedBoxColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SelectedFontColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UnselectedFontColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LabelSelectedConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LabelUnselectedConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TitleHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TitleFontConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatsConsolidationHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatsConsolidationFontConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatsActivationHeight" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatsActivationFontConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="InstructionFontConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DevicesLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ActivateCardsWithoutBarcode" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidateVoteWithOneMemory" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeInParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeOutParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ScanConsolidationConfiguration" type="ScanConsolidationConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CardActivationTotalCountConfiguration" type="CountConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidationTotalCountConfiguration" type="CountConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidationOfficialCountConfiguration" type="CountConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimerSleepWriteCard" type="xsd:nonNegativeInteger"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+				
+		<xsd:element name="CloseVotationFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="RequestForID" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="MinimumOfficialsActivationForConfirmation" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowConfirmationMessageWhenClosing" type="xsd:boolean"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="InitializationWindowConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+         		    <xsd:element maxOccurs="1" minOccurs="1" name="ContingencyCardEnabled" type="xsd:boolean"/>
+         		    <xsd:element maxOccurs="1" minOccurs="1" name="RemoveContingencyCardTitle" type="XMLLabelConfiguration"/>
+         		    <xsd:element maxOccurs="1" minOccurs="1" name="RemoveContingencyCardText" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="RequestForIDOnPresidentMachineInitialization" type="xsd:boolean"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="IncidentReportFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonConfiguration" type="ButtonBoxConfiguration"/>
+					<xsd:element maxOccurs="8" minOccurs="1" name="IncidentReportConfiguration" type="IncidentReportTreeViewConfiguration"/>
+					<xsd:element maxOccurs="8" minOccurs="1" name="CompleteReportParameters" type="IncidentReportColumn"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowID" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowDeleteConfirmation" type="xsd:boolean"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="PollWorkerRegisterFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ButtonConfiguration" type="ButtonBoxConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowDeleteConfirmation" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="RegisterWidgetConfiguration" type="RegisterWidgetConfiguration" />
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="PollWorkerRegisterConfiguration" type="PollWorkerRegisterConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="CloseNoteRegisterFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element name="AddButtonConf" type="ButtonConfiguration"/>
+					<xsd:element name="NextButtonConf" type="ButtonConfiguration"/>
+					<xsd:element name="AddCancelButtonConf" type="ButtonConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="RegisterWidgetConfiguration" type="RegisterWidgetConfiguration" />
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		 <xsd:element name="VoteConsolidationFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="UsePrintPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UseVerticalTableInPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CounterWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CounterPadding" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowVotingMachineCustomAttribute" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsTitleLabelConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsTitleColor" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowBarcodeInPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidateDemoVotes" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidateSimulatedVotes" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="AuditModeResources" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeInParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeOutParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidationTotalCountConfiguration" type="CountConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConsolidationOfficialCountConfiguration" type="CountConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="PrintPreviewFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="UsePrintPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UseVerticalTableInPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowBarcodeInPreview" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeInParams" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BarcodeOutParams" type="xsd:string"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="LogReportFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrinterMessageTimeout" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PageSize" type="xsd:nonNegativeInteger"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="CloseNotetFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="MinimunNotesToRegister" type="xsd:nonNegativeInteger"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="VotingExperienceValidationScreensFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:all>	
+		   			<xsd:element name="ScreenOnlyFirstBallot" type="xsd:boolean"/>	
+					<xsd:element name="Autorun" type="xsd:boolean"/>
+					<xsd:element name="TimeForStart" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="Autoclose" type="xsd:boolean"/>
+					<xsd:element name="TimeForClose" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="TimeToShow" type="xsd:nonNegativeInteger"/>	
+					<xsd:element name="TimeToHide" type="xsd:nonNegativeInteger"/>	
+					<xsd:element name="TimeAfterCapture" type="xsd:nonNegativeInteger"/>	
+					<xsd:element name="CaptureWholeScreen" type="xsd:boolean"/>
+					<xsd:element name="PartySelImageFormatName" type="xsd:string"/>		
+					<xsd:element name="OptionSelImageFormatName" type="xsd:string"/>																	
+					<xsd:element name="CustomAttrSelImageFormatName" type="xsd:string"/>
+					<xsd:element name="CustomAttrConfImageFormatName" type="xsd:string"/>
+					<xsd:element name="LanguageSelImageFormatName" type="xsd:string"/>
+					<xsd:element name="LanguageSelImageFormatNameConfirmation" type="xsd:string"/>
+					<xsd:element name="SuperNullImageFormatName" type="xsd:string"/>
+					<xsd:element name="SuperNullImageFormatNameConfirmation" type="xsd:string"/>
+					<xsd:element name="PrintImageFormatName" type="xsd:string"/>
+					<xsd:element name="CardRemotionIndImageFormatName" type="xsd:string"/>
+					<xsd:element name="CardRemovedImageFormatName" type="xsd:string"/>
+					<xsd:element name="FoldVoteImageFormatName" type="xsd:string"/>
+					<xsd:element name="NullImageConfirmationFormatName" type="xsd:string"/>
+					<xsd:element name="WelcomeScreenFormatName" type="xsd:string"/>
+					<xsd:element name="ShowDialog" type="xsd:boolean"/>
+					<xsd:element name="ScreensButtonConf" type="ButtonConfiguration"/>
+					<xsd:element name="CheckImageFile" type="xsd:boolean"/>
+					<xsd:element name="ShowFinalMessage" type="xsd:boolean"/>
+				</xsd:all>
+		  </xsd:complexType>
+		  
+		</xsd:element>
+		<xsd:element name="VotingForDisabledFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:all>	
+					<xsd:element name="AddButtonConf" type="ButtonConfiguration"/>
+		   			<xsd:element name="QuestionTitleConfiguration" type="XMLLabelConfiguration"/>
+					<xsd:element name="QuestionButtonConf" type="ButtonConfiguration"/>
+		   			<xsd:element name="InfoTitleConfiguration" type="XMLLabelConfiguration"/>
+		   			<xsd:element name="InfoIDConfiguration" type="XMLLabelConfiguration"/>
+		   			<xsd:element name="InfoTextConfiguration" type="XMLLabelConfiguration"/>
+		   			<xsd:element name="InfoErrorConfiguration" type="XMLLabelConfiguration"/>
+		   			<xsd:element name="TimeOutInfoError" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="AddCancelButtonConf" type="ButtonConfiguration"/>
+					<xsd:element name="RegisterWidgetConfiguration" type="RegisterWidgetConfiguration"/>
+					<xsd:element name="CommentConfig" type="IDProperties"/>
+				</xsd:all>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="PoliceNoteRegisterFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:all>	
+					<xsd:element name="AddButtonConf" type="ButtonConfiguration"/>
+					<xsd:element name="AddCancelButtonConf" type="ButtonConfiguration"/>
+					<xsd:element name="RegisterWidgetConfiguration" type="RegisterWidgetConfiguration"/>
+				</xsd:all>
+		  </xsd:complexType>
+		</xsd:element>
+		<xsd:element name="DataUtilsValidatorFunctionalityConfiguration">
+		 	<xsd:complexType>
+		   		<xsd:all>	
+					<xsd:element name="KeyFile" type="xsd:string"/>
+					<xsd:element name="Separator" type="xsd:string"/>
+					<xsd:element name="PositionCode" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="PositionPassword" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="Columns" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="Width" type="xsd:nonNegativeInteger"/>
+					<xsd:element name="Height" type="xsd:nonNegativeInteger"/>
+				</xsd:all>
+		  </xsd:complexType>
+		</xsd:element>
+		
+			<xsd:element name="ThemesConfiguration">
+			 	<xsd:complexType>
+			   		<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="OfficialThemeConfiguration">
+							<xsd:complexType>
+						   		<xsd:sequence>	
+						   			<xsd:element maxOccurs="1" minOccurs="1" name="VotingWindowButton" type="xsd:string"/>												
+									<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperiencePartyEventbox" type="xsd:string"/>									
+									<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceWindow" type="xsd:string"/>		
+									<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceBallotOptionEventbox" type="xsd:string"/>								
+									<xsd:element maxOccurs="1" minOccurs="1" name="CardActivatorFunctionalityMessage" type="xsd:string"/>						
+									<xsd:element maxOccurs="1" minOccurs="1" name="CardActivatorMessageEventbox" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="CardActivatorFunctionalityEventbox" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="CardActivatorValuesEventbox" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="CardActivatorFunctionalityCenterFrame" type="xsd:string"/>	
+									<xsd:element maxOccurs="1" minOccurs="1" name="EventboxStepBarcode" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="EventboxStepBarcodeTitle" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="EventboxStepCardTitle" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="VoteDemoFunctionalityMessage" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="StandInLabelLabel" type="xsd:string"/>					
+									<xsd:element maxOccurs="1" minOccurs="1" name="StandInLabelEvent" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceSelectBallotOptionWidget" type="xsd:string"/>					
+									<xsd:element maxOccurs="1" minOccurs="1" name="ChangeLanguageMessageWigdetEventbox" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="CustomAttributeComboSelectionsWidgetTitle" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="CustomAttributeCounterWidgetTitle" type="xsd:string"/>					
+									<xsd:element maxOccurs="1" minOccurs="1" name="EventboxChooseWidgetFrame" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperiencePartyWidget" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="PartyWidgetEventbox" type="xsd:string"/> 					
+									<xsd:element maxOccurs="1" minOccurs="1" name="EventboxImageStepInstallationWizard" type="xsd:string"/>					
+									<xsd:element maxOccurs="1" minOccurs="1" name="EventboxStepInstallationWizard" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="ParentKeypadEventbox" type="xsd:string"/>
+									<xsd:element maxOccurs="1" minOccurs="1" name="InfoFrame" type="xsd:string"/>	
+								</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="DemoThemeConfiguration">
+						<xsd:complexType>
+							<xsd:sequence>	
+						   		<xsd:element maxOccurs="1" minOccurs="1" name="VotingWindowButtonDemo" type="xsd:string"/>	
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperiencePartyEventboxDemo" type="xsd:string"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceWindowDemo" type="xsd:string"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceBallotOptionEventboxDemo" type="xsd:string"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="RecoveryThemeConfiguration">
+						<xsd:complexType>
+							<xsd:sequence>	
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingWindowButtonRecovery" type="xsd:string"/>		
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperiencePartyEventboxRecovery" type="xsd:string"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceWindowRecovery" type="xsd:string"/>
+								<xsd:element maxOccurs="1" minOccurs="1" name="VotingExperienceBallotOptionEventboxRecovery" type="xsd:string"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+	
+	<xsd:element name="FunctionalityWizardConfiguration" type="FunctionalityWizardFlowConfiguration"/>
+	
+	</xsd:sequence>		
+  </xsd:complexType>
+
+  <xsd:simpleType name="OpenElectionSteps">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="RegisterNote"/>
+  		<xsd:enumeration value="RequestIDCard"/>
+		<xsd:enumeration value="OpenElection"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+		<xsd:complexType name="ScanConsolidationConfiguration">
+		   		<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ScanPopUpMessageConfiguration" type="ScanPopUpMessageConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="EnabledChangeColor" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BoxColorValid" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BoxColorDuplicate" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="BoxColorBad" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="FontColorValid" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="FontColorDuplicate" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="FontColorBad" type="ColorConfiguration"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TextConfiguration" type="XMLLabelConfiguration"/>
+				</xsd:sequence>
+		  </xsd:complexType>
+			
+		<xsd:complexType name="ScanPopUpMessageConfiguration">
+		   		<xsd:all>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="Visible" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeOut" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="Opacity" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="Width" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="Height" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="X" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="Y" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="Position" type="PositionConfiguration"/>
+				</xsd:all>
+		  </xsd:complexType>
+		
+	<xsd:simpleType name="PositionConfiguration">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="top-right"/>
+			<xsd:enumeration value="top-left"/>
+			<xsd:enumeration value="top-center"/>
+			<xsd:enumeration value="center-right"/>
+			<xsd:enumeration value="center-left"/>
+			<xsd:enumeration value="center-center"/>
+			<xsd:enumeration value="bottom-right"/>
+			<xsd:enumeration value="bottom-left"/>
+			<xsd:enumeration value="bottom-center"/>
+			<xsd:enumeration value="full-screen"/>
+			<xsd:enumeration value="custom"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="TreeColumnConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Resizable" type="xsd:boolean"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MaxWidth" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="MinWidth" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Alignment" type="xsd:double"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:simpleType name="IncidentReportColumn">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Description"/>
+			<xsd:enumeration value="NotificationDate"/>
+			<xsd:enumeration value="NamesOfTechnicians"/>
+			<xsd:enumeration value="ActivityOfTechnicians"/>
+			<xsd:enumeration value="AdditionalObservations"/>
+			<xsd:enumeration value="PersonalArrivalDate"/>
+			<xsd:enumeration value="IncidentSolutionDate"/>
+			<xsd:enumeration value="Complete"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="IncidentReportTreeViewConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IncidentReportColumn" type="IncidentReportColumn"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="IncidentColumnConfiguration" type="TreeColumnConfiguration"/>
+		</xsd:all>
+	</xsd:complexType> 
+  
+	<xsd:complexType name="ButtonConfiguration">
+		<xsd:all>
+			<xsd:element name="ButtonWidth" type="xsd:nonNegativeInteger"/>
+			<xsd:element name="ButtonHeight" type="xsd:nonNegativeInteger"/>
+			<xsd:element name="FontSize" type="xsd:nonNegativeInteger"/>
+		</xsd:all>
+	</xsd:complexType>
+  
+	<xsd:complexType name="ButtonBoxConfiguration">
+		<xsd:all>
+			<xsd:element name="ButtonWidth" type="xsd:nonNegativeInteger"/>
+			<xsd:element name="ButtonHeight" type="xsd:nonNegativeInteger"/>
+			<xsd:element name="Spacing" type="xsd:nonNegativeInteger"/>
+		</xsd:all>
+	</xsd:complexType>
+ 
+  <xsd:complexType name="MenuWidgetConfiguration">
+  	<xsd:sequence>
+		<xsd:element name="FirstLevelWidth" type="xsd:integer"/>
+		<xsd:element name="FirstLevelHeight" type="xsd:integer"/>
+		<xsd:element name="FirstLevelSpacing" type="xsd:integer"/>
+		<xsd:element name="FirstLevelBorderWidth" type="xsd:integer"/>
+		<xsd:element name="FirstLevelFrameWidth" type="xsd:integer"/>
+		<xsd:element name="FirstLevelFrameHeight" type="xsd:integer"/>
+		<xsd:element name="SecondLevelWidth" type="xsd:integer"/>
+		<xsd:element name="SecondLevelHeight" type="xsd:integer"/>
+		<xsd:element name="SecondLevelSpacing" type="xsd:integer"/>
+		<xsd:element name="SecondLevelBorderWidth" type="xsd:integer"/>
+		<xsd:element name="SecondLevelFramePadding" type="xsd:integer"/>
+		<xsd:element name="HasShortcut" type="xsd:boolean"/>
+		<xsd:element name="RootOption" type="MenuOption"/>
+	</xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="MenuOption">
+  	<xsd:sequence>
+		<xsd:element name="NameKey" type="xsd:string"/>
+		<xsd:element name="UntraslatedKey" type="xsd:string"/>
+		<xsd:element name="ImageKey" type="xsd:string"/>
+		<xsd:element name="Code" type="xsd:integer"/>
+		<xsd:element name="MappingKey" type="xsd:integer"/>
+		<xsd:element name="MappingKeyName" type="xsd:string"/>
+		<xsd:element name="OptionType" type="MenuOptionType"/>
+		<xsd:element name="MenuOptions">
+			<xsd:complexType>
+			  	<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="Option" type="MenuOption"/>
+				</xsd:sequence> 
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="MenuOptionType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="XMLMenu"/>
+		<xsd:enumeration value="XMLMOpenElectionFunctionality"/>
+		<xsd:enumeration value="XMLMCloseElectionFunctionality"/>
+		<xsd:enumeration value="XMLMDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMSCReaderDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMPrinterDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMAlarmBoxDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMCalibrationDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMBrightnessDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMBarcodeDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMAllDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMFlashDiagnosisFunctionality"/>
+		<xsd:enumeration value="XMLMChangeHourFunctionality"/>
+		<xsd:enumeration value="XMLMCardGeneratorFunctionality"/>
+		<xsd:enumeration value="XMLMAssistedCardGeneratorFunctionality"/>
+		<xsd:enumeration value="XMLMRecoveryCardGeneratorFunctionality"/>
+		<xsd:enumeration value="XMLMVotingMachineInstallationFunctionality"/>
+		<xsd:enumeration value="XMLMChangeLanguageFunctionality"/>
+		<xsd:enumeration value="XMLMVoteProcessDemoFunctionality"/>
+		<xsd:enumeration value="XMLMPrintPreviewFunctionality"/>
+		<xsd:enumeration value="XMLMIncidentReportFunctionality"/>
+		<xsd:enumeration value="XMLMStatisticsReportFunctionality"/>
+		<xsd:enumeration value="XMLMPollWorkerRegisterFunctionality"/>
+		<xsd:enumeration value="XMLMVotingExperienceValidationFunctionality"/>
+		<xsd:enumeration value="XMLMVoteConsolidationFunctionality"/>
+		<xsd:enumeration value="XMLMCloseVotationFunctionality"/>
+		<xsd:enumeration value="XMLMRegisterPresidentNotesFunctionality"/>
+		<xsd:enumeration value="XMLMMReportPrintingFunctionality"/>
+		<xsd:enumeration value="XMLMLogReportFunctionality"/>
+		<xsd:enumeration value="XMLMShutdowmMachineFunctionality"/>
+		<xsd:enumeration value="XMLMFillAssistedActivationInfoFunctionality"/>
+		<xsd:enumeration value="XMLMActivationConsolidationFunctionality"/>
+		<xsd:enumeration value="XMLMVotingForDisabledFunctionality"/>
+		<xsd:enumeration value="XMLMPoliceNotesFunctionality"/>
+		<xsd:enumeration value="XMLMDataUtilsValidatorFunctionality"/>
+	</xsd:restriction>
+  </xsd:simpleType> 
+  
+	
+	<xsd:simpleType name="CustomAttributesPresentationType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="SelectionWindows"/>
+			<xsd:enumeration value="EventBoxes"/>
+			<xsd:enumeration value="ComboBoxes"/>
+			<xsd:enumeration value="RadioButtons"/>
+		</xsd:restriction>
+	</xsd:simpleType> 
+	
+	<xsd:complexType name="DiagnosticType">
+		<xsd:all/>
+		<xsd:attribute name="Device" type="DiagnosticDevice" use="required"/>
+		<xsd:attribute name="Mandatory" type="xsd:boolean" use="required"/>			
+	</xsd:complexType>
+	<xsd:simpleType name="DiagnosticDevice">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Barcode"/>
+			<xsd:enumeration value="Printer"/>
+			<xsd:enumeration value="AlarmBox"/>
+			<xsd:enumeration value="SmartCard"/>												
+			<xsd:enumeration value="TouchScreenCalibration"/>
+			<xsd:enumeration value="ScreenContrast"/>
+			<xsd:enumeration value="Flash"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+											
+    <xsd:complexType name="VotingExperienceConfiguration">
+  	<xsd:all>
+  		<xsd:element name="SortOptionsAlphabetical" type="xsd:boolean"/>
+  		<xsd:element name="SortLanguagesAlphabetical" type="xsd:boolean"/>
+  		<xsd:element name="DetectCardExtraction" type="xsd:boolean"/>
+  		<xsd:element name="NumberOfExtractionsBeforeStop" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="VotingWindow" type="VotingWindowConfiguration"/>
+  		<xsd:element name="PartySelection" type="PartySelectionConfiguration"/>
+  		<xsd:element name="BallotOptionSelection" type="BallotOptionSelectionConfiguration"/>
+  		<xsd:element name="ReferendumSelection" type="ReferendumConfiguration"/>
+  		<xsd:element name="CustomAtributtesWindow" type="CustomAtributtesWindowConfiguration"/>
+  		<xsd:element name="ConfirmationWindow" type="ConfirmationWindowConfiguration"/>
+  		<xsd:element name="VotingExperienceLabel" type="VotingExperienceLabelConfiguration"/>
+  		<xsd:element name="TimeOutCard" type="xsd:integer"/>
+  		<xsd:element name="TimeToShowFinalMessage" type="xsd:integer"/>
+  		<xsd:element name="RemoveCardFirst" type="xsd:boolean"/>
+  		<xsd:element maxOccurs="1" minOccurs="1" name="MarkCardAsUsed" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="CheckSumFailTimerMessage" type="xsd:nonNegativeInteger"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="CheckSumFailOption">
+			<xsd:simpleType>
+		   		<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="CleanSelections"/>
+					<xsd:enumeration value="MaintainSelections"/>
+					<xsd:enumeration value="CloseVotingExperience"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:element>
+	</xsd:all>
+  </xsd:complexType>
+  
+  	<xsd:complexType name="PartySelectionConfiguration">
+  	<xsd:all>
+		<xsd:element name="EnableClick" type="xsd:boolean"/>
+		<xsd:element name="UseMaxPartyNumerFromAllContest" type="xsd:boolean"/>
+  		<xsd:element name="ShowNullParty" type="xsd:boolean"/>  	
+  		<xsd:element name="ShowNullButton" type="xsd:boolean"/>
+  		<xsd:element name="PartyButton" type="ViewButtonConfiguration"/>
+  		<xsd:element name="ExpandButton" type="ExpandButtonConfiguration"/>
+  		<xsd:element name="SeparateButton" type="PartySeparateButtonConfiguration"/>
+		<xsd:element name="FrameBottomHeight" type="xsd:integer"/>
+  		<xsd:element name="Columns" type="xsd:integer"/>
+  		<xsd:element name="SizeToColumns" type="xsd:integer"/>
+		<xsd:element name="ImageRelation" type="xsd:double"/>
+  		<xsd:element name="PartiesMargin" type="xsd:integer"/>
+  		<xsd:element name="PartyWidget" type="PartyWidgetConfiguration"/>
+  		<xsd:element name="PartySelectionAlignment" type="xsd:double"/>
+  		<xsd:element name="HeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="BottomLabelConfiguration" type="XMLLabelConfiguration"/>  		
+  	</xsd:all>
+	</xsd:complexType>
+	
+  	<xsd:complexType name="PartyWidgetConfiguration">
+  	<xsd:all>
+  		<xsd:element name="NumberWidth" type="xsd:integer"/>
+  		<xsd:element name="UseAbbreviation" type="xsd:boolean"/>
+		<xsd:element name="Padding" type="xsd:integer"/>
+  		<xsd:element name="ShowFrame" type="xsd:boolean"/>
+		<xsd:element name="Display" type="DisplayType"/>
+		<xsd:element name="UseFillByRows" type="xsd:boolean"/>
+  	</xsd:all>
+	</xsd:complexType>	
+	
+  <xsd:simpleType name="DisplayType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="IMAGE"/>
+		<xsd:enumeration value="TEXT"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+ 
+	<xsd:complexType name="BallotOptionSelectionConfiguration">
+  	<xsd:all>
+		<xsd:element name="EnableClick" type="xsd:boolean"/>
+  		<xsd:element name="HideStandInLabelIfEmpty" type="xsd:boolean"/>
+  		<xsd:element name="UseMaxBallotNumberFromContest" type="xsd:boolean"/>
+  		<xsd:element name="BallotOptionTable" type="ViewTableConfiguration"/>
+  		<xsd:element name="BallotOptionButton" type="ViewButtonConfiguration"/>
+  		<xsd:element name="ExpandButton" type="ExpandButtonConfiguration"/>
+  		<xsd:element name="SeparateButton" type="BallotOptionSeparateButtonConfiguration"/>
+		<xsd:element name="FrameBottomHeight" type="xsd:integer"/>
+		<xsd:element name="FrameHeaderHeight" type="xsd:integer"/>
+  		<xsd:element name="MaxColumns" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="MaxRows" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="FixBorder" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="ResizeBallotBox" type="xsd:boolean"/>
+  		<xsd:element name="BallotsMargin" type="xsd:integer"/>
+		<xsd:element name="OptionListLinked" type="xsd:boolean"/>
+		<xsd:element name="SelectListImpliesSelectStandIn" type="xsd:boolean"/>
+		<xsd:element name="SelectStandInImpliesSelectList" type="xsd:boolean"/>
+  		<xsd:element name="AllowBackWithBallotSelected" type="xsd:boolean"/>
+  		<xsd:element name="ShowConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="CandidatesButtonsSpacing" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="UseCustomBallotRelation" type="xsd:boolean"/>
+  		<xsd:element name="BallotRelation" type="xsd:double"/>
+  		<xsd:element name="ListSelectedColor" type="ColorConfiguration"/>
+  		<xsd:element name="ListUnSelectedColor" type="ColorConfiguration"/>
+  		<xsd:element name="StandInColor" type="ColorConfiguration"/>
+  		<xsd:element name="BallotOptionWidget" type="BallotOptionWidgetConfiguration"/>
+  		<xsd:element name="HeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="BottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="ShowImageInList" type="xsd:boolean"/>
+  		<xsd:element name="ImageInListPadgging" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="FillPrincipal" type="FillPrincipalConfiguration"/>
+  		<xsd:element name="FillColumnDynamic" type="FillColumnDynamicConfiguration"/> 
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="FillPrincipalConfiguration">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="fill-column-fixed"/>
+			<xsd:enumeration value="fill-column-dynamic"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="FillColumnDynamicConfiguration">
+  		<xsd:sequence>
+  		 <xsd:element maxOccurs="unbounded" minOccurs="1" name="PivotConfig" type="PivotConfig"/>
+  		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="PivotConfig">
+  		<xsd:sequence/>
+  		<xsd:attribute name="Value" type="xsd:nonNegativeInteger" use="required"/>
+  		<xsd:attribute name="ColumnCount" type="xsd:nonNegativeInteger" use="required"/>
+  		<xsd:attribute name="Wrap" type="xsd:boolean" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="CustomAtributtesWindowConfiguration">
+  	<xsd:all>
+  		<xsd:element name="ForceQuestionHeader" type="xsd:boolean"/>
+  		<xsd:element name="ForceQuestionFooter" type="xsd:boolean"/>
+  		<xsd:element name="ForceQuestionHeaderConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="ForceQuestionFooterConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="ShowWelcomeMessageQuestionCloseButton" type="xsd:boolean"/>
+  		<xsd:element name="WelcomeMessageQuestionTimer" type="xsd:integer"/>
+  		<xsd:element name="ShowQuestionConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="ShowWelcomeQuestion" type="xsd:boolean"/>
+		<xsd:element name="QuestionWindowWith" type="xsd:integer"/>
+		<xsd:element name="QuestionWindowHeight" type="xsd:integer"/>
+  		<xsd:element name="HeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="BottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="CenterLabelConfiguration" type="XMLLabelConfiguration"/>
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="ConfirmationWindowConfiguration">
+  	<xsd:all>
+  		<xsd:element name="HeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="BottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="NullButtonsVertical" type="xsd:boolean"/>
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="FormsCommonControlsConfigurations">
+  	<xsd:all>
+  		<xsd:element name="FormTitles" type="FormsTitleLabelConfigurations"/>
+  		<xsd:element name="FormMesages" type="FormsMessagesLabelConfigurations"/>
+  		<xsd:element name="UnableFunctionalityMessage" type="XMLLabelConfiguration"/>
+  		<xsd:element name="UnableMessageCloseTime" type="xsd:integer"/>
+  		<xsd:element name="ExitFunctionalityMessageCloseTime" type="xsd:nonNegativeInteger"/>
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="FormsMessagesLabelConfigurations">
+  	<xsd:all>
+  		<xsd:element name="VMLogingMessageLabel" type="XMLLabelConfiguration"/>  		
+  	</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="FormsTitleLabelConfigurations">
+  	<xsd:all>
+  		<xsd:element name="EmptyWindowTitleLabel" type="XMLLabelConfiguration"/>  		
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="VotingExperienceLabelConfiguration">
+  	<xsd:all>
+  		<xsd:element name="SelectionLanguageHeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SelectionLanguageBottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SelectionLanguageConfirmationHeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SelectionLanguageConfirmationBottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SelectionLanguageConfirmationCenterLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SuperWhiteHeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SuperWhiteBottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SuperWhiteCenterLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SuperWhiteConfirmationHeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SuperWhiteConfirmationBottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="SuperWhiteConfirmationCenterLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="ContestWhiteSelectionHeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="ContestWhiteSelectionBottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="ContestWhiteSelectionCenterLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="WelcomeContestCenterLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="VotingWidgetLabelChildLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="VotingWidgetTopChildLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="VotingWidgetBottomChildLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="VotingWidgetNumberChildLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="VotingWindowEndMessageLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="VotingWidgetPartySelectionLabelChildLabelConfiguration" type="XMLLabelConfiguration"/>
+		<xsd:element name="PartyNullLabelConfiguration" type="XMLLabelConfiguration"/>
+		<xsd:element name="LoadingBallotsLabelConfiguration" type="XMLLabelConfiguration"/>
+		<xsd:element name="CheckSumLabelConfiguration" type="XMLLabelConfiguration"/>
+		<xsd:element name="InterrupVotingExperienceMessageLabelConfiguration" type="XMLLabelConfiguration"/>
+		<xsd:element name="InterrupVotingExperienceCancelLabelConfiguration" type="XMLLabelConfiguration"/>
+  	</xsd:all>
+	</xsd:complexType>	
+	
+	<xsd:complexType name="BallotOptionWidgetConfiguration">
+  	<xsd:all>
+  		<xsd:element name="NumberWidth" type="xsd:integer"/>
+		<xsd:element name="Padding" type="xsd:integer"/>
+		<xsd:element name="Display" type="DisplayType"/>
+  		<xsd:element name="ShowFrame" type="xsd:boolean"/>
+  		<xsd:element name="SelectedColor" type="ColorConfiguration"/>
+  		<xsd:element name="UnSelectedColor" type="ColorConfiguration"/>
+  		<xsd:element name="BallotFont" type="FontConfiguration"/>
+  		<xsd:element name="SeparatorCharacter" type="xsd:string"/>
+  		<xsd:element name="NameIsBeforeSeparator" type="xsd:boolean"/>
+  	</xsd:all>
+	</xsd:complexType>
+  
+	<xsd:complexType name="VotingWindowConfiguration">
+  	<xsd:all>
+  		<xsd:element name="ShowBallotOptionFooter" type="xsd:boolean"/>
+  		<xsd:element name="BottomFrameMargin" type="xsd:integer"/>
+  		<xsd:element name="BottomFrameHeight" type="xsd:integer"/>
+  		<xsd:element name="BottomFont" type="FontConfiguration"/>
+  		<xsd:element name="ShowLanguageConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="WelcomeMessageContestTimer" type="xsd:integer"/>
+  		<xsd:element name="ShowBlankVoteQuestion" type="xsd:boolean"/>
+  		<xsd:element name="ShowBlankVoteConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="ShowNullQuestionInBack" type="xsd:boolean"/>
+  		<xsd:element name="ShowLanguageSelectionInBack" type="xsd:boolean"/>
+  		<xsd:element name="ShowBallotOptionsInContestBack" type="xsd:boolean"/>
+  		<xsd:element name="ShowWelcomeContest" type="xsd:boolean"/>
+  		<xsd:element name="EraseBallotOptionsInPartyChanged" type="xsd:boolean"/>
+  		<xsd:element name="QuestionHeaderSameInConfirmation" type="xsd:boolean"/>
+  		<xsd:element name="ConnectTimer" type="xsd:integer"/>
+  		<xsd:element name="ConnectTimerLoading" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="ConnectTimerLanguage" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LoadingBallotMessage">  		
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="Never"/>
+					<xsd:enumeration value="Always"/>
+					<xsd:enumeration value="Selective"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:element>
+  		<xsd:element name="NumberOfBallotsToDisplayLoadingBallotMessage" type="xsd:nonNegativeInteger"/>
+  	</xsd:all>
+	</xsd:complexType>
+		
+	<xsd:complexType name="ReportPrintingWidgetConfiguration">
+    <xsd:all>
+        <xsd:element name="CompositeDescriptionLabelConfiguration" type="XMLLabelConfiguration"/>
+        <xsd:element name="ReportListTitleLabelConfiguration" type="XMLLabelConfiguration"/>
+        <xsd:element name="ProgressMessageLabelConfiguration" type="XMLLabelConfiguration"/>
+        <xsd:element name="ReportListItemLabelConfiguration" type="XMLLabelConfiguration"/>
+    </xsd:all>
+    </xsd:complexType>
+	
+    <xsd:complexType name="FontConfiguration">
+  	<xsd:all>
+		<xsd:element name="Size" type="xsd:integer"/>
+		<xsd:element name="FontName" type="xsd:string"/>
+	</xsd:all>
+  </xsd:complexType>
+  
+    <xsd:complexType name="ColorConfiguration">
+  	<xsd:all>
+		<xsd:element name="Red" type="xsd:double"/>
+		<xsd:element name="Blue" type="xsd:double"/>
+		<xsd:element name="Green" type="xsd:double"/>
+	</xsd:all>
+  </xsd:complexType>
+  
+  		<xsd:complexType name="XMLLabelConfiguration">
+			<xsd:all>
+				<xsd:element name="Label_Alignment">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="Left"/>
+							<xsd:enumeration value="Center"/>
+							<xsd:enumeration value="Right"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Label_VerticalPadding" type="xsd:integer"/>
+				<xsd:element name="Label_HorizontalPadding" type="xsd:integer"/>
+				<xsd:element name="Label_Family" type="xsd:string"/>
+				<xsd:element name="Label_Style">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="Normal"/>
+							<xsd:enumeration value="Oblique"/>
+							<xsd:enumeration value="Italic"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Label_Weight">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="Light"/>
+							<xsd:enumeration value="Normal"/>
+							<xsd:enumeration value="Bold"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Label_Size" type="xsd:integer"/>
+			</xsd:all>
+		</xsd:complexType>
+		
+
+		<xsd:simpleType name="IncomePassphraseEnum">
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Token"/>
+				<xsd:enumeration value="Screen"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+			
+  <xsd:simpleType name="ViewButtonConfiguration">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="expand-buttons"/>
+  		<xsd:enumeration value="separate-buttons"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="ViewTableConfiguration">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="column-fixed"/>
+  		<xsd:enumeration value="column-center"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="ExpandButtonConfiguration">
+  	<xsd:all>
+  		<xsd:element name="Spacing" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="FontSize" type="xsd:nonNegativeInteger"/>
+	</xsd:all>
+  </xsd:complexType>
+
+  <xsd:complexType name="BallotOptionSeparateButtonConfiguration">
+  	<xsd:all>
+		<xsd:element name="ClearButtonWidth" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="AcceptButtonWidth" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="BackButtonWidth" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="FontSize" type="xsd:nonNegativeInteger"/>
+	</xsd:all>
+  </xsd:complexType>
+
+  <xsd:complexType name="PartySeparateButtonConfiguration">
+  	<xsd:all>
+		<xsd:element name="NullButtonWidth" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="BackButtonWidth" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="FontSize" type="xsd:nonNegativeInteger"/>
+	</xsd:all>
+  </xsd:complexType>
+
+  <xsd:simpleType name="CloseElectionSteps">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="CloseConfirmation"/>
+  		<xsd:enumeration value="RequestIDCard"/>
+<!--		<xsd:enumeration value="GenerateTransmissionPackage"/> -->
+<!--		<xsd:enumeration value="GenerateCodiFiles"/> -->
+		<xsd:enumeration value="GenerateAllResult"/>
+		<xsd:enumeration value="SignTransmissionPackage"/>
+		<xsd:enumeration value="SignElectionResource"/>
+		<xsd:enumeration value="CloseElection"/>
+		<xsd:enumeration value="PrintPV"/>
+		<xsd:enumeration value="GeneratePVReport"/>
+		<xsd:enumeration value="RegisterCloseNote"/>
+		<xsd:enumeration value="Statistics"/>
+		<xsd:enumeration value="VoteDuration"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="ChallengePasswordSourceEnum">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="PresidentPassphrase"/>
+		<xsd:enumeration value="Role"/>
+	</xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:complexType name="ActivatedCardStatisticsConfiguration">
+			<xsd:all>
+				<xsd:element name="HideOfficial" type="xsd:boolean"/>
+				<xsd:element name="HideDemo" type="xsd:boolean"/>
+				<xsd:element name="HideRecovery" type="xsd:boolean"/>
+				<xsd:element name="HideAudio" type="xsd:boolean"/>
+				<xsd:element name="HideNonAudio" type="xsd:boolean"/>
+				<xsd:element name="HideCA" type="xsd:boolean"/>
+			</xsd:all>
+	</xsd:complexType>
+	
+	 <xsd:complexType name="VMInstallationWidgetConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Type" type="VMInstallationWidgetTypeConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ButtonsWidth" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ButtonsHeight" type="xsd:nonNegativeInteger"/>
+		</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="VMInstallationWidgetTypeConfiguration">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="OnlyKeyWordXML"/>
+			<xsd:enumeration value="OnlyTokenXML"/>
+			<xsd:enumeration value="keywordAndTokenXML"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="ShowBeidEntryTypeConfiguration">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="ShowWithSecurity"/>
+			<xsd:enumeration value="NoShow"/>
+			<xsd:enumeration value="Show"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+  	<xsd:complexType name="ElectionBlockStatusList">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1" name="ElectionStatus" type="ProcessStatus"/>
+		</xsd:sequence>
+	</xsd:complexType>
+		
+	<xsd:complexType name="HelpConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ImageHelp" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="PdfHelp" type="xsd:string"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="TitleKey" type="xsd:string"/>	
+			<xsd:element maxOccurs="1" minOccurs="1" name="UseHelp" type="xsd:boolean"/>	
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="WizardStateTimeLineConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="NameKey" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="DescriptionKey" type="xsd:string"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="RelativeImagePath" type="xsd:string"/>			
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="WizardStateToolboxConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ToolboxElementWidth" type="xsd:nonNegativeInteger"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ToolboxElementHeight" type="xsd:nonNegativeInteger"/>					
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="WizardStateHelpConfiguration">
+		<xsd:all>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TitleKey" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ContentKey" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="RelativeImagePath" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Help" type="HelpConfiguration"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="FunctionalityWizardStateConfiguration">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="PrincipalMenuOptions" type="MenuOption"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="ToolbarMenuOptions" type="MenuOption"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="StateNameKey" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="StateDescriptionKey" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ProcessStatus" type="ProcessStatus"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="StateHelp" type="WizardStateHelpConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TimeLineConfiguration" type="WizardStateTimeLineConfiguration"/>			
+			<xsd:element maxOccurs="1" minOccurs="1" name="ToolboxConfiguration" type="WizardStateToolboxConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ButtonsLabelConfiguration" type="XMLLabelConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="TitleHelpLabelConfiguration" type="XMLLabelConfiguration"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="HelpLabelConfiguration" type="XMLLabelConfiguration"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FunctionalityWizardFlowConfiguration">
+		<xsd:sequence>			
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="WizardStatesConfiguration" type="FunctionalityWizardStateConfiguration"/>			
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="NecessaryDevicesConfiguration">
+		<xsd:sequence>			
+			<xsd:element maxOccurs="unbounded" minOccurs="1" name="DeviceConfiguration" type="DeviceConfiguration"/>			
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="DeviceConfiguration">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="barcode"/>
+			<xsd:enumeration value="smartcard"/>
+			<xsd:enumeration value="printer"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="MemoryBlock">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Block"/>
+			<xsd:enumeration value="Suspend"/>
+			<xsd:enumeration value="Allow"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="ReferendumConfiguration">
+  	<xsd:all>
+		<xsd:element name="EnableClick" type="xsd:boolean"/>
+  		<xsd:element name="HeaderLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="BottomLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="QuestionLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="BallotsLabelConfiguration" type="XMLLabelConfiguration"/>
+  		<xsd:element name="FrameBottomHeight" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="QuestionWidth" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="QuestionHeight" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="ButtonsVertical" type="xsd:boolean"/>
+  		<xsd:element name="BallotBoxTopPadding" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="BallotBoxLeftPadding" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="BallotBoxSpacing" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="BallotWidth" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="BallotHeight" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="ShowBackButton" type="xsd:boolean"/>
+  		<xsd:element name="ShowNullOption" type="xsd:boolean"/>
+  	</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="PollingCardConfiguration">
+  	<xsd:all>
+  		<xsd:element name="PMInstallationWindow" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="VMInstallationWindow" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="VotingExperienceWindow" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="EndVotingExperienceWindow" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="AssistedCardGeneratorFunctionality" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="CardGeneratorFunctionality" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="RecoveryCardGeneratorFunctionality" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="VoteProcessDemoFunctionality" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="BEIDCardWidget" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="ActivationStatsWidget" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="WaitingCardWidget" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="SmartCardReaderDiagnosisWidget" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="VotingMachineInstallationWidgetInsert" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="VotingMachineInstallationWidgetExtract" type="xsd:nonNegativeInteger"/>
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="AlarmBoxMonitorConfiguration">
+  	<xsd:all>
+  		<xsd:element name="Enable" type="xsd:boolean"/>
+  		<xsd:element name="MonitoringTime" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="SearchTime" type="xsd:nonNegativeInteger"/>
+  	</xsd:all>
+	</xsd:complexType>
+			<xsd:element name="PMWidgetConfiguration">
+			<xsd:complexType>
+				<xsd:sequence>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="NumberOfDivision" type="xsd:nonNegativeInteger"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="MaxCharacters" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="EntryWidth" type="xsd:nonNegativeInteger"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ShowImages" type="xsd:boolean"/>
+				</xsd:sequence>				
+			</xsd:complexType>
+		</xsd:element>			
+	
+	<xsd:simpleType name="PreviewLanguageConfig">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="language-install"/>
+			<xsd:enumeration value="language-vote"/>
+			<xsd:enumeration value="language-elector"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="EntryDividedWidgetConfiguration">
+  	<xsd:all>
+  		<xsd:element name="NumberOfDivision" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="MaxCharacters" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="EntryWidth" type="xsd:nonNegativeInteger"/>
+  		<xsd:element name="Visibility" type="xsd:boolean"/>
+  	</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="CountConfiguration">
+  	<xsd:sequence>
+  		<xsd:element maxOccurs="unbounded" minOccurs="1" name="CountType" type="CountTypeConfig"/>
+  	</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="CountTypeConfig">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="total"/>
+			<xsd:enumeration value="official"/>
+			<xsd:enumeration value="demo"/>
+			<xsd:enumeration value="recovery"/>
+			<xsd:enumeration value="simulate"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="StartConfiguration">
+  	<xsd:sequence>
+  		<xsd:element maxOccurs="1" minOccurs="1" name="LoadSelectionLanguage" type="xsd:boolean"/>
+  		<xsd:element maxOccurs="1" minOccurs="1" name="PersistLanguage" type="xsd:boolean"/>
+  		<xsd:element maxOccurs="1" minOccurs="1" name="InfoMachine" type="InfoMachineConfiguration"/>
+  	</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="BEIDCardWidgetConfiguration">
+  	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="TitleErrorFontConf" type="XMLLabelConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="TextErrorFontConf" type="XMLLabelConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="TimeoutError" type="xsd:nonNegativeInteger"/>
+  	</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="ProcessStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="NotInstalled"/>
+			<xsd:enumeration value="NotPollworkerRegistered"/>
+			<xsd:enumeration value="NotDemostrationVote"/>
+			<xsd:enumeration value="NotInitiated"/>
+			<xsd:enumeration value="Initiated"/>
+			<xsd:enumeration value="Closed"/>
+			<xsd:enumeration value="ResultsTransmitted"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="WorkerMemberType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PRESIDENT"/>
+			<xsd:enumeration value="SECRETARY"/>
+			<xsd:enumeration value="ASSISTENT"/>
+			<xsd:enumeration value="WITNESS"/>
+			<xsd:enumeration value="POLICE"/>
+			<xsd:enumeration value="ASSISTANT_SECRETARY"/>
+			<xsd:enumeration value="DEPUTY_PRESIDENT"/>
+			<xsd:enumeration value="DEPUTY_SECRETARY"/>
+			<xsd:enumeration value="DEPUTY_ASSISTENT"/>
+			<xsd:enumeration value="DEPUTY_WITNESS"/>
+			<xsd:enumeration value="DEPUTY_POLICE"/>
+			<xsd:enumeration value="DEPUTY_ASSISTANT_SECRETARY"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+		
+	<xsd:complexType name="IDCardProcessConfiguration">
+  	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="PMInstall" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="VMInstall" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="OpenElection" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="CloseVotation" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="CloseElection" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="CloseNoteRegister" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="IncidentReport" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="AssistedActivation" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="DisabledVoter" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="DisabledVoterHelper" type="IDConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="PoliceNote" type="IDConfig"/>
+  	</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="PollWorkerRegisterConfiguration">
+  	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="WorkerMemberType" type="WorkerMemberType"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="RegisterMax" type="xsd:nonNegativeInteger"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="RegisterRequired" type="xsd:nonNegativeInteger"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="IDConfig" type="IDConfig"/>
+  	</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="IDConfig">
+  	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="0" name="Name" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="LastName" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="IDNumber" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="Gender" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="Nationality" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="NationalityNumber" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="Account" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="Party" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="Phone" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="AllDay" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="InfoDeputy" type="IDProperties"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="BureauAssigned" type="IDProperties"/>
+  	</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="IDProperties">
+  	<xsd:all/>
+		<xsd:attribute name="Mandatory" type="xsd:boolean" use="required"/>
+		<xsd:attribute name="Type" type="ElementType" use="optional"/>
+		<xsd:attribute name="Max" type="xsd:nonNegativeInteger" use="optional"/>
+		<xsd:attribute name="Mask" type="xsd:string" use="optional"/>
+		<xsd:attribute name="Regex" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="RegisterWidgetConfiguration">
+  	<xsd:all>
+		<xsd:element name="VerticalFilling" type="xsd:boolean"/>
+		<xsd:element name="MaxColumn" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="MaxRow" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="WidthBox" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="HeigthBox" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="SpacingBox" type="xsd:nonNegativeInteger"/>
+		<xsd:element name="ShowHeader" type="xsd:boolean"/>
+		<xsd:element name="ShowCenter" type="xsd:boolean"/>
+		<xsd:element name="ShowBottom" type="xsd:boolean"/>
+		<!-- <xsd:element name="HeaderConf" type="XMLLabelConfiguration"/>
+		<xsd:element name="CenterConf" type="XMLLabelConfiguration"/>
+		<xsd:element name="HeaderConf" type="XMLLabelConfiguration"/> -->
+  	</xsd:all>
+	</xsd:complexType>
+
+	<xsd:simpleType name="ElementType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="numeric"/>
+			<xsd:enumeration value="alpha"/>
+			<xsd:enumeration value="alpha-numeric"/>
+			<xsd:enumeration value="custom"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="InfoMachineConfiguration">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="pm"/>
+			<xsd:enumeration value="vm"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+  <xsd:element name="SaesGUIConfiguration" type="SaesGUIConfiguration">
+  </xsd:element>
+</xsd:schema>

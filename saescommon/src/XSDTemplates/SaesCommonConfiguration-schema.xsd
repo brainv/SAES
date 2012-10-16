@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.smartmatic.com/SaesCommonConfiguration" xmlns:mstns="http://www.smartmatic.com/SaesCommonConfiguration/SaesCommonConfiguration-schema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="SaesCommonConfiguration" targetNamespace="http://www.smartmatic.com/SaesCommonConfiguration">
+   <xsd:complexType name="SaesCommonConfiguration">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationElectionFilesPath">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CodiFilesFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SAESFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ResourcesFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ImagesFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="VotesFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DocsFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CodiFolder" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LogsFolderName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TransmissionPackageFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TransmissionPackageHashFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TransmissionPackageKeyFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TransmissionPackageCrtFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PVFormFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ElectionFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ElectionStatusFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CardListStatusFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ElectionResourcesFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="VotingMachineStatusFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="VotingDeviceFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PollworkersFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatisticsFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ActivatedCardStatisticsFileName" type="xsd:string"/>					
+					<xsd:element maxOccurs="1" minOccurs="1" name="IncidentReportFileName" type="xsd:string"/>	
+					<xsd:element maxOccurs="1" minOccurs="1" name="ClosingNotesFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="XMLImageFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="AssistedActivationFileName" type="xsd:string"/>		
+					<xsd:element maxOccurs="1" minOccurs="1" name="VotingDisabledFileName" type="xsd:string"/>		
+					<xsd:element maxOccurs="1" minOccurs="1" name="PoliceNotesFileName" type="xsd:string"/>		
+					<xsd:element maxOccurs="1" minOccurs="1" name="LanguageFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="VotingCentersFileName" type="xsd:string"/>				
+					<xsd:element maxOccurs="1" minOccurs="1" name="ConfigBasePath" type="ConfigurationBasePath"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SecretKeyFile" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UPKeyFile" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="MachineKeysFile" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="IDCardMembersFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TransmissionPackageSignatureFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PVFormSignatureFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CACertificateFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ItermediateCACertificatesFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ItermediateCACertificatesFromPKCS12FileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TrustedCertificatesFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TrustedCertificatesFromPKCS12FileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PVTemplateFolderName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PVTemplateFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="GeneratedPVReportFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ElectionResultSignatureFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="VoteStatisticsFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SignatureResourceFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LogErrorFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="LogAuditFileName" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="X7SSignedKeyCertifiedFileName" type="xsd:string"/>
+        			<xsd:element maxOccurs="1" minOccurs="0" name="X7SSignedCertifiedFileName" type="xsd:string"/>
+        			<xsd:element maxOccurs="1" minOccurs="0" name="X7SCryptoCertifiedFileName" type="xsd:string"/>
+					
+				</xsd:sequence>			
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ConfigurationPrinter">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="SkipPrint" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="TimeToPrintTicket" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="UsePresentPaperOnline" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DefaultPrinterFontFamily" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="EndPaddingDirectPrint" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CharsetDirectPrint" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CharPaddingDirectPrint" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CharIndentationDirectPrint" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CutType" type="CutType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="PrinterBackendType" type="PrinterBackendType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DirectPrintDeleteFiles" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="GeneratePVReportInAllLanguages" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="CommandPrintingMode" type="CommandPrintingModeType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatusMonitorTimeOut" type="xsd:integer"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="StatusMonitorCancel" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DirectQrUseOptimization" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DirectQrCommandHeader" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="DirectQrCommandFooter" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ScreenPreviewWidth" type="xsd:nonNegativeInteger"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ScreenPreviewResolutionFactor" type="xsd:float"/>
+				</xsd:sequence>			
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element maxOccurs="1" minOccurs="1" name="OSConfigurationFiles" type="OSConfigurationFiles"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="MachineSecuritySchema" type="SecurityConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LogConfigurationReader" type="LogConfigurationReader"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="BEIDConfiguration" type="BEIDConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SmartCardConfiguration" type="SmartCardConfiguration"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="PCSCDConfiguration" type="PCSCDConfiguration"/>
+		
+	</xsd:sequence>
+  </xsd:complexType>
+
+<xsd:complexType name="OSConfigurationFiles">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="IdHardwareFileFullPath" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="MasterDeviceFileFullPath" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="EventDeviceFileFullPath" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LineDeviceSeparator" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="RemoveEventDeviceFile" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SerialLocationFileFullPath" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LineSerialLocationSeparator" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ScriptRunSmartCard" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ScriptRunPrintBlank" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ScriptRunDSortVote" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SyncFileSignalUSER1" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SyncFileSignalUSER2" type="xsd:string"/>
+	</xsd:sequence>			
+</xsd:complexType>
+
+<xsd:complexType name="LogConfigurationReader">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LogErrorReader" type="CryptoType"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="LogAuditReader" type="CryptoType"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="BEIDConfiguration">
+	<xsd:sequence>	
+		<xsd:element maxOccurs="1" minOccurs="1" name="UseCallbackEvent" type="xsd:boolean"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="SmartCardConfiguration">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="1" name="AppletAID" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="GlobalPIN" type="GlobalPIN"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="DataPIN" type="DataPIN"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="PlatformMode" type="PlatformMode"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecureChannelEnabled" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecurityKeySetVersion" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecurityKeyIndex" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecurityChannelProtocol" type="SecurityChannelProtocol"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecurityChannelProtocolImpl" type="SecurityChannelProtocolImpl"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecurityLevel" type="SecurityLevel"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SecurityKeyDerivation" type="SecurityKeyDerivation"/>
+		<xsd:element maxOccurs="unbounded" minOccurs="1" name="NivelTest" type="NivelTestConfig"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SuspendResumeEachVote" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="SuspendResumeOnErrorCondition" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="DelayAfterSuspend" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="DelayAfterOn" type="xsd:integer"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ShowMessagePowerCycle" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="TimeOutMessagePowerCycle" type="xsd:nonNegativeInteger"/>
+    <xsd:element maxOccurs="1" minOccurs="1" name="PowerCycleTries" type="xsd:nonNegativeInteger"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ForceRestartPCSCD" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="WaitStopPCSCD" type="xsd:nonNegativeInteger"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="WaitStartPCSCD" type="xsd:nonNegativeInteger"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ShowMessageRestartPCSCD" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="ReadRetry" type="xsd:nonNegativeInteger"/>
+    <xsd:element maxOccurs="unbounded" minOccurs="1" name="FatalErrorCodes" type="SmartCardErrorCode"/>
+	</xsd:sequence>
+	<xsd:attribute name="UseConnectedSmartcardReader" type="xsd:boolean" use="required"/>
+	<xsd:attribute name="ConnectedReaderRenewContext" type="xsd:boolean" use="required"/>
+	<xsd:attribute name="ConnectedSmartcardPCSCCheckCard" type="xsd:boolean" use="required"/>
+	<xsd:attribute name="ConnectedSmartcardConnectToCheckPresence" type="xsd:boolean" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="PCSCDConfiguration">
+	<xsd:sequence>	
+		<xsd:element maxOccurs="1" minOccurs="1" name="StartService" type="xsd:boolean"/>
+		<xsd:element maxOccurs="1" minOccurs="1" name="StopService" type="xsd:boolean"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<!-- Método de escritura de los comandos de impresión -->
+<xsd:simpleType name="CommandPrintingModeType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="EMBEDDED_TEXT_CMD"/>
+  		<xsd:enumeration value="BINARY_CMD"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<!-- incorporacion tipo de corte impresion -->
+<xsd:simpleType name="PrinterBackendType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="DIRECTPRINTING"/>
+  		<xsd:enumeration value="GTKPRINTING"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<!-- incorporacion tipo de corte impresion -->
+<xsd:simpleType name="CutType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="NOCUT"/>
+  		<xsd:enumeration value="CUT"/>
+		<xsd:enumeration value="PARTIALCUT"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<!-- incorporacion de configuracion del path base -->
+<xsd:complexType name="ConfigurationBasePath">
+     <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" name="RulesBasePath" type="RulesBasePathType"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="LiveFileSystemBasePath" type="xsd:string"/>
+     </xsd:sequence>
+     <xsd:attribute name="languageImageDirectory" type="xsd:string" use="required"/>
+     <xsd:attribute name="backupFileName" type="xsd:string" use="required"/>
+     <xsd:attribute name="ProjectName" type="xsd:string" use="required"/>
+     <xsd:attribute name="WorkingDirectory" type="xsd:string" use="required"/>
+     <xsd:attribute name="VotingExperienceValidationScreensDirectory" type="xsd:string" use="required"/>
+</xsd:complexType>
+
+<!-- incorporacion de rules base path -->
+<xsd:simpleType name="RulesBasePathType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="pm-rule"/>
+		<xsd:enumeration value="vm-rule"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<!-- incorporacion de base path -->
+<xsd:complexType name="BasePath">
+	<xsd:sequence/>
+	<xsd:attribute name="path" type="xsd:string" use="required"/>
+	<xsd:attribute name="type" type="BasePathType" use="required"/>
+</xsd:complexType>
+
+<!-- incorporacion tipo de base path -->
+<xsd:simpleType name="BasePathType">
+  	<xsd:restriction base="xsd:string">
+  		<xsd:enumeration value="DOM"/>
+		<xsd:enumeration value="FLASH"/>
+		<xsd:enumeration value="BACKUP"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="DigestAlgType">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="md5"/>
+      <xsd:enumeration value="sha1"/>
+      <xsd:enumeration value="sha224"/>
+      <xsd:enumeration value="sha256"/>
+      <xsd:enumeration value="sha384"/>
+      <xsd:enumeration value="sha512"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="KeyDerivAlgType">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="hmac"/>
+      <xsd:enumeration value="des"/>
+      <xsd:enumeration value="3key3des"/>
+      <xsd:enumeration value="2key3des"/>
+      <xsd:enumeration value="rc4"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="SaltSourceType">
+     <xsd:sequence>
+       <xsd:element maxOccurs="1" minOccurs="1" name="CalcSalt" type="xsd:boolean"/>
+       <xsd:element maxOccurs="1" minOccurs="1" name="SepChar" type="xsd:string"/>
+       <xsd:element maxOccurs="1" minOccurs="1" name="DefaultSalt" type="xsd:string"/>
+     </xsd:sequence>
+</xsd:complexType>
+
+<!-- incorporacion de informacion de seguridad -->
+<xsd:complexType name="SecurityConfiguration">
+  	<xsd:sequence>
+  	  <xsd:element maxOccurs="1" minOccurs="0" name="SecurityCryptoMode" type="SecurityCryptoMode"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="SecretKeyEncrypted" type="xsd:boolean"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="ForceReduceElection" type="xsd:boolean"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="VerifySAESFolder" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="IsCompressElection" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="IsCompressVotingDevices" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="ImplementCACertificateFileName" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="ImplementItermediateCACertificates" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="ImplementTrustedCertificates" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="CertifiedTime" type="xsd:string"/> <!-- format iso8601 1970-01-01T00:00:00.00Z -->
+      <xsd:element maxOccurs="1" minOccurs="1" name="ValidateCertifiedTime" type="TimeConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="VerifyExternElements" type="xsd:boolean"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="UseAsimetricKeyForTransmissionPackages" type="xsd:boolean"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="InstallationFiles" type="SecurityFileConfiguration"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="ExternalFiles" type="SecurityFileConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="InternalFiles" type="SecurityFileConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="ResourcesFiles" type="SecurityFileConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="ExchangeFiles" type="SecurityFileConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="UtilFiles" type="SecurityFileConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="PrintedVoteData" type="SecurityFileConfiguration"/>
+  	  <xsd:element maxOccurs="1" minOccurs="1" name="FileSystemVote" type="FileSystemVoteConfiguration"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="SaltSource" type="SaltSourceType"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="DigestAlg" type="DigestAlgType"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="KeyDerivAlg" type="KeyDerivAlgType"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="Iterations" type="xsd:integer"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="SignedPVForm" type="xsd:boolean"/>
+  	</xsd:sequence>
+
+</xsd:complexType>
+
+
+<xsd:complexType name="SecurityFileConfiguration">
+  	<xsd:sequence>
+      <xsd:element maxOccurs="1" minOccurs="1" name="EncryptedData" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="SignedData" type="SignedType"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="ValidateSigned" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="CertifiedFilePath" type="xsd:string"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="CertifiedType" type="CertifiedType"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="ValidateCertified" type="xsd:boolean"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="ValidateCertifiedConfig" type="ValidateCertifiedConfiguration"/>
+  	</xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:complexType name="FileSystemVoteConfiguration">
+  	<xsd:sequence>
+      <xsd:element maxOccurs="1" minOccurs="1" name="maxfiles" type="xsd:nonNegativeInteger"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="ImplementTime" type="TimeConfiguration"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="FileSystemVoteTime" type="xsd:string"/>  <!-- format iso8601 1970-01-01T00:00:00.00Z -->
+      <xsd:element maxOccurs="1" minOccurs="1" name="ImplementRandom" type="xsd:boolean"/>
+      <xsd:element maxOccurs="1" minOccurs="1" name="BackupMarkFile" type="xsd:string"/>    
+  	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:simpleType name="SignedType">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="simple"/>
+      <xsd:enumeration value="full"/>
+      <xsd:enumeration value="none"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="ValidateCertifiedConfiguration">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NO_FLAGS"/>
+      <xsd:enumeration value="DO_NOT_VALIDATE"/>
+      <xsd:enumeration value="IGNORE_CRITICAL"/>
+      <xsd:enumeration value="CB_ISSUER_CHECK"/>
+      <xsd:enumeration value="CRL_CHECK"/>
+      <xsd:enumeration value="CRL_CHECK_ALL"/>
+      <xsd:enumeration value="POLICY_CHECK"/>
+      <xsd:enumeration value="EXPLICIT_POLICY"/>
+      <xsd:enumeration value="INHIBIT_ANY"/>
+      <xsd:enumeration value="INHIBIT_MAP"/>
+      <xsd:enumeration value="X509_STRICT"/>
+      <xsd:enumeration value="EXTENDED_CRL_SUPPORT"/>
+      <xsd:enumeration value="USE_DELTAS"/>
+      <xsd:enumeration value="NOTIFY_POLICY"/>
+      <xsd:enumeration value="CHECK_SS_SIGNATURE"/>
+      <xsd:enumeration value="SET_CHECK_TIME"/>
+      <xsd:enumeration value="ALLOW_PROXY_CERTS"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="TimeConfiguration">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="MACHINE_TIME"/>
+      <xsd:enumeration value="CONFIG_TIME"/>
+      <xsd:enumeration value="NONE"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="CertifiedType">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="PCKS12"/>
+      <xsd:enumeration value="X509"/>
+      <xsd:enumeration value="NONE"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="CryptoType">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="GLOBAL"/>
+      <xsd:enumeration value="BASE64"/>
+      <xsd:enumeration value="PLAIN"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="SecurityCryptoMode">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ECB"/>
+      <xsd:enumeration value="CBC"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="PlatformMode">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="OP_201"/>
+      <xsd:enumeration value="GP_211"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="GlobalPIN">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="fixed"/>
+      <xsd:enumeration value="derived"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="DataPIN">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="opening-code"/>
+      <xsd:enumeration value="verification-key"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="SecurityChannelProtocol">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SCP01"/>   <!-- Secure Channel Protocol '01' -->
+      <xsd:enumeration value="SCP02"/>   <!-- Secure Channel Protocol '02' -->
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="SecurityChannelProtocolImpl">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SCP01_IMPL_i05"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, no ICV encryption, 3 Secure Channel Keys -->
+      <xsd:enumeration value="SCP01_IMPL_i15"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV encryption, 3 Secure Channel Keys -->
+      <xsd:enumeration value="SCP02_IMPL_i44"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, no ICV encryption, 1 Secure Channel base key, well-known pseudo-random algorithm (card challenge) -->
+      <xsd:enumeration value="SCP02_IMPL_i45"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, no ICV encryption, 3 Secure Channel base key, well-known pseudo-random algorithm (card challenge) -->
+      <xsd:enumeration value="SCP02_IMPL_i54"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV encryption for C-MAC session, 1 Secure Channel base key, well-known pseudo-random algorithm (card challenge) -->
+      <xsd:enumeration value="SCP02_IMPL_i55"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV encryption for C-MAC session, 3 Secure Channel base key, well-known pseudo-random algorithm (card challenge) -->
+      <xsd:enumeration value="SCP02_IMPL_i04"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, no ICV encryption, 1 Secure Channel base key, unspecified card challenge generation method -->
+      <xsd:enumeration value="SCP02_IMPL_i05"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, no ICV encryption, 3 Secure Channel base key, unspecified card challenge generation method -->
+      <xsd:enumeration value="SCP02_IMPL_i0A"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV set to MAC over AID, no ICV encryption, 1 Secure Channel base key -->
+      <xsd:enumeration value="SCP02_IMPL_i0B"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV set to MAC over AID, no ICV encryption, 3 Secure Channel base key -->
+      <xsd:enumeration value="SCP02_IMPL_i14"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV encryption for CMAC session, 1 Secure Channel base key, unspecified card challenge generation method -->
+      <xsd:enumeration value="SCP02_IMPL_i15"/> <!-- Initiation mode explicit, C-MAC on modified APDU, ICV set to zero, ICV encryption for CMAC session, 3 Secure Channel base key, unspecified card challenge generation method -->
+      <xsd:enumeration value="SCP02_IMPL_i1A"/> <!-- Initiation mode implicit, C-MAC on unmodified APDU, ICV set to MAC over AID, ICV encryption for C-MAC session, 1 Secure Channel base key -->
+      <xsd:enumeration value="SCP02_IMPL_i1B"/> <!-- Initiation mode implicit, C-MAC on unmodified APDU, ICV set to MAC over AID, ICV encryption for C-MAC session, 3 Secure Channel base key -->
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="SecurityLevel">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="C_MAC"/>               <!-- C-MAC -->
+      <xsd:enumeration value="C_DEC_C_MAC"/>         <!-- C-DECRYPTION and C-MAC -->
+      <xsd:enumeration value="R_MAC"/>               <!-- R-MAC (Only SCP02) -->
+      <xsd:enumeration value="C_MAC_R_MAC"/>         <!-- C-MAC and R-MAC (Only SCP02) -->
+      <xsd:enumeration value="C_DEC_C_MAC_R_MAC"/>   <!-- C-DECRYPTION, C-MAC and R-MAC (Only SCP02) -->
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="SecurityKeyDerivation">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="none"/>
+      <xsd:enumeration value="visa2"/>
+      <xsd:enumeration value="emvcps11"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="NivelTestConfig">
+  <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="simple-select-applet"/>
+      <xsd:enumeration value="simple-write-read"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+  <xsd:element name="SaesCommonConfiguration" type="SaesCommonConfiguration">
+  </xsd:element>
+
+<xsd:simpleType name="SmartCardErrorCode">
+  <xsd:restriction base="xsd:nonNegativeInteger"/>
+</xsd:simpleType>
+
+</xsd:schema>

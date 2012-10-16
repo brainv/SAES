@@ -1,0 +1,13 @@
+src/AppController.cpp
+src/AppController.h
+src/AppMainWindow.cpp
+src/AppMainWindow.h
+src/CardInstallationWrapper.cpp
+src/CardInstallationWrapper.h
+src/Exceptions/GpCommandException.cpp
+src/Exceptions/GpCommandException.h
+src/GpCommandWrapper.cpp
+src/GpCommandWrapper.h
+src/InstallationDiagnosis.cpp
+src/InstallationDiagnosis.h
+src/main.cc

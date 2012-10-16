@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+-->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+  
+  
+   <appender name="appxConsoleAppender" class="org.apache.log4j.ConsoleAppender">    
+    <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %c{1} - %t - %d - %m%n"/>
+        </layout>
+  </appender>
+  
+  <appender name="AppenderDebugDom" class="org.apache.log4j.DynamicPathRollingFileAppender">    
+    <param name="File"   value="debug-log-file.log" />
+    <param name="basepathtype" value="DOM" />
+    <param name="Append" value="true" />
+    
+    <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern" value="%-5p %c{1} - %t - %d - %m%n"/>
+    </layout>
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="debug" />
+      <param name="AcceptOnMatch" value="true" />
+   </filter>
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="error" />
+      <param name="AcceptOnMatch" value="true" />
+   </filter>   
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="warn" />
+      <param name="AcceptOnMatch" value="true" />
+   </filter>      
+  </appender>
+
+  <appender name="AppenderAuditDom" class="org.apache.log4j.DynamicPathRollingFileAppender">    
+    <param name="File"   value="audit-log-file.log" />
+    <param name="basepathtype" value="DOM" />
+    <param name="Append" value="true" />	    
+    
+    <layout class="org.apache.log4j.CryptoLayout">
+        <param name="ConversionPattern" value="%d@%m@%p@%r%n"/>
+    </layout>
+
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="debug" />
+      <param name="AcceptOnMatch" value="false" />
+   </filter>
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="error" />
+      <param name="AcceptOnMatch" value="false" />
+   </filter>   
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="warn" />
+      <param name="AcceptOnMatch" value="true" />
+   </filter>   
+  </appender>
+
+  <appender name="AppenderErrorDom" class="org.apache.log4j.DynamicPathRollingFileAppender">    
+    <param name="File"   value="error-log-file.log" />
+    <param name="basepathtype" value="DOM" />
+    <param name="Append" value="true" />	    
+    
+    <layout class="org.apache.log4j.CryptoLayout">
+        <param name="ConversionPattern" value="%d@%m@%p@%r%n"/>
+    </layout>	    
+
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="debug" />
+      <param name="AcceptOnMatch" value="false" />
+   </filter>
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="error" />
+      <param name="AcceptOnMatch" value="true" />
+   </filter>   
+   <filter class="org.apache.log4j.filters.LevelMatchFilter">
+      <param name="LevelToMatch" value="warn" />
+      <param name="AcceptOnMatch" value="false" />
+   </filter>   
+  </appender>
+  
+  <root>   
+     <priority value="debug"/>
+        <!-- appender-ref ref="AppenderDebugDom"/>
+        <appender-ref ref="AppenderAuditDom"/>
+        <appender-ref ref="AppenderErrorDom"/ -->
+        <appender-ref ref="appxConsoleAppender" />
+  </root>
+  <logger name="Smartmatic.SAES.Card.SmartcardConnected" additivity="true">
+    <level value="DEBUG" />
+    <appender-ref ref="AppenderDebugDom" />
+</logger>
+<logger name="Smartmatic.SAES.Card.SaesSmartCard" additivity="true">
+    <level value="DEBUG" />
+    <appender-ref ref="AppenderDebugDom" />
+</logger>
+
+</log4j:configuration>

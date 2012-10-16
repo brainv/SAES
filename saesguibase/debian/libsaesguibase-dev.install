@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsaesguibase*.la
+debian/tmp/usr/lib/libsaesguibase*.so
+debian/tmp/usr/lib/pkgconfig/libsaesguibase*.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsaesguibase/AUTHORS
+debian/tmp/usr/share/doc/libsaesguibase/ChangeLog
+debian/tmp/usr/share/doc/libsaesguibase/INSTALL
+debian/tmp/usr/share/doc/libsaesguibase/NEWS
+debian/tmp/usr/share/doc/libsaesguibase/README

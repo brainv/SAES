@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="ActivatedCardStatistics"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports" 
+	xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" 
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/activated-card-statistics-schema.xsd">
+	<xs:element name="ActivatedCardStatistics">
+		<xs:complexType>
+			<xs:sequence>
+			    <xs:element name="TotalActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalNonAudioActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalAudioActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalOfficialActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>			    
+			    <xs:element name="TotalDemoActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalRecoveryActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+
+			    <xs:element name="TotalAudioOfficialActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>			    
+			    <xs:element name="TotalAudioDemoActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalAudioRecoveryActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalNonAudioOfficialActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>			    
+			    <xs:element name="TotalNonAudioDemoActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			    <xs:element name="TotalNonAudioRecoveryActivated" type = "xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+			
+				<xs:element name="ActivatedOfficialNonAudioByCA" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CardByCA" minOccurs="0" maxOccurs="unbounded" type="ActivatedCardByCA"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ActivatedDemoNonAudioByCA" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CardByCA" minOccurs="0" maxOccurs="unbounded" type="ActivatedCardByCA"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ActivatedOfficialAudioByCA" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CardByCA" minOccurs="0" maxOccurs="unbounded" type="ActivatedCardByCA"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ActivatedDemoAudioByCA" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CardByCA" minOccurs="0" maxOccurs="unbounded" type="ActivatedCardByCA"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>			
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="ActivatedCardByCA">
+		<xs:attribute name="Counter" type = "xs:nonNegativeInteger" use="required"/>
+		<xs:attribute name="CACode" type="xs:string" use="required"/>
+		<xs:attribute name="CAValue" type="xs:string" use="required"/>
+	</xs:complexType>
+</xs:schema>

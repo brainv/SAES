@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ]; then
+
+	/usr/sbin/locale-gen || true
+
+fi
+
+#DEBHELPER#
+
+exit 0

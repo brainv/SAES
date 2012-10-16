@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/Vote" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Vote/station-tally-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="StationTally" targetNamespace="http://www.smartmatic.com/Saes/Voting/Vote">
+	<xs:element name="stn-tly">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="r">
+					<xs:complexType>
+						<xs:sequence/>
+						<xs:attribute name="bo" type="xs:string" use="optional"/>
+						<xs:attribute name="t" type="xs:nonNegativeInteger" use="optional"/>
+						<xs:attribute name="t2" type="xs:nonNegativeInteger" use="optional"/>
+						<xs:attribute name="l1" type="xs:nonNegativeInteger" use="optional"/>
+						<xs:attribute name="l2" type="xs:nonNegativeInteger" use="optional"/>
+						<xs:attribute name="l3" type="xs:nonNegativeInteger" use="optional"/>
+						<xs:attribute name="l4" type="xs:nonNegativeInteger" use="optional"/>
+						<xs:attribute name="c-sum" type="xs:nonNegativeInteger" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="type" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AUTOMATED"/>
+						<xs:enumeration value="MANUAL"/>
+						<xs:enumeration value="OMR"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="number" type="xs:string" use="optional"/>
+			<xs:attribute name="contest" type="xs:string" use="optional"/>
+			<xs:attribute name="automatic-votes" type="xs:string" use="optional"/>
+			<xs:attribute name="complete-unconscious-void-votes" type="xs:string" use="optional"/>
+			<xs:attribute name="specific-unconscious-void-votes" type="xs:string" use="optional"/>
+			<xs:attribute name="specific-total-void-votes" type="xs:string" use="optional"/>
+			<xs:attribute name="complete-total-void-votes" type="xs:string" use="optional"/>
+			<xs:attribute name="empty-votes" type="xs:nonNegativeInteger" use="optional"/>
+			<xs:attribute name="overvotes" type="xs:nonNegativeInteger" use="optional"/>
+			<xs:attribute name="processed-votes" type="xs:nonNegativeInteger" use="optional"/>
+			<xs:attribute name="logical-voter-group-code" type="xs:string" use="optional"/>
+			<xs:attribute name="reserved0" type="xs:string" use="optional"/>
+			<xs:attribute name="reserved1" type="xs:string" use="optional"/>
+			<xs:attribute name="selected-votes" type="xs:nonNegativeInteger" use="optional"/>
+			<xs:attribute name="codi-checksum" type="xs:nonNegativeInteger" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

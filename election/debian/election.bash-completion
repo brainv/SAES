@@ -1,0 +1,41 @@
+# bash completion for election
+
+have election &&
+_election()
+{
+    local cur prev split=false
+
+    COMPREPLY=()
+    cur=`_get_cword`
+    prev=${COMP_WORDS[COMP_CWORD-1]}
+
+    _split_longopt && split=true
+
+    case $prev in
+        --config|--logger)
+			_filedir 'xml'
+			return 0
+            ;;
+        --help|--version)
+            # all other arguments are noop with these
+            return 0
+            ;;
+    esac
+
+    $split && return 0
+
+    if [[ "$cur" == * ]]; then
+        # return list of available options
+        COMPREPLY=( $( compgen -W '-h --help -v --version --config --logger' \
+            -- "$cur") )
+    fi
+} &&
+complete -F _election election
+
+# Local variables:
+# mode: shell-script
+# sh-basic-offset: 4
+# sh-indent-comment: t
+# indent-tabs-mode: nil
+# End:
+# ex: ts=4 sw=4 et filetype=sh

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkHBox" id="hbox1">
+    <property name="visible">True</property>
+    <child>
+      <object class="GtkTable" id="m_LeftPanelTableLayout">
+        <property name="width_request">280</property>
+        <property name="visible">True</property>
+        <property name="n_rows">3</property>
+        <child>
+          <object class="GtkVBox" id="m_ReportListVBox">
+            <property name="visible">True</property>
+            <property name="border_width">2</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox_ReportListTitle">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="m_ReportListTitle">
+                <property name="visible">True</property>
+                <property name="label">Reports to Print</property>
+                <property name="wrap">True</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x_options">GTK_SHRINK</property>
+            <property name="y_options"></property>
+            <property name="y_padding">8</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHButtonBox" id="hbuttonbox1">
+            <property name="height_request">100</property>
+            <property name="visible">True</property>
+            <property name="layout_style">center</property>
+            <child>
+              <object class="GtkButton" id="m_PrintButton">
+                <property name="label">Print Reports</property>
+                <property name="width_request">150</property>
+                <property name="height_request">60</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+            <property name="x_options">GTK_SHRINK</property>
+            <property name="y_options">GTK_SHRINK</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkVSeparator" id="vseparator1">
+        <property name="visible">True</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="padding">10</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEventBox" id="main-eventbox">
+        <property name="visible">True</property>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,18 @@
+# low level usb barcode reader triggers
+# Smartmatic - Belgic System
+
+# USB barcode add trigger
+
+ACTION=="add", ATTRS{idVendor}=="1eab", ATTRS{idProduct}=="0102", RUN+="/sbin/modprobe usbserial vendor=0x1eab product=0x0102"
+ACTION=="add", ATTRS{idVendor}=="1eab", ATTRS{idProduct}=="0d02", RUN+="/sbin/modprobe usbserial vendor=0x1eab product=0x0d02"
+ACTION=="add", ATTRS{idVendor}=="1eab", ATTRS{idProduct}=="0103", RUN+="/sbin/modprobe usbserial vendor=0x1eab product=0x0103"
+
+
+ACTION=="add", SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1eab", ATTRS{idProduct}=="0102", RUN+="/usr/sbin/smtt-barcode-event"
+ACTION=="add", SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1eab", ATTRS{idProduct}=="0d02", RUN+="/usr/sbin/smtt-barcode-event"
+ACTION=="add", SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1eab", ATTRS{idProduct}=="0103", RUN+="/usr/sbin/smtt-barcode-event"
+
+
+
+# USB barcode remove trigger 
+ACTION=="remove",SUBSYSTEM=="tty", SUBSYSTEMS=="usb", RUN+="/usr/sbin/smtt-barcode-event remove"

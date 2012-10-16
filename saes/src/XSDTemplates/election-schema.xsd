@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/Election" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Election/election-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="election" targetNamespace="http://www.smartmatic.com/Saes/Voting/Election">
+
+  <xs:include schemaLocation="election-language-schema.xsd"/>
+
+  <xs:element name="election">
+    <xs:annotation>
+      <xs:documentation>Contains all of the parameters that define a particular election process.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ballots">
+          <xs:annotation>
+            <xs:documentation>Set of ballots that are going to be used by the current voting machine during the voting process.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ballot">
+                <xs:annotation>
+                  <xs:documentation>Definition of a particular ballot used by this machine throughout the voting experience screens.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ballot-cards">
+                      <xs:annotation>
+                        <xs:documentation>Defines a ballot-card that groups together a set of contests.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="ballot-card">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="contests">
+                                  <xs:annotation>
+                                    <xs:documentation>Set of contests that are grouped within the ballot-card.</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="contest">
+                                        <xs:annotation>
+                                          <xs:documentation>Defines each one of the contests that is grouped by the ballot-card.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="district">
+                                              <xs:annotation>
+                                                <xs:documentation>Defines the electoral district where the current contest is effective.</xs:documentation>
+                                              </xs:annotation>
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="regions">
+                                                    <xs:annotation>
+                                                      <xs:documentation>Unique code of the geographical region associated to the electoral district where the contest is being carried out.</xs:documentation>
+                                                    </xs:annotation>
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element maxOccurs="unbounded" name="region">
+                                                          <xs:complexType>
+                                                            <xs:sequence/>
+                                                            <xs:attribute name="code" type="xs:string" use="required"/>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="name-key" type="xs:string" use="required">
+                                                  <xs:annotation>
+                                                    <xs:documentation>Contest name.</xs:documentation>
+                                                  </xs:annotation>
+                                                </xs:attribute>
+                                                <xs:attribute name="number" type="xs:nonNegativeInteger" use="required">
+                                                  <xs:annotation>
+                                                    <xs:documentation>Contest number.</xs:documentation>
+                                                  </xs:annotation>
+                                                </xs:attribute>
+                                                <xs:attribute name="description-key" type="xs:string" use="required"/>
+                                                <xs:attribute name="region-hierarchy-code" type="xs:string" use="required">
+                                                  <xs:annotation>
+                                                    <xs:documentation>Unique code of the region hierarchy that defines the region associated to the current district.</xs:documentation>
+                                                  </xs:annotation>
+                                                </xs:attribute>
+                                                <xs:attributeGroup ref="base-general-info"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="eligibles-options">
+                                              <xs:annotation>
+                                                <xs:documentation>Set of eligible options for the contest.  These options are presented to the voter via the voting-experience screens during the voting process, when running the contest.  For election contests, an eligible option represents the circumstance of a candidate running for a post.  For issue contests, an eligible option represents the existence of an answer for a particular question (or issue).</xs:documentation>
+                                              </xs:annotation>
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded" name="eligible-option">
+                                                    <xs:annotation>
+                                                      <xs:documentation>Each one of the eligible options for the contest.</xs:documentation>
+                                                    </xs:annotation>
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="ballot-options">
+                                                          <xs:annotation>
+                                                            <xs:documentation>Set of ballot-options associated to a particular eligible-option.</xs:documentation>
+                                                          </xs:annotation>
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element maxOccurs="unbounded" name="ballot-option">
+                                                                <xs:annotation>
+                                                                  <xs:documentation>Each one of the ballot options associated to the eligible option. A ballot option exists by the fact that a political party is supporting a candidate running for a contest; it is, an eligible-option is a pair defined by an eligible-option and a party.  For issue contests, there exists one ballot-option associated to each eligible-option, supportes by a generic party that has no explicit political meaning.</xs:documentation>
+                                                                </xs:annotation>
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element minOccurs="0" name="pad-position-group">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element maxOccurs="unbounded" name="pad-position" type="xs:positiveInteger"/>
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="party">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence/>
+                                                                        <xs:attribute name="name" type="xs:string"/>
+                                                                        <xs:attribute name="abbreviation" type="xs:string"/>
+                                                                        <xs:attribute name="type">
+                                                                          <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                              <xs:enumeration value="PARTY"/>
+                                                                              <xs:enumeration value="I"/>
+                                                                              <xs:enumeration value="GROUP"/>
+                                                                              <xs:enumeration value="CFO"/>
+                                                                              <xs:enumeration value="CITIZEN"/>
+                                                                              <xs:enumeration value="DUMMY"/>
+                                                                            </xs:restriction>
+                                                                          </xs:simpleType>
+                                                                        </xs:attribute>
+                                                                        <xs:attributeGroup ref="base-general-info"/>
+                                                                        <xs:attribute name="image-file-name" type="xs:string" use="optional"/>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                  <xs:attributeGroup ref="base-general-info"/>
+                                                                  <xs:attribute name="type" use="required">
+                                                                    <xs:annotation>
+                                                                      <xs:documentation>Presentation type of the ballot-option.  It determines if the ballot is selectable by means of a voting pad or by means of the voting machine screen.  Usually, all of the ballot-options contained in a particular ballot, have the same type; this fact would lead to having the presentation type associated to the ballot and not to the ballot-option, but it has been decided to be kept within the ballot-option for sake of model generality.</xs:documentation>
+                                                                    </xs:annotation>
+                                                                    <xs:simpleType>
+                                                                      <xs:restriction base="xs:string">
+                                                                        <xs:enumeration value="SCREEN"/>
+                                                                        <xs:enumeration value="PAD"/>
+                                                                        <xs:enumeration value="VTV"/>
+                                                                        <xs:enumeration value="PAD_WITH_SCREEN_STATUS"/>
+                                                                      </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                  </xs:attribute>                                                                  
+                                                                  <xs:attribute name="image-file-name" type="xs:string" use="optional"/>
+                                                                  <xs:attribute name="image-for-vote-receipt-file-name" type="xs:string" use="optional"/>
+                                                                  <xs:attribute name="tally-position" type="xs:positiveInteger" use="required"/>
+                                                                  <xs:attribute name="contest-code-ref" type="xs:string" use="optional"/>
+                                                                  <xs:attribute name="category" use="required">
+                                                                    <xs:simpleType>
+                                                                      <xs:restriction base="xs:string">
+                                                                        <xs:enumeration value="PRINCIPAL"/>
+                                                                        <xs:enumeration value="STAND_IN"/>
+                                                                        <xs:enumeration value="LIST"/>
+                                                                      </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                  </xs:attribute>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attributeGroup ref="base-general-info"/>
+                                                      <xs:attribute name="ballot-name-key" type="xs:string" use="required">
+                                                        <xs:annotation>
+                                                          <xs:documentation>Name of the eligible option that is presented in the ballot.</xs:documentation>
+                                                        </xs:annotation>
+                                                      </xs:attribute>
+                                                      <xs:attribute name="candidate-id" type="xs:string" use="required">
+                                                        <xs:annotation>
+                                                          <xs:documentation>Unique id of the candidate associated to this eligible option.  In issue contests, this field represents the unique id of the answer.</xs:documentation>
+                                                        </xs:annotation>
+                                                      </xs:attribute>
+                                                      <xs:attribute name="parent-code" type="xs:string" use="required">
+                                                        <xs:annotation>
+                                                          <xs:documentation>Code of the parent associated to this eligible option.</xs:documentation>
+                                                        </xs:annotation>
+                                                      </xs:attribute>
+                                                      <xs:attribute name="sub-level-eligible-amount" type="xs:nonNegativeInteger" use="optional">
+                                                        <xs:annotation>
+                                                          <xs:documentation>Level number of this eligible option. The first level is 0.</xs:documentation>
+                                                        </xs:annotation>
+                                                      </xs:attribute>
+                                                      <xs:attribute name="sub-level-order-index" type="xs:nonNegativeInteger" use="optional">
+                                                        <xs:annotation>
+                                                          <xs:documentation>Unique index of this eligible option among all others.</xs:documentation>
+                                                        </xs:annotation>
+                                                      </xs:attribute>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="display-info">
+                                              <xs:complexType>
+                                                <xs:sequence/>
+                                                <xs:attribute name="image-width-height-relation" type="xs:float" use="required"/>
+                                                <xs:attribute name="ballot-options-layout-kind" use="required">
+                                                  <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                      <xs:enumeration value="HORIZONTAL"/>
+                                                      <xs:enumeration value="VERTICAL"/>
+                                                    </xs:restriction>
+                                                  </xs:simpleType>
+                                                </xs:attribute>
+                                                <xs:attribute default="1" name="max-amount-of-ballot-options-columns" type="xs:integer" use="optional"/>
+                                                <xs:attribute default="false" name="force-max-amount-of-ballot-options-columns" type="xs:boolean" use="optional"/>
+                                                <xs:attribute default="3" name="max-amount-of-ballot-options-columns-in-multi-level-selection-mode" type="xs:integer" use="optional"/>
+                                                <xs:attribute default="true" name="force-max-amount-of-ballot-options-columns-in-multi-level-selection-mode" type="xs:boolean" use="optional"/>
+                                                <xs:attribute name="multi-level-voting-experience-layout-kind" type="xs:string" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attributeGroup ref="general-info"/>
+                                          <xs:attribute name="min-votes" type="xs:nonNegativeInteger" use="required">
+                                            <xs:annotation>
+                                              <xs:documentation>Minimum number of selections that can be made for the current contest.</xs:documentation>
+                                            </xs:annotation>
+                                          </xs:attribute>
+                                          <xs:attribute name="max-votes" type="xs:nonNegativeInteger" use="required">
+                                            <xs:annotation>
+                                              <xs:documentation>Maximum number of selections that can be made for the first level in current contest.</xs:documentation>
+                                            </xs:annotation>
+                                          </xs:attribute>
+                                          <xs:attribute name="is-question" type="xs:boolean" use="required">
+                                            <xs:annotation>
+                                              <xs:documentation>Defines if the current contest represents an issue, where the selection is done over a set of answers made on a specific issue, instead of over a set of candidates running for the same position.</xs:documentation>
+                                            </xs:annotation>
+					  </xs:attribute>
+					  <!--xs:attribute name="custom-code" type="xs:string" use="optional"/ This is already included in general-info-->
+					  <xs:attribute name="contest-class-code" type="xs:string" use="required"/>
+                                        </xs:complexType>
+                                        <xs:unique name="ballot-option-tally-position-key">
+                                          <xs:selector xpath=".//ballot-option"/>
+                                          <xs:field xpath="@tally-position"/>
+                                        </xs:unique>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attributeGroup ref="general-info"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="general-info"/>
+                </xs:complexType>
+                <xs:unique name="ballot-option-pad-position-key">
+                  <xs:selector xpath=".//ballot-option"/>
+                  <xs:field xpath="@pad-position"/>
+                </xs:unique>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="languages" minOccurs="0" type="Languages"/>
+        
+        <xs:element name="xml-schemas-necessary">
+          <xs:annotation>
+            <xs:documentation>The results documents that a voting machine sends to the Tally Reception WebServices are syntactically verified against DTD definitions.  This node contains the list of DTD files that are used for verifying the documents generated by the voting machine and sent to the Tally Reception WebServices.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="transmission-package" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>URL of the DTD used for syntax verification of the transmission-package file generated by the voting machine.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contest-classes">
+          <xs:complexType>
+            <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="comparator">
+            	<xs:complexType>
+                  <xs:sequence/>                  
+                  <xs:attribute name="class" type="xs:string" use="optional"/>
+                 </xs:complexType>
+            </xs:element>
+              <xs:element maxOccurs="unbounded" name="contest-class">
+                <xs:complexType>
+                  <xs:sequence/>                  
+                  <xs:attribute name="code" type="xs:string" use="required"/>
+                  <xs:attribute name="custom-code" type="xs:string" use="optional"/>
+                  <xs:attribute name="name-key" type="xs:string" use="required"/>
+                  <xs:attribute name="description-key" type="xs:string" use="required"/>
+                  <xs:attribute name="type" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="SINGLE"/>
+                        <xs:enumeration value="LIST"/>
+                        <xs:enumeration value="MINORITY_SINGLE"/>
+                        <xs:enumeration value="ISSUE"/>
+                        <xs:enumeration value="NON_CANDIDATE"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="stand-count-chief" type="xs:nonNegativeInteger" use="required"/>
+                  <xs:attribute name="period" type="xs:nonNegativeInteger" use="required"/>
+                  <xs:attribute name="unit" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="DAY"/>
+                        <xs:enumeration value="WEEK"/>
+                        <xs:enumeration value="MONTH"/>
+                        <xs:enumeration value="YEAR"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="election-mode" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="REGULAR"/>
+                        <xs:enumeration value="OPENLIST"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="class" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contest-groups">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="contest-group">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="contest-code" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="code" type="xs:string" use="required"/>
+                  <xs:attribute name="custom-code" type="xs:string" use="optional"/>
+                  <xs:attribute name="name-key" type="xs:string" use="required"/>
+                  <xs:attribute name="description-key" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ballot-form-layouts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ballot-form-layout">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="identification-area" type="ballot-form-identification-area"/>
+                    <xs:element maxOccurs="unbounded" name="ballot-option-areas" type="ballot-form-area"/>
+                  </xs:sequence>
+                  <xs:attribute name="image-file-name" type="xs:string" use="required"/>
+                  <xs:attribute name="code" type="xs:string" use="required"/>
+                  <xs:attribute name="custom-code" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="identification-area" type="ballot-form-identification-area"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="hash" type="xs:string" use="optional"/>
+      <xs:attribute name="name-key" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation>Election process' name.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="electoral-organization" type="xs:string" use="required"/>
+      <xs:attribute name="voting-time-out" use="required">
+        <xs:annotation>
+          <xs:documentation>The voting session timeout expressed in seconds</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="60"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="audio-voting-time-out" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="180"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attributeGroup ref="base-general-info"/>
+    </xs:complexType>
+    <xs:key name="ballot-code-key">
+      <xs:selector xpath=".//ballot"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:key name="ballot-card-code-key">
+      <xs:selector xpath=".//ballot-card"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:key name="contest-code-key">
+      <xs:selector xpath=".//contest"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:key name="eligible-option-code-key">
+      <xs:selector xpath=".//eligible-option"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:key name="ballot-option-code-key">
+      <xs:selector xpath=".//ballot-option"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:unique name="ballot-option-image-file-name-unique">
+      <xs:selector xpath=".//ballot-option"/>
+      <xs:field xpath="@image-file-name"/>
+    </xs:unique>
+  </xs:element>
+  <xs:attributeGroup name="general-info">
+    <xs:annotation>
+      <xs:documentation>general-info is an attribute group that can be applied to every item that is shown in the voting machine graphic interface.</xs:documentation>
+    </xs:annotation>
+    <xs:attributeGroup ref="base-general-info"/>
+    <xs:attribute name="title-key" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Title.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="abstract-key" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Summarized description.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="help-key" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Help text that is shown to the voter, on demand, when he or she interacts with the voting-experience screens; specifically through the current item.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <!--xs:simpleType name="no-empty-string">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType-->
+  <xs:complexType name="ballot-form-area">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="x" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="y" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="width" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="height" type="xs:nonNegativeInteger" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ballot-form-identification-area">
+    <xs:complexContent>
+      <xs:extension base="ballot-form-area">
+        <xs:sequence>
+          <xs:element maxOccurs="5" minOccurs="4" name="part">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="BALLOT_ID"/>
+                <xs:enumeration value="INDEX"/>
+                <xs:enumeration value="COUNT"/>
+                <xs:enumeration value="LOGICAL_VOTER_GROUP"/>
+                <xs:enumeration value="LAYOUT_CODE"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="parts-pattern" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--xs:attributeGroup name="base-general-info">
+    <xs:annotation>
+      <xs:documentation>general-info is an attribute group that can be applied to every item that is shown in the voting machine graphic interface.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="code" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Unique code.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="custom-code" type="xs:string" use="required"/>
+  </xs:attributeGroup-->
+</xs:schema>

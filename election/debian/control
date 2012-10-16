@@ -1,0 +1,51 @@
+Source: election
+Section: x11
+Priority: optional
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Build-Depends: debhelper (>= 7), 
+	autotools-dev,
+	bash-completion,
+	intltool,
+	pkg-config,
+	xsdcxx (>= 3.3.0.1),
+	libqrencode-dev (>= 3.1.1),
+	zlib1g-dev (>= 1:1.2.3.4),
+	libxml-security-c-dev (>= 1.6.1),
+	libglobalplatform6-dev (>= 6.0.0),
+	libxerces-c-dev,
+	libgtkmm-2.4-dev,
+	libx11-dev,
+	libxtst-dev,
+	libcups2-dev,
+	libusb-1.0-0-dev,
+	liblog4cxx10-dev,
+	libpcsclite-dev,
+	libgmp3-dev,
+	libssl-dev,
+	libsmartmaticgui-dev,
+	libsmartmatic-dev,
+	libsaesfunctionality-dev,
+	libsaescommon-dev,
+	libsaes-dev,
+	libsaeshardware-dev,
+	libsaesguibase-dev,
+	libsmartmaticlog-dev
+Standards-Version: 3.9.1
+Homepage: http://www.smartmatic.com
+
+Package: election
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: saes-themes,
+	saes-l10n-all (= ${binary:Version}),
+	libccid (>= 1.3.11),
+	libasedrive-usb (>= 3.5),
+	xmlroff (>= 0.6.2),
+	fop (>= 1:1.0),
+	zenity,
+	bash-completion,
+	imagemagick,
+	pngcheck
+Description: Smartmatic PM and VM
+ Smartmatic Labs PM and VM

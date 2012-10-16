@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/VotingDevice" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/VotingDevice/contingency-card-data-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="ContingencyCardData" targetNamespace="http://www.smartmatic.com/Saes/Voting/VotingDevice">
+	<xs:element name="ContingencyCardData">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="PollingPlace" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="Passphrase" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="OpeningCode" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>

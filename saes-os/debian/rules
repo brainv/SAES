@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+
+	ln -sf ../udev/70-saes-os-storage.rules debian/saes-os-storage.udev
+	ln -sf ../udev/70-saes-os-bcr.rules debian/saes-os-bcr.udev
+
+	dh_auto_install
+
+override_dh_installudev:
+	dh_installudev --priority=70
+
+override_dh_clean:
+	dh_clean
+	rm -f debian/saes-os-storage.udev
+	rm -f debian/saes-os-bcr.udev

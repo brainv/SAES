@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" id="ConfigurationBaseRoot"
+	targetNamespace="http://www.smartmatic.com/Configuration" 
+	xmlns="http://www.smartmatic.com/Configuration" 
+	xmlns:mstns="http://www.smartmatic.com/Configuration/ConfigurationBase-schema.xsd" >
+   <xsd:complexType name="ConfigurationBase">
+	   <xsd:sequence>
+		  <xsd:element name="ConfigurationType" minOccurs="1" maxOccurs="unbounded">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="Configuration" type="xsd:string"  minOccurs="1" maxOccurs="1">
+					</xsd:element>
+				</xsd:sequence>			
+				<xsd:attribute name="name" type="xsd:string" use="required" />
+				<xsd:attribute name="description" type="xsd:string" use="required" />
+			</xsd:complexType>
+		  </xsd:element>
+		</xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="ConfigurationBaseRoot" type="ConfigurationBase">
+
+  </xsd:element>
+</xsd:schema>
+

@@ -1,0 +1,47 @@
+Source: libsmartmaticlog
+Section: devel
+Priority: extra
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Build-Depends: debhelper (>= 7),
+	autotools-dev,
+	cdbs,
+	pkg-config,
+	liblog4cxx10-dev,
+	doxygen,
+	graphviz
+Standards-Version: 3.9.1
+Homepage: http://www.smartmatic.com
+
+Package: libsmartmaticlog-dev
+Section: libdevel
+Architecture: any
+Depends: libsmartmaticlog1 (= ${binary:Version}), ${misc:Depends}
+Description: Library Smartmatic Log Developer
+ Library Smartmatic Log Developer C++.
+
+Package: libsmartmaticlog1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Library Smartmatic Log
+ Library Smartmatic Log Runtime.
+
+Package: libsmartmaticlog-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery
+Suggests: devhelp
+Description: Library Smartmatic Log Doc
+ Library Smartmatic Log Documentation.
+
+Package: libsmartmaticlog1-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: libsmartmaticlog1 (= ${binary:Version}), ${misc:Depends} 
+Description: Library Smartmatic Log Debug
+ Library Smartmatic Log Runtime Debug
+ .
+ This package contains the debugging symbols of the library.
+

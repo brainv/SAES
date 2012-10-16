@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/codi" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/codi/codi-exchange-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="codi-exchange" targetNamespace="http://www.smartmatic.com/Saes/Voting/codi">
+<xs:element name="CODIExchange">
+	<xs:complexType>
+    	<xs:all>
+	        <xs:element name="Data" type="xs:string"/>
+		</xs:all>
+     </xs:complexType>     
+</xs:element>
+</xs:schema>

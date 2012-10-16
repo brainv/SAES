@@ -1,0 +1,4 @@
+libsmartmaticgui_la-help-button-listener.lo: \
+ Widgets/help-button-listener.cc Widgets/help-button-listener.h
+
+Widgets/help-button-listener.h:

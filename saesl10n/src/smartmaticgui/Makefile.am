@@ -1,0 +1,3 @@
+CLEANFILES = *~
+SUBDIRS = po
+

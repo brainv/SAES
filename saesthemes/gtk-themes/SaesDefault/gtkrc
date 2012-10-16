@@ -1,0 +1,875 @@
+##################################################
+#					         #
+# Belgium					 #
+# Version #12			         	 #
+#					         #
+# created by: Gerardo Hernandez		         #
+# mail address: gerardo.hernandez@smartmatic.com #
+# website: http://www.smartmatic.com             #
+#					         #
+##################################################
+
+style "theme-default"
+{
+ GtkButton      ::default-border    = { 0, 0, 0, 0 }
+ GtkRange       ::trough-border     = 0
+ GtkPaned       ::handle-size       = 6
+ GtkRange       ::slider-width      = 15
+ GtkRange       ::stepper-size      = 15
+ GtkScrollbar   ::min-slider-length = 30
+ GtkCheckButton ::indicator-size    = 14
+ GtkMenuBar     ::internal-padding  = 0
+ GtkTreeView    ::expander-size     = 14
+ GtkExpander    ::expander-size     = 16
+ GtkScale       ::slider-length     = 27
+   
+ xthickness = 1
+ ythickness = 1
+
+ fg[NORMAL] = "#353535"
+ fg[ACTIVE] = "#353535"
+ fg[PRELIGHT] = "#000000"
+ fg[SELECTED] = "#000000"
+ fg[INSENSITIVE] = "#9b9b9b"
+
+ bg[NORMAL] = "#dedde1"
+ bg[ACTIVE] = "#fafafa"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#e0e0e0"
+ bg[INSENSITIVE] = "#f0f0f0"
+
+ base[NORMAL] = "#ffffff"
+ base[ACTIVE] = "#dddddd"
+ base[PRELIGHT] = "#ffffff"
+ base[SELECTED]	= "#c5c5c5"
+ base[INSENSITIVE] = "#f4f4f4"
+
+ text[NORMAL] = "#000000"
+ text[ACTIVE] = "#505050"
+ text[PRELIGHT] = "#353535"
+ text[SELECTED] = "#353535"
+ text[INSENSITIVE] = "#9b9b9b"
+
+ engine "murrine" 
+ {
+  focusstyle = 0 
+  #scrollbar_color = "#dddddd"
+  contrast = 1.0
+  glazestyle = 0
+  menubarstyle = 3
+  menubaritemstyle = 1
+  listviewheaderstyle = 2
+  animation = TRUE
+  highlight_shade = 1.1000011
+  roundness = 2
+  #gradients = TRUE
+  menuitemstyle = 0
+  menustyle = 0
+  listviewstyle = 1
+  scrollbarstyle = 3
+ }
+}
+
+style "theme-wide" = "theme-default"
+{
+ xthickness = 2
+ ythickness = 2
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.1000011
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-wider" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.1000011
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-frame" = "theme-wide"
+{
+ bg[NORMAL] = "#dedde1"
+
+ xthickness = 1
+ ythickness = 1
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.1000011
+  gradient_shades = { 1.5, 1.5, 1.5, 1.5 }
+  gradient_colors = {  "#ffffff", "#ffffff", "#ffffff", "#ffffff" }
+ }
+}
+
+style "theme-principal-message-frame" = "theme-wide"
+{
+
+ bg[NORMAL] = "#dedde1"
+ bg[ACTIVE] = "#dedde1"
+ bg[PRELIGHT] = "#dedde1"
+ bg[SELECTED] = "#dedde1"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "theme-keypad-principal-frame" = "theme-wide"
+{
+
+ bg[NORMAL] = "#edeeef"
+ bg[ACTIVE] = "#edeeef"
+ bg[PRELIGHT] = "#edeeef"
+ bg[SELECTED] = "#edeeef"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "main-window-information-event-box" = "theme-wide"
+{
+ GtkLabel       ::font-size     = 1024
+
+ bg[NORMAL] = "#edeeef"
+ bg[ACTIVE] = "#edeeef"
+ bg[PRELIGHT] = "#edeeef"
+ bg[SELECTED] = "#edeeef"
+ bg[INSENSITIVE] = "#edeeef"
+
+}
+
+style "theme-party-widget-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#ffffff"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#ffffff"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "CardActivatorFunctionalityMessage-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#b7b3b2"
+ bg[ACTIVE] = "#b7b3b2"
+ bg[PRELIGHT] = "#b7b3b2"
+ bg[SELECTED] = "#b7b3b2"
+ bg[INSENSITIVE] = "#b7b3b2"
+}
+
+style "CardActivatorMessageEventBox-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#eaebed"
+ bg[ACTIVE] = "#eaebed"
+ bg[PRELIGHT] = "#eaebed"
+ bg[SELECTED] = "#eaebed"
+ bg[INSENSITIVE] = "#eaebed"
+}
+
+style "CustomAttributeComboSelectionsWidgetTitle-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#b7b3b2"
+ bg[ACTIVE] = "#b7b3b2"
+ bg[PRELIGHT] = "#b7b3b2"
+ bg[SELECTED] = "#b7b3b2"
+ bg[INSENSITIVE] = "#b7b3b2"
+}
+
+style "CardActivatorFunctionalityEventBox-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#dcdbe0"
+ bg[ACTIVE] = "#dcdbe0"
+ bg[PRELIGHT] = "#dcdbe0"
+ bg[SELECTED] = "#dcdbe0"
+ bg[INSENSITIVE] = "#dcdbe0"
+}
+
+style "CustomAttributeCounterWidgetTitle-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#b7b3b2"
+ bg[ACTIVE] = "#b7b3b2"
+ bg[PRELIGHT] = "#b7b3b2"
+ bg[SELECTED] = "#b7b3b2"
+ bg[INSENSITIVE] = "#b7b3b2"
+}
+
+style "theme-DialogWidgetBaseFrameHeaderEventBox" = "theme-wide"
+{ 
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#ffffff"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#ffffff"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "theme-DialogWidgetBaseFrameHeaderEventBox-demo" = "theme-wide"
+{ 
+ bg[NORMAL] = "#dedde1"
+ bg[ACTIVE] = "#dedde1"
+ bg[PRELIGHT] = "#dedde1"
+ bg[SELECTED] = "#dedde1"
+ bg[INSENSITIVE] = "#dedde1"
+
+}
+
+style "theme-DialogWidgetBaseFrameClientAreaEventBox" = "theme-wide"
+{ 
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#ffffff"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#ffffff"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "theme-DialogWidgetBaseFrameClientAreaEventBox-demo" = "theme-wide"
+{ 
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#ffffff"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#ffffff"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "theme-DialogWidgetBaseFrameFooterEventBox" = "theme-wide"
+{ 
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#ffffff"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#ffffff"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+style "theme-DialogWidgetBaseFrameFooterEventBox-demo" = "theme-wide"
+{ 
+ bg[NORMAL] = "#dedde1"
+ bg[ACTIVE] = "#dedde1"
+ bg[PRELIGHT] = "#dedde1"
+ bg[SELECTED] = "#dedde1"
+ bg[INSENSITIVE] = "#dedde1"
+
+}
+
+style "theme-stand-in-event-box" = "theme-wide"
+{ 
+ bg[NORMAL] = "#000000"
+ bg[ACTIVE] = "#000000"
+ bg[PRELIGHT] = "#000000"
+ bg[SELECTED] = "#000000"
+ bg[INSENSITIVE] = "#000000"
+}
+
+style "theme-base-window-title-event-box" = "theme-wide"
+{
+ GtkLabel       ::font-size     = 1024
+
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#ffffff"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#ffffff"
+ bg[INSENSITIVE] = "#ffffff"
+
+}
+
+
+style "theme-button" = "theme-default"
+{
+
+ xthickness = 3
+ ythickness = 3
+ 
+ fg[NORMAL] = {1.0, 0.0, 0.0}
+
+ engine "murrine" 
+ {
+  highlight_shade = 0.9955009955
+  gradient_shades = { 1.1, 1.5, 1.5, 1.2 }
+  gradient_colors = {  "#626264", "#626264", "#626264", "#B4AEAD" }
+ }
+}
+
+style "theme-voting-experience-button-label" = "theme-default"
+{
+   font_name  = "Sans Italic 24" 
+
+ fg[NORMAL] = "#ffffff"
+ fg[ACTIVE] = "#ffffff"
+ fg[PRELIGHT] = "#ffffff"
+ fg[SELECTED] = "#ffffff"
+ fg[INSENSITIVE] = "#ffffff"
+
+ bg[NORMAL] = "#000000"
+ bg[ACTIVE] = "#000000"
+ bg[PRELIGHT] = "#000000"
+ bg[SELECTED] = "#000000"
+ bg[INSENSITIVE] = "#000000"
+
+ text[NORMAL] = "#ffffff"
+ text[ACTIVE] = "#ffffff"
+ text[PRELIGHT] = "#ffffff"
+ text[SELECTED] = "#ffffff"
+ text[INSENSITIVE] = "#ffffff"	
+
+
+   xthickness = 3
+   ythickness = 3
+  
+    engine "murrine" 
+    {
+       highlight_shade = 0.9955009955
+       gradient_shades = { 1.1, 1.5, 1.5, 1.2 }
+       gradient_colors = {  "#5C5C5C", "#000000", "#000000", "#5C5C5C" }
+    }
+}
+
+style "theme-voting-experience-button-label-demo" = "theme-default"
+{
+   font_name  = "Sans Italic 20" 
+
+ fg[NORMAL] = "#000000"
+ fg[ACTIVE] = "#000000"
+ fg[PRELIGHT] = "#000000"
+ fg[SELECTED] = "#000000"
+ fg[INSENSITIVE] = "#ffffff"
+
+ text[NORMAL] = "#ffffff"
+ text[ACTIVE] = "#ffffff"
+ text[PRELIGHT] = "#ffffff"
+ text[SELECTED] = "#ffffff"
+ text[INSENSITIVE] = "#ffffff"
+
+   xthickness = 3
+   ythickness = 3
+
+    engine "murrine" 
+    {
+       highlight_shade = 0.9955009955
+       gradient_shades = { 1.1, 1.5, 1.5, 1.2 }
+       gradient_colors = {  "#e58a30", "#e58a30", "#e58a30", "#B4AEAD" }
+    }
+}
+
+style "theme-voting-experience-w" = "theme-wide"
+{
+ bg[NORMAL] = "#ffffff"
+
+ xthickness = 1
+ ythickness = 1
+
+}
+
+style "theme-voting-experience-w-demo" = "theme-wide"
+{
+ bg[NORMAL] = "#edeeef"
+
+ xthickness = 1
+ ythickness = 1
+
+}
+
+style "theme-voting-experience-frame-w" = "theme-wide"
+{
+ fg[NORMAL] = "#000000"
+ fg[ACTIVE] = "#000000"
+ fg[PRELIGHT] = "#000000"
+ fg[SELECTED] = "#000000"
+ fg[INSENSITIVE] = "#000000"
+
+ bg[NORMAL] = "#000000"
+ bg[ACTIVE] = "#000000"
+ bg[PRELIGHT] = "#000000"
+ bg[SELECTED] = "#000000"
+ bg[INSENSITIVE] = "#000000"
+
+ base[NORMAL] = "#000000"
+ base[ACTIVE] = "#000000"
+ base[PRELIGHT] = "#000000"
+ base[SELECTED]	= "#000000"
+ base[INSENSITIVE] = "#000000"
+
+ text[NORMAL] = "#000000"
+ text[ACTIVE] = "#000000"
+ text[PRELIGHT] = "#000000"
+ text[SELECTED] = "#000000"
+ text[INSENSITIVE] = "#000000"
+
+ xthickness = 2
+ ythickness = 2
+
+}
+
+style "theme-CardActivatorFunctionalityCenter-frame" = "theme-wide"
+{
+
+ bg[NORMAL] = "#dddce1"
+ bg[ACTIVE] = "#dddce1"
+ bg[PRELIGHT] = "#dddce1"
+ bg[SELECTED] = "#dddce1"
+ bg[INSENSITIVE] = "#dddce1"
+
+ xthickness = 2
+ ythickness = 2
+
+}
+
+style "theme-event_box_choose_widget-frame" = "theme-wide"
+{
+
+ #bg[NORMAL] = "#eaebed"
+ #bg[ACTIVE] = "#eaebed"
+ #bg[PRELIGHT] = "#eaebed"
+ #bg[SELECTED] = "#eaebed"
+ #bg[INSENSITIVE] = "#eaebed"
+
+ bg[NORMAL] = "#4e4e4e"
+ bg[ACTIVE] = "#4e4e4e"
+ bg[PRELIGHT] = "#4e4e4e"
+ bg[SELECTED] = "#4e4e4e"
+ bg[INSENSITIVE] = "#4e4e4e"
+
+ xthickness = 2
+ ythickness = 2
+}
+
+style "theme_menu_widget_principal_button" = "theme-button"
+{
+
+ fg[NORMAL] = "#ffffff"
+ fg[ACTIVE] = "#ffffff"
+ fg[PRELIGHT] = "#000000"
+ fg[SELECTED] = "#000000"
+ fg[INSENSITIVE] = "#ffffff"
+
+ text[NORMAL] = "#ffffff"
+ text[ACTIVE] = "#ffffff"
+ text[PRELIGHT] = "#ffffff"
+ text[SELECTED] = "#ffffff"
+ text[INSENSITIVE] = "#ffffff"
+
+ engine "murrine" 
+ {
+  highlight_shade = 0.9955009955
+  gradient_shades = { 1.0, 1.0, 1.0, 1.1 }
+  gradient_colors = {  "#415181", "#415181", "#415181", "#8b96b1" }
+ }
+}
+
+style "theme_menu_widget_secondary_button" = "theme-button"
+{
+
+ fg[NORMAL] = "#000000"
+ fg[ACTIVE] = "#000000"
+ fg[PRELIGHT] = "#000000"
+ fg[SELECTED] = "#000000"
+ fg[INSENSITIVE] = "#ffffff"
+
+ text[NORMAL] = "#ffffff"
+ text[ACTIVE] = "#ffffff"
+ text[PRELIGHT] = "#ffffff"
+ text[SELECTED] = "#ffffff"
+ text[INSENSITIVE] = "#ffffff"
+
+ engine "murrine" 
+ {
+  
+  highlight_shade = 0.9955009955
+  gradient_shades = { 1.1, 1.5, 1.5, 1.2 }
+  gradient_colors = {  "#626264", "#626264", "#626264", "#B4AEAD" }
+ }
+}
+
+style "theme-key-pad-button" = "theme-button"
+{
+
+}
+
+
+style "theme-check" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+ 
+ bg[NORMAL] = "#e8e8e8"
+ bg[ACTIVE] = "#d4d4d4"
+ bg[PRELIGHT] = "#f3f3f3"
+
+ engine "murrine"
+ {
+  highlight_shade = 1.045001045
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-scale" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+
+ bg[NORMAL] = "#d8d8d8"
+ bg[ACTIVE] = "#dddddd"
+ bg[PRELIGHT] = "#f3f3f3"
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.1000011
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-scrollbar" = "theme-default"
+{
+ xthickness = 2
+ ythickness = 2
+ 
+ bg[NORMAL] = "#e8e8e8"
+ bg[ACTIVE] = "#dddddd"
+ bg[PRELIGHT] = "#f3f3f3"
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.000000
+  gradient_shades = { 1.1, 1.0, 1.0, 1.1 }
+ }
+}
+
+style "theme-range" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+}
+
+style "theme-notebook" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+
+ #bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#e5e5e5"
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.000000
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-notebook-white" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+
+ bg[NORMAL] = "#ffffff"
+ bg[ACTIVE] = "#e5e5e5"
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.000000
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-tasklist" = "theme-default"
+{ 
+ xthickness = 5
+ ythickness = 3
+}
+
+style "theme-menu" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 2
+}
+
+style "theme-menu-item" = "theme-default"
+{
+ xthickness = 2
+ ythickness = 3
+}
+
+style "theme-menubar" = "theme-default"
+{
+ xthickness = 2
+ ythickness = 2
+ 
+ bg[NORMAL] = "#e5e5e5"
+}
+
+style "theme-menubar-item" = "theme-default"
+{
+ xthickness = 2
+ ythickness = 3
+
+ bg[PRELIGHT] = "#ffffff"
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.000000
+  gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+ }
+}
+
+style "theme-tree" = "theme-default"
+{
+ xthickness = 2
+ ythickness = 2
+ 
+ bg[NORMAL] = "#e8e8e8"
+}
+
+style "theme-frame-title" = "theme-default"
+{
+ fg[NORMAL] = "#404040"
+}
+
+style "theme-AuthenticationWindow-title" = "theme-default"
+{
+ fg[NORMAL] = "#000000"
+ text[NORMAL] = "#000000"
+
+ 
+}
+
+
+style "message-label" = "theme-default"
+{
+ fg[NORMAL] = "#000000"
+ text[NORMAL] = "#000000"
+}
+
+style "theme-stand-in-label-label" 
+{
+
+ base[NORMAL] = "#ffffff"
+ base[ACTIVE] = "#ffffff"
+ base[PRELIGHT] = "#ffffff"
+ base[SELECTED]	= "#ffffff"
+ base[INSENSITIVE] = "#ffffff"
+
+ fg[NORMAL] = "#ffffff"
+ fg[ACTIVE] = "#ffffff"
+ fg[PRELIGHT] = "#ffffff"
+ fg[SELECTED] = "#ffffff"
+ fg[INSENSITIVE] = "#ffffff"
+
+ text[NORMAL] = "#ffffff"
+ text[ACTIVE] = "#ffffff"
+ text[PRELIGHT] = "#ffffff"
+ text[SELECTED] = "#ffffff"
+ text[INSENSITIVE] = "#ffffff"
+}
+
+
+style "theme-tooltips" = "theme-default"
+{
+ xthickness = 4
+ ythickness = 4
+ 
+ bg[NORMAL] = "#f0f0f0"
+}
+
+style "theme-progressbar" = "theme-default"
+{
+ xthickness = 1
+ ythickness = 1
+ 
+ bg[NORMAL] = "#f6f6f6"
+ bg[ACTIVE] = "#fafafa"
+ bg[PRELIGHT] = "#ffffff"
+ bg[SELECTED] = "#e0e0e0"
+ bg[INSENSITIVE] = "#f0f0f0"
+
+ base[NORMAL] = "#ffffff"
+ base[ACTIVE] = "#dddddd"
+ base[PRELIGHT] = "#ffffff"
+ base[SELECTED]	= "#c5c5c5"
+ base[INSENSITIVE] = "#f4f4f4"
+ 
+ engine "murrine" 
+ {
+  highlight_shade = 1.000000
+  gradient_shades = { 1.1, 1.0, 1.0, 1.1 }
+ }
+}
+
+style "theme-combo" = "theme-default"
+{
+ xthickness = 3
+ ythickness = 3
+ 
+ bg[NORMAL] = "#e8e8e8"
+ bg[ACTIVE] = "#dddddd"
+ bg[PRELIGHT] = "#f3f3f3"
+
+ engine "murrine" 
+ {
+  highlight_shade = 0.9955009955
+  gradient_shades = { 1.4, 1.4, 1.4, 1.2 }
+ }
+}
+
+
+style "theme-combo-error-frame" = "theme-combo"
+{
+ bg[NORMAL] = "#ff0000"
+ bg[ACTIVE] = "#ff0000"
+ bg[PRELIGHT] = "#ff0000"
+ bg[SELECTED] = "#ff0000"
+ bg[INSENSITIVE] = "#ff0000"
+}
+
+style "metacity-frame" = "theme-default"
+{
+ bg[SELECTED] = "#cccccc"
+}
+
+style "theme-entry-error-frame" = "theme-wider"
+{
+ base[NORMAL] = "#ff0000"
+}
+
+
+# widget styles
+class "GtkWidget" style "theme-default"
+class "GtkButton" style "theme-button"
+class "GtkScale" style "theme-range"
+class "GtkCombo" style "theme-button"
+class "GtkScale" style "theme-scale"
+class "GtkScrollbar" style "theme-scrollbar"
+class "GtkRange" style "theme-wide"
+class "GtkFrame" style "theme-frame"
+class "GtkMenu" style "theme-menu"
+class "GtkEntry" style "theme-wider"
+class "GtkMenuItem" style "theme-menu-item"
+class "GtkNotebook" style "theme-notebook"
+class "GtkProgressBar" style "theme-progressbar"
+class "*MenuBar*" style "theme-menubar"
+class "GtkCheckButton" style "theme-check"
+class "GtkRadioButton" style "theme-check"
+
+# menubar stuff
+widget_class "*MenuItem.*" style "theme-menu-item"
+widget_class "*MenuBar.*" style "theme-menubar-item"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton" style "theme-combo"
+widget_class "*.GtkCombo.GtkButton" style "theme-combo"
+
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton" style "theme-tasklist"
+widget "gtk-tooltip*" style "theme-tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton" style "theme-tree"
+widget_class "*.GtkCTree.GtkButton" style "theme-tree"
+widget_class "*.GtkList.GtkButton" style "theme-tree"
+widget_class "*.GtkCList.GtkButton" style "theme-tree"
+widget_class "*.GtkFrame.GtkLabel" style "theme-frame-title"
+#widget_class "*<GtkButton>*<GtkLabel>" style "theme-AuthenticationWindow-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox" style "theme-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "theme-notebook"
+
+widget "*labelBottom*" style "theme-AuthenticationWindow-title"
+widget "*eventBoxmainwidowinformation*" style "theme-principal-message-frame"
+widget "*keypadeventbox*" style "theme-keypad-principal-frame"
+widget "*parentkeypadeventbox*" style "theme-keypad-principal-frame"
+widget "*base_window_title_event_box*" style "theme-base-window-title-event-box"
+widget "*main_window_information_event_box*" style "main-window-information-event-box"
+
+#keypad buttons configuration
+widget "*key_pad_zero*" style "theme-key-pad-button"
+widget "*key_pad_one*" style "theme-key-pad-button"
+widget "*key_pad_two*" style "theme-key-pad-button"
+widget "*key_pad_three*" style "theme-key-pad-button"
+widget "*key_pad_four*" style "theme-key-pad-button"
+widget "*key_pad_five*" style "theme-key-pad-button"
+widget "*key_pad_six*" style "theme-key-pad-button"
+widget "*key_pad_seven*" style "theme-key-pad-button"
+widget "*key_pad_eight*" style "theme-key-pad-button"
+widget "*key_pad_nine*" style "theme-key-pad-button"
+widget "*key_pad_corrige*" style "theme-key-pad-button"
+widget "*key_pad_confirma*" style "theme-key-pad-button"
+
+#menu buttons
+widget "*theme_menu_widget_principal_button*" style "theme_menu_widget_principal_button"
+widget "*theme_menu_widget_secondary_button*" style "theme_menu_widget_secondary_button"
+
+#voting experience window 
+widget "*votingexperiencewindow*" style "theme-voting-experience-w"
+widget "*votingexperiencepartyeventbox*" style "theme-voting-experience-w"
+widget "*votingexperienceballotoptioneventbox*" style "theme-voting-experience-w"
+widget "*votingexperienceeventboxexternal*" style "theme-voting-experience-w"
+widget "*dialog_widget_baseDialogWidgetBaseFrame*" style "theme-voting-experience-frame-w"
+widget "*voting_experience_select_ballot_option_widget*" style "theme-voting-experience-frame-w"
+widget "*voting_experience_party_widget*" style "theme-voting-experience-frame-w"
+widget "*party_widget_event_box*" style "theme-party-widget-event-box"
+widget "*stand_in_label_event*" style "theme-stand-in-event-box"
+widget "*stand_in_label_label*" style "theme-stand-in-label-label"
+widget "*dialog_widget_baseDialogWidgetBaseFrameHeaderEventBox*" style "theme-DialogWidgetBaseFrameHeaderEventBox"
+widget "*dialog_widget_baseDialogWidgetBaseFrameClientAreaEventBox*" style "theme-DialogWidgetBaseFrameClientAreaEventBox"
+widget "*dialog_widget_baseDialogWidgetBaseFrameFooterEventBox*" style "theme-DialogWidgetBaseFrameFooterEventBox"
+widget "*dialog_widget_baseDialogWidgetBaseFrameframeHeader*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_baseDialogWidgetBaseFrameborderFrameHeader*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_baseDialogWidgetBaseFrameframeClientArea*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_baseDialogWidgetBaseFrameborderframeClientArea*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_baseDialogWidgetBaseFrameframeFooter*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_baseDialogWidgetBaseFrameborderframeFooter*" style "theme-voting-experience-frame-w"
+
+#voting experience window demo
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameHeaderEventBox*" style "theme-DialogWidgetBaseFrameHeaderEventBox-demo"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameClientAreaEventBox*" style "theme-DialogWidgetBaseFrameClientAreaEventBox-demo"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameFooterEventBox*" style "theme-DialogWidgetBaseFrameFooterEventBox-demo"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameframeHeader*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameborderFrameHeader*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameframeClientArea*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameborderframeClientArea*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameframeFooter*" style "theme-voting-experience-frame-w"
+widget "*dialog_widget_demo_baseDialogWidgetBaseFrameborderframeFooter*" style "theme-voting-experience-frame-w"
+
+#Botones de la experiencia de votaciòn
+widget "*VotingWindowButton*" style "theme-voting-experience-button-label"
+widget "*VotingWindowButtonDemo*" style "theme-voting-experience-button-label-demo"
+
+#change language functionality
+widget "*change_language_message_wigdet_event_box*" style "main-window-information-event-box"
+
+#card generator functionality
+widget "*cardActivatorFunctionalityEventBox*" style "CardActivatorFunctionalityEventBox-event-box"
+
+
+
+#card generator functionality <right panel>
+widget "*CardActivatorMessageEventBox*" style "CardActivatorMessageEventBox-event-box"
+widget "*cardActivatorValuesEventBox*" style "CardActivatorMessageEventBox-event-box"
+widget "*CardActivatorFunctionalityMessage*" style "CardActivatorFunctionalityMessage-event-box"
+
+#card generator functionality <center panel>
+widget "*CardActivatorFunctionalityCenterFrame*" style "theme-CardActivatorFunctionalityCenter-frame"
+widget "*CustomAttributeComboSelectionsWidgetTitle*" style "CustomAttributeComboSelectionsWidgetTitle-event-box"
+widget "*CustomAttributeCounterWidgetTitle*" style "CustomAttributeCounterWidgetTitle-event-box"
+
+#
+widget "*event_box_choose_widget_frame*" style "theme-event_box_choose_widget-frame"
+
+# entry error validate
+widget "*entry_error_frame*" style "theme-entry-error-frame"
+
+# combo error validate
+widget "*combo_error_frame*" style "theme-combo-error-frame"
+
+# theme-notebook-white
+widget "*notebook_white_frame*" style "theme-notebook-white"
+
+# wm stuff
+class "MetaFrames" style "metacity-frame"
+class "GtkWindow" style "metacity-frame"
+

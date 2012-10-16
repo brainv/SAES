@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#author Pablo Trujillo, Yadickson Soto
+#date 14-09-2011
+#package saes-os
+#version 1.4.6
+
+APPCONF="/etc/saes-os/saes-os.conf"
+BIN=$(cat "${APPCONF}" | awk -F: '/BIN/{print $2}')
+SIGNALBCR=$(cat "${APPCONF}" | awk -F: '/SIGNALBCR/{print $2}')
+SIGNALED="/tmp/SyncUSER1"
+
+ACTION="${1}"
+
+if [ -f "${SIGNALED}" ]
+then
+	for bin in $(echo "${BIN}" | tr " " "\n")
+	do
+		pkill -"${SIGNALBCR}" "${bin}"
+	done
+fi
+
+if [ ! -z "${ACTION}" ]; then
+	sleep 1
+	modprobe -r usbserial
+	sleep 2
+	modprobe -r usbserial
+fi
+

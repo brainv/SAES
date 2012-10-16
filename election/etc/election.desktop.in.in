@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=SAES ELECTION
+Type=Application
+Exec=sudo @BINDIR@/election-5.0
+Terminal=false
+Icon=@PIXMAPDIR@/election-5.0.png
+_Comment=Voting Machine
+Categories=Utility;
+OnlyShowIn=GNOME;XFCE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=election-5.0
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=30
+X-Ubuntu-Gettext-Domain=election-5.0

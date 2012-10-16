@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/VotingCenters" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/VotingCenters/voting-centers-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="voting-centers" targetNamespace="http://www.smartmatic.com/Saes/Voting/VotingCenters">
+<xs:element name="VotingCenters">
+	<xs:complexType>
+    	<xs:sequence>
+	        <xs:element maxOccurs="unbounded" minOccurs="1" name="VotingCenter">
+    	      <xs:complexType>
+               <xs:sequence/>
+               <xs:attribute name="code" type="xs:string" use="required"/>
+               <xs:attribute name="folder-name" type="xs:string" use="required"/>
+               <xs:attribute name="image-file-name" type="xs:string" use="required"/>
+               <xs:attribute name="program-unit" type="xs:string" use="optional"/>
+              </xs:complexType>
+        	</xs:element>
+		</xs:sequence>
+     </xs:complexType>
+     <xs:key name="voting-center-code-key">
+      <xs:selector xpath=".//VotingCenter"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:key name="voting-folder-name-key">
+      <xs:selector xpath=".//VotingCenter"/>
+      <xs:field xpath="@folder-name"/>
+    </xs:key>
+</xs:element>
+</xs:schema>

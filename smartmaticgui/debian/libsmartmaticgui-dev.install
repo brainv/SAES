@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsmartmaticgui*.la
+debian/tmp/usr/lib/libsmartmaticgui*.so
+debian/tmp/usr/lib/pkgconfig/libsmartmaticgui.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsmartmaticgui/AUTHORS
+debian/tmp/usr/share/doc/libsmartmaticgui/ChangeLog
+debian/tmp/usr/share/doc/libsmartmaticgui/INSTALL
+debian/tmp/usr/share/doc/libsmartmaticgui/NEWS
+debian/tmp/usr/share/doc/libsmartmaticgui/README

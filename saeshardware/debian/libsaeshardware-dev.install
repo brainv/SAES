@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsaeshardware*.la
+debian/tmp/usr/lib/libsaeshardware*.so
+debian/tmp/usr/lib/pkgconfig/libsaeshardware.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsaeshardware/AUTHORS
+debian/tmp/usr/share/doc/libsaeshardware/ChangeLog
+debian/tmp/usr/share/doc/libsaeshardware/INSTALL
+debian/tmp/usr/share/doc/libsaeshardware/NEWS
+debian/tmp/usr/share/doc/libsaeshardware/README

@@ -1,0 +1,714 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/Operation/Authenticator/PMachineAuthenticator.cxx:85
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator."
+"ValidateElectoralProcess"
+msgstr "Valideren verkiezingsproces"
+
+#: ../src/Operation/Authenticator/PMachineAuthenticator.cxx:90
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateMenu"
+msgstr "Valideer menu"
+
+#: ../src/Operation/Authenticator/PMachineAuthenticator.cxx:93
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateNoMatch"
+msgstr "Validatie geen overeenkomst"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:84
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateMenu"
+msgstr "Valideer menu"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:89
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator."
+"ValidateVotingProcess"
+msgstr "Valideren stemproces"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:94
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator."
+"ValidateAudioVotingProcess"
+msgstr "Valideren Audio stemproces"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:99
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateClearAlarm"
+msgstr "Validere elemineren Alarm"
+
+#: ../src/Operation/Authenticator/VMachineAuthenticator.cxx:102
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.VMachineAuthenticator.ValidateNoMatch"
+msgstr "Validatie geen overeenkomst"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:42
+msgid "Smartmatic.SAES.Operation.Initiator.StartPMAchine"
+msgstr "Opstarten voorzittermachine"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:91
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReport"
+msgstr "Afdrukken installatierapport"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:219
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineInitiator.PrintingInstallReportOk"
+msgstr "Afdrukken rapport geslaagd"
+
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:224
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:229
+#: ../src/Operation/Initiator/PMachineInitiator.cxx:234
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.PMachineInitiator."
+"PrintingInstallReportFail"
+msgstr "Het afdrukken is mislukt. \nSluit de drukker aan en herstart de voorzitterscomputer"
+
+#: ../src/Operation/Initiator/VMachineInitiator.cxx:40
+msgid "Smartmatic.SAES.Operation.Initiator.StartVMAchine"
+msgstr "Start stemcomputer"
+
+#: ../src/Operation/Initiator/VMachineInitiator.cxx:65
+msgid ""
+"Smartmatic.SAES.Operation.Initiator.CanRemoveTheFlashDriveFromTheMachine"
+msgstr "      U kunt nu de gegevensdrager verwijderen\nDaarna kunt u de volgende stemcomputer installeren"
+
+#: ../src/Operation/Initiator/VMachineInitiator.cxx:89
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"ErrorLogicalVoterGroupAndCustomAttributeDefinition"
+msgstr "Fout in de Logical Voter Group en Custom Attribute Definitie"
+
+#: ../src/Operation/Voting/FillVote.cxx:115
+msgid ""
+"Smartmatic.SAES.Operation.Voting.FillVote."
+"ErrorLogicalVoterGroupAndCustomAttributeDefinition"
+msgstr "Fout in de Logical Voter Group en Custom Attribute Definitie"
+
+#: ../src/Operation/Voting/VotingExperienceController.cxx:704
+#: ../src/Operation/Voting/VotingExperienceController.cxx:709
+#: ../src/Operation/Voting/VotingExperienceController.cxx:714
+#: ../src/Operation/Voting/VotingExperienceController.cxx:748
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController.UnderConstruction"
+msgstr "Onder Constructie"
+
+#: ../src/Operation/Voting/VotingExperienceController.cxx:732
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextCustomAttributeDefinitionNotFound"
+msgstr "Volgende aangepast attribuut definitie niet gevonden"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.IDCardDetectionException"
+msgstr "Fout tijdens het detecteren van de eID kaart"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager."
+"IDCardSignatureOperationException"
+msgstr "Fout tijdens het ondertekenen van de eID kaart"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager."
+"IDCardSignatureCannotOpenFileException"
+msgstr "Fout tijdens het ondertekenen van de eID kaart - kan bestand niet openen"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.GettingVoteFromSafeBuffer"
+msgstr "Ophalen stem van de veilige buffer"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager."
+"ElectoralConfigurationReportPrinted"
+msgstr "Rapport met kiesconfiguratie afgedrukt"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator."
+"LogPrintingInstallReportFailPrinterNotReady"
+msgstr "Fout tijdens het afdrukken van het installatierapport - drukker niet klaar"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator."
+"LogPrintingInstallReportFail"
+msgstr "Afdrukken installatierapport"
+
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"StartingVotingExperience"
+msgstr "Starten stemproces"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"StartVotingExperienceFailture"
+msgstr "Fout tijdens het starten van het stemproces"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"StartedVotingExperience"
+msgstr "Stemproces gestart"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextActionVotingExperienceClose"
+msgstr "Volgende actie afsluiten stemproces"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextActionVotingExperienceContest"
+msgstr "Volgende actie stemproces verkiezing"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnableToReadCard"
+msgstr "Kan de kaart niet lezen"
+
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnableToWriteCard"
+msgstr "Kan de kaart niet beschrijven"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCryptographicError"
+msgstr "Cryptografische fout"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogInvalidCard"
+msgstr "Ongeldige kaart"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCardUsed"
+msgstr "Kaart reeds gebruikt"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogInvalidVotingCardData"
+msgstr "Ongeldige data op stemkaart"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogTimeOut"
+msgstr "Tijd om te stemmen is afgelopen"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogUnexpected"
+msgstr "Onverwachte gebeurtenis"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogStackOfAlarmsCleared"
+msgstr "Log van alarmen opgekuist"
+
+
+
+############## new functionalities de PM
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorValidatedVote"
+msgstr "Fout tijdens het valideren van de stem"
+
+msgid ""
+"Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorVote"
+msgstr "Foutieve stem"
+
+msgid ""
+"Smartmatic.SAES.Functionality.Operation.MachineOperationManager."
+"ErrorFileNameVote"
+msgstr "Foutieve bestandsnaam stem"
+
+msgid ""
+"Smartmatic.SAES.Functionality.Operation.MachineOperationManager."
+"ErrorValidateVote"
+msgstr "Fout tijdens het valideren van de stem"
+
+msgid ""
+"Smartmatic.SAES.Operation.Voting.VotingExperienceController.PartyNotFound"
+msgstr "Partij niet gevonden"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorFoundFolderDomVotes"
+msgstr "Een fout heeft zich voorgedaan op de master gegevensdrager"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorFoundFolderFlashVotes"
+msgstr "Een fout heeft zich voorgedaan op de back-up gegevensdrager"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogCardNotRemovedAfterVoting"
+msgstr "De kaart werd niet verwijderd na het stemmen"
+
+########### Log de auditoria
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectionOpened"
+msgstr "Verkiezing geopend"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ElectionClosed"
+msgstr "Verkiezing gesloten"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.VotingExperienceClosed"
+msgstr "Stemproces gesloten"
+
+############ claves nuevas ivette
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorValidatingVote"
+msgstr "Fout bij het valideren van de stem"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceOfficialVote"
+msgstr "Stem met succes bewaard"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceDemoVote"
+msgstr "Teststem met succes bewaard"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceRecoveryVote"
+msgstr "Herstelstem met succes bewaard"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteDecyptoException"
+msgstr "Fout bij het registreren van de stem"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteSignatureException"
+msgstr "Fout bij het registreren van de stem"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorSignedData"
+msgstr "Fout in de ondertekende gegevens"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteErrorData"
+msgstr "Fout bij het registreren van de stem"
+
+############ Add 25-05-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTime"
+msgstr "De toepassing wordt voor de eerste keer opgestart"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecovery"
+msgstr "Starten van het memory recovery proces"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.MemoryRecoverySuccess"
+msgstr "Het memory recovery proces is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.MemoryRecoveryError"
+msgstr "Het memory recovery proces is met fouten beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalMode"
+msgstr "De applicatie draait in normale modus"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.NotOperatingSystemInFlash"
+msgstr "Het besturingssysteem werd niet gevonden"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.InvalidDomAndFlashData"
+msgstr "De gegevens op beide gegevensdragers zijn ongeldig"
+
+########## Add 29-05-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingOpenElection"
+msgstr "Starten van het proces 'Open verkiezing'"
+
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingCloseVotingExperience"
+msgstr "Starten van het proces 'Afsluiten verkiezing'"
+
+
+####### add 01-06-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckingConfigurationSuccess"
+msgstr "Het verifiëren van de configuratie werd met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckingConfigurationError"
+msgstr "Er is een fout opgetreden tijdens het verifiëren van de configuratie"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTimeSuccess"
+msgstr "De voorzittermachine werd met succes voor de eerste keer opgestart"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningFirstTimeError"
+msgstr "Fout tijdens het opstarten voor de eerste keer"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalModeSuccess"
+msgstr "De toepassing is met succes in de normale modus gestart"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningNormalModeError"
+msgstr "Er is een fout opgetreden tijdens het starten van de toepassing normale modus"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingInstallMachine"
+msgstr "Starten van de installatie van de machine"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MachineInstalled"
+msgstr "Machine geïnstalleerd"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.PollworkerRegistered"
+msgstr "Lid van het stembureau geregistreerd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineAuthenticator.ValidateWizardMenu"
+msgstr "Valideer wizard menu"
+
+############## ADD 03-06-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingPersistPVForm"
+msgstr "Start registratie proces verbaal formulier"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.PersistPVFormSuccess"
+msgstr "Registratie proces verbaal gebeurde met succes"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StartingCloseElection"
+msgstr "Starten van het afsluiten van de verkiezing"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingDemostrationVote"
+msgstr "Starten van de teststem"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.DemostrationVote"
+msgstr "Teststemmen"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.StatingRegisterPollworker"
+msgstr "Starten met het registeren van de leden van het stembureau"
+
+############## ADD 13-06-11
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.VoteRecoveryIntegrityOk"
+msgstr "Stem recuperatie integriteit is OK"
+
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController.VoteRecoveryIntegrityBad"
+msgstr "Stem recuperatie integriteit is fout"
+
+
+############## ADD 02-07-11
+
+#: ../src/Operation/Voting/VotingExperienceController.cxx:660
+msgid "Smartmatic.SAES.Operation.Voting.VotingExperienceController."
+"NextActionVotingExperienceCustomAttributeDefinition"
+msgstr "Volgende actie tijdens het stemmen custom atttribute definition"
+
+#: ../src/Operation/MachineOperationManager.cxx:572
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorDecryptoData"
+msgstr "Fout bij decryptie gegevens"
+
+#: ../src/Operation/MachineOperationManager.cxx:576
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistingVoteDecompressionException"
+msgstr "Fout bij opslaan stem door foute decompressie"
+
+#: ../src/Operation/MachineOperationManager.cxx:577
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorDecompressData"
+msgstr "Fout bij decompressie gegevens"
+
+#: ../src/Operation/MachineOperationManager.cxx:587
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorData"
+msgstr "Probleem met de gegevens"
+
+#: ../src/Operation/MachineOperationManager.cxx:591
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SuccessPersistenceVote"
+msgstr "Opslaan stem geslaagd"
+
+#: ../src/Operation/MachineOperationManager.cxx:660
+msgid "Smartmatic.SAES.Functionality.Operation.MachineOperationManager.ErrorCountVotes"
+msgstr "Fout bij het tellen van de stemmen"
+
+#: ../src/Operation/MachineOperationManager.cxx:715
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostOfficialVotes"
+msgstr "Fout: officiële stemmen verloren"
+
+# ############# new functionalities de PM
+#: ../src/Operation/MachineOperationManager.cxx:731
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostDemoVotes"
+msgstr "Fout: teststem verloren"
+
+#: ../src/Operation/MachineOperationManager.cxx:739
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostSecurityCopyVotes"
+msgstr "Fout: herstelstemmen verloren"
+
+#: ../src/Operation/MachineOperationManager.cxx:747
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostSuperNullVotes"
+msgstr "Fout: blanco stemmen verloren"
+
+# ############# new functionalities de PM
+#: ../src/Operation/MachineOperationManager.cxx:755
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLostTotalVotes"
+msgstr "Fout: totaal aantal stemmen verloren"
+
+#: ../src/Operation/MachineOperationManager.cxx:765
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistenceVoteStatistics"
+msgstr "Fout bij opslaan verkiezingsstatistieken"
+
+############## ADD 21-06-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfiguration"
+msgstr "Configuratietest wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfigurationSuccess"
+msgstr "Configuratietest met succes uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningCheckConfigurationError"
+msgstr "Configuratietest mislukt"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineMode"
+msgstr "Machinevervangingsmode wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineModeSuccess"
+msgstr "Vervanging van machine met succes uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningReplaceMachineModeError"
+msgstr "Vervanging van machine mislukt"
+
+############# Add 30-08-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistenceVote"
+msgstr "Fout in het voortduren van de stem"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.CheckVotes"
+msgstr "Controle van de stemmen"
+
+#############Add 31-08-11
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MessageErrorSIGSEGV"
+msgstr "Een fout is opgetreden in het programma. \nGelieve om technische bijstand te vragen"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.MessageErrorSIGABRT"
+msgstr "Een fout is opgetreden in het programma. \nGelieve om technische bijstand te vragen"
+
+###############Add 14-09-11 ###############
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SaveVoteInOneMemory"
+msgstr "Beginnen met volhardingsmode met één gegevensdrager"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SaveVoteInOneMemorySuccess"
+msgstr "Volhardingsmode met één gegevensdrager uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.RestoreVoteInAllMemory"
+msgstr "Beginnen met herstellen of opnieuw synchroniseren van stemmen in beide gegevensdragers"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.RestoreVoteInAllMemorySuccess"
+msgstr "Stemmen in beide gegevensdragers hersteld of opnieuw gesynchroniseerd"
+
+###############Add 26-09-11 ###############
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceSimulateVote"
+msgstr "Gesimuleerde stem blijft op correcte wijze bewaard"
+
+################ Add 20-10-11
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineInitiator.CheckingConfigurationSuccess"
+msgstr "Het verifiëren van de configuratie werd met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Initiator.VMachineInitiator.CheckingConfigurationError"
+msgstr "Er is een fout opgetreden tijdens het verifiëren van de configuratie"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecoverySuccess"
+msgstr "De geheugenreparatie was succesvol"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.RunningMemoryRecoveryError"
+msgstr "De geheugenreparatie was niet geheel succesvol"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.ContingencyModeSuccess"
+msgstr "De noodmode werd succesvol geladen"
+
+msgid "Smartmatic.SAES.Operation.Initiator.PMachineInitiator.ContingencyModeError"
+msgstr "Het laden van de noodmode was niet helemaal succesvol"
+
+################ Add 02-11-11
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.InitializingDiagnostic"
+msgstr "Initialisatie diagnose"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnose geslaagd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.DiagnosticFailed"
+msgstr "Diagnose mislukt"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.InitializingDiagnostic"
+msgstr "Initialisatie diagnose"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnose geslaagd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.DiagnosticFailed"
+msgstr "Diagnose mislukt"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.ReconfigureDevice"
+msgstr "Opnieuw configureren van de barcodelezer"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.CouldNotReachBarcodeReaderDiagnosticFailed"
+msgstr "Kan de barcodelezer niet bereiken. Diagnose is mislukt"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.InitializingDiagnostic"
+msgstr "Starting automatische kalibratie"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.DiagnosticSuccessful"
+msgstr "Kalibratie geslaagd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.CalibrationDiagnosis.DiagnosticFailed"
+msgstr ""
+"Kalibratie is mislukt\n"
+" Druk op 'Kalibereren' om het kalibratieproces te starten"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.InitializingDiagnostic"
+msgstr "Initialisatie diagnose"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnose geslaagd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DiagnosticFailed"
+msgstr "Diagnose mislukt"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.CheckingForMediaInserted"
+msgstr "Controle USB-gegevensdrager"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.InitializingDiagnostic"
+msgstr "Initialisatie diagnose"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnose geslaagd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.SendingFileToPrint"
+msgstr "Verzending bestand naar de printer om af te drukken"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.InitializingDiagnostic"
+msgstr "Initialisatie diagnose"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.DiagnosticSuccessful"
+msgstr "Diagnose geslaagd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.DiagnosticFailed"
+msgstr "Diagnose mislukt"
+
+###############Add 05-11-11 ###############
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.WriteDeviceError"
+msgstr "Schrijffout apparaat"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.ReadDeviceError"
+msgstr "Leesfout apparaat"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DataWriteDeviceError"
+msgstr "Schrijffout apparaat"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DeleteDeviceError"
+msgstr "Fout verwijderen bestand in apparaat"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.DeviceNotFound"
+msgstr "Apparaat niet gevonden" 
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogMaximunCardExtractionCounterAlarm"
+msgstr "Alarm geactiveerd.  Het maximaal aantal keer (3 keer) dat de\nsmart card uit de kaartlezer kan worden gehaald werd bereikt"
+
+################ Add 14.02.12 ##################
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNearEndOfPaperAfterVoting"
+msgstr "Alarm: papier is bijna op\n\nAls de fout aanhoudt, vraag om technische bijstand"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterFailure"
+msgstr "Fout tijdens het drukken van het stembiljet.\nGelieve technische assistentie te vragen." 
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNotReadyForVoterActivation"
+msgstr "Er is een fout met de drukker, u kan beginnen met stemmen. \nGelieve technische assistentie te vragen." 
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.SucessfullPersistenceDuplicatedVote"
+msgstr "Stembiljet reeds ingescand" 
+
+################# Add 24.02.12 #################
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.TitleErrorSIGSEGV"
+msgstr "Fout"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.TitleErrorSIGABRT"
+msgstr "Fout"
+
+################ Add 21.03.12 ##################
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Run"
+msgstr "Diagnose van de alarm box wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Ok"
+msgstr "Diagnose van de alarm box is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.AlarmBox.Error"
+msgstr "Fout tijdens de diagnose van de alarm box"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Run"
+msgstr "Diagnose van de barcodelezer wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Ok"
+msgstr "Diagnose van de barcodelezer is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Barcode.Error"
+msgstr "Fout tijdens de diagnose van de barcodelezer"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Run"
+msgstr "Diagnose van de drukker wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Ok"
+msgstr "Diagnose van de drukker is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Printer.Error"
+msgstr "Fout tijdens de diagnose van de drukker"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Run"
+msgstr "Diagnose van de kaartlezer wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Ok"
+msgstr "Diagnose van de kaartlezer is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.SmartCard.Error"
+msgstr "Fout tijdens de diagnose van de kaartlezer"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Run"
+msgstr "Diagnose van de USB gegevensdrager wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Ok"
+msgstr "Diagnose van de USB gegevensdrager is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.Flash.Error"
+msgstr "Fout tijdens de diagnose van de USB gegevensdrager"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Run"
+msgstr "Diagnose van het aanraakscherm wordt uitgevoerd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Ok"
+msgstr "Diagnose van het aanraakscherm is met succes beëindigd"
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.IDiagnosis.TouchScreenCalibration.Error"
+msgstr "Fout tijdens de diagnose van het aanraakscherm "
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorUnpackVote"
+msgstr "Fout tijdens het lezen van het stembiljet"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorLogicalVoterGroupInVote"
+msgstr "Fout met betrekking tot stem informatie"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVotingDeviceInVote"
+msgstr "Fout met betrekking tot stem informatie"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVoteCode"
+msgstr "Fout tijdens validatie van de stemcode"
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorVoteData"
+msgstr "Fout met betrekking tot de structuur van de stem"
+
+############ New Keys 15-03-2012
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ErrorPersistPVForm"
+msgstr "Fout tijdens de verwerking van het PV"
+
+######################### Add 09.05.12 ###############################
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.AlarmBoxDiagnosis.Info"
+msgstr "Verifiëren of de alarmdoos correct is aangesloten, even geduld.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.BarCodeDiagnosis.Info"
+msgstr "Verifiëren of de barcodelezer correct is aangesloten, even geduld.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.FlashDiagnosis.Info"
+msgstr "Verifiëren of de USB gegevensdrager correct is ingebracht, even geduld.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.SmartCardReaderDiagnosis.Info"
+msgstr "Verifiëren of de kaartlezer correct is aangesloten, even geduld.\n\n "
+
+msgid "Smartmatic.SAES.Operation.Diagnosis.PrinterDiagnosis.Info"
+msgstr "Indien het beeld op het scherm niet correct is afgeprint,\nvraag om technische ondersteuning\n\n "
+
+
+####################### Add 11.05.12 #################################
+
+msgid "Smartmatic.SAES.Operation.MachineOperationManager.ContingencyCardCreated"
+msgstr "De noodkaart werd aangemaakt"
+
+###################### Add 17.05.12 #################################
+
+msgid "Smartmatic.SAES.Operation.AlarmController.LogPrinterNearEndOfPaperBeforeVoting"
+msgstr "De printer zal weldra papier nodig hebben"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.AlarmBoxDisconnected"
+msgstr "De alarmdoos is niet aangesloten"
+
+msgid "Smartmatic.SAES.Operation.AlarmController.AlarmBoxConnected"
+msgstr "De alarmdoos is aangesloten"
+
+################## Add 03.08.12 ############################
+
+######## Claves para componente visual para alarma cuando SCR de VM falla ########
+
+msgid "Smartmatic.SAES.Operation.AlarmController.CardReaderUnresponsive"
+msgstr "nl Card Reader device is unresponsive. Please, restart voting machine"
+

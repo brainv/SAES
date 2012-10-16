@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/Screen" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Screen/generated-images-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="images-description" targetNamespace="http://www.smartmatic.com/Saes/Voting/Screen">
+	<xs:element name="GeneratedImages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="WelcomeScreen" type="BasicImage"/>
+
+				<xs:element maxOccurs="1" minOccurs="1" name="LanguageScreen">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="BasicImage">
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="1" name="confirmation-dialog">
+										<xs:complexType>
+											<xs:complexContent>
+												<xs:extension base="BasicImage">
+													<xs:sequence/>
+													<xs:attribute use="required" name="language" type="xs:string"/>
+												</xs:extension>
+											</xs:complexContent>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element maxOccurs="1" minOccurs="0" name="SuperNullScreen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="1" minOccurs="1" name="super-null-dialog" type="BasicImage"/>
+							<xs:element maxOccurs="1" minOccurs="1" name = "confirmation-dialog" type="BasicImage"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			
+				
+				<xs:element maxOccurs="1" minOccurs="0" name="NullScreen" type="BasicImage"/>
+				
+				<xs:element maxOccurs="unbounded" minOccurs="1" name="ContestScreen" type="ContestImage"/>
+
+				<xs:element maxOccurs="1" minOccurs="1" name="PrintScreen" type="BasicImage"/>
+
+				<xs:element maxOccurs="1" minOccurs="1" name="FoldVoteScreen" type="BasicImage"/>
+
+				<xs:element maxOccurs="1" minOccurs="1" name="SmartCardScreen" type="BasicImage"/>
+			</xs:sequence>
+			<xs:attribute name="voting-center" type="xs:string" use="required"/>
+			<xs:attribute name="election-name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="ContestImage">
+		<xs:sequence>
+   			<xs:element maxOccurs="1" minOccurs="0" name="CustomAttributeDialog" type="BasicImage"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name = "confirmation-custom-attribute">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="BasicImage">
+							<xs:sequence/>
+							<xs:attribute use="required" name="custom-attribute-code" type="xs:string"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			
+   			<xs:element maxOccurs="unbounded" minOccurs="1" name="PartySelectionDialogs">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="BasicImage">
+							<xs:sequence>
+								<xs:element maxOccurs="unbounded" minOccurs="1" name="BallotSelectionDialogs">
+									<xs:complexType>
+										<xs:complexContent>
+											<xs:extension base="BasicImage">
+												<xs:sequence/>
+												<xs:attribute name="party-name" type="xs:string"/>
+												<xs:attribute name="party-abbreviation" type="xs:string"/>
+												<xs:attribute name="party-code" type="xs:string" use="required"/>
+												<xs:attribute name="party-custom-code" type="xs:string" use="required"/>
+											</xs:extension>
+										</xs:complexContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:attribute use="required" name="contest-code" type="xs:string"/>
+							<xs:attribute use="required" name="contest-custom-code" type="xs:string"/>
+							<xs:attribute use="required" name="contest-title-key" type="xs:string"/>
+							<xs:attribute use="required" name="contest-abstract-key" type="xs:string"/>
+							<xs:attribute use="required" name="contest-help-key" type="xs:string"/>
+							<xs:attribute use="required" name="district-custom-code" type="xs:string"/>
+							<xs:attribute use="required" name="district-description-key" type="xs:string"/>
+							<xs:attribute use="required" name="district-name-key" type="xs:string"/>
+							<xs:attribute use="required" name="custom-attribute-value" type="xs:string"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute use="required" name="custom-attribute-name" type="xs:string"/>
+		<xs:attribute use="required" name="custom-attribute-code" type="xs:string"/>
+		<xs:attribute use="required" name="custom-attribute-description-key" type="xs:string"/>
+	</xs:complexType>
+
+	<xs:complexType name="BasicImage">
+		<xs:sequence/>
+		<xs:attribute use="required" name="file-name" type="xs:string"/>
+		<xs:attribute use="required" name="language-code" type="xs:string"/>
+		<xs:attribute use="required" name="country-code" type="xs:string"/>
+	</xs:complexType>
+
+</xs:schema>

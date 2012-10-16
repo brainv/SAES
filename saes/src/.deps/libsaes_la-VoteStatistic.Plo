@@ -1,0 +1,4 @@
+libsaes_la-VoteStatistic.lo: ../src/Voting/PBReports/VoteStatistic.cxx \
+ ../src/Voting/PBReports/VoteStatistic.hxx
+
+../src/Voting/PBReports/VoteStatistic.hxx:

@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+
+#: ../ui/saesguibase.glade:9
+msgid ""
+"THIS DOES\n"
+"NOTHING"
+msgstr ""
+
+#: ../ui/saesguibase.glade:17
+msgid "Nothing else to say"
+msgstr ""
+
+#: ../ui/saesguibase.glade:29
+msgid "SAMPLE WIDGET"
+msgstr ""
+
+#: ../ui/init_win.glade.h:1
+msgid "Smartmatic.ui.InitWin.Label.label_message_message"
+msgstr ""
+
+#: ../ui/ballot-option-widget.glade:21 ../ui/ballot-option-widget.glade:38
+msgid "label"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:33
+msgid "Red"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:49
+msgid "Green"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:72 ../ui/alarmbox-diagnostic.glade:159
+msgid "On"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:87 ../ui/alarmbox-diagnostic.glade:174
+msgid "Off"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:133
+msgid "<b>LED Tests</b>"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:220
+msgid "<b>Buzzer Tests</b>"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:242
+msgid "Please press the button:"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:276
+msgid "<b>Button Tests</b>"
+msgstr ""
+
+#: ../ui/alarmbox-diagnostic.glade:339
+msgid "<b>Complete Tests</b>"
+msgstr ""
+
+#: ../ui/change-hour.glade:36
+msgid "Change Date/Hour"
+msgstr ""
+
+#: ../ui/change-hour.glade:72
+msgid "Hour:"
+msgstr ""
+
+#: ../ui/change-hour.glade:161
+msgid "Minute:"
+msgstr ""
+
+#: ../ui/change-hour.glade:198
+msgid "Seconds:"
+msgstr ""
+
+#: ../ui/change-hour.glade:307
+msgid "Hour Change:"
+msgstr ""
+
+#: ../ui/change-hour.glade:341
+msgid "Day:"
+msgstr ""
+
+#: ../ui/change-hour.glade:446
+msgid "Month:"
+msgstr ""
+
+#: ../ui/change-hour.glade:464
+msgid "Year:"
+msgstr ""
+
+#: ../ui/change-hour.glade:624
+msgid "Date Change:"
+msgstr ""
+
+#: ../ui/change-hour.glade:720
+#: ../src/Functionalities/change-hour-functionality.cc:70
+msgid "Current Date:"
+msgstr ""
+
+#: ../src/Gui/Windows/initialization-window.cc:38
+msgid "Initialization"
+msgstr ""
+
+#: ../src/Gui/Windows/initialization-window.cc:108
+msgid "Initializing"
+msgstr ""
+
+#: ../src/Gui/Windows/initialization-window.cc:157
+msgid "Successfuly loaded the environment."
+msgstr ""
+
+#: ../src/Gui/Windows/initialization-window.cc:167
+msgid "Error loading the environment."
+msgstr ""
+
+#. hide();
+#: ../src/Gui/Windows/initialization-window.cc:186
+msgid "initilization windows dispose"
+msgstr ""
+
+#: ../src/Gui/Windows/authentication-window.cc:144
+msgid "Election:"
+msgstr ""
+
+#: ../src/Gui/Windows/authentication-window.cc:147
+msgid "Polling Place:"
+msgstr ""
+
+#: ../src/Gui/Windows/authentication-window.cc:255
+#: ../src/Gui/Windows/authentication-window.cc:257
+#: ../src/Gui/Windows/authentication-window.cc:330
+msgid "WRONG PASSWORD"
+msgstr ""
+
+#. hide();
+#: ../src/Gui/Windows/authentication-window.cc:308
+msgid "Audio Voting Process"
+msgstr ""
+
+#. option closeElection
+#: ../src/Functionalities/close-election-functionality.cc:76
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:252
+msgid "Close Election"
+msgstr ""
+
+#. option diagnosis
+#: ../src/Functionalities/diagnosis-functionality.cc:90
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:263
+msgid "Diagnosis"
+msgstr ""
+
+#. option openElection
+#: ../src/Functionalities/open-election-functionality.cc:91
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:241
+msgid "Open Election"
+msgstr ""
+
+#: ../src/Functionalities/calibration-diagnosis-functionality.cc:72
+#: ../src/Functionalities/calibration-diagnosis-functionality.cc:91
+msgid "Press anywhere on this area to start the calibration"
+msgstr ""
+
+#: ../src/Functionalities/calibration-diagnosis-functionality.cc:107
+msgid "the user finalized the calibration"
+msgstr ""
+
+#. option calibrationDiagnosis
+#: ../src/Functionalities/calibration-diagnosis-functionality.cc:120
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:304
+msgid "Calibration Diagnosis"
+msgstr ""
+
+#: ../src/Functionalities/change-hour-functionality.cc:876
+msgid "Change Hour Functionality"
+msgstr ""
+
+#. voting Machine Menu
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:225
+msgid "Voting Process"
+msgstr ""
+
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:232
+msgid "Maintenance"
+msgstr ""
+
+#. diagnosis->setMenuOptions (* new MenuOptions ());
+#. option alarmBoxDiagnosis
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:274
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:321
+msgid "Alarm Box Diagnosis"
+msgstr ""
+
+#. option smartcardReaderDiagnosis
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:284
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:184
+msgid "Smartcard Reader Diagnosis"
+msgstr ""
+
+#. option printerDiagnosis
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:294
+#: ../src/Functionalities/printer-diagnosis-functionality.cc:91
+msgid "Printer Diagnosis"
+msgstr ""
+
+#. option changeHour
+#: ../src/Configuration/s-a-e-s-g-u-i-conf-manager.cc:314
+msgid "Set Date/Hour"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:64
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:81
+#: ../src/Gui/Widgets/waiting-card-widget.cc:95
+#: ../src/Gui/Widgets/waiting-card-widget.cc:110
+msgid "Please Insert Card"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:75
+#: ../src/Gui/Widgets/waiting-card-widget.cc:74
+#: ../src/Gui/Widgets/waiting-card-widget.cc:104
+msgid "Card Inserted"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:111
+msgid "Test Card"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:138
+msgid "Result:"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:156
+msgid "Test Passed!"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:162
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:170
+msgid "Test Failed!"
+msgstr ""
+
+#: ../src/Functionalities/s-c-reader-diagnosis-functionality.cc:169
+#, c-format
+msgid "EXCEPTION!!!!!!!"
+msgstr ""
+
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:187
+msgid "LED Test"
+msgstr ""
+
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:192
+msgid "Buzzer Test"
+msgstr ""
+
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:197
+msgid "All Around Test"
+msgstr ""
+
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:287
+msgid "Now press the button"
+msgstr ""
+
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:296
+#: ../src/Functionalities/alarm-box-diagnosis-functionality.cc:307
+msgid "Button pressed!"
+msgstr ""
+
+#: ../src/Gui/Windows/voting-window.cc:57
+msgid "BOTTOM MESSAGE"
+msgstr ""
+
+#: ../src/Gui/Windows/voting-window.cc:109
+msgid "Language Selection"
+msgstr ""
+
+#: ../src/Gui/Windows/voting-window.cc:122
+msgid "single language : "
+msgstr ""
+
+#: ../src/Gui/Widgets/ballot-option-selection-widget.cc:48
+msgid "Substitute"
+msgstr ""
+
+#: ../src/Gui/Widgets/ballot-option-selection-widget.cc:50
+msgid "Principal"
+msgstr ""
+
+#: ../src/Gui/Widgets/ballot-option-selection-widget.cc:74
+msgid "Clear Selection"
+msgstr ""
+
+#: ../src/Gui/Widgets/ballot-option-selection-widget.cc:76
+msgid "Accept Selection"
+msgstr ""
+
+#: ../src/Gui/Widgets/ballot-option-selection-widget.cc:78
+#: ../src/Gui/Widgets/waiting-card-widget.cc:54
+msgid "Back"
+msgstr ""
+
+#: ../src/Gui/Widgets/party-selection-widget.cc:45
+msgid "Null Selection"
+msgstr ""
+
+#: ../src/Gui/Widgets/waiting-card-widget.cc:47
+msgid "Simulate Card"
+msgstr ""

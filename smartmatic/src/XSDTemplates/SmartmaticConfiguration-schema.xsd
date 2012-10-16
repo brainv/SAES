@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" id="SmartmaticConfiguration"
+	targetNamespace="http://www.smartmatic.com/SmartmaticConfiguration" 
+	xmlns="http://www.smartmatic.com/SmartmaticConfiguration" 
+	xmlns:mstns="http://www.smartmatic.com/SmartmaticConfiguration/SmartmaticConfiguration-schema.xsd" >
+   <xsd:complexType name="SmartmaticConfiguration">
+	   <xsd:sequence>
+	   	 <xsd:element name="ResourcePaths" minOccurs="1" maxOccurs="1">
+				<xsd:complexType>
+		  		 	<xsd:sequence>
+			  			<xsd:element name="ResourcePath" type="xsd:string" minOccurs="1" maxOccurs="unbounded">
+			 	 		</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			 <xsd:element name="ImageResources" minOccurs="1" maxOccurs="1">
+				<xsd:complexType>
+		  		 	<xsd:sequence>
+			  			<xsd:element name="StoreInMemory" type="xsd:boolean" minOccurs="1" maxOccurs="1">
+			 	 		</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SoundOutput">
+			  <xsd:complexType>
+				<xsd:sequence>
+				  		<xsd:element maxOccurs="1" minOccurs="1" name="UseBeep" type="xsd:boolean"/>
+				  		<xsd:element maxOccurs="1" minOccurs="1" name="AppSound" type="xsd:string"/>
+						<xsd:element name="SoundConfigurations" maxOccurs="unbounded" minOccurs="0">
+						  <xsd:complexType>
+				  			<xsd:sequence>
+						  		<xsd:element maxOccurs="1" minOccurs="0" name="SoundFile" type="xsd:string"/>
+						  		<xsd:element maxOccurs="unbounded" minOccurs="0" name="SoundConfiguration" type="SoundDescriptorConfiguration"/>
+						  		<xsd:element name="Name" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+						  	</xsd:sequence> 
+						  </xsd:complexType>		
+					  </xsd:element> 
+				</xsd:sequence> 
+			 </xsd:complexType>
+			</xsd:element>		
+		</xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="SmartmaticConfiguration" type="SmartmaticConfiguration">
+  </xsd:element>
+ <xsd:complexType name="SoundDescriptorConfiguration">
+  	<xsd:sequence>
+		<xsd:element name="frequency" type="xsd:integer"/>
+		<xsd:element name="time" type="xsd:integer"/>
+		<xsd:element name="repetitions" type="xsd:integer"/>
+		<xsd:element name="timeBetweenRepetitions" type="xsd:integer"/>	
+	</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+
+
+	

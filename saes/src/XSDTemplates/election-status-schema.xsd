@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/Status" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Status/election-status-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="election-status" targetNamespace="http://www.smartmatic.com/Saes/Voting/Status">
+	<xs:element name="ElectionStatus">
+		<xs:complexType>
+				<xs:attribute name="State" type="ProcessStatus" use="required"/>
+				<xs:attribute name="OpeningCode" type="xs:string" use="required"/>				
+				<xs:attribute name="VotersRegisteredInBook" type="xs:nonNegativeInteger" use="required"/>
+				<xs:attribute name="OperationModeCode" type="xs:string" use="required"/>
+				<xs:attribute name="ElectionConfigurationReportPrinted" type="xs:boolean" use="required"/>
+				<xs:attribute name="OpenElectionDate" type="xs:string" use="required"/>
+				<xs:attribute name="CloseVotingDate" type="xs:string" use="required"/>
+				<xs:attribute name="CloseElectionDate" type="xs:string" use="required"/>
+				<xs:attribute name="SynchronizeVotes" type="xs:boolean" use="optional"/>
+				<xs:attribute name="ContingencyCardCreated" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="ProcessStatus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NotInstalled"/>
+			<xs:enumeration value="NotPollworkerRegistered"/>
+			<xs:enumeration value="NotDemostrationVote"/>
+			<xs:enumeration value="NotInitiated"/>
+			<xs:enumeration value="Initiated"/>
+			<xs:enumeration value="Closed"/>
+			<xs:enumeration value="ResultsTransmitted"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,4 @@
+libsmartmaticgui_la-menu-widget-configuration.lo: \
+ Widgets/menu-widget-configuration.cc Widgets/menu-widget-configuration.h
+
+Widgets/menu-widget-configuration.h:

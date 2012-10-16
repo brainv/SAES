@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#. /<macro for gettext not translate
+msgid "Smartmatic.Graphics.Encoding2D.QREncoding.InitQRCodeUnableToAllocateMemory"
+msgstr ""
+
+#. /< text for log
+msgid "Smartmatic.Graphics.Encoding2D.QREncoding.InitQRCodeInvalidArguments"
+msgstr ""
+
+#. /<macro for gettext not translate
+msgid "Smartmatic.GUI.Widgets.BoolStatWidget.True"
+msgstr "Yes"
+
+#. /< option true
+msgid "Smartmatic.GUI.Widgets.BoolStatWidget.False"
+msgstr "No"
+
+msgid "Smartmatic.GUI.Widgets.ChooseDialogWidget.ConfirmationTextFormat"
+msgstr "Please confirm the option %1 as your choice"
+
+#. buttonCancel = new SmartmaticButton();
+msgid "Smartmatic.GUI.Widgets.ChooseDialogWidget.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.GUI.Widgets.ConfirmationDialogWidget.Accept"
+msgstr "Accept"
+
+msgid "Smartmatic.GUI.Widgets.ConfirmationDialogWidget.Cancel"
+msgstr "Cancel"
+
+#. /<macro for gettext not translate
+msgid "Smartmatic.GUI.Widgets.GenderComboBox.Female"
+msgstr "Female"
+
+#. /< option female
+msgid "Smartmatic.GUI.Widgets.GenderComboBox.Male"
+msgstr "Male"
+
+msgid "Smartmatic.GUI.Glade.Key-board.0Message"
+msgstr "0"
+
+msgid "Smartmatic.GUI.Glade.Key-board.1Message"
+msgstr "1"
+
+msgid "Smartmatic.GUI.Glade.Key-board.2Message"
+msgstr "2"
+
+msgid "Smartmatic.GUI.Glade.Key-board.3Message"
+msgstr "3"
+
+msgid "Smartmatic.GUI.Glade.Key-board.4Message"
+msgstr "4"
+
+msgid "Smartmatic.GUI.Glade.Key-board.5Message"
+msgstr "5"
+
+msgid "Smartmatic.GUI.Glade.Key-board.6Message"
+msgstr "6"
+
+msgid "Smartmatic.GUI.Glade.Key-board.7Message"
+msgstr "7"
+
+msgid "Smartmatic.GUI.Glade.Key-board.8Message"
+msgstr "8"
+
+msgid "Smartmatic.GUI.Glade.Key-board.9Message"
+msgstr "9"
+
+msgid "Smartmatic.GUI.Glade.Key-board.AMessage"
+msgstr "Q"
+
+msgid "Smartmatic.GUI.Glade.Key-board.BMessage"
+msgstr "B"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CMessage"
+msgstr "C"
+
+msgid "Smartmatic.GUI.Glade.Key-board.DMessage"
+msgstr "D"
+
+msgid "Smartmatic.GUI.Glade.Key-board.EMessage"
+msgstr "E"
+
+msgid "Smartmatic.GUI.Glade.Key-board.FMessage"
+msgstr "F"
+
+msgid "Smartmatic.GUI.Glade.Key-board.GMessage"
+msgstr "G"
+
+msgid "Smartmatic.GUI.Glade.Key-board.HMessage"
+msgstr "H"
+
+msgid "Smartmatic.GUI.Glade.Key-board.IMessage"
+msgstr "I"
+
+msgid "Smartmatic.GUI.Glade.Key-board.JMessage"
+msgstr "J"
+
+msgid "Smartmatic.GUI.Glade.Key-board.KMessage"
+msgstr "K"
+
+msgid "Smartmatic.GUI.Glade.Key-board.LMessage"
+msgstr "L"
+
+msgid "Smartmatic.GUI.Glade.Key-board.MMessage"
+msgstr "?"
+
+msgid "Smartmatic.GUI.Glade.Key-board.NMessage"
+msgstr "N"
+
+msgid "Smartmatic.GUI.Glade.Key-board.OMessage"
+msgstr "O"
+
+msgid "Smartmatic.GUI.Glade.Key-board.PMessage"
+msgstr "P"
+
+msgid "Smartmatic.GUI.Glade.Key-board.QMessage"
+msgstr "A"
+
+msgid "Smartmatic.GUI.Glade.Key-board.RMessage"
+msgstr "R"
+
+msgid "Smartmatic.GUI.Glade.Key-board.SMessage"
+msgstr "S"
+
+msgid "Smartmatic.GUI.Glade.Key-board.TMessage"
+msgstr "T"
+
+msgid "Smartmatic.GUI.Glade.Key-board.UMessage"
+msgstr "U"
+
+msgid "Smartmatic.GUI.Glade.Key-board.VMessage"
+msgstr "V"
+
+msgid "Smartmatic.GUI.Glade.Key-board.WMessage"
+msgstr "Z"
+
+msgid "Smartmatic.GUI.Glade.Key-board.XMessage"
+msgstr "X"
+
+msgid "Smartmatic.GUI.Glade.Key-board.YMessage"
+msgstr "Y"
+
+msgid "Smartmatic.GUI.Glade.Key-board.ZMessage"
+msgstr "Z"
+
+#. Especials
+msgid "Smartmatic.GUI.Glade.Key-board.CE1Message"
+msgstr "⟵"
+
+#. BS
+msgid "Smartmatic.GUI.Glade.Key-board.CE2Message"
+msgstr "↵"
+
+#. LF
+msgid "Smartmatic.GUI.Glade.Key-board.CE6Message"
+msgstr "Esc"
+
+#. Esc
+msgid "Smartmatic.GUI.Glade.Key-board.CE5Message"
+msgstr "SPACE"
+
+#. Space
+msgid "Smartmatic.GUI.Glade.Key-board.CE3Message"
+msgstr ";"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE4Message"
+msgstr ":"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE7Message"
+msgstr "~"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE8Message"
+msgstr "_"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE9Message"
+msgstr "="
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE10Message"
+msgstr "["
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE11Message"
+msgstr "]"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE12Message"
+msgstr "\\"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE13Message"
+msgstr "'"
+
+msgid "Smartmatic.GUI.Glade.Key-board.ÑMessage"
+msgstr "Ñ"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE14Message"
+msgstr "/"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE15Message"
+msgstr "↑"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE16Message"
+msgstr "↓"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE17Message"
+msgstr "←"
+
+msgid "Smartmatic.GUI.Glade.Key-board.CE18Message"
+msgstr "→"
+
+msgid "Smartmatic.GUI.Glade.Key-board.SHIFTMessage"
+msgstr "SHIFT"
+
+msgid "Smartmatic.GUI.Glade.Key-board.ñoMessage"
+msgstr "m"
+
+#. TODO: configuration
+msgid "Smartmatic.GUI.Widgets.MessageWidget.OK"
+msgstr "OK"
+
+msgid "Smartmatic.GUI.Widgets.NotebookContainer.PlaceHolderPage"
+msgstr "Page %1 of %2"
+
+msgid "Smartmatic.GUI.Widgets.NotebookContainer.Next"
+msgstr "Next"
+
+msgid "Smartmatic.GUI.Widgets.NotebookContainer.Back"
+msgstr "Back"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticButton.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticButton.Cancel"
+msgstr "Cancel"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticEntryDateTime.Year"
+msgstr "Year"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticEntryDateTime.Month"
+msgstr "Month"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticEntryDateTime.Day"
+msgstr "Day"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticEntryDateTime.Hour"
+msgstr "Hour"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticEntryDateTime.Min"
+msgstr "Min"
+
+msgid "Smartmatic.GUI.Widgets.SmartmaticEntryDateTime.Sec"
+msgstr "Sec"
+
+msgid "Smartmatic.GUI.Widgets.VMInstallationWidget.InsertYourPasswordUsingTheKeyboard"
+msgstr "Insert your password using the keyboard"
+
+msgid "Smartmatic.GUI.Widgets.VMInstallationWidget.WaitingCardTokenLabel"
+msgstr "Ok"
+
+msgid "Smartmatic.GUI.Widgets.VMInstallationWidget.DefaultProgressMessage"
+msgstr "Ok"
+
+msgid "Smartmatic.GUI.Widgets.VMInstallationWidget.ButtonOk"
+msgstr "Ok"
+
+msgid "Smartmatic.GUI.Windows.HelpWindow.InstructionMessage"
+msgstr "Instruction Message"
+
+msgid "Smartmatic.GUI.Windows.PasswordWindow.OkButton"
+msgstr "OK"
+
+msgid "Smartmatic.GUI.Glade.Key-board.XMessagee"
+msgstr "X"
+
+msgid "Smartmatic.GUI.Glade.Key-board.YMessagee"
+msgstr "Y"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label0101Message"
+msgstr "1"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label0112Message"
+msgstr "2"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label0123Message"
+msgstr "3"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label0134Message"
+msgstr "4"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label1201Message"
+msgstr "1"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label1212Message"
+msgstr "2"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label1223Message"
+msgstr "3"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label1234Message"
+msgstr "4"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label2301Message"
+msgstr "1"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label2312Message"
+msgstr "2"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label2323Message"
+msgstr "3"
+
+msgid "Smartmatic.GUI.Glade.Keypad.Label2334Message"
+msgstr "4"

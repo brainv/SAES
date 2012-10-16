@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" id="CardDataListGenerated"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/Status" 
+	xmlns="http://www.smartmatic.com/Saes/Voting/Status" 
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Status/card-generated-list-schema.xsd" >
+   <xsd:complexType name="CardDataList">
+	   <xsd:sequence>
+		  <xsd:element name="CardDataGenerated" minOccurs="1" maxOccurs="unbounded">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="CardData" type="xsd:string"  minOccurs="1" maxOccurs="1">
+					</xsd:element>
+				</xsd:sequence>			
+			</xsd:complexType>
+		  </xsd:element>
+		</xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="CardDataListGenerated" type="CardDataList">
+
+  </xsd:element>
+</xsd:schema>
+

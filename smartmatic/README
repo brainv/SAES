@@ -1,0 +1,25 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - xsdcxx
+  - libxerces-c-dev
+  - libglibmm-2.4-dev
+  - libgtkmm-2.4-dev
+  - uuid-dev
+  - libxml-security-c-dev
+  - libsmartmaticlog-dev
+  - zlib1g-dev
+  - libssl-dev
+
+Dependencias de ejecución:
+  - libxerces-c3.1
+  - libglibmm-2.4-1c2a
+  - libgtkmm-2.4-1c2a
+  - libuuid1
+  - libxml-security-c16
+  - libsmartmaticlog-1.0-1
+  - zlib1g

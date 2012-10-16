@@ -1,0 +1,16 @@
+libsaes (0.2.0)
+
+ * Yadickson Soto <yadickson.soto@smartmatic.com>
+  - Incorporación de herramientas de compilación automática
+  - Empaquetado de la biblioteca
+  - Desarrollo de la fachada del core
+  - Desarrollo de los adaptadores de objetos
+
+libsaes (0.1.0)
+
+ * Yadickson Soto <yadickson.soto@smartmatic.com>
+  - Reestruccturacion de la aplicación.
+
+ * Freddy Gomez <freddy.gomez@smartmatic.com>
+  - Prueba de conceptos
+

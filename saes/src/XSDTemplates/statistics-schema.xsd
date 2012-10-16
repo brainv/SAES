@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/statistics-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="Statistics" targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports">
+	<xs:element name="Statistics">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="Statistic" type="StatisticType"/>
+			</xs:sequence>			
+		</xs:complexType>
+	</xs:element>
+
+<xs:complexType name="StatisticType">
+    <xs:sequence/>
+    <xs:attribute name="Code" type="xs:string" use="required"/>
+    <xs:attribute name="NameKey" type="xs:string" use="required"/>
+    <xs:attribute name="DescriptionKey" type="xs:string" use="required"/>
+    <xs:attribute name="Value" type="xs:string" use="required"/>
+</xs:complexType>
+
+</xs:schema>

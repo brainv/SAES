@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="FinalData"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/Codi" 
+	xmlns="http://www.smartmatic.com/Saes/Voting/Codi" 
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Codi/x7s-codi-file-schema.xsd">
+	<xs:element name="FinalData">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SignedPV">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OriginialFileName" type="xs:string"/>
+							<xs:element name="DocType">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="PDF"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Data" type="xs:base64Binary"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FormatF">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OriginialFileName" type="xs:string"/>
+							<xs:element name="Data" type="xs:base64Binary"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

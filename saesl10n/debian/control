@@ -1,0 +1,66 @@
+Source: saesl10n
+Section: localization
+Priority: extra
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7),
+	autotools-dev,
+	cdbs,
+	intltool
+
+Package: saes-l10n-all
+Architecture: all
+Depends:
+ saes-l10n-en,
+ saes-l10n-es,
+ saes-l10n-fr,
+ saes-l10n-nl,
+ saes-l10n-de,
+ ${misc:Depends}
+Description: All language packages for project SAES C++
+ All support languages for project SAES C++
+ .
+ This package is a metapackage depending on all available localization of
+ SAES C++.
+
+Package: saes-l10n-en
+Architecture: all
+Depends: ${misc:Depends}, locales
+Description: English language package for project SAES C++
+ English language for project SAES C++.
+ .
+ This package contains the localization of english.
+
+Package: saes-l10n-es
+Architecture: all
+Depends: ${misc:Depends}, locales
+Description: Spanish language package for project SAES C++
+ Spanish language for project SAES C++.
+ .
+ This package contains the localization of spanish.
+
+Package: saes-l10n-fr
+Architecture: all
+Depends: ${misc:Depends}, locales
+Description: French language package for project SAES C++
+ French language for project SAES C++.
+ .
+ This package contains the localization of french.
+
+Package: saes-l10n-nl
+Architecture: all
+Depends: ${misc:Depends}, locales
+Description: Dutch language package for project SAES C++
+ Dutch language for project SAES C++.
+ .
+ This package contains the localization of dutch.
+
+Package: saes-l10n-de
+Architecture: all
+Depends: ${misc:Depends}, locales
+Description: German language package for project SAES C++
+ German language for project SAES C++.
+ .
+ This package contains the localization of german.
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#author Pablo Trujillo
+#date 14-09-2011
+#package @PACKAGE@
+#version @VERSION@
+
+DEVICE="${1}"
+ACTION="${2}"
+
+@SBINDIR@/smtt-event-script "${DEVICE}" "${ACTION}" &
+

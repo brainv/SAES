@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsaescommon*.la
+debian/tmp/usr/lib/libsaescommon*.so
+debian/tmp/usr/lib/pkgconfig/libsaescommon.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsaescommon/AUTHORS
+debian/tmp/usr/share/doc/libsaescommon/ChangeLog
+debian/tmp/usr/share/doc/libsaescommon/INSTALL
+debian/tmp/usr/share/doc/libsaescommon/NEWS
+debian/tmp/usr/share/doc/libsaescommon/README

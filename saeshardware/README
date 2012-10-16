@@ -1,0 +1,20 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - xsdcxx
+  - libxerces-c-dev
+  - libsmartmatic-5.0-dev
+  - libpcsclite-dev
+  - libglibmm-2.4-dev
+  - libusb-1.0-0-dev
+
+Dependencias de ejecución:
+  - libxerces-c3.1
+  - libsmartmatic-5.0-5
+  - libpcsclite1
+  - libglib-2.0-0
+  - libusb-1.0-0

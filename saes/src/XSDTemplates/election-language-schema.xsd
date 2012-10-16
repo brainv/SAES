@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="languages"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/Election"
+	xmlns="http://www.smartmatic.com/Saes/Voting/Election"
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Election/election-language-schema.xsd">
+  
+  <xs:element name="languages" type="Languages"/>
+    
+  <xs:complexType name="Languages">
+    <xs:sequence>
+      <xs:element name="language" maxOccurs="unbounded" type="Language"/>
+    </xs:sequence>
+  </xs:complexType>
+	
+  <xs:complexType name="Language">
+    <xs:attributeGroup ref="base-general-info"/>
+    <xs:attribute name="name-key" type="xs:string" use="required"/>
+    <xs:attribute name="is-default" type="xs:boolean" use="required"/>
+    <xs:attribute name="audio" type="xs:boolean" use="required"/>
+    <xs:attribute name="precedence" type="xs:int" use="required"/>
+    <xs:attribute name="message" type="xs:string" use="required"/>
+    <xs:attribute name="language" type="xs:string" use="required"/>
+    <xs:attribute name="country" type="xs:string" use="required"/>
+    <xs:attribute name="key" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+	<!--xs:simpleType name="no-empty-string">
+	<xs:restriction base="xs:string">
+	   <xs:minLength value="1"/>
+	</xs:restriction>
+	</xs:simpleType -->
+
+  <xs:attributeGroup name="base-general-info">
+    <xs:annotation>
+      <xs:documentation>general-info is an attribute group that can be applied to every item that is shown in the voting machine graphic interface.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="code" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Unique code.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="custom-code" type="xs:string" use="required"/>
+  </xs:attributeGroup>
+
+</xs:schema>
+
+

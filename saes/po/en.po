@@ -1,0 +1,882 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+msgid "Smartmatic.SAES.Printing.ClosedPrintDocument.PVDescription"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ClosedPrintDocument.PVTitle"
+msgstr ""
+
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.ActivationCardsReceived.ItemName"
+msgstr "Activation Card Received"
+
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.ActivationCardsReceived.ItemDescription"
+msgstr "Number Activation Card Received"
+
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.Name"
+msgstr "Installation Kit"
+
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.EditableStateInstruction"
+msgstr "Enter the contents of the Installation Kit"
+
+msgid "Smartmatic.SAES.StatisticGroup.BeforeOpenElection.NonEditableNotification"
+msgstr "You can not edit the contents of the Installation Kit, in this election state"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.DamagedCardsOnPorpuse.ItemName"
+msgstr "Damaged Cards"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.DamagedCardsOnPorpuse.ItemDescription"
+msgstr "Number of damaged cards for voters"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.ActivatedCardsWithProblems.ItemName"
+msgstr "Activations Failed"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.ActivatedCardsWithProblems.ItemDescription"
+msgstr "Number of actived cards with problems"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.TotalCardsWithProblems.ItemName"
+msgstr "Problems of Cards"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.TotalCardsWithProblems.ItemDescription"
+msgstr "Total number of problems of cards"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.VisualizationProblems.ItemName"
+msgstr "Display Problems"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.VisualizationProblems.ItemDescription"
+msgstr "Display Problems"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.RevealedVotes.ItemName"
+msgstr "Votes Revealed"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.RevealedVotes.ItemDescription"
+msgstr "Enter the number of voters who showed their votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.AnnuledVotes.ItemName"
+msgstr "Votes Cancelled"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.AnnuledVotes.ItemDescription"
+msgstr "Enter the number of spoiled votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.Name"
+msgstr "Voting Process"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.EditableStateInstruction"
+msgstr "Enter the indicated counters"
+
+msgid "Smartmatic.SAES.StatisticGroup.VotingProcess.NonEditableNotification"
+msgstr "You can not edit the contents of the counters listed in this election state"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.UnusedActivationCards.ItemName"
+msgstr "Unused Cards"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.UnusedActivationCards.ItemDescription"
+msgstr "Enter the number of unused cards"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.RegisteredActivationCardsWithVotes.ItemName"
+msgstr "Cards with Votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.RegisteredActivationCardsWithVotes.ItemDescription"
+msgstr "Enter the number of cards with votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.ValidatedActivationCardsByUrn.ItemName"
+msgstr "Votes Consolidated"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.ValidatedActivationCardsByUrn.ItemDescription"
+msgstr "Enter the number of consolidated votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToProblems.ItemName"
+msgstr "Votes Unconsolidated"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToProblems.ItemDescription"
+msgstr "Enter the number of spoiled votes because technical problems"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToInvalidaVote.ItemName"
+msgstr "Invalid Votes"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsDueToInvalidaVote.ItemDescription"
+msgstr "Enter the number of votes invalidated by the system"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsUnderReview.ItemName"
+msgstr "Votes in Review"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.AnnuledActivationCardsUnderReview.ItemDescription"
+msgstr "Enter the number of votes in review"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.Name"
+msgstr "Consolidation Process"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.EditableStateInstruction"
+msgstr "Enter the indicated counters"
+
+msgid "Smartmatic.SAES.StatisticGroup.AfterClose.NonEditableNotification"
+msgstr "You can not edit the contents of the counters listed in this election state"
+
+msgid "Smartmatic.SAES.Printing.AuditLogPrintDocument"
+msgstr "Audit Log Report"
+
+msgid "Smartmatic.SAES.Printing.BarcodeTitle"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.BarcodeInstructionLine1"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.BarcodeInstructionLine2"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.BarcodeInstructionLine3"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.PrintContingencyReport"
+msgstr "Print contingency report"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyHelpTitle"
+msgstr "INFORMATION"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyHelpText"
+msgstr "Help contingency text"
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyCardInfoTitle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.ContingencyCardPinTitle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.InstallationReportTitle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.VotingBoothTitle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.VotingCenter"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.VotingCenterAddress"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.RegionTitle"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region1"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region2"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region3"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region4"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region5"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region6"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region7"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ContingencyCardReport.Region8"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.ErrorLogPrintDocument"
+msgstr "Error Log Report"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PrintInstallReport"
+msgstr "Print installation report"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.InstallationReportTitle"
+msgstr "INSTALLATION REPORT"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticReportTitle"
+msgstr "DIAGNOSTIC REPORT"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.VotingBoothTitle"
+msgstr "Voting Booth"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.VotingCenter"
+msgstr "Voting Center: %1"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.VotingCenterAddress"
+msgstr "Address: %1"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine1"
+msgstr "DIAGNOSTIC REPORT"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine2"
+msgstr "DIAGNOSTIC REPORT"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine3"
+msgstr "DIAGNOSTIC REPORT"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DiagnosticAppReportDescLine4"
+msgstr "DIAGNOSTIC REPORT"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.RegionTitle"
+msgstr "REGION"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region1"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region2"
+msgstr "%2"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region3"
+msgstr "%3"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region4"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region5"
+msgstr "%5"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region6"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region7"
+msgstr "%7"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Region8"
+msgstr "%8"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.DevicesStatus"
+msgstr "DEVICES STATUS"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.ActivationKeys"
+msgstr "ACTIVATION KEYS"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine1"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine2"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine3"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine4"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine1Title"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine2Title"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine3Title"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.PasswordLine4Title"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Ballot"
+msgstr "Ballot"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.AlarmBox"
+msgstr "Alarm Box Device"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Barcode"
+msgstr "Barcode Reader"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Printer"
+msgstr "Printer"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Smartcard"
+msgstr "Smartcard Reader"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Flash"
+msgstr "Flash Device"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.TouchScreenCalibration"
+msgstr "Touch Screen Calibration"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.ScreenContrast"
+msgstr "Screen Contrast"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.NotDiagnosed"
+msgstr "Not Diagnosed"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Error"
+msgstr "Error"
+
+msgid "Smartmatic.SAES.Printing.InstallationPrintDocument.Ok"
+msgstr "Ok"
+
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.ElectionName"
+msgstr "Election Name"
+
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.ElectoralOrganization"
+msgstr "Electoral Organization"
+
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.DeviceCode"
+msgstr "Election Name"
+
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.PollingPlace"
+msgstr "Polling Place"
+
+msgid "Smartmatic.SAES.Printing.LogPrintDocument.PollingPlaceAddresss"
+msgstr "Polling Place Address"
+
+msgid "Smartmatic.SAES.Printing.SmartcardRemovedPrintDocument.PrintDoc_Title"
+msgstr "Alarm Smartcard removal, %1 times"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineSeparator"
+msgstr "----------------------------------------"
+
+msgid "Smartmatic.SAES.Printing.SmartcardRemovedPrintDocument.PrintDoc_Description"
+msgstr "Alarm triggered, the Smartcard has been removed %1 times"
+
+msgid "Smartmatic.SAES.Printing.TestPrinting.Title"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.TimeoutPrintDocument.PrintDoc_Title"
+msgstr "VOTING TIME EXPIRED"
+
+msgid "Smartmatic.SAES.Printing.TimeoutPrintDocument.PrintDoc_Description"
+msgstr "YOUR VOTING TIME IS OVER"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineBeginHeader"
+msgstr "----------------------------------------"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo1"
+msgstr "%8"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo2"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo3"
+msgstr "%2"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo4"
+msgstr "%4"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo5"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo6"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HeaderDemo7"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header1"
+msgstr "%8"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header2"
+msgstr "%5"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header3"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header4"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header5"
+msgstr "%2"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header6"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.Header7"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineBallotNameBegin"
+msgstr "----------------------------------------"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.HorizontalLineBallotNameEnd"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1SuperBlankVote"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1Referendum"
+msgstr "%1"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1NullVote"
+msgstr "%1 [%%1]"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName1NormalVote"
+msgstr "%1 [%%1]"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2SuperBlankVote"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2Referendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2NullVote"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName2NormalVote"
+msgstr "%6"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3SuperBlankVote"
+msgstr "%8"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3Referendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3NullVote"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ContestName3NormalVote"
+msgstr "%8"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ParentOptionWasSelected"
+msgstr "List Option selected: %7"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.FormatReferendum"
+msgstr "Title referendum"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalFormat"
+msgstr "%1 %2 %3"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInFormat"
+msgstr "%1 %2 %3"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.CustomAttributeHeader"
+msgstr "%1 %2 %3"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.DemoTitle"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.RecoveryTitle"
+msgstr "RECOVERY RECOVERY"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.SimulatedTitle"
+msgstr "SIMULATION VOTE"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.DemoEnd"
+msgstr "DEMO DEMO"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.RecoveryEnd"
+msgstr "RECOVERY RECOVERY"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.SimulatedEnd"
+msgstr "SIMULATION VOTE"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.NullReferendum"
+msgstr "Null referendum"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.NullVote"
+msgstr "NULL VOTE"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.TitleReferendum"
+msgstr "Title referendum"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.ParentOptionMessage"
+msgstr "List"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalTitleReferendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalNoSelectectedMessage"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.PrincipalMessage"
+msgstr "Principal"
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInTitleReferendum"
+msgstr " "
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInNoSelectedMessage"
+msgstr ""
+
+msgid "Smartmatic.SAES.Printing.VotePrintDocument.StandInMessage"
+msgstr "Stand in"
+
+msgid "Smartmatic.SAES.Voting.Codi.CodiFileWrapper.ErrorInputCodiFiles"
+msgstr ""
+
+msgid "Smartmatic.SAES.Voting.Codi.CodiFileWrapper.ErrorTallyRegisterL"
+msgstr ""
+
+msgid "Smartmatic.SAES.Voting.Codi.CodiFileWrapper.ErrorTallyRegisterC"
+msgstr ""
+
+msgid "Smartmatic.SAES.Voting.Codi.X7SCodiFileWrapper.ErrorLoadPVReport"
+msgstr ""
+
+msgid "Smartmatic.SAES.Voting.Codi.X7SCodiFileWrapper.ErrorLoadCodiFile"
+msgstr ""
+
+msgid "Smartmatic.SAES.Voting.Codi.X7SCodiFileWrapper.ErrorSerializaData"
+msgstr "Error serializa data"
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionInstalationLanguages.ErrorSerializaData"
+msgstr "Error read file "
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.BallotWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.BallotCardWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.EligibleOptionWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.BallotOptionWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestClassWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestCustomCodeWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.ContestGroupWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.PartyWithAbbNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.PartyWithCodeNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.Election.ElectionWrapper.EligibleOptionNotFound"
+msgstr "Eligible option not found."
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ErrorSignedElectoralResources"
+msgstr "Object election null"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ObjectElectionNull"
+msgstr "Object election null"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ObjectVotingDeviceNull"
+msgstr "Object votingDevice null"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.ObjectVoteRecoveryNull"
+msgstr "Object votingDevice null"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.VotingBoothNotFound"
+msgstr "Voting Booth Not Found"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.RegionHierarchiesNotFound"
+msgstr "Region Hierarchies Not Found"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.OperationModeNotFound"
+msgstr "Operation Mode Not Found"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.RoleNotFound"
+msgstr "Role Not Found"
+
+msgid "Smartmatic.SAES.Voting.ElectoralConfiguration.CodiFileNotFound"
+msgstr "Codi File Not Found"
+
+msgid "Smartmatic.SAES.Voting.ElectoralFactory.ErrorXMLSchema"
+msgstr "Error xml schema file "
+
+msgid "Smartmatic.SAES.Voting.ElectoralFactory.ErrorParseXml"
+msgstr "Error parse file "
+
+msgid "Smartmatic.SAES.Voting.OperationStatus.ErrorSerializaData"
+msgstr "Error read file "
+
+msgid "Smartmatic.SAES.Voting.PBReports.ActivatedCardStatisticsWrapper.ErrorParseFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.AssistedActivationWrapper.ErrorParseFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.AssistedActivationWrapper.AddAssistedActivation"
+msgstr "Add Assisted activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.ClosingNotesLoadedSuccessfully"
+msgstr "Closing Notes Loaded Successfully"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.ErrorLoadingCloseNotes"
+msgstr "Error Loading Close Notes"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.ErrorParseFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.NoteAdded"
+msgstr "Note Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.NoteRemoved"
+msgstr "Note Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.ClosingNotesWrapper.NoteModified"
+msgstr "Note Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddPMInstallMemberInfo"
+msgstr "AddPMInstallMemberInfo"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddVMInstallMemberInfo"
+msgstr "AddVMInstallMemberInfo"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddOpenElectionMemberInfo"
+msgstr "AddOpenElectionMemberInfo"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddCloseVotingMemberInfo"
+msgstr "AddCloseVotingMemberInfo"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.AddCloseElectionMemberInfo"
+msgstr "AddCloseElectionMemberInfo"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IDCardInfoWrapper.ErrorLoadFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.IncidentReportWrapper.ErrorParseFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.ErrorParseFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.AddPoliceNote"
+msgstr "Police Note Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.RemovePoliceNote"
+msgstr "Police Note Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PoliceNoteWrapper.ModifyPoliceNote"
+msgstr "Police Note Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ErrorParseFile"
+msgstr "Error Parse File"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ErrorLoadingPollWorkers"
+msgstr "Error Loading Poll Workers"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedPresident"
+msgstr "President Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedSecretary"
+msgstr "Secretary Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedAssistent"
+msgstr "Assistent Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedWitness"
+msgstr "Witness Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedPolice"
+msgstr "Police Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedAssistantSecretary"
+msgstr "Assistant Secretary Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyPresident"
+msgstr "Deputy President Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputySecretary"
+msgstr "Deputy Secretary Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyAssistent"
+msgstr "Deputy Assistent Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyWitness"
+msgstr "Deputy Witness Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputyAssistantSecretary"
+msgstr "Deputy Assistant Secretary Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.AddedDeputy"
+msgstr "Deputy Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedPresident"
+msgstr "President Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedSecretary"
+msgstr "Secretary Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedAssistent"
+msgstr "Assistent Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedWitness"
+msgstr "Witness Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedPolice"
+msgstr "Police Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedAssistantSecretary"
+msgstr "Assistant Secretary Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyPresident"
+msgstr "Deputy President Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputySecretary"
+msgstr "Deputy Secretary Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyAssistent"
+msgstr "Deputy Assistent Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyWitness"
+msgstr "Deputy Witness Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputyAssistantSecretary"
+msgstr "Deputy Assistant Secretary Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.DeletedDeputy"
+msgstr "Deputy Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedPresident"
+msgstr "President Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedSecretary"
+msgstr "Secretary Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedAssistent"
+msgstr "Assistent Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedWitness"
+msgstr "Witness Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedPolice"
+msgstr "Police Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedAssistantSecretary"
+msgstr "Assistant Secretary Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyPresident"
+msgstr "Deputy President Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputySecretary"
+msgstr "Deputy Secretary Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyAssistent"
+msgstr "Deputy Assistent Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyWitness"
+msgstr "Deputy Witness Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputyAssistantSecretary"
+msgstr "Deputy Assistant Secretary Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.ModifiedDeputy"
+msgstr "Deputy Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.NoteAdded"
+msgstr "Note Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.NoteDeleted"
+msgstr "Note Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PollworkersWrapper.NoteModified"
+msgstr "Note Modified"
+
+msgid "Smartmatic.SAES.Voting.PBReports.PVFormWrapper.ErrorSerializaData"
+msgstr "Error read file "
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.ErrorParseFile"
+msgstr "Total proxy activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.PersistenceStatistic"
+msgstr "Saved statistics"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.AssistedActivation"
+msgstr "Assisted activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.EditInfoAssistedActivation"
+msgstr "Edit info assisted activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.BlockerInfoAssistedActivation"
+msgstr "Blocker info assisted activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.TotalAssistedActivation"
+msgstr "Total assisted activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.TotalImpugnedActivation"
+msgstr "Total impugned activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.StatisticManager.TotalProxyActivation"
+msgstr "Total proxy activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VoteStatisticsWrapper.ErrorLoadStatisticVote"
+msgstr "Error load statistic vote"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VoteStatisticsWrapper.ErrorSerializaData"
+msgstr "Error read file "
+
+msgid "Smartmatic.SAES.Voting.PBReports.VoteStatisticsWrapper.ErrorParseFile"
+msgstr "Total proxy activation"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.ErrorParseFile"
+msgstr "Error parse file for voting disabled"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.AddVotingDisabled"
+msgstr "Disabled Voting Added"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.RemoveVotingDisabled"
+msgstr "Disabled Voting Deleted"
+
+msgid "Smartmatic.SAES.Voting.PBReports.VotingDisabledWrapper.ModifyVotingDisabled"
+msgstr "Disabled Voting Modified"
+
+msgid "Smartmatic.SAES.Voting.Vote.TransmissionPackageWrapper.ErrorSerializaData"
+msgstr "Error serializa data"
+
+msgid "Smartmatic.SAES.Voting.Vote.TransmissionPackageWrapper.ErrorCertNotFound"
+msgstr "Error serializa data"
+
+msgid "Smartmatic.SAES.Voting.Vote.TransmissionPackageWrapper.ErrorCert"
+msgstr "Error serializa data"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.ErrorSerializaData"
+msgstr "Error serializa data"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.LogicalVoterGroup"
+msgstr "%1 %2 %3"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.VoteNULL"
+msgstr "Vote null"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.VoteNotNULL"
+msgstr "Vote not null"
+
+#. ******************************************************************************
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.Contest"
+msgstr "%1 %2 %3"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.Party"
+msgstr "%1 %2 %3"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.Candidate"
+msgstr "%1 %2"
+
+#. throw and exception
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.InvalidXmlDataFormat"
+msgstr "Expected attribute not found in the QR data"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.InvalidSignature"
+msgstr "An invalid signature was found in the QR data"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.UnexpectedSignatureError"
+msgstr "Unexpected error verifying QR data signature"
+
+msgid "Smartmatic.SAES.Voting.Vote.VoteWrapper.InvalidDataFormat"
+msgstr "Invalid format in QR data"
+
+msgid "Smartmatic.SAES.Voting.VotingCenters.VotingCentersWrapper.ErrorSerializaData"
+msgstr "Error serializa data"
+
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.FirstVotingDeviceNotFound"
+msgstr "First voting device not found."
+
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.VotingDeviceCodeNotFound"
+msgstr "First voting device not found."
+
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.LogicalVotingGroupCodeNotFound"
+msgstr "First voting device not found."
+
+msgid "Smartmatic.SAES.Voting.VotingDevice.VotingDeviceWrapper.LogicalVotingGroupByContestGroupCodeNotFound"
+msgstr "First voting device not found."

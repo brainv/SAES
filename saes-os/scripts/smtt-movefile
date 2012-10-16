@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#author Pablo Trujillo, Yadickson Soto
+#date 14-09-2011
+#package saes-os
+#version 1.4.6
+
+RANDDEVICE=urandom
+
+# move the file, preserve contents in a temporal file 
+#fix: move in the same folder, this has the same efect, preserve the backup when the usb is removed
+
+FILE="${1}"
+CURRDIR="${2}"
+TMPFILE="${FILE}.tmp"
+
+# we need to be sure here, the whole content must be copied.
+
+# rename the file -means:in process, if the usb is removed and this file exist, use this file as backup
+
+chmod 777 "${CURRDIR}/${FILE}"
+chown smtt:smtt "${CURRDIR}/${FILE}"
+
+mv "${CURRDIR}/${FILE}" "${CURRDIR}/${TMPFILE}"
+
+# this changes the inode
+
+cp -a "${CURRDIR}/${TMPFILE}" "${CURRDIR}/${FILE}"
+
+# check if the file is Ok
+    
+chkOrig=$(md5sum -b "${CURRDIR}/${TMPFILE}" | awk '{print $1}')
+chkCopy=$(md5sum -b "${CURRDIR}/${FILE}" | awk '{print $1}')
+
+if [ ! "${chkOrig}" = "${chkCopy}" ]
+then
+      echo "error checking file ${FILE}"
+      exit 1
+fi
+
+# if the cp finish, we have already the file copied in his new location , the temporal is no needed any more
+
+# using shred to make a secure delete
+
+exit 0
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/vote-statistics-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="VoteStatistics" targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports">
+	<xs:element name="VoteStatistics">
+		<xs:complexType>
+			<xs:sequence>
+			    <xs:element maxOccurs="1" minOccurs="1" name="TotalVotes" type="xs:nonNegativeInteger"/>
+			    <xs:element maxOccurs="1" minOccurs="1" name="TotalSecurityVotes" type="xs:nonNegativeInteger"/>
+			    <xs:element maxOccurs="1" minOccurs="1" name="TotalOfficialVotes" type="xs:nonNegativeInteger"/>
+			    <xs:element maxOccurs="1" minOccurs="1" name="TotalDemoVotes" type="xs:nonNegativeInteger"/>
+			     <xs:element maxOccurs="1" minOccurs="1" name="TotalSuperNullVotes" type="xs:nonNegativeInteger"/>
+			      <xs:element maxOccurs="1" minOccurs="1" name="TotalDuplicatedVotes" type="xs:nonNegativeInteger"/>
+			      <xs:element maxOccurs="1" minOccurs="0" name="TotalSimulatedVotes" type="xs:nonNegativeInteger"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="VotesByCA">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="VoteByCA">
+						     <xs:complexType>
+							<xs:attribute name="VotesCounter" type="xs:nonNegativeInteger" use="required"/>
+							<xs:attribute name="CACode" type="xs:string" use="required"/>
+							<xs:attribute name="CAValue" type="xs:string" use="required"/>
+						    </xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			</xs:sequence>			
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

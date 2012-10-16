@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsmartmatic*.la
+debian/tmp/usr/lib/libsmartmatic*.so
+debian/tmp/usr/lib/pkgconfig/libsmartmatic.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsmartmatic/AUTHORS
+debian/tmp/usr/share/doc/libsmartmatic/ChangeLog
+debian/tmp/usr/share/doc/libsmartmatic/INSTALL
+debian/tmp/usr/share/doc/libsmartmatic/NEWS
+debian/tmp/usr/share/doc/libsmartmatic/README

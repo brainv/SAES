@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<interface>
+  <!-- interface-requires gtk+ 2.12 -->
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkVBox" id="main-vbox">
+    <property name="visible">True</property>
+    <property name="spacing">4</property>
+    <child>
+      <object class="GtkEventBox" id="title-eventbox">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkFrame" id="title-frame">
+            <property name="visible">True</property>
+            <property name="label_xalign">0</property>
+            <child>
+              <object class="GtkHBox" id="title-hbox">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkImage" id="title-image">
+                    <property name="visible">True</property>
+                    <property name="xpad">5</property>
+                    <property name="stock">gtk-missing-image</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="title-label">
+                    <property name="visible">True</property>
+                    <property name="use_markup">True</property>
+                    <property name="justify">center</property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEventBox" id="title-help-eventbox">
+                    <property name="visible">True</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="padding">1</property>
+                    <property name="pack_type">end</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+            <child type="label_item">
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkFrame" id="header-frame">
+        <property name="visible">True</property>
+        <property name="label_xalign">0</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child type="label_item">
+          <placeholder/>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEventBox" id="center-eventbox">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkFrame" id="center-frame">
+            <property name="visible">True</property>
+            <property name="label_xalign">0</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child type="label_item">
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEventBox" id="bottom-eventbox">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkFrame" id="bottom-frame">
+            <property name="visible">True</property>
+            <property name="label_xalign">0</property>
+            <child>
+              <object class="GtkLabel" id="bottom-label">
+                <property name="visible">True</property>
+              </object>
+            </child>
+            <child type="label_item">
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="pack_type">end</property>
+        <property name="position">3</property>
+      </packing>
+    </child>
+  </object>
+</interface>

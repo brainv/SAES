@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/VotingDevice" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/VotingDevice/card-data-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="card-data" targetNamespace="http://www.smartmatic.com/Saes/Voting/VotingDevice">
+	<xs:element name="card-data">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" name="logical-voter-group">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" name="custom-attributes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" minOccurs="0" name="custom-attribute">
+											<xs:complexType>
+											<xs:sequence/>
+											<xs:attribute name="code" type="xs:string" use="required"/>
+											<xs:attribute name="value" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="contest-group-code" type="xs:string" use="required"/>
+						<xs:attribute name="operation-mode-code" type="xs:string" use="required"/>
+						<xs:attribute name="voting-booth-code" type="xs:string" use="required"/>
+						<xs:attribute name="region-code" type="xs:string" use="required"/>
+						<xs:attribute name="name-key" type="xs:string" use="required"/>
+						<xs:attribute name="code" type="xs:string" use="required"/>
+						<xs:attribute name="custom-code" type="xs:string" use="required"/>						
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="1" minOccurs="0" name="vote" type="vote"/>
+			</xs:sequence>
+			<xs:attribute name="code" type="xs:string" use="required"/>
+			<xs:attribute name="IsAudio" type="xs:boolean" use="required"/>
+			<xs:attribute name="card-type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="OFFICIAL_VOTE_CARD"/>
+						<xs:enumeration value="DEMOSTRATION_VOTE_CARD"/>
+						<xs:enumeration value="RECOVERY_VOTE_CARD"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="card-status" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="USED"/>
+						<xs:enumeration value="NOT_USED"/>
+						<xs:enumeration value="SIMULATED"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="activation-code" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="vote">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1" name="s">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="1" name="b" type="xs:string">
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="c" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>	
+		<xs:attribute name="code" type="xs:string" use="required"/>
+		<xs:attribute name="v" type="xs:string" use="required"/>
+		<xs:attribute name="l" type="xs:string" use="required"/>
+		<xs:attribute name="m" type="VoteMode" use="required"/>
+		<xs:attribute name="lan-code" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="VoteMode">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="O"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="R"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

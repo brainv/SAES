@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#author Pablo Trujillo, Yadickson Soto
+#date 14-09-2011
+#package @PACKAGE@
+#version @VERSION@
+
+lock="/tmp/lock"
+SIGNALED="/tmp/SyncUSER2"
+
+while [ -f "${lock}" ]
+do
+	sleep 0.5
+done
+
+touch "${lock}"
+
+APPCONF=@APPCONF@
+BIN=$(cat ${APPCONF} | awk -F: '/BIN/{print $2}')
+SIGNALSTORAGE=$(cat ${APPCONF} | awk -F: '/SIGNALSTORAGE/{print $2}')
+file="/tmp/EVENTDEVICE"
+
+DEVICE="${1}"
+ACTION="${2}"
+
+echo "${DEVICE}:${ACTION}" > "${file}"
+
+if [ "${ACTION}" = "add" ]
+then
+
+	## asure that the usb is mounted:
+	MOUNTPOINT=""
+	retry=0
+
+	while [ -z "${MOUNTPOINT}" ]
+	do
+		MOUNTPOINT=$(grep "${DEVICE}" "/proc/mounts" | awk '{ print $2 }' )
+		sleep 1
+		retry=$(($retry + 1))
+		
+		if [ $retry -gt 30 ]
+		then
+			break
+		fi
+	done
+
+fi
+
+devices=$(LANG=C ls -lo /dev/disk/by-id/*usb* | grep part1 | awk '{print $10 $11}' | perl -ne 's/\.\.\///g; print')
+
+for i in ${devices}
+do
+	device=$(cat /proc/mounts | grep "${i}" | awk '{print $2}')
+	echo "/dev/${i} ${device}" >> "${file}"
+done
+
+if [ -f "${SIGNALED}" ]
+then
+	for bin in $(echo "${BIN}" | tr " " "\n")
+	do
+		pkill -"${SIGNALSTORAGE}" "${bin}"
+	done
+fi
+
+rm -f "${lock}"
+
+exit 0
+

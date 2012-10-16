@@ -1,0 +1,452 @@
+#!/bin/bash
+
+#author pablo Trujillo
+#date 14-09-2011
+#package saes-os
+#version 1.4.6
+
+###############
+#
+# this scripts introduce disordes in the inode list
+#in the folder speficified - make some random
+# values in the old files (making unreadable the contents of the file).
+# After this operations, the files get in a state tha is dificult
+# to know in what order was written.
+#
+#
+#
+#
+##############
+
+# get two params: max number allowed ,  bytes used (currently only bs=1, is supported)
+# return: randon number selected
+get_random()
+{
+top=$1;
+
+if [ $2 -eq 1 ]
+    then
+        while true
+        do
+        number=$(dd status=noxfer if=/dev/$RANDDEVICE count=1 bs=$2 2>/dev/null | od -t u1 --address-radix=n); 
+        if [ $number -lt $(($top)) ]
+            then
+            if  [ "$3" = "nonzero" ]
+            then
+            if [ $number -gt 0  ]
+            then
+             break;
+            fi
+            else
+            break;
+            fi
+            fi
+        done
+elif [ $2 -eq 2 ]
+    then
+        number=0   # this feature is not supported yet
+fi
+echo $number
+}
+
+#move files and copy  to changes its inode information
+move_files()
+{
+
+# move the file, preserve contents in a temporal file 
+#fix: move in the same folder, this has the same efect, preserve the backup when the usb is removed
+CURRDIR=$2
+
+# we need to be sure here, the whole content must be copied.
+
+# rename the file -means:in process, if the usb is removed and this file exist, use this file as backup
+
+mv $CURRDIR/$1 $CURRDIR/$1.tmp
+
+# this changes the inode
+
+cp -a $CURRDIR/$1.tmp  $CURRDIR/$1
+
+# check if the file is Ok
+
+chkOrig=$(md5sum -b $CURRDIR/$1.tmp | awk '{print $1}')
+chkCopy=$(md5sum -b $CURRDIR/$1 | awk '{print $1}')
+
+if ! [ "${chkOrig}" = "${chkCopy}" ]
+then
+      echo "error checking file $1"
+      return
+fi
+
+# if the cp finish, we have already the file copied in his new location , the temporal is no needed any more
+
+# proceed to do the secure erase:
+
+FILESIZE=$(ls -l $CURRDIR/$1.tmp | awk '{print $5}')
+
+# written blocks  are probably diferent from the originals, so the old date file's info is erase previuosly:
+
+echo "write zeros in the bytes's file"
+
+ dd  if=/dev/zero of=$CURRDIR/$1.tmp count=1 bs=$FILESIZE status=noxfer 2>/dev/null
+
+echo "write   random bytes in bytes's file"
+
+ dd  if=/dev/$RANDDEVICE of=$CURRDIR/$1.tmp count=1 bs=$FILESIZE status=noxfer 2>/dev/null
+
+echo "write   0xFF bytes in bytes's file"
+
+tr '\0' '\377' < /dev/zero | dd bs=$FILESIZE count=1 of=$CURRDIR/$1.tmp status=noxfer 2>/dev/null
+
+echo "write   0xAA bytes in bytes's file"
+
+tr '\0' '\252' < /dev/zero | dd bs=$FILESIZE count=1 of=$CURRDIR/$1.tmp status=noxfer 2>/dev/null
+
+echo "write zeros in the bytes's file"
+
+ dd  if=/dev/zero of=$CURRDIR/$1.tmp count=1 bs=$FILESIZE 2>/dev/null
+
+echo "right know, the old data is not avalible from the old file."
+
+# erase the old file, free the inode and blocks. (the current blocks has no recoverable info)
+
+rm $CURRDIR/$1.tmp
+
+# change the timestamp
+
+touch $CURRDIR/$1
+
+}
+
+move_files_v2()
+{
+
+# move the file, preserve contents in a temporal file 
+#fix: move in the same folder, this has the same efect, preserve the backup when the usb is removed
+CURRDIR=$2
+
+# we need to be sure here, the whole content must be copied.
+
+# rename the file -means:in process, if the usb is removed and this file exist, use this file as backup
+
+chmod 777 $CURRDIR/$1
+chown smtt:smtt $CURRDIR/$1
+
+mv $CURRDIR/$1 $CURRDIR/$1.tmp
+
+# this changes the inode
+
+cp -a $CURRDIR/$1.tmp  $CURRDIR/$1
+
+# check if the file is Ok
+    
+chkOrig=$(md5sum -b $CURRDIR/$1.tmp | awk '{print $1}')
+chkCopy=$(md5sum -b $CURRDIR/$1 | awk '{print $1}')
+
+if ! [ "${chkOrig}" = "${chkCopy}" ]
+then
+      echo "error checking file $1"
+      return
+fi
+
+# if the cp finish, we have already the file copied in his new location , the temporal is no needed any more
+
+# using shred to make a secure delete
+
+shred -z --random-source=/dev/$RANDDEVICE   $CURRDIR/$1.tmp
+
+rm $CURRDIR/$1.tmp
+
+# change the timestamp
+
+#touch $CURRDIR/$1
+
+}
+
+#            parsing parameters
+#############################################
+#if [ "$EUID" != "0" ]; then
+#  echo "This script must be run as root" 1>&2
+#   exit 1
+#fi
+
+RANDDEVICE=urandom
+
+timestamp=
+
+ELEMENTS=
+movepoint=
+
+LOCKFILE=4567
+
+DIR=
+
+declare -a ADDFILES
+
+while getopts "d:n:t:l:a:" OPTION
+do
+   case $OPTION in
+                d)
+                    if ! [ -d $OPTARG ]
+                        then
+                          echo "$OPTARG not found or is not a directory"
+                        exit 1
+                     else
+
+                        DIR=$OPTARG
+                    fi
+                    ;;
+                n)
+                    # max 250 files will be re-ordered
+                    if [ $OPTARG -gt 250 ]
+                        then
+                        ELEMENTS=250
+                        echo "Only 250 files max will be moved - selected max number"
+                     else
+                        ELEMENTS=$OPTARG
+                     fi
+                    ;;
+                  t)
+                   timestamp=$OPTARG   # needs validations
+                   ;;
+                   l)
+                        ADDFILES=($OPTARG)
+                   ;;
+                   a)
+                        LOCKFILE=$OPTARG  
+                   ;;
+             esac
+
+
+done
+
+if [ "$DIR" = "" ]
+then
+   echo "Selecting current directory"
+   DIR=./
+fi
+
+if [ -n "$LOCKFILE" ]
+ then
+  touch /tmp/$LOCKFILE
+  touch ${DIR}/$LOCKFILE 
+fi
+
+#echo  "all ok at the moment ..."
+
+
+#  detecting the number of files in directory
+#############################################
+entries=0
+declare -a FILELIST
+
+#chmod 777 $DIR/*
+#chown smtt:smtt $DIR/*
+
+for file in $(ls $DIR -i  --ignore=. --ignore=.. --ignore=$LOCKFILE | sort | awk '{ print $2}') # ordered by inode
+do
+
+if [ -d $file ]
+then
+ continue
+fi
+if [ -f $DIR/$file ]
+then
+  FILELIST[$entries]=$file
+  entries=$(($entries +1))
+
+fi
+done
+
+#echo "detected $entries entries"
+
+#############################################
+
+if [ -z "$ELEMENTS" ]
+  then
+  if [ $entries -lt 250 ]
+   then
+    ELEMENTS=$(get_random $entries 1 nonzero)
+   else
+    ELEMENTS=$(get_random 250 1 nonzero)
+  fi
+elif [ $ELEMENTS -gt $entries ]
+then
+ELEMENTS=$entries
+fi
+
+#echo "ELEMENTS TO MOVE= $ELEMENTS"
+
+#echo "getting random list...."
+
+#echo filling random list
+
+ declare -a rand_array
+ declare -a rand_to_reduce
+
+BS=$(($entries + 1000 ))
+
+TOP=$(($BS - 1 ))
+
+rand_to_reduce=($(dd status=noxfer if=/dev/$RANDDEVICE count=1 bs=$BS 2>/dev/null | od -t u1 --address-radix=n))
+
+j=0
+ for element in "${rand_to_reduce[@]}"
+        do
+           rand_array[$j]=$(( $element / 10 ))
+            j=$(($j+1))
+        done
+
+#echo "${rand_array[@]}"
+
+declare -a randomlist
+n=0
+i=0
+while [ $i -lt $ELEMENTS ]
+do
+
+     toeval=${rand_array[$n]}
+
+     # echo "$n: -  $toeval"
+      n=$(($n + 1))
+	ready=0
+       for elmnt in "${randomlist[@]}"
+        do
+        if [ $toeval -eq $elmnt ]
+         then
+          ready=1
+          break
+        fi
+       done
+
+    if  [ $ready -eq 0 ]
+     then
+
+     if [ $toeval -lt  $entries ]
+     then
+        randomlist[$i]=$toeval
+        i=$(($i + 1))
+      fi
+     fi
+
+     if [ $n -gt $TOP ]
+     then
+            rand_reduce=($(dd status=noxfer if=/dev/$RANDDEVICE count=1 bs=$BS 2>/dev/null | od -t u1 --address-radix=n)) 
+             for element in "${rand_to_reduce[@]}"
+        do
+           rand_array[$j]=$(( $element / 10 ))
+            j=$(($j+1))
+        done
+        n=0
+        i=0
+     fi
+done
+
+FILESTOMOVE=
+
+#for (( i=0;i< ${entries};i++)); do
+#echo "file to move list(): ${FILELIST[i]}  - $i"
+#done
+
+echo
+
+#for (( i=0;i< ${#randomlist[@]};i++)); do
+#echo "file to move (rand): ${FILELIST[${randomlist[i]}]}  - $i - ${randomlist[i]} "
+#done
+
+for (( i=0;i< ${#randomlist[@]};i++)); do
+FILESTOMOVE[i]=${FILELIST[${randomlist[i]}]}
+done
+
+currententries=${#FILESTOMOVE[@]}
+
+if [ ${#ADDFILES[@]} -gt 0 ]
+then
+      for (( j=0;j<${#ADDFILES[@]};j++));do
+      FIND=0
+       for ((i=0;i<${currententries};i++));do
+           FILETOADD="${ADDFILES[j]}"
+#            echo     "${FILESTOMOVE[i]} =  ${ADDFILES[j]}"
+            if [ "${FILESTOMOVE[i]}" =  "${ADDFILES[j]}" ]
+            then
+            FIND=1
+           echo "find"
+            break
+            fi
+       done
+
+       if [ "$FIND" = "0" ]
+           then
+           if [ -f "$DIR/$FILETOADD" ]
+            then
+             FILESTOMOVE[$currententries]=$FILETOADD
+             currententries=$(($currententries+ 1))
+#             echo "file $FILETOADD added"
+           fi
+       fi
+    done
+
+fi
+
+#echo "done"
+
+#echo "moving"
+
+#mkdir -p /tmp/$DIR -no need in the new scheme
+
+fileList=""
+
+for (( i=0;i< ${#FILESTOMOVE[@]};i++))
+do
+	#echo "file: ${FILESTOMOVE[i]}"
+	sleep 0.5
+	/usr/sbin/smtt-move-file ${FILESTOMOVE[i]} ${DIR}
+	fileList="${fileList} ${DIR}/${FILESTOMOVE[i]}.tmp"
+done
+
+stringEval="shred --zero --random-source=/dev/${RANDDEVICE} ${fileList}"
+eval "${stringEval}"
+
+stringDeletFiles="rm -f ${fileList}"
+eval "${stringDeletFiles}"
+
+# set time - stamp
+
+if [ -z "$timestamp" ]
+then
+for ((i=0;i< ${#FILESTOMOVE[@]};i++)); do
+  touch $DIR/${FILESTOMOVE[i]}
+done
+else
+  for ((i=0;i<${#FILESTOMOVE[@]};i++));do
+touch -t $timestamp $DIR/${FILESTOMOVE[i]}
+done
+fi
+
+# check if we reach the end of process:
+
+#while true
+#do
+
+#sleep 1
+
+#TEMPFILES=$(ls $DIR | grep tmp )
+
+#if [ -z "$TEMPFILES" ]
+#then
+#    break;
+#fi
+
+#done
+
+if [ -f /tmp/$LOCKFILE ]
+then
+rm /tmp/$LOCKFILE
+fi
+
+if [ -f ${DIR}/$LOCKFILE  ]
+then
+rm ${DIR}/$LOCKFILE 
+fi
+
+echo "Ready"

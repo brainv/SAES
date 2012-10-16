@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/Vote" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/Vote/transmission-package-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="transmission-package" targetNamespace="http://www.smartmatic.com/Saes/Voting/Vote">
+	<xs:element name="transmission">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="transmission-package">
+					<xs:complexType>
+						<xs:sequence>
+							<!--xs:element name="logs-pck" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="auditing-logs" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="auditing-entry" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="environment-manager-logs" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="environment-manager-entry" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="error-logs" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="error-entry" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="installation-logs" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="installation-entry" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="transmission-logs" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="transmission-entry" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element-->
+							<!--xs:element name="configuration-and-status-pck" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="region-hierarchies">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="region-hierarchy" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="category" type="region-category"/>
+															</xs:sequence>
+															<xs:attribute name="code" type="no-empty-string" use="required"/>
+															<xs:attribute name="name" type="no-empty-string" use="required"/>
+															<xs:attribute name="is-default" type="xs:boolean" use="required"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="voting-device-id">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="voting-booth-id">
+														<xs:complexType>
+															<xs:sequence/>
+															<xs:attribute name="code" type="xs:string"/>
+															<xs:attribute name="custom-code" type="xs:string"/>
+															<xs:attribute name="number" type="xs:string"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="code" type="xs:string"/>
+												<xs:attribute name="custom-code" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="time-zone-information" type="xs:string"/>
+										<xs:element name="devices-status">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="device-status" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence/>
+															<xs:attribute name="id" type="xs:string"/>
+															<xs:attribute name="type">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="Ballot"/>
+																		<xs:enumeration value="Printer"/>
+																		<xs:enumeration value="Modem"/>
+																		<xs:enumeration value="Flash"/>
+																		<xs:enumeration value="Token"/>
+																		<xs:enumeration value="Sound"/>
+																		<xs:enumeration value="TouchScreen"/>
+																		<xs:enumeration value="ScreenContrast"/>
+																		<xs:enumeration value="Able"/>
+																		<xs:enumeration value="CardReader"/>
+																		<xs:enumeration value="Acquisition"/>
+																		<xs:enumeration value="Recognition"/>
+																		<xs:enumeration value="PenAcquisition"/>
+																		<xs:enumeration value="PenRecognition"/>
+																		<xs:enumeration value="FingerprintReader"/>
+																		<xs:enumeration value="None"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="date-time" type="xs:string"/>
+															<xs:attribute name="status">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="NotDiagnosed"/>
+																		<xs:enumeration value="Ok"/>
+																		<xs:enumeration value="Error"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="diagnose-description" type="xs:string"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="operation-mode-code" type="xs:string"/>
+									<xs:attribute name="voting-device-registered-electors" type="xs:integer"/>
+									<xs:attribute name="opening-date-time" type="xs:string"/>
+									<xs:attribute name="closing-date-time" type="xs:string"/>
+									<xs:attribute name="flags" type="xs:integer"/>
+									<xs:attribute name="factory-diagnose-completed" type="xs:boolean"/>
+									<xs:attribute name="transmission-attempts" type="xs:integer"/>
+									<xs:attribute name="process-status">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="NotInitiated"/>
+												<xs:enumeration value="Initiated"/>
+												<xs:enumeration value="Closed"/>
+												<xs:enumeration value="ResultsTransmitted"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="opening-code" type="xs:string"/>
+									<xs:attribute name="application-version" type="xs:string"/>
+									<xs:attribute name="operating-system-version" type="xs:string"/>
+									<xs:attribute name="machine-model" type="xs:string"/>
+								</xs:complexType>
+							</xs:element -->
+							<xs:element minOccurs="0" name="stn-tly-pcks">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" minOccurs="0" name="stn-tly-pck">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element maxOccurs="unbounded" minOccurs="0" name="stn-tly">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" name="r">
+																	<xs:complexType>
+																		<xs:sequence/>
+																		<xs:attribute name="bo" type="xs:string" use="optional"/>
+																		<xs:attribute name="t" type="xs:nonNegativeInteger" use="optional"/>
+																		<xs:attribute name="t2" type="xs:nonNegativeInteger" use="optional"/>
+																		<xs:attribute name="l1" type="xs:nonNegativeInteger" use="optional"/>
+																		<xs:attribute name="l2" type="xs:nonNegativeInteger" use="optional"/>
+																		<xs:attribute name="l3" type="xs:nonNegativeInteger" use="optional"/>
+																		<xs:attribute name="l4" type="xs:nonNegativeInteger" use="optional"/>
+																		<xs:attribute name="c-sum" type="xs:nonNegativeInteger" use="optional"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="type" use="optional">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="AUTOMATED"/>
+																		<xs:enumeration value="MANUAL"/>
+																		<xs:enumeration value="OMR"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="number" type="xs:string" use="optional"/>
+															<xs:attribute name="contest" type="xs:string" use="optional"/>
+															<xs:attribute name="automatic-votes" type="xs:string" use="optional"/>
+															<xs:attribute name="complete-unconscious-void-votes" type="xs:string" use="optional"/>
+															<xs:attribute name="specific-unconscious-void-votes" type="xs:string" use="optional"/>
+															<xs:attribute name="specific-total-void-votes" type="xs:string" use="optional"/>
+															<xs:attribute name="complete-total-void-votes" type="xs:string" use="optional"/>
+															<xs:attribute name="empty-votes" type="xs:nonNegativeInteger" use="optional"/>
+															<xs:attribute name="overvotes" type="xs:nonNegativeInteger" use="optional"/>
+															<xs:attribute name="processed-votes" type="xs:nonNegativeInteger" use="optional"/>
+															<xs:attribute name="logical-voter-group-code" type="xs:string" use="optional"/>
+															<xs:attribute name="reserved0" type="xs:string" use="optional"/>
+															<xs:attribute name="reserved1" type="xs:string" use="optional"/>
+															<xs:attribute name="selected-votes" type="xs:nonNegativeInteger" use="optional"/>
+															<xs:attribute name="codi-checksum" type="xs:nonNegativeInteger" use="optional"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element minOccurs="0" name="valid-votes">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" name="v" type="vote"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element minOccurs="0" name="spoiled-votes">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" name="s-v" type="vote"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="voting-device-code" type="xs:string" use="required"/>
+												<!--xs:attribute name="voters" type="xs:nonNegativeInteger" use="required"/>
+												<xs:attribute name="serial" type="xs:string" use="required"/>
+												<xs:attribute name="ballot-box-votes" type="xs:nonNegativeInteger" use="required"/>
+												<xs:attribute name="processed-votes" type="xs:nonNegativeInteger" use="required"/>
+												<xs:attribute name="miscellaneous" type="xs:string" use="required"/>
+												<xs:attribute name="operation-mode-code" type="xs:string" use="required"/>
+												<xs:attribute name="opening-code" type="xs:string" use="required"/>												
+												<xs:attribute name="scrutiny-date" type="xs:string"/>
+												<xs:attribute name="scrt-prfm" type="xs:boolean"/>
+												<xs:attribute name="rejected-ballots" type="xs:nonNegativeInteger" use="required"/-->
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--xs:complexType name="vote">
+		<xs:sequence>
+			<xs:element name="contest" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="bos">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="bo" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="c" type="xs:string"/>
+					<xs:attribute name="s" use="optional" default="VALID">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="VALID"/>
+								<xs:enumeration value="OVERVOTED"/>
+								<xs:enumeration value="MISSING"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="c" type="xs:string"/>
+		<xs:attribute name="lvg" type="xs:string"/>
+	</xs:complexType-->
+	<xs:complexType name="vote">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1" name="s">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="1" name="b" type="xs:string">
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="c" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>	
+		<xs:attribute name="code" type="xs:string" use="required"/>
+		<xs:attribute name="v" type="xs:string" use="required"/>
+		<xs:attribute name="l" type="xs:string" use="required"/>
+		<xs:attribute name="m" type="VoteMode" use="required"/>
+		<xs:attribute name="lan-code" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="VoteMode">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="O"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="R"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!--xs:complexType name="region-category">
+		<xs:sequence>
+			<xs:element name="region">
+				<xs:complexType>
+					<xs:sequence/>
+					<xs:attribute name="code" type="no-empty-string" use="required"/>
+					<xs:attribute name="name-key" type="no-empty-string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="category" type="region-category" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="code" type="no-empty-string" use="required"/>
+		<xs:attribute name="name-key" type="no-empty-string" use="required"/>
+	</xs:complexType-->
+	<!--xs:simpleType name="no-empty-string">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType-->
+</xs:schema>

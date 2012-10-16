@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="VotingDisabledInformation"
+	targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports" 
+	xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" 
+	xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/assisted-information-schema.xsd">
+	<xs:element name="VotingDisabledInformation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="VotingDisabled" type="VotingDisabled" />
+			</xs:sequence>			
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="VotingDisabled">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="Voter" type="IDCardInfo"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Helper" type="IDCardInfo"/>
+		</xs:sequence>
+		<xs:attribute name="custom-code" type="xs:string" use="required"/>
+		<xs:attribute name="create-date" type="xs:string" use="required"/>
+		<xs:attribute name="type" type="VotingDisabledType" use="required"/>
+		<xs:attribute name="disabled" type="xs:string" use="required"/>
+		<xs:attribute name="approved" type="xs:string" use="required"/>
+		<xs:attribute name="description" type="xs:string" use="required"/>
+    </xs:complexType>						    
+	
+	<!-- This complexType name="IDCardInfo" is here for xsd comprobation  -->
+	<xs:complexType name="IDCardInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="FirstName" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Surname" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Gender" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="0" name="LocationOfBirth" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Nationality" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="NationalNumber" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="SpecialOrganization" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="MemberOfFamily" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="AddressVersion" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Street" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="ZipCode" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Municipality" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Country" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="SpecialStatus" type="xs:string"/>
+		</xs:sequence>			
+	</xs:complexType>
+
+	<xs:simpleType name="VotingDisabledType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ASSISTED"/>
+			<xs:enumeration value="ACCOMPANIED"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

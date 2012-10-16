@@ -1,0 +1,27 @@
+Aplicación probada en Ubuntu (10.04)
+
+Dependencias de construcción:
+  - autotools-dev
+  - intltool
+  - cdbs
+  - pkg-config
+  - xsdcxx
+  - libxerces-c-dev
+  - libgtkmm-2.4-dev
+  - libqrencode-dev
+  - uuid-dev
+  - libsmartmatic-dev
+  - libsaescommon-dev
+  - libsmartmaticgui-dev
+  - libgmp3-dev
+
+Dependencias de ejecución:
+  - libxerces-c3.1
+  - libgtk-2.0-0
+  - libqrencode3
+  - libuuid1
+  - libsmartmatic-1.0-1
+  - libsaescommon-1.0-1
+  - libsmartmaticgui-1.0-1
+  - libgmp3c2
+  - libgmpxx4ldbl

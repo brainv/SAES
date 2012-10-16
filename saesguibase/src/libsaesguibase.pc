@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=${exec_prefix}/lib
+datarootdir=${prefix}/share
+datadir=${prefix}/share
+includedir=${prefix}/include/saesguibase
+
+Name: libsaesguibase
+Description: Sample library created by Anjuta project wizard.
+Version: 1.4.6
+Requires: 
+Libs: -L${libdir} -lsaesguibase
+Cflags: -I${includedir}

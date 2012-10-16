@@ -1,0 +1,3 @@
+SUBDIRS = Voting
+CLEANFILES = *~
+

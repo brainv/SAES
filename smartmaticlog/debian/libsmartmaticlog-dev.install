@@ -1,0 +1,9 @@
+debian/tmp/usr/lib/libsmartmaticlog*.la
+debian/tmp/usr/lib/libsmartmaticlog*.so
+debian/tmp/usr/lib/pkgconfig/libsmartmaticlog.pc
+debian/tmp/usr/include/*
+debian/tmp/usr/share/doc/libsmartmaticlog/AUTHORS
+debian/tmp/usr/share/doc/libsmartmaticlog/ChangeLog
+debian/tmp/usr/share/doc/libsmartmaticlog/INSTALL
+debian/tmp/usr/share/doc/libsmartmaticlog/NEWS
+debian/tmp/usr/share/doc/libsmartmaticlog/README

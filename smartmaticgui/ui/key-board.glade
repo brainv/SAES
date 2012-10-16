@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkTable" id="table1">
+    <property name="width_request">500</property>
+    <property name="height_request">230</property>
+    <property name="visible">True</property>
+    <property name="n_rows">5</property>
+    <property name="n_columns">13</property>
+    <property name="homogeneous">True</property>
+    <child>
+      <object class="GtkButton" id="button1">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.1Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button2">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.2Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button3">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.3Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button4">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.4Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button5">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.5Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">5</property>
+        <property name="right_attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button6">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.6Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">6</property>
+        <property name="right_attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button7">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.7Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">7</property>
+        <property name="right_attach">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button8">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.8Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">8</property>
+        <property name="right_attach">9</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button9">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.9Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">9</property>
+        <property name="right_attach">10</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="button0">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.0Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">10</property>
+        <property name="right_attach">11</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonBackspace">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE1Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">12</property>
+        <property name="right_attach">13</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonQ">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.QMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonW">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.WMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">2</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonE">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.EMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonR">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.RMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonT">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.TMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonY">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.YMessagee</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">5</property>
+        <property name="right_attach">6</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonU">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.UMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">6</property>
+        <property name="right_attach">7</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonI">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.IMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">7</property>
+        <property name="right_attach">8</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonO">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.OMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">8</property>
+        <property name="right_attach">9</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonP">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.PMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">9</property>
+        <property name="right_attach">10</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonA">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.AMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonS">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.SMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">2</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonD">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.DMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonF">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.FMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonG">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.GMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonH">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.HMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">5</property>
+        <property name="right_attach">6</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonJ">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.JMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">6</property>
+        <property name="right_attach">7</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonK">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.KMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">7</property>
+        <property name="right_attach">8</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonL">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.LMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">8</property>
+        <property name="right_attach">9</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonEnter">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE2Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">11</property>
+        <property name="right_attach">13</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonZ">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.ZMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonX">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.XMessagee</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonC">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonV">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.VMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">5</property>
+        <property name="right_attach">6</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonB">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.BMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">6</property>
+        <property name="right_attach">7</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonN">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.NMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">7</property>
+        <property name="right_attach">8</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonM">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.MMessage</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">8</property>
+        <property name="right_attach">9</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonComa">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE3Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">9</property>
+        <property name="right_attach">10</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonPoint">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE4Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">10</property>
+        <property name="right_attach">11</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonSpace">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE5Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">9</property>
+        <property name="top_attach">4</property>
+        <property name="bottom_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonEsc">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE6Message</property>
+        <property name="height_request">42</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="top_attach">4</property>
+        <property name="bottom_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonDest">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE7Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonUnder">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE8Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">11</property>
+        <property name="right_attach">12</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonEqual">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE9Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">12</property>
+        <property name="right_attach">13</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonBrace1">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE10Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">10</property>
+        <property name="right_attach">11</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonBrace2">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE11Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">11</property>
+        <property name="right_attach">12</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonBackslash">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE12Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">12</property>
+        <property name="right_attach">13</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonApostrophe">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE13Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">10</property>
+        <property name="right_attach">11</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonShift">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.SHIFTMessage</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="right_attach">2</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonÑ">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.ÑMessage</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">9</property>
+        <property name="right_attach">10</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonSlash">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE14Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">9</property>
+        <property name="right_attach">10</property>
+        <property name="top_attach">4</property>
+        <property name="bottom_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonUp">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE15Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">11</property>
+        <property name="right_attach">12</property>
+        <property name="top_attach">3</property>
+        <property name="bottom_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonDown">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE16Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">11</property>
+        <property name="right_attach">12</property>
+        <property name="top_attach">4</property>
+        <property name="bottom_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonLeft">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE17Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">10</property>
+        <property name="right_attach">11</property>
+        <property name="top_attach">4</property>
+        <property name="bottom_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="buttonRight">
+        <property name="label" translatable="yes">Smartmatic.GUI.Glade.Key-board.CE18Message</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="left_attach">12</property>
+        <property name="right_attach">13</property>
+        <property name="top_attach">4</property>
+        <property name="bottom_attach">5</property>
+      </packing>
+    </child>
+  </object>
+</interface>

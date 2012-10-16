@@ -1,0 +1,63 @@
+Source: libsaescommon
+Section: devel
+Priority: extra
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Build-Depends: debhelper (>= 7),
+	autotools-dev,
+	cdbs,
+	intltool,
+	pkg-config,
+	xsdcxx (>= 3.3.0.1),
+	libxml-security-c-dev (>= 1.6.1),
+	libqrencode-dev (>= 3.1.1),
+	libglobalplatform6-dev (>= 6.0.0),
+	libxerces-c-dev,
+	barcode,
+	libcups2-dev,
+	libgtkmm-2.4-dev,
+	libbeidlib3-dev,
+	liblog4cxx10-dev,
+	libpcsclite-dev,
+	libssl-dev,
+	doxygen,
+	graphviz,
+	libsmartmatic-dev,
+	libsmartmaticgui-dev,
+	libsmartmaticlog-dev
+Standards-Version: 3.9.1
+Homepage: http://www.smartmatic.com
+
+Package: libsaescommon-dev
+Section: libdevel
+Architecture: any
+Depends: libsaescommon1 (= ${binary:Version}), ${misc:Depends}
+Description: Library SAES Common Developer
+ Library SAES Common Developer C++.
+
+Package: libsaescommon1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: saes-l10n-all
+Description: Library SAES Common
+ Library SAES Common Runtime.
+
+Package: libsaescommon-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery
+Suggests: devhelp
+Description: Library SAES Common Doc
+ Library SAES Common Documentation.
+
+Package: libsaescommon1-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: libsaescommon1 (= ${binary:Version}), ${misc:Depends} 
+Description: Library SAES Common Debug
+ Library SAES Runtime Common Debug
+ .
+ This package contains the debugging symbols of the library.
+

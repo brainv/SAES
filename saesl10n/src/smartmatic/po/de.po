@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/SmttResourceTest.cpp:42
+msgid "Smartmatic.System.Security.Cryptography.CryptoAES.ErrorEncryptoData"
+msgstr "Fehler beim Verschlüsseln der Daten"
+
+msgid "Smartmatic.System.Security.Crypto.ErrorOpenFile"
+msgstr "Fehler beim Öffnen des Datenbestands"
+
+msgid "Smartmatic.System.Security.Crypto.ErrorWriteFile"
+msgstr "Fehler beim Übertragen von Daten in den Datenbestand"
+
+############### Add 05.03.12 ########################
+
+msgid "Smartmatic.System.Security.Cryptography.PKCS7Signer.ErrorSignedData"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+msgid "Smartmatic.System.Security.Cryptography.PKCS7Signer.ErrorValidateData"
+msgstr "Fehler bei der Validierung der Unterschrift"
+
+############## Add 07.03.12 #########################
+
+msgid "Smartmatic.System.Security.Cryptography.CMSSigner.ErrorSignedData"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+################# Add 21.03.12 #########################
+
+msgid "Smartmatic.System.Security.Cryptography.CMSSigner.ErrorValidateData"
+msgstr "Fehler bei der Validierung der Unterschrift mit CMS"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS7.ErrorCryptoData"
+msgstr "Fehler bei der PKCS7-Verschlüsselung"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS7.ErrorDecryptoData"
+msgstr "Fehler bei der PKCS7-Entzifferung"
+
+############### Add 23.03.12 ############################
+
+msgid "Smartmatic.System.Security.SecurityBase.ErrorLoadCertifiedPKey"
+msgstr "Das Zertifikat 'pkey' kann nicht hochgeladen werden"
+
+msgid "Smartmatic.System.Security.SecurityBase.ErrorLoadCertifiedX509"
+msgstr "Das Zertifikat 'x509' kann nicht hochgeladen werden"
+
+############ New Keys 15-03-2012
+
+msgid "Smartmatic.System.GuidClass.ParseError"
+msgstr "Fehler bei der Verarbeitung des 'Guid String'"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS12.ErrorOpenPKCS12File"
+msgstr "Fehler beim Laden des pkcs12-Datenbestands"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS12.ErrorReadingPKCS12File"
+msgstr "Fehler beim Lesen des pkcs12-Datenbestands"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS12.ErrorParsingPKCS12File"
+msgstr "Fehler beim Lesen des pkcs12-Datenbestands"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS12.ErrorPrimaryKeyNull"
+msgstr "Fehler mit dem Schlüssel des pkcs12-Datenbestands"
+
+msgid "Smartmatic.System.Security.Cryptography.CryptoPKCS12.ErrorCertifiedNull"
+msgstr "Fehler mit dem Zertifikat im pkcs12-Datenbestand"
+
+msgid "Smartmatic.System.Security.Cryptography.ECDSASigner.CannotComputeSignature"
+msgstr "Fehler hinsichtlich der Unterzeichnung elliptischer Kurven"
+
+msgid "Smartmatic.System.Security.Cryptography.MsgDigestUtil.ErrorSettingChannel"
+msgstr "Fehler bei der Kanalwahl zum Lesen der Daten"
+
+msgid "Smartmatic.System.Security.Cryptography.MsgDigestUtil.ErrorReadingSecretKey"
+msgstr "Fehler beim Lesen des geheimen Schlüssels"
+
+msgid "Smartmatic.System.Security.Cryptography.MsgDigestUtil.ErrorReadingFileHashing"
+msgstr "Fehler beim Lesen des Hashs des Datenbestands"
+
+msgid "Smartmatic.System.Security.Cryptography.MsgDigestUtil.ErrorUnknownMessageDigest"
+msgstr "Unbekannter Fehler"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.ErrorGeneratingKey"
+msgstr "Fehler beim Generieren des Schlüssels"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.ErrorCheckingKeyIntegrity"
+msgstr "Fehler bei der Überprüfung der Integrität des verschlüsselten Schlüssels"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.InvalidBuffer"
+msgstr "Fehler im Datenbuffer für die Verschlüsselung"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.ErrorDuringCpherOperation"
+msgstr "Fehler im Rahmen des Verschlüsselungsprozesses"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.InvalidPadding"
+msgstr "Fehler bei der Konfigurierung der Verschlüsselung"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.ErrorLoadingKeyFromDisk"
+msgstr "Fehler beim Herunterladen des Schlüssels von der Festplatte"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.ErrorConvertingP12Format"
+msgstr "Fehler bei der Umwandlung des pkcs12-Formats"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.BadKeyTypeFormat"
+msgstr "Unbekannter Fehler im Format des Zertifikats"
+
+msgid "Smartmatic.System.Security.Cryptography.RsaUtil.LoadedKeyIsInvalid"
+msgstr "Fehler beim Hochladen des Zertifikats"
+
+msgid "Smartmatic.System.Security.Cryptography.SignatureAlgorithm.ErrorLoadCertifiedX509"
+msgstr "Fehler beim Hochladen des x509-Zertifikats"
+
+msgid "Smartmatic.System.Security.Signed.ErrorSignedHMAC"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+msgid "Smartmatic.System.Security.Signed.ErrorSignedRSA"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+msgid "Smartmatic.System.Security.Signed.ErrorSignedCert"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+msgid "Smartmatic.System.Security.Signed.ErrorSignedDSA"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+msgid "Smartmatic.System.Security.Signed.ErrorValidatingDigitalXmlSignature"
+msgstr "Fehler bei der Validierung der Unterschrift"
+
+msgid "Smartmatic.System.Security.Signed.ErrorValidateSignedHMAC"
+msgstr "Fehler bei der Validierung der Unterschrift"
+
+msgid "Smartmatic.System.Security.Signed.ErrorSigned"
+msgstr "Fehler bei der Unterzeichnung der Daten"
+
+msgid "Smartmatic.System.Security.Signed.ErrorValidatingSignature"
+msgstr "Fehler bei der Validierung der Unterschrift"
+
+msgid "Smartmatic.System.XML.DomXml.ErrorDuringInitialitationOfXmlPlatformUtils"
+msgstr "Fehler bei der Umsetzung xml"
+
+msgid "Smartmatic.System.XML.DomXml.ErrorDuringParserFileToXml"
+msgstr "Fehler bei der Umsetzung xml"
+
+msgid "Smartmatic.System.XML.DomXml.ErrorDuringParserXmlToFile"
+msgstr "Fehler bei der Umsetzung xml"
+
+msgid "Smartmatic.System.XML.DomXml.ErrorDuringParserXmlToString"
+msgstr "Fehler bei der Umsetzung xml"
+
+msgid "Smartmatic.System.XML.DomXml.ErrorDuringParserStringToDom"
+msgstr "Fehler bei der Umsetzung xml"

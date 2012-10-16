@@ -1,0 +1,5 @@
+libsaesfunctionality_la-saes-menu-option-type.lo: \
+ Functionalities/saes-menu-option-type.cc \
+ Functionalities/saes-menu-option-type.h
+
+Functionalities/saes-menu-option-type.h:

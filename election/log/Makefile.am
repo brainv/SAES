@@ -1,0 +1,3 @@
+SUBDIRS = MP MV
+CLEANFILES = *~
+

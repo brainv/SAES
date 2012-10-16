@@ -1,0 +1,27 @@
+Source: saes-os
+Section: utils
+Priority: extra
+Maintainer: Smartmatic Labs C.A. <latam@smartmatic.com>
+Uploaders: Yadickson Soto <yadickson.soto@smartmatic.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage: http://www.smartmatic.com
+
+Package: saes-os
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, saes-os-storage, saes-os-bcr
+Description: SAES Operating System
+ This packages provides scripts called for SAES election
+
+Package: saes-os-storage
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: SAES Operating System Rules UDEV for USB Storage
+ This packages provides rules for automounting usb storage
+
+Package: saes-os-bcr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: SAES Operating System Rules UDEV for BCR
+ This packages provides rules for automounting barcodereader
+

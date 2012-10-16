@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/statistics-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="Statistics" targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports">
+	<xs:element name="PVForm">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="InfoElection" type="PVInfoElection"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="Pollworkers" type="Pollworkers"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="Statistics" type="Statistics"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="VoteStatistics" type="VoteStatistics"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="ActivatedCardStatistics" type="ActivatedCardStatistics"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="AssistedActivations" type="AssistedActivations"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="VotingDisabledInformation" type="VotingDisabledInformation"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="IncidentReports" type="IncidentReports"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="CloseElectionNotes" type="CloseElectionNotes"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="ReferenceVotes" type="PVVotes"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="HashOfTheResults" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="IDCardMembers" type="IDCardMembers"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="PoliceNotes" type="PoliceNotes"/>
+			</xs:sequence>			
+		</xs:complexType>
+	</xs:element>
+
+<xs:complexType name="PVInfoElection">
+    <xs:sequence>
+    	<xs:element maxOccurs="unbounded" minOccurs="1" name="RegionLevel" type="RegionLevel"/>
+    </xs:sequence>
+    <xs:attribute name="election-name" type="xs:string" use="required"/>    
+    <xs:attribute name="electoral-organization" type="xs:string" use="required"/>
+    <xs:attribute name="creation-time" type="xs:string" use="required"/>   
+    <xs:attribute name="voting-device-code" type="xs:string" use="required"/>
+	<xs:attribute name="polling-station-code" type="xs:string" use="required"/>
+	<xs:attribute name="polling-station-number" type="xs:positiveInteger" use="required"/>
+	<xs:attribute name="polling-station-criteria" type="xs:string" use="required"/>
+	<xs:attribute name="polling-place-code" type="xs:string" use="required"/>
+	<xs:attribute name="polling-place-registered-electors" type="xs:integer" use="required"/>
+	<xs:attribute name="polling-place-address" type="xs:string" use="required"/>
+	<xs:attribute name="polling-place-name" type="xs:string" use="required"/>
+	<xs:attribute name="number-senators" type="xs:integer" use="required"/>
+	<xs:attribute name="number-members" type="xs:integer" use="required"/>
+	<xs:attribute name="opening-date" type="xs:string" use="required"/>
+	<xs:attribute name="close-voting-date" type="xs:string" use="required"/>
+	<xs:attribute name="close-election-date" type="xs:string" use="required"/>
+	<xs:attribute name="duration-election-date" type="xs:string" use="required"/>	
+	<xs:attribute name="niscode" type="xs:string" use="optional"/>	
+</xs:complexType>
+
+<xs:complexType name="Statistics">
+	<xs:sequence>
+		<xs:element maxOccurs="unbounded" minOccurs="0" name="Statistic" type="StatisticType"/>
+	</xs:sequence>			
+</xs:complexType>
+
+<xs:complexType name="StatisticType">
+    <xs:sequence/>
+    <xs:attribute name="Type" type="StatisticElementType" use="required"/>
+    <xs:attribute name="Code" type="xs:string" use="required"/>
+    <xs:attribute name="NameKey" type="xs:string" use="required"/>
+    <xs:attribute name="DescriptionKey" type="xs:string" use="required"/>
+    <xs:attribute name="Value" type="xs:string" use="required"/>
+</xs:complexType>
+
+	<xs:simpleType name="StatisticElementType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="numeric"/>
+			<xs:enumeration value="boolean"/>
+			<xs:enumeration value="string"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+<xs:complexType name="Pollworkers">
+	<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="Workers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="1" name="Worker" type="Worker"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element maxOccurs="1" minOccurs="1" name="Notes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="Note" type="Note"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	</xs:sequence>			
+</xs:complexType>
+
+<xs:complexType name="Worker">
+	<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="personal-info" type="IDCardInfo"/>
+		<xs:element maxOccurs="unbounded" minOccurs="0" name="oposser" type="IDCardInfo"/>
+	</xs:sequence>	
+	<xs:attribute name="member-type" use="required" type="WorkerMemberType" />
+	<xs:attribute name="party" type="xs:string" use="required"/>
+	<xs:attribute name="account-number" type="xs:string" use="required"/>
+	<xs:attribute name="phone" type="xs:string" use="required"/>
+	<xs:attribute name="custom-code" type="xs:string" use="required"/>
+	<xs:attribute name="create-date" type="xs:string" use="required"/>
+	<xs:attribute name="all-day" type="xs:boolean" use="optional"/>
+	<xs:attribute name="start-time" type="xs:string" use="optional"/>
+	<xs:attribute name="end-time" type="xs:string" use="optional"/>
+	<xs:attribute name="accept-designation" type="xs:boolean" use="optional"/>
+	<xs:attribute name="impugnation-reason" type="xs:string" use="optional"/>
+	<xs:attribute name="bureau-assigned" type="xs:boolean" use="optional"/>
+</xs:complexType>
+
+<xs:simpleType name="WorkerMemberType">
+	<xs:restriction base="xs:string">
+			<xs:enumeration value="PRESIDENT"/>
+			<xs:enumeration value="SECRETARY"/>
+			<xs:enumeration value="ASSISTENT"/>
+			<xs:enumeration value="WITNESS"/>
+			<xs:enumeration value="POLICE"/>
+			<xs:enumeration value="ASSISTANT_SECRETARY"/>
+			<xs:enumeration value="DEPUTY_PRESIDENT"/>
+			<xs:enumeration value="DEPUTY_SECRETARY"/>
+			<xs:enumeration value="DEPUTY_ASSISTENT"/>
+			<xs:enumeration value="DEPUTY_WITNESS"/>
+			<xs:enumeration value="DEPUTY_POLICE"/>
+			<xs:enumeration value="DEPUTY_ASSISTANT_SECRETARY"/>
+			<xs:enumeration value="DEPUTY" />
+	</xs:restriction>
+</xs:simpleType>
+	
+	<xs:complexType name="Note">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="Content" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="Type" type="NoteWorkerMemberType" use="required"/>
+		<xs:attribute name="title" type="xs:string"/>
+		<xs:attribute name="custom-code" type="xs:string" use="required"/>
+		<xs:attribute name="create-date" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="NoteWorkerMemberType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OPEN_ELECTION"/>
+			<xs:enumeration value="OPEN_VOTING"/>
+			<xs:enumeration value="CLOSE_VOTING"/>
+			<xs:enumeration value="CLOSE_ELECTION"/>
+			<xs:enumeration value="NONE"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+<xs:complexType name="VoteStatistics">
+	<xs:sequence>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalVotes" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalSecurityVotes" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalOfficialVotes" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalDemoVotes" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalSuperNullVotes" type="xs:nonNegativeInteger"/>
+		<xs:element maxOccurs="1" minOccurs="1" name="VotesByCA">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="VoteByCA">
+				     <xs:complexType>
+					<xs:attribute name="VotesCounter" type="xs:nonNegativeInteger" use="required"/>
+					<xs:attribute name="CACode" type="xs:string" use="required"/>
+					<xs:attribute name="CAValue" type="xs:string" use="required"/>
+				    </xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>			
+</xs:complexType>
+
+<xs:complexType name="IncidentReports">
+	<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="Reports">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="Report">
+				     <xs:complexType>
+				     <xs:sequence>
+							<xs:element maxOccurs="1" minOccurs="1" name="Description" type="xs:string"/>
+							<xs:element maxOccurs="1" minOccurs="1" name="NamesOfTechnicians" type="IDCardInfo"/>
+							<xs:element maxOccurs="1" minOccurs="1" name="ActivityOfTechnicians" type="xs:string"/>
+							<xs:element maxOccurs="1" minOccurs="0" name="AdditionalObservations" type="xs:string"/>
+					</xs:sequence>
+					<xs:attribute name="NotificationDate" type="xs:dateTime" use="required"/>
+					<xs:attribute name="PersonalArrivalDate" type="xs:dateTime" use="required"/>
+					<xs:attribute name="IncidentSolutionDate" type="xs:dateTime" use="required"/>
+					<xs:attribute name="custom-code" type="xs:string" use="required"/>
+				    </xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>			
+</xs:complexType>
+
+<xs:complexType name="IDCardMembers">
+	<xs:sequence>
+		<xs:element maxOccurs="unbounded" minOccurs="0" name="IDCardInfo" type="IDCardInfo"/>
+	</xs:sequence>
+</xs:complexType>
+
+<!-- This complexType name="IDCardInfo" is here for xsd comprobation  -->
+<xs:complexType name="IDCardInfo">
+	<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="FirstName" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="1" name="Surname" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="Gender" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xs:string" />
+		<xs:element maxOccurs="1" minOccurs="0" name="LocationOfBirth" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="Nationality" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="NationalNumber" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="SpecialOrganization" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="MemberOfFamily" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="AddressVersion" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="Street" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="ZipCode" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="Municipality" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="Country" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="0" name="SpecialStatus" type="xs:string"/>
+	</xs:sequence>
+	<xs:attribute name="Type" type="IDCardInfoType" use="optional" />
+</xs:complexType>
+
+<xs:simpleType name="IDCardInfoType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="InstallPM"/>
+		<xs:enumeration value="InstallVM"/>
+		<xs:enumeration value="OpenElection"/>
+		<xs:enumeration value="CloseVoting"/>
+		<xs:enumeration value="CloseElection"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="ActivatedCardStatistics">
+	<xs:sequence>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalNonAudioActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalAudioActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalOfficialActivated" type="xs:nonNegativeInteger"/>			    
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalDemoActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalRecoveryActivated" type="xs:nonNegativeInteger"/>
+
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalAudioOfficialActivated" type="xs:nonNegativeInteger"/>			    
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalAudioDemoActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalAudioRecoveryActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalNonAudioOfficialActivated" type="xs:nonNegativeInteger"/>			    
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalNonAudioDemoActivated" type="xs:nonNegativeInteger"/>
+	    <xs:element maxOccurs="1" minOccurs="1" name="TotalNonAudioRecoveryActivated" type="xs:nonNegativeInteger"/>
+	
+		<xs:element maxOccurs="1" minOccurs="1" name="ActivatedOfficialNonAudioByCA">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="CardByCA" type="ActivatedCardByCA"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element maxOccurs="1" minOccurs="1" name="ActivatedDemoNonAudioByCA">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="CardByCA" type="ActivatedCardByCA"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element maxOccurs="1" minOccurs="1" name="ActivatedOfficialAudioByCA">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="CardByCA" type="ActivatedCardByCA"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element maxOccurs="1" minOccurs="1" name="ActivatedDemoAudioByCA">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="CardByCA" type="ActivatedCardByCA"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>			
+</xs:complexType>
+
+<xs:complexType name="ActivatedCardByCA">
+	<xs:attribute name="Counter" type="xs:nonNegativeInteger" use="required"/>
+	<xs:attribute name="CACode" type="xs:string" use="required"/>
+	<xs:attribute name="CAValue" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="AssistedActivations">
+	<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="Activations">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="Activation">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="1" minOccurs="1" name="Pollworker" type="IDCardInfo"/>
+							<xs:element maxOccurs="1" minOccurs="1" name="Voter" type="IDCardInfo"/>
+							<xs:element maxOccurs="1" minOccurs="1" name="PropossedPerson" type="IDCardInfo"/>
+							<xs:element maxOccurs="1" minOccurs="0" name="Impugnator" type="IDCardInfo"/>
+							<xs:element maxOccurs="1" minOccurs="0" name="DesignatedPerson" type="IDCardInfo"/>
+							<xs:element maxOccurs="1" minOccurs="0" name="ImpugnationReason" type="xs:string"/>
+						</xs:sequence>
+						<xs:attribute name="custom-code" type="xs:string" use="required"/>
+						<xs:attribute name="WasImpugned" type="xs:boolean" use="required"/>
+				    	<xs:attribute name="activationMode" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="PROXY"/>
+									<xs:enumeration value="PRESENTIAL"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+				    </xs:complexType>						    
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>			
+</xs:complexType>
+
+
+<xs:complexType name="PVContest">
+    <xs:sequence>
+	<xs:element maxOccurs="unbounded" minOccurs="0" name="PrincipalsSelected" type="PVCandidate"/>
+	<xs:element maxOccurs="unbounded" minOccurs="0" name="StandInSelected" type="PVCandidate"/>
+    </xs:sequence>
+    <xs:attribute name="pv-report-name" type="xs:string" use="required"/>        
+    <xs:attribute name="pv-party-name" type="xs:string" use="required"/>
+    <xs:attribute name="null-info" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="PVVote">
+    <xs:sequence>
+	<xs:element maxOccurs="unbounded" minOccurs="0" name="Contest" type="PVContest"/>	
+    </xs:sequence>
+    <xs:attribute name="logical-voter-group" type="xs:string" use="required"/>    
+    <xs:attribute name="vote-code" type="xs:string" use="required"/>
+    <xs:attribute name="voting-device-code" type="xs:string" use="required"/>    
+</xs:complexType>
+
+<xs:complexType name="PVCandidate">
+    <xs:sequence/>
+    <xs:attribute name="info" type="xs:string" use="required"/>    
+</xs:complexType>
+
+
+<xs:complexType name="PVVotes">
+    <xs:sequence>
+	<xs:element maxOccurs="unbounded" minOccurs="0" name="Vote" type="PVVote"/>	
+    </xs:sequence>
+    <xs:attribute name="total-votes" type="xs:nonNegativeInteger" use="required"/>           
+</xs:complexType>
+
+<xs:complexType name="CloseElectionNotes">
+	<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="CloseNotes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="CloseNote">
+				    <xs:complexType>
+				    	<xs:sequence>
+							<xs:element maxOccurs="1" minOccurs="1" name="Content" type="xs:string"/>
+							<xs:element maxOccurs="1" minOccurs="1" name="writer-name" type="IDCardInfo"/>
+						</xs:sequence>
+						<xs:attribute name="president-note" type="xs:boolean" use="required"/>						
+				    </xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>			
+</xs:complexType>
+
+<xs:complexType name="RegionLevel">
+    <xs:sequence/>
+    <xs:attribute name="category-level" type="xs:string" use="required"/>           
+    <xs:attribute name="category" type="xs:string" use="required"/>           
+    <xs:attribute name="name" type="xs:string" use="required"/>           
+</xs:complexType>
+
+
+	<xs:complexType name="VotingDisabledInformation">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="VotingDisabled" type="VotingDisabled" />
+		</xs:sequence>			
+	</xs:complexType>
+	
+	<xs:complexType name="VotingDisabled">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="Voter" type="IDCardInfo"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Helper" type="IDCardInfo"/>
+		</xs:sequence>
+		<xs:attribute name="custom-code" type="xs:string" use="required"/>
+		<xs:attribute name="create-date" type="xs:string" use="required"/>
+		<xs:attribute name="type" type="VotingDisabledType" use="required"/>
+		<xs:attribute name="disabled" type="xs:boolean" use="required"/>
+		<xs:attribute name="approved" type="xs:boolean" use="required"/>
+		<xs:attribute name="description" type="xs:string" use="required"/>
+    </xs:complexType>						    
+
+	<xs:simpleType name="VotingDisabledType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ASSISTED"/>
+			<xs:enumeration value="ACCOMPANIED"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="PoliceNotes">
+		<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="PoliceNote" type="PoliceNote"/>
+		</xs:sequence>			
+	</xs:complexType>
+	
+	<xs:complexType name="PoliceNote">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="personal-info" type="IDCardInfo"/>
+		</xs:sequence>	
+		<xs:attribute name="custom-code" type="xs:string" use="required"/>
+		<xs:attribute name="create-date" type="xs:string" use="required"/>
+		<xs:attribute name="action-one" type="xs:boolean" use="required"/>
+		<xs:attribute name="action-two" type="xs:boolean" use="required"/>
+		<xs:attribute name="action-three" type="xs:boolean" use="required"/>
+		<xs:attribute name="comment" type="xs:string" use="required"/>
+	</xs:complexType>
+
+</xs:schema>

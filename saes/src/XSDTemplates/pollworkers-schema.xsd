@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by smtt (private) -->
+<xs:schema xmlns="http://www.smartmatic.com/Saes/Voting/PBReports" xmlns:mstns="http://www.smartmatic.com/Saes/Voting/PBReports/pollbook-members-schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="Pollworkers" targetNamespace="http://www.smartmatic.com/Saes/Voting/PBReports">
+	<xs:element name="Pollworkers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="Workers">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="Worker" type="Worker"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="1" name="Notes">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="Note" type="Note"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>	
+			</xs:sequence>			
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="Worker">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="personal-info" type="IDCardInfo"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="oposser" type="IDCardInfo"/>
+		</xs:sequence>	
+		<xs:attribute name="member-type" use="required" type="WorkerMemberType" />
+		<xs:attribute name="party" type="xs:string" use="required"/>
+		<xs:attribute name="account-number" type="xs:string" use="required"/>
+		<xs:attribute name="phone" type="xs:string" use="required"/>
+		<xs:attribute name="custom-code" type="xs:string" use="required"/>
+		<xs:attribute name="create-date" type="xs:string" use="required"/>
+		<xs:attribute name="all-day" type="xs:boolean" use="optional"/>
+		<xs:attribute name="start-time" type="xs:string" use="optional"/>
+		<xs:attribute name="end-time" type="xs:string" use="optional"/>
+		<xs:attribute name="accept-designation" type="xs:boolean" use="optional"/>
+		<xs:attribute name="impugnation-reason" type="xs:string" use="optional"/>
+		<xs:attribute name="bureau-assigned" type="xs:boolean" use="optional"/>
+	</xs:complexType>
+
+	<xs:simpleType name="WorkerMemberType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PRESIDENT"/>
+			<xs:enumeration value="SECRETARY"/>
+			<xs:enumeration value="ASSISTENT"/>
+			<xs:enumeration value="WITNESS"/>
+			<xs:enumeration value="POLICE"/>
+			<xs:enumeration value="ASSISTANT_SECRETARY"/>
+			<xs:enumeration value="DEPUTY_PRESIDENT"/>
+			<xs:enumeration value="DEPUTY_SECRETARY"/>
+			<xs:enumeration value="DEPUTY_ASSISTENT"/>
+			<xs:enumeration value="DEPUTY_WITNESS"/>
+			<xs:enumeration value="DEPUTY_POLICE"/>
+			<xs:enumeration value="DEPUTY_ASSISTANT_SECRETARY"/>
+			<xs:enumeration value="DEPUTY" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="Note">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="Content" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="title" type="xs:string"/>
+		<xs:attribute name="custom-code" type="xs:string" use="required"/>
+		<xs:attribute name="create-date" type="xs:string" use="required"/>
+		<xs:attribute name="type" type="NoteWorkerMemberType" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="NoteWorkerMemberType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OPEN_ELECTION"/>
+			<xs:enumeration value="OPEN_VOTING"/>
+			<xs:enumeration value="CLOSE_VOTING"/>
+			<xs:enumeration value="CLOSE_ELECTION"/>
+			<xs:enumeration value="POLLWORKERS"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- This complexType name="IDCardInfo" is here for xsd comprobation  -->
+	<xs:complexType name="IDCardInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="FirstName" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Surname" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Gender" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="LocationOfBirth" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Nationality" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="NationalNumber" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="SpecialOrganization" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="MemberOfFamily" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="AddressVersion" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Street" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="ZipCode" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Municipality" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="Country" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="SpecialStatus" type="xs:string"/>
+		</xs:sequence>			
+	</xs:complexType>
+</xs:schema>

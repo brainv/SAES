@@ -1,0 +1,6 @@
+etc/saes-os/*
+usr/bin/*
+usr/sbin/smtt-dsort
+usr/sbin/smtt-movefile
+usr/sbin/smtt-smartcard
+

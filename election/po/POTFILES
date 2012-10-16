@@ -1,0 +1,12 @@
+	../etc/election.desktop.in \
+	../src/Config.cxx \
+	../src/Config.hxx \
+	../src/Diagnostics.cxx \
+	../src/Diagnostics.hxx \
+	../src/main.cc \
+	../src/PMachine.cxx \
+	../src/PMachine.hxx \
+	../src/RunFunctionality.cxx \
+	../src/RunFunctionality.hxx \
+	../src/VMachine.cxx \
+	../src/VMachine.hxx

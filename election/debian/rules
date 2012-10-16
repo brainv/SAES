@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with bash-completion
+
+override_dh_install:
+	rm -rf debian/election/usr/share/locale
+	dh_install
+

@@ -1,0 +1,4 @@
+libsaescommon_la-IStateWrapper.lo: ../src/Voting/IStateWrapper.cxx \
+ ../src/Voting/IStateWrapper.hxx
+
+../src/Voting/IStateWrapper.hxx:
