@@ -8,4 +8,5 @@ http://abb.vlaanderenkiest.be/sites/default/files/SAES1.4.6.zip (direct download
 
 Build instructions:
 Te builden op debian met dpkg-buildpackage.
-Meer informatie bij Matthias Streulens (@streulma op Twitter).
+Met dank aan Matthias Streulens (@streulma op Twitter):
+https://twitter.com/streulma/status/258205468382597120
