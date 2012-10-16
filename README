@@ -1,0 +1,10 @@
+Broncode stemsoftware
+Datum: dinsdag, 16 oktober, 2012
+
+De broncode van de stemsoftware van de verkiezingen van 14 oktober 2012.
+http://abb.vlaanderenkiest.be/broncode-stemsoftware
+
+
+Build instructions:
+Te builden op debian met dpkg-buildpackage.
+Meer informatie bij Matthias Streulens (@streulma op Twitter).
